@@ -274,6 +274,9 @@ collections:
   datascience:
     output: true
     permalink: /:collection/:path/
+  cursos:
+    output: true
+    permalink: /:collection/:path/
 
 # HTML Compression
 # - http://jch.penibelst.de/
