@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Germán A. González"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/GG4.JPG"
   bio              : "Bioinformático / Bioestadístico / Fundamentalista de R / Jedi Master"
   location         : "Argentina"
   email            :
@@ -229,14 +229,6 @@ plugins:
   - jekyll-include-cache
   - jekyll-archives
 
-# Jeckyll archives
-jekyll-archives:
-  enabled:
-    - 'tags'
-  layout: tag_index
-  permalinks:
-    tag: '/tags/:name/'
-    
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -264,17 +256,24 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
+# Collections
+collections:
+  cafe:
+    output: true
+    permalink: /:collection/:path/
+  datascience:
+    output: true
+    permalink: /:collection/:path/
 
 # HTML Compression
 # - http://jch.penibelst.de/
