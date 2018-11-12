@@ -2,6 +2,8 @@
 layout: single
 title: El rol del estado en la ciencia
 categories: cafe
+header:
+  teaser: /assets/img/estado-ciencia/estado-ciencia.png
 ---
 
 ¿Cuál es el rol del estado en la investigación científica y tecnológica? ¿Puede ser suplantado en su totalidad por privados?
