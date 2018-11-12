@@ -270,13 +270,13 @@ jekyll-archives:
 collections:
   cafe:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:cafe/:path/
   datascience:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:datascience/:path/
   cursos:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:cursos/:path/
 
 # HTML Compression
 # - http://jch.penibelst.de/
