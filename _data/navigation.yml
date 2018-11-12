@@ -5,5 +5,5 @@ main:
    - title: "Cursos"
      url: /cursos.html
    - title: "Café"
-     url: /cafe.html
+     url: /cafe/
  
