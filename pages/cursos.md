@@ -6,4 +6,4 @@ permalink: /cursos/
 author_profile: true
 ---
 
-Cursos de posgrado dictados.
+Cursos de posgrado y talleres dictados.
