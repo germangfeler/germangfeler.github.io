@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: El rol del estado en la ciencia
 categories: cafe
 ---
