@@ -1,9 +1,9 @@
 # main links
 main:
    - title: "Data Science"
-     url: /datascience/
+     url: /datascience.html
    - title: "Cursos"
-     url: /cursos/
+     url: /cursos.html
    - title: "Café"
-     url: /cafe/
+     url: /cafe.html
  
