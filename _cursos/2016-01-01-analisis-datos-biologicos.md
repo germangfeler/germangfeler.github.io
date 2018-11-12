@@ -12,7 +12,6 @@ El curso tiene como objetivo general cubrir desde conceptos básicos hasta aplic
 de análisis e interpretación de imágenes, y su procesamiento desde la obtención de la misma hasta su transformación en una figura publicable con rigor científico.
 
 <h2>Docentes</h2>
-Docentes:
 * Lic. German Gonzalez. Bioinformático. IDEA-CONICET.
 * Dr. Andrés Dekanty, Cátedra de Biología Celular y Molecular de la FBCB-UNL y el IAL-CONICET-UNL.
 * Dr. Pablo Manavella, Cátedra de Biología Celular y Molecular de la FBCB-UNL y el IAL-CONICET-UNL.
