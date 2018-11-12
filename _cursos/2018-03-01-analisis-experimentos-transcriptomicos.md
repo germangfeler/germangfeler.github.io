@@ -10,8 +10,7 @@ Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad
 7 al 11 de mayo de 2018.
 
 <h2>Objetivos</h2>
-El curso tiene como objetivo general cubrir desde conceptos básicos hasta aplicaciones prácticas de técnicas avanzadas de análisis bioinformático y procesamiento de datos biológicos, así como del procesamiento de imágenes obtenidas mediante microscopía láser confocal, microscopía de fluorescencia, microscopía óptica. El propósito final del curso es lograr que el alumno aprenda a procesar datos provenientes de análisis de microarreglos de ADN o RNAseq (secuenciación de ARN), técnicas cada vez más utilizadas y difundidas para la generación de datos biológicos. De manera complementaria, se introducirán técnicas
-de análisis e interpretación de imágenes, y su procesamiento desde la obtención de la misma hasta su transformación en una figura publicable con rigor científico.
+El curso tiene como finalidad brindar los conocimientos básicos necesarios para el diseño y análisis de experimentos transcriptómicos de alto rendimiento utilizando el software considerado como ‘estándar de facto’ en la literatura.
 
 <h2>Docentes</h2>
 * Germán A. González, IDEA-CONICET. 
