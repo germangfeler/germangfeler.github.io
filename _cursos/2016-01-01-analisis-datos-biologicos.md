@@ -19,7 +19,8 @@ de análisis e interpretación de imágenes, y su procesamiento desde la obtenci
 
 <h2>Programa</h2>
 <strong>Parte I: Introducción al análisis de datos transcriptómicos (27-30hs)</strong>
-I.1 Diseño de experimentos transcriptómicos
+
+<strong>I.1 Diseño de experimentos transcriptómicos</strong>
 Teoría: Reseña de las plataformas utilizadas para análisis transcriptómico. Tipos de
 diseños para experimentos de microarrays y RNA-seq: comparaciones directas e
 indirectas, diseños en bloque, dye-swap, experimentos longitudinales, diseños
