@@ -4,7 +4,6 @@ title: 2018 - Análisis de experimentos transcriptómicos (RNA-Seq)
 categories: cursos
 ---
 
-<h1>“Análisis de experimentos transcriptómicos (RNA-Seq)”</h1>
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad Nacional de Córdoba.
 
 <h2>Fecha</h2>
