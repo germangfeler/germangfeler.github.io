@@ -2,8 +2,7 @@
 layout: single
 title: El rol del estado en la ciencia
 categories: cafe
-header:
-  teaser: /assets/img/estado-ciencia/estado-ciencia.png
+picture: /assets/img/estado-ciencia/estado-ciencia.png
 ---
 
 ¿Cuál es el rol del estado en la investigación científica y tecnológica? ¿Puede ser suplantado en su totalidad por privados?
@@ -25,7 +24,7 @@ realizado en gran medida por el estado.
 ![estado](/assets/img/estado-ciencia/estado.png)
 
 No es raro escuchar por estas redes que en EEUU la innovación es llevada adelante por el sector privado. ¿Es esto así? 
-#spoileralert: NO. Veamos estos dos gráficos de Mazzucato sobre las fuentes de financiamiento en I&D en EEUU. El primero 
+<strong>#spoileralert: NO</strong>. Veamos estos dos gráficos de Mazzucato sobre las fuentes de financiamiento en I&D en EEUU. El primero 
 muestra el panorama cuando consideramos todo el proceso en forma global y el segundo cuando nos acotamos a lo que sucede 
 en ciencia básica. 
 
@@ -38,28 +37,26 @@ más arriesgada) y un sector privado que acompaña financiando el desarrollo en 
 Hasta aquí vimos una visión “macro” (si se me permite el término) de cómo funciona la política científica en innovación pero
 alguno de uds se puede estar preguntando ¿qué cosas concretas han salido de la investigación estatal?  Veamos algunos ejemplos, que no intentan ser exhaustivos pero sí relevantes.
 
-- Internet. Lo que conocemos ahora como internet tuvo sus primeros pasos en los años 60 con ARPANET en EEUU (creado por DARPA) y NPL network en Inglaterra (del Laboratorio Nacional de Física). Durante los siguientes años se extendió a universidades e instituciones científicas y recién a partir de los 90 comenzó a llegar al público general con la aparición de los proveedores privados (ISP). 
+- <strong>Internet</strong>. Lo que conocemos ahora como internet tuvo sus primeros pasos en los años 60 con ARPANET en EEUU (creado por DARPA) y NPL network en Inglaterra (del Laboratorio Nacional de Física). Durante los siguientes años se extendió a universidades e instituciones científicas y recién a partir de los 90 comenzó a llegar al público general con la aparición de los proveedores privados (ISP). 
 Internet solo definió la manera en la que se transfería la información de una computadora a otra pero lo que terminaría de 
 hacerla popular sería la aparición de la web (páginas con textos, multimedia y links). Ésta también un origen gubernamental: 
 el CERN (si, los del colisionador de hadrones).
 
 ![internet](/assets/img/estado-ciencia/internet.png)
 
-- Google. Si hablamos de internet, hablamos de Google. El trabajo de Brin y Page (en ese momento estudiantes de Stanford) 
+- <strong>Google</strong>. Si hablamos de internet, hablamos de Google. El trabajo de Brin y Page (en ese momento estudiantes de Stanford) 
 fue financiado por las agencias estatales NSF, DARPA y NASA.
 
 ![google1](/assets/img/estado-ciencia/google1.png)
 ![google2](/assets/img/estado-ciencia/google2.png)
 
-- iPhone. El dispositivo estrella de la última década no hubiera podido existir sin las decenas de tecnologías que 
+- <strong>iPhone</strong>. El dispositivo estrella de la última década no hubiera podido existir sin las decenas de tecnologías que 
 desarrollaron las agencias estatales en EEUU (en especial las militares). Desde las baterías de litio hasta las pantallas
 multi-táctiles, pasando por el GPS y los microprocesadores.
 
 ![iph](/assets/img/estado-ciencia/iphone-slide.jpeg)
 
-- ¿Quién es el actor fundamental de la innovación en la industria farmaceútica y biotecnológica? Si, adivinaste, es 
-el estado. En EEUU la mayor fuente de financiamiento de estas investigaciones es el NIH, que ha visto aumentar su 
-presupuesto año a año independientemente del gobierno de turno. Desde 1930 han invertido casi 900 mil millones de dólares. 
+- <strong>Farmas</strong> ¿Quién es el actor fundamental de la innovación en la industria farmaceútica y biotecnológica? Si, adivinaste, es el estado. En EEUU la mayor fuente de financiamiento de estas investigaciones es el NIH, que ha visto aumentar su presupuesto año a año independientemente del gobierno de turno. Desde 1930 han invertido casi 900 mil millones de dólares. 
 El 75% de las drogas innovadoras (NME, new molecular entities) que se patentan en EEUU tienen su origen en investigaciones 
 financiadas por el NIH. Y esto se está profundizando con el tiempo: si miramos solo el período 2010-2016 el porcentaje 
 sube al 100%. Si las farmas no innovan ¿en qué invierten? bueno, en gran medida, en marketing. Y cuando se dedican a 
