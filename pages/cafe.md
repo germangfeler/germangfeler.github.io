@@ -6,4 +6,4 @@ permalink: /cafe/
 author_profile: false
 ---
 
-Sample document listing for the collection `_cafe`.
+Discusiones sobre política, ciencia y algunas cosas más.
