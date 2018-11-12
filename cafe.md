@@ -1,0 +1,11 @@
+---
+layout: page
+permalink: /cafe/
+title: Café
+---
+
+Posts sobre cuestiones que escapan de la ciencia de dato. Desde política científica hasta temas filósificos.
+
+{% for post in site.categories.cafe %}
+ <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a>{{ post.excerpt }}</li>
+{% endfor %}
