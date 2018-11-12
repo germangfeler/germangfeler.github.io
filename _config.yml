@@ -229,6 +229,14 @@ plugins:
   - jekyll-include-cache
   - jekyll-archives
 
+# Jeckyll archives
+jekyll-archives:
+  enabled:
+    - 'tags'
+  layout: tag_index
+  permalinks:
+    tag: '/tags/:name/'
+    
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
