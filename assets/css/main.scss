@@ -27,7 +27,7 @@ img.thumbnail {
     width: 400px !important; /* Set a small width */
 }
 
-.author__avatar {
-    width: 72px;
-    height: 72px;
+.author__avatar img {
+    max-width: 200px !important;
+    border-radius: 10% !important;
 }
