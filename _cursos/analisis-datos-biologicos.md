@@ -4,8 +4,8 @@ title: 2016 - Análisis de datos biológicos, del bit a la publicación científ
 categories: cursos
 ---
 
-Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Facultad de Bioquímica y Ciencias Biológicas, Universidad Nacional del Litoral
-
+Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Facultad de Bioquímica y Ciencias Biológicas, Universidad Nacional del Litoral.
+<!--more-->
 <h2>Objetivos</h2>
 El curso tiene como objetivo general cubrir desde conceptos básicos hasta aplicaciones prácticas de técnicas avanzadas de análisis bioinformático y procesamiento de datos biológicos, así como del procesamiento de imágenes obtenidas mediante microscopía láser confocal, microscopía de fluorescencia, microscopía óptica. El propósito final del curso es lograr que el alumno aprenda a procesar datos provenientes de análisis de microarreglos de ADN o RNAseq (secuenciación de ARN), técnicas cada vez más utilizadas y difundidas para la generación de datos biológicos. De manera complementaria, se introducirán técnicas
 de análisis e interpretación de imágenes, y su procesamiento desde la obtención de la misma hasta su transformación en una figura publicable con rigor científico.
