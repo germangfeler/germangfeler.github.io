@@ -7,9 +7,7 @@ picture: /assets/img/estado-ciencia/estado-ciencia.png
 
 <p>¿Cuál es el rol del estado en la investigación científica y tecnológica? ¿Puede ser suplantado en su totalidad por privados?</p>
 
-<p class=".page__content">Primero necesitamos definir de qué hablamos cuando hablamos de financiar ciencia. De modo amplio podemos decir que hay dos 
-ítems principales: los sueldos de investigadores y becarios y los subsidios para comprar insumos y equipamiento.En muchos 
-países los sueldos dependen de las universidades y los subsidios de las agencias científicas. En el caso de EEUU, por ejemplo, existen agencias que financian investigaciones en áreas específicas: NIH (salud), NSF (ciencia básica), NASA (espacial), DARPA (militar), etc. En Argentina es un poco diferente porque, si bien muchos investigadores dependen de las universidades, el principal empleador es el CONICET, un ente gubernamental centralizado que abarca todas las áreas de la ciencia. Los subsidios a su vez provienen del mismo CONICET o de la Agencia Nacional de Promoción Científica y Tecnológica (ANPCyT).</p>
+<p class="page__content">Primero necesitamos definir de qué hablamos cuando hablamos de financiar ciencia. De modo amplio podemos decir que hay dos ítems principales: los sueldos de investigadores y becarios y los subsidios para comprar insumos y equipamiento.En muchos países los sueldos dependen de las universidades y los subsidios de las agencias científicas. En el caso de EEUU, por ejemplo, existen agencias que financian investigaciones en áreas específicas: NIH (salud), NSF (ciencia básica), NASA (espacial), DARPA (militar), etc. En Argentina es un poco diferente porque, si bien muchos investigadores dependen de las universidades, el principal empleador es el CONICET, un ente gubernamental centralizado que abarca todas las áreas de la ciencia. Los subsidios a su vez provienen del mismo CONICET o de la Agencia Nacional de Promoción Científica y Tecnológica (ANPCyT).</p>
 
 <p>Si nos preguntamos cuáles han sido las tecnologías que han cambiado nuestra vida durante los últimos 50 años encontraremos 
 que la gran mayoría (sino todas) han tenido su origen en una investigación financiada por el estado. ¿Por qué esto es así?</p> 
@@ -29,11 +27,9 @@ realizado en gran medida por el estado. </p>
 ![eeuu1](/assets/img/estado-ciencia/eeuu1.png)
 ![eeuu2](/assets/img/estado-ciencia/eeuu2.png)
 
-Esto refuerza lo que hablamos hasta ahora: hay un estado que se encarga de financiar la investigación básica (más innovadora,
-más arriesgada) y un sector privado que acompaña financiando el desarrollo en las etapas finales y la comercialización.
+<p>Esto refuerza lo que hablamos hasta ahora: hay un estado que se encarga de financiar la investigación básica (más innovadora, más arriesgada) y un sector privado que acompaña financiando el desarrollo en las etapas finales y la comercialización.</p>
 
-Hasta aquí vimos una visión “macro” (si se me permite el término) de cómo funciona la política científica en innovación pero
-alguno de uds se puede estar preguntando ¿qué cosas concretas han salido de la investigación estatal?  Veamos algunos ejemplos, que no intentan ser exhaustivos pero sí relevantes.
+<p>Hasta aquí vimos una visión “macro” (si se me permite el término) de cómo funciona la política científica en innovación pero alguno de uds se puede estar preguntando ¿qué cosas concretas han salido de la investigación estatal?  Veamos algunos ejemplos, que no intentan ser exhaustivos pero sí relevantes.</p>
 
 - <strong>Internet</strong>. Lo que conocemos ahora como internet tuvo sus primeros pasos en los años 60 con ARPANET en EEUU (creado por DARPA) y NPL network en Inglaterra (del Laboratorio Nacional de Física). Durante los siguientes años se extendió a universidades e instituciones científicas y recién a partir de los 90 comenzó a llegar al público general con la aparición de los proveedores privados (ISP). 
 Internet solo definió la manera en la que se transfería la información de una computadora a otra pero lo que terminaría de 
