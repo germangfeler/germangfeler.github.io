@@ -1,11 +1,11 @@
 # main links
 main:
-   - title: "CV"
-     url: /cv/
-   - title: "Cursos"
-     url: /cursos/
    - title: "Data Science"
      url: /datascience/
    - title: "Café"
      url: /cafe/
+   - title: "Cursos"
+     url: /cursos/
+   - title: "CV"
+     url: /cv/
  
