@@ -1,9 +1,16 @@
 ---
-layout: collection
+layout: default
 title: "Data Science"
-collection: datascience
 permalink: /datascience/
 author_profile: true
 ---
-
 Posts sobre Data Science, Estadística y aplicaciones en R.
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
