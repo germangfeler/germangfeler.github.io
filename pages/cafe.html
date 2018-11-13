@@ -10,7 +10,7 @@ Discusiones sobre política, ciencia y algunas cosas más.
 
 {% for post in site.categories.cafe %}
   <div>
-  <img src="{{ post.thumbnail }}" />
+  <img src="{{ post.thumbnail }}" class="thumbnail"/>
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     {{ post.excerpt }}
   </div>
