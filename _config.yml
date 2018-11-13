@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Germán A. González"
+  name             : ""
   avatar           : "/assets/GG4.JPG"
   bio              : "Bioinformático / Bioestadístico / Fundamentalista de R / Jedi Master"
   location         : "Argentina"
