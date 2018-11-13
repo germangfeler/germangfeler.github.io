@@ -1,9 +1,15 @@
 ---
-layout: collection
+layout: single
 title: "Café"
-collection: cafe
 permalink: /cafe/
 author_profile: true
 ---
 
 Discusiones sobre política, ciencia y algunas cosas más.
+
+{% for post in site.categories.cafe %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
