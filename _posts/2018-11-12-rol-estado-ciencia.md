@@ -2,10 +2,10 @@
 layout: single
 title: El rol del estado en la ciencia
 categories: cafe
-picture: /assets/img/estado-ciencia/estado-ciencia.png
+thumbnail: /assets/img/estado-ciencia/estado-ciencia.png
 ---
 
-<p>¿Cuál es el rol del estado en la investigación científica y tecnológica? ¿Puede ser suplantado en su totalidad por privados?</p>
+<p>¿Cuál es el rol del estado en la investigación científica y tecnológica?</p>
 
 <p class="page__content">Primero necesitamos definir de qué hablamos cuando hablamos de financiar ciencia. De modo amplio podemos decir que hay dos ítems principales: los sueldos de investigadores y becarios y los subsidios para comprar insumos y equipamiento.En muchos países los sueldos dependen de las universidades y los subsidios de las agencias científicas. En el caso de EEUU, por ejemplo, existen agencias que financian investigaciones en áreas específicas: NIH (salud), NSF (ciencia básica), NASA (espacial), DARPA (militar), etc. En Argentina es un poco diferente porque, si bien muchos investigadores dependen de las universidades, el principal empleador es el CONICET, un ente gubernamental centralizado que abarca todas las áreas de la ciencia. Los subsidios a su vez provienen del mismo CONICET o de la Agencia Nacional de Promoción Científica y Tecnológica (ANPCyT).</p>
 
