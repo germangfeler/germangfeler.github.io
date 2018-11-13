@@ -1,9 +1,11 @@
 # main links
 main:
-   - title: "Data Science"
-     url: /datascience/
+   - title: "CV"
+     url: /cv/
    - title: "Cursos"
      url: /cursos/
+   - title: "Data Science"
+     url: /datascience/
    - title: "Café"
      url: /cafe/
  
