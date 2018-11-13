@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" #"dark", "default","air", "aqua", "contras
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Databoom"
+title                    : "Ciencia de datos, R, estadística y cosas de la vida"
 title_separator          : "-"
 name                     : "German Gonzalez"
 description              : "Ciencia de datos, R, estadística y cosas de la vida"
