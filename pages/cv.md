@@ -17,6 +17,10 @@ author_profile: true
 * Curso de posgrado: Análisis de datos biológicos, del bit a la publicación científica (2016) [responsable]
 * Curso de posgrado: Análisis de experimentos transcriptómicos (RNA-Seq) (2018) [responsable]
 
+<h2>Divulgación científica</h2>
+* <strong>bioinformaticos.com.ar</strong> (2007-2017), administración, edición y redacción de artículos  
+* <strong>Instituto de Diversidad y Ecología Animal</strong> (2018-actualidad), creación de contenido para la web y redes sociales
+
 <h2>Publicaciones</h2>
 * Garnero, P. L., Monferran, M. V., <strong>González, G. A.</strong>, Griboff, J., & de los Ángeles, B. M. (2018). Assessment of exposure to metals, As and Se in water and sediment of a freshwater reservoir and their bioaccumulation in fish species of different feeding and habitat preferences. Ecotoxicology and environmental safety, 163, 492-501.
 * A novel non-parametric method for uncertainty evaluation of correlation-based molecular signatures: its application on PAM50 algorithm. Fresno C, <strong>González GA</strong>, Merino G, Flesia AG, Podhajcer OL, Llera AS y Fernandez EA. Bioinformatics, btw704, 2017.
