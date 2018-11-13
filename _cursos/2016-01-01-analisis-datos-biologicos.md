@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: 2016 - Análisis de datos biológicos, del bit a la publicación científica
 categories: cursos
 ---
