@@ -24,6 +24,9 @@ a:visited {
     color: #2884bd !important;
 }
 
-img {
-    border: 1px solid #ddd !important;
+.thumbnail img {
+    border: 1px solid #ddd !important;/* Gray border */
+    border-radius: 4px !important;  /* Rounded border */
+    padding: 5px !important; /* Some padding */
+    width: 150px !important; /* Set a small width */
 }
