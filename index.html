@@ -2,3 +2,10 @@
 layout: home
 author_profile: true
 ---
+
+{% for collection in site.collections %}
+  <ul>
+    <p><img align="center", src="{{ collection.thumbnail }}"></img>
+    <li>{{ collection.label }}:<a href="{{ site.baseurl }}/{{collection.label}}/briefing/">Briefing</a></li></p>
+</ul>
+{% endfor %}
