@@ -7,7 +7,7 @@ picture: /assets/img/estado-ciencia/estado-ciencia.png
 
 <p>¿Cuál es el rol del estado en la investigación científica y tecnológica? ¿Puede ser suplantado en su totalidad por privados?</p>
 
-<p>Primero necesitamos definir de qué hablamos cuando hablamos de financiar ciencia. De modo amplio podemos decir que hay dos 
+<p class=".page__content">Primero necesitamos definir de qué hablamos cuando hablamos de financiar ciencia. De modo amplio podemos decir que hay dos 
 ítems principales: los sueldos de investigadores y becarios y los subsidios para comprar insumos y equipamiento.En muchos 
 países los sueldos dependen de las universidades y los subsidios de las agencias científicas. En el caso de EEUU, por ejemplo, existen agencias que financian investigaciones en áreas específicas: NIH (salud), NSF (ciencia básica), NASA (espacial), DARPA (militar), etc. En Argentina es un poco diferente porque, si bien muchos investigadores dependen de las universidades, el principal empleador es el CONICET, un ente gubernamental centralizado que abarca todas las áreas de la ciencia. Los subsidios a su vez provienen del mismo CONICET o de la Agencia Nacional de Promoción Científica y Tecnológica (ANPCyT).</p>
 
@@ -17,16 +17,14 @@ que la gran mayoría (sino todas) han tenido su origen en una investigación fin
 1. Las investigaciones en ciencia básica y aplicada suelen necesitar de muchos años de trabajo 
 2. La incertidumbre es muy alta (y por lo tanto el riesgo). Cuando se comienza una investigación es imposible saber cuál será el resultado. Por cada producto que llega al mercado hay decenas de miles que mueren en el camino. Incluso antes de nacer.
 
-El capital privado no está dispuesto a afrontar un riesgo tan alto por lo cual recién entra en el proceso de innovación en 
+<p>El capital privado no está dispuesto a afrontar un riesgo tan alto por lo cual recién entra en el proceso de innovación en 
 la segunda o tercera etapa. Es por esto que el financiamiento de la investigación básica y aplicada en todo el mundo es 
-realizado en gran medida por el estado. 
+realizado en gran medida por el estado. </p>
 
 ![estado](/assets/img/estado-ciencia/estado.png)
 
-No es raro escuchar por estas redes que en EEUU la innovación es llevada adelante por el sector privado. ¿Es esto así? 
-<strong>#spoileralert: NO</strong>. Veamos estos dos gráficos de Mazzucato sobre las fuentes de financiamiento en I&D en EEUU. El primero 
-muestra el panorama cuando consideramos todo el proceso en forma global y el segundo cuando nos acotamos a lo que sucede 
-en ciencia básica. 
+<p>No es raro escuchar por estas redes que en EEUU la innovación es llevada adelante por el sector privado. ¿Es esto así? 
+<strong>#spoileralert: NO</strong>. Veamos estos dos gráficos de Mazzucato sobre las fuentes de financiamiento en I&D en EEUU. El primero muestra el panorama cuando consideramos todo el proceso en forma global y el segundo cuando nos acotamos a lo que sucede en ciencia básica. </p>
 
 ![eeuu1](/assets/img/estado-ciencia/eeuu1.png)
 ![eeuu2](/assets/img/estado-ciencia/eeuu2.png)
