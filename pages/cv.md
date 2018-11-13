@@ -18,6 +18,7 @@ author_profile: true
 * Curso de posgrado: Análisis de experimentos transcriptómicos (RNA-Seq) (2018)
 
 <h2>Publicaciones</h2>
+* Garnero, P. L., Monferran, M. V., <strong>González, G. A.</strong>, Griboff, J., & de los Ángeles, B. M. (2018). Assessment of exposure to metals, As and Se in water and sediment of a freshwater reservoir and their bioaccumulation in fish species of different feeding and habitat preferences. Ecotoxicology and environmental safety, 163, 492-501.
 * A novel non-parametric method for uncertainty evaluation of correlation-based molecular signatures: its application on PAM50 algorithm. Fresno C, <strong>González GA</strong>, Merino G, Flesia AG, Podhajcer OL, Llera AS y Fernandez EA. Bioinformatics, btw704, 2017.
 * Improving Information Retrieval in Functional Enrichment Analysis. Rodriguez JC, <strong>Gonzalez GA</strong>, Fresno C, Llera AS y Fernandez EA. Computers in Biology and Medicine Vol. 79, 2016, 10–20.
 * Contrasting gene expression patterns induced by levodopa and pramipexole treatments in the rat model of Parkinson’s disease. Taravini IR, Larramendy C,Gomez G, Saborido MD, Spaans F, Fresno C, <strong>González G</strong>, Fernández E, Murer MG, Gershanik OS. Neuropharmacology, 101, 576-589, 2016.
