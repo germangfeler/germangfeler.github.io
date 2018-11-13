@@ -2,6 +2,7 @@
 layout: single
 title: 2016 - Análisis de datos biológicos, del bit a la publicación científica
 categories: cursos
+thumbnail: /assets/thumbnails/array.jpeg
 ---
 
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Facultad de Bioquímica y Ciencias Biológicas, Universidad Nacional del Litoral.
