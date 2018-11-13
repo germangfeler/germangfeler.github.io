@@ -5,6 +5,7 @@ categories: cursos
 ---
 
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad Nacional de Córdoba.
+<!--more-->
 
 <h2>Fecha</h2>
 A determinar.
