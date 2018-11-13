@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: posts
 title: 2019 - R Aplicado a Ecología: de Individuos a Comunidades
 categories: cursos
 ---
