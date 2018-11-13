@@ -10,7 +10,7 @@ author_profile: true
 * Licenciatura en Bioinformática (2006-2011). Facultad de Ingeniería de la Universidad Nacional de Entre Ríos (UNER). Promedio con aplazos: 7,75.
 
 <h2>Experiencia laboral</h2>
-* <strong>Instituto de Diversidad y Ecología Animal</strong> (2016-actualidad). Profesional asistente de CONICET a cargo del área de Bioestadística del instituto. Encargado del diseño y análisis de experimentos de biología animal y ecología.
+* <strong>Instituto de Diversidad y Ecología Animal</strong> (2016-actualidad). Profesional Asistente de CONICET a cargo del área de Bioestadística del instituto. Encargado del diseño y análisis de experimentos de biología animal y ecología.
 * <strong>Grupo de Minería de Datos en Biociencias</strong> (2011-2016). Analista de datos transcriptómicos (microarrays) y clínicos mediante técnicas estadísticas y computacionales.
 
 <h2>Docencia</h2>
