@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 2019 - R Aplicado a Ecologia: de Individuos a Comunidades
+title: 2019 - R Aplicado a Ecologia de Individuos a Comunidades
 categories: cursos
 ---
 
