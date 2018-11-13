@@ -14,8 +14,8 @@ author_profile: true
 * <strong>Grupo de Minería de Datos en Biociencias</strong> (2011-2016). Analista de datos transcriptómicos (microarrays) y clínicos mediante técnicas estadísticas y computacionales.
 
 <h2>Docencia</h2>
-* Curso de posgrado: Análisis de datos biológicos, del bit a la publicación científica (2016)
-* Curso de posgrado: Análisis de experimentos transcriptómicos (RNA-Seq) (2018)
+* Curso de posgrado: Análisis de datos biológicos, del bit a la publicación científica (2016) [responsable]
+* Curso de posgrado: Análisis de experimentos transcriptómicos (RNA-Seq) (2018) [responsable]
 
 <h2>Publicaciones</h2>
 * Garnero, P. L., Monferran, M. V., <strong>González, G. A.</strong>, Griboff, J., & de los Ángeles, B. M. (2018). Assessment of exposure to metals, As and Se in water and sediment of a freshwater reservoir and their bioaccumulation in fish species of different feeding and habitat preferences. Ecotoxicology and environmental safety, 163, 492-501.
