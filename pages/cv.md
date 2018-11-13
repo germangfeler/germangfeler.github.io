@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "CV resumido"
 permalink: /cv/
 author_profile: true
