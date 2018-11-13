@@ -7,7 +7,7 @@ author_profile: true
 
 <h2>Formación académica</h2>
 * Maestría en Estadística Aplicada (2012-). Universidad Nacional de Córdoba. Tesis pendiente.
-* Licenciatura en Bioinformática (2006-2011). Título otorgado por la Facultad de Ingeniería de la Universidad Nacional de Entre Ríos (UNER) en abril de 2011.Promedio con aplazos: 7,75.
+* Licenciatura en Bioinformática (2006-2011). Facultad de Ingeniería de la Universidad Nacional de Entre Ríos (UNER). Promedio con aplazos: 7,75.
 
 <h2>Experiencia laboral</h2>
 * <strong>Instituto de Diversidad y Ecología Animal</strong> (2016-actualidad). Profesional asistente de CONICET a cargo del área de Bioestadística del instituto. Encargado del diseño y análisis de experimentos de biología animal y ecología.
