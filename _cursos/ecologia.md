@@ -16,4 +16,5 @@ A determinar.
 <h2>Objetivos</h2>
 El curso tiene como finalidad brindar los conocimientos básicos necesarios para el análisis, la interpretación y el reporte de datos ecológicos.
 
+
 PRONTO MÁS INFORMACIÓN.
