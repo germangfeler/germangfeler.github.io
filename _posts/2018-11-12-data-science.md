@@ -13,5 +13,4 @@ thumbnail: /assets/thumbnails/ciencia_datos.png
 {:.center}
 ![estado](/assets/img/data-science/stacey-malibu.jpg)
 <br>
-{:.center}
-<i>¡Si, pero el sombrero es nuevo!</i>
+<p class="center"><i>¡Si, pero el sombrero es nuevo!</i></p>
