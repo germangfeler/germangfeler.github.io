@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Científicos de datos"
+title: "La ciencia de datos, ese raro bicho ¿nuevo?"
 categories: datascience
 thumbnail: /assets/thumbnails/ciencia_datos.png
 ---
@@ -11,3 +11,4 @@ Vivimos en la época de los datos. La revolución electrónica trajo consigo la 
 
 {:.center}
 ![estado](/assets/img/data-science/stacey-malibu.jpg)
+<i>¡Si, pero el sombrero es nuevo!</i>
