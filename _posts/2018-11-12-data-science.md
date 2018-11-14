@@ -20,15 +20,15 @@ thumbnail: /assets/thumbnails/ciencia_datos.png
 </p>
 
 <p>Aunque a veces suena a ciencia ficción, la ciencia de datos es algo que se aplica a diario alrededor nuestro:</p>
-* En la predicción de fraudes de seguros 
-* En el análisis de datos genéticos para predicir si tenemos predisposición a ciertas enfermedades
+* Cuando le pedimos a "Ok Google" que nos muestre la temperatura en Río de Janeiro
+* Cuando nos hacemos un estudio genético para predicir si tenemos predisposición a ciertas enfermedades 
 * Cuando Youtube nos recomienda escuchar a AC/DC porque antes estuvimos escuchando a Zeppelin
 * Cuando Netflix propone que veamos Dark porque nos maratoneamos Stranger Things en un finde
 
 <p><i>Nos persiguen con largos algoritmos perversos</i> dice Babasónicos y un poco de razón tienen. Los algoritmos llegaron para quedarse y hoy es raro encontrar una empresa grande que no tenga, o esté pensando en tener, un científico de datos. 
 </p>
 
-<p>Este crecimiento va a requerir de personal capacitado en áreas bastante disímiles, lo que conlleva un desafío más que interesante. Así comenzamos este blog con la idea de acercar la ciencia de datos a todes. Ahí vamos.</p>
+<p>Así comenzamos este blog con la idea de acercar la ciencia de datos a todes. Ahí vamos.</p>
 
 
 
