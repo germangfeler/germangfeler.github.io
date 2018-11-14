@@ -16,4 +16,10 @@ thumbnail: /assets/thumbnails/ciencia_datos.png
 <br>
 <p class="center"><i>¡Si, pero el sombrero es nuevo!</i></p>
 
-<p>En realidad la ciencia de datos abarca muchas técnicas y metodologías que conocemos desde hace mucho, como la visualización de datos, la estadística y la inteligencia artificial.</p>
+<p>En realidad la ciencia de datos abarca muchas técnicas y metodologías que conocemos desde hace mucho, como la <strong>visualización de datos</strong>, la <strong>estadística</strong> y la <strong>inteligencia artificial</strong>. Una caja de herramientas siempre lista para darle sentido a montañas de datos y extraer información útil. 
+</p>
+
+
+
+
+
