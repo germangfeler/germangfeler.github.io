@@ -26,12 +26,16 @@ En muchos países los sueldos dependen de las universidades y los subsidios de l
 la segunda o tercera etapa. Es por esto que el financiamiento de la investigación básica y aplicada en todo el mundo es 
 realizado en gran medida por el estado. </p>
 
+{:.center}
 ![estado](/assets/img/estado-ciencia/estado.png)
 
 <p>No es raro escuchar por estas redes que en EEUU la innovación es llevada adelante por el sector privado. ¿Es esto así? 
 <strong>#spoileralert: NO</strong>. Veamos estos dos gráficos de Mazzucato sobre las fuentes de financiamiento en I&D en EEUU. El primero muestra el panorama cuando consideramos todo el proceso en forma global y el segundo cuando nos acotamos a lo que sucede en ciencia básica. </p>
 
+{:.center}
 ![eeuu1](/assets/img/estado-ciencia/eeuu1.png)
+
+{:.center}
 ![eeuu2](/assets/img/estado-ciencia/eeuu2.png)
 
 <p>Esto refuerza lo que hablamos hasta ahora: hay un estado que se encarga de financiar la investigación básica (más innovadora, más arriesgada) y un sector privado que acompaña financiando el desarrollo en las etapas finales y la comercialización.</p>
@@ -43,16 +47,23 @@ Internet solo definió la manera en la que se transfería la información de una
 hacerla popular sería la aparición de la web (páginas con textos, multimedia y links). Ésta también un origen gubernamental: 
 el CERN (si, los del colisionador de hadrones).
 
+{:.center}
 ![internet](/assets/img/estado-ciencia/internet.png)
+La Internet.
 
 - <strong>Google</strong>. Al hablar de internet probablemente se les vino Google a la cabeza. Este (ahora) gigante de la tecnología comenzó como un trabajo académico de Brin y Page (en ese momento estudiantes de Stanford) que fue financiado por las agencias estatales NSF, DARPA y NASA.
 
+{:.center}
 ![google1](/assets/img/estado-ciencia/google1.png)
+
+{:.center}
 ![google2](/assets/img/estado-ciencia/google2.png)
 
 - <strong>iPhone</strong>. El dispositivo estrella de la última década no hubiera podido existir sin las decenas de tecnologías que desarrollaron las agencias estatales en EEUU (en especial las militares). Desde las baterías de litio hasta las pantallas multi-táctiles, pasando por el GPS y los microprocesadores.
 
+{:.center}
 ![iph](/assets/img/estado-ciencia/iphone-slide.jpeg)
+El origen de las partes del iPhone (Mazzucato, 2013).
 
 - <strong>Farmas</strong> ¿Quién es el actor fundamental de la innovación en la industria farmaceútica y biotecnológica? Si, adivinaste, es el estado. En EEUU la mayor fuente de financiamiento de estas investigaciones es el NIH, que ha visto aumentar su presupuesto año a año independientemente del gobierno de turno. Desde 1930 han invertido casi 900 mil millones de dólares. 
 El 75% de las drogas innovadoras (NME, new molecular entities) que se patentan en EEUU tienen su origen en investigaciones 
@@ -60,6 +71,7 @@ financiadas por el NIH. Y esto se está profundizando con el tiempo: si miramos 
 sube al 100%. Si las farmas no innovan ¿en qué invierten? bueno, en gran medida, en marketing. Y cuando se dedican a 
 investigar suelen poner más énfasis en drogas “me too” (variaciones de otras existentes) que en NME.
 
+{:.center}
 ![nih](/assets/img/estado-ciencia/nih.png)
 
 Para cerrar este post quiero redondear algunas ideas: el estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún países serio del mundo, es la sinergia entre ambos lo que da los mejores resultados.
