@@ -2,6 +2,8 @@
 layout: posts
 title: "La ciencia de datos, ese raro bicho ¿nuevo?"
 categories: datascience
+header:
+  teaser: /assets/thumbnails/ciencia_datos.png
 thumbnail: /assets/thumbnails/ciencia_datos.png
 ---
 
