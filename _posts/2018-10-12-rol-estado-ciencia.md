@@ -2,7 +2,8 @@
 layout: single
 title: ¿Cuál es el rol del estado en la investigación científica y tecnológica?
 categories: cafe
-thumbnail: /assets/img/estado-ciencia/estado-ciencia.png
+header:
+  teaser: /assets/img/estado-ciencia/estado-ciencia.png
 ---
 
 <p>Desde algunos sectores del liberalismo se ha agitado una campaña contra los organismos científicos estatales. Que son ineficientes. Que estudian cosas inútiles. Que si fueran tan buenos investigando conseguirían trabajo en el sector privado. Que los privados deberían ser los únicos que lleven adelante la ciencia. ¿Es eso factible? ¿Cómo funciona la ciencia en el mundo?</p>

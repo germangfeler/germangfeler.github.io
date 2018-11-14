@@ -2,7 +2,8 @@
 layout: posts
 title: "La ciencia de datos, ese raro bicho ¿nuevo?"
 categories: datascience
-thumbnail: /assets/thumbnails/ciencia_datos.png
+header:
+  teaser: /assets/thumbnails/ciencia_datos.png
 ---
 
 <p>La modernidad trajo consigo la facilidad para registrar cosas. Desde los artículos que se compran en el supermercado hasta las secuencias de miles de genes, pasando por la cantidad de goles de cabeza que metió Wanchope Abila en su carrera profesional. Hoy los datos nos inundan y eso puede ser un poco abrumador. Pero no nos desesperemos, la ciencia de datos está aquí para ayudarnos.</p>

@@ -2,7 +2,8 @@
 layout: posts
 title: "DataViz I: Shape of You"
 categories: datascience
-thumbnail: /assets/img/dataviz/violin.png
+header:
+  teaser: /assets/img/dataviz/violin.png
 ---
 
 I'm in love with your body.
