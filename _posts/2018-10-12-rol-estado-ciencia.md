@@ -2,8 +2,6 @@
 layout: single
 title: ¿Cuál es el rol del estado en la investigación científica y tecnológica?
 categories: cafe
-header:
-  teaser: /assets/img/estado-ciencia/estado-ciencia.png
 thumbnail: /assets/img/estado-ciencia/estado-ciencia.png
 ---
 
