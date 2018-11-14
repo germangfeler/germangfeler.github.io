@@ -24,7 +24,7 @@ thumbnail: /assets/thumbnails/ciencia_datos.png
 * Cuando Youtube nos recomienda escuchar a AC/DC porque antes estuvimos escuchando a Zeppelin
 * Cuando Netflix propone que veamos Dark porque nos maratoneamos Stranger Things en un finde
 
-<p><i>Nos persiguen con largos algoritmos perversos</i> dice Babasónicos y un poco de razón tienen. Los algoritmos llegaron para quedarse y hoy es raro encontrar una empresa grande que no tenga, o esté pensando en tener, un científico de datos. 
+<p><i>"Nos persiguen con largos algoritmos perversos"</i> dice Babasónicos y un poco de razón tienen. Los algoritmos llegaron para quedarse y hoy es raro encontrar una empresa grande que no tenga, o esté pensando en tener, un científico de datos. 
 </p>
 
 <p>Así comenzamos este blog con la idea de acercar la ciencia de datos a todes. Ahí vamos.</p>
