@@ -6,7 +6,7 @@ thumbnail: /assets/img/dataviz/violin.png
 ---
 
 I'm in love with your body.
-
+<!--more-->
 
 ```{r, echo=TRUE}
 library(ggplot2)

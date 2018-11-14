@@ -6,7 +6,7 @@ thumbnail: /assets/img/estado-ciencia/estado-ciencia.png
 ---
 
 <p>Desde algunos sectores del liberalismo se ha agitado una campaña contra los organismos científicos estatales. Que son ineficientes. Que estudian cosas inútiles. Que si fueran tan buenos investigando conseguirían trabajo en el sector privado. Que los privados deberían ser los únicos que lleven adelante la ciencia. ¿Es eso factible? ¿Cómo funciona la ciencia en el mundo?</p>
-
+<!--more-->
 <p> Para entender como se financia la ciencia primero tenemos que definir que es "financiar la ciencia". De modo amplio podemos decir que hay dos cuestiones principales:</p>
 1. Los sueldos de investigadores y becarios
 2. Los fondos para comprar insumos y equipamiento.
