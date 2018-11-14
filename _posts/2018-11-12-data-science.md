@@ -10,8 +10,4 @@ Vivimos en la época de los datos. La revolución electrónica trajo consigo la 
 ¿Es la ciencia de datos una rama nueva de la ciencia? bueno, la verdad es que de nuevo solo tiene el nombre, como Stacey Malibú. La ciencia de datos abarca muchas técnicas y metodologías que conocemos desde hace mucho, como la visualización de datos, la estadística y el machine learning. 
 
 
-```{r, echo=TRUE}
-library(ggplot2)
-head(InsectSprays)
-
-```
+![estado](/assets/img/data-science/stacey-malibu.jpg)
