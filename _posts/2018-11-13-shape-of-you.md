@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: DataViz I: Shape of You
+title: "DataViz I: Shape of You"
 categories: datascience
 thumbnail: /assets/thumbnails/AFRICA.png
 ---
