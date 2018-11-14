@@ -49,6 +49,8 @@ el CERN (si, los del colisionador de hadrones).
 
 {:.center}
 ![internet](/assets/img/estado-ciencia/internet.png)
+<br>
+{:.center}
 La Internet.
 
 - <strong>Google</strong>. Al hablar de internet probablemente se les vino Google a la cabeza. Este (ahora) gigante de la tecnología comenzó como un trabajo académico de Brin y Page (en ese momento estudiantes de Stanford) que fue financiado por las agencias estatales NSF, DARPA y NASA.

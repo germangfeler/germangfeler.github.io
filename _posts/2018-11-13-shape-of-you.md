@@ -2,10 +2,10 @@
 layout: posts
 title: "DataViz I: Shape of You"
 categories: datascience
-thumbnail: /assets/thumbnails/AFRICA.png
+thumbnail: /assets/img/dataviz/violin.png
 ---
 
-dsfsdfd
+I'm in love with your body.
 
 
 ```{r, echo=TRUE}
