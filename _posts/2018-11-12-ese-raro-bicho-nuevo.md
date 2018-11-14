@@ -16,7 +16,7 @@ thumbnail: /assets/thumbnails/ciencia_datos.png
 <br>
 <p class="center"><i>¡Si, pero el sombrero es nuevo!</i></p>
 
-<p>En realidad la ciencia de datos abarca muchas técnicas y metodologías que conocemos desde hace mucho, como la <strong>visualización de datos</strong>, la <strong>estadística</strong> y la <strong>inteligencia artificial</strong>. Una caja de herramientas que los analistas tienen siempre a mano para darle sentido a montañas de datos y extraer información útil. Esa información permite que las empresas diseñen sus campañas de marketing o que el médico elija el mejor tratamiento para su paciente. Tener mejor información no impide que se cometan errores ni que se tomen decisiones equivocadas, pero sin dudas reduce las chances.</p>
+<p>En realidad la ciencia de datos abarca muchas técnicas y metodologías que conocemos desde hace mucho, como la <strong>visualización de datos</strong>, la <strong>estadística</strong> y la <strong>inteligencia artificial</strong>. Una caja de herramientas que los analistas tienen siempre a mano para darle sentido a montañas de datos y extraer información útil. Esa información ayuda a que las empresas diseñen sus campañas de marketing o que el médico elija el mejor tratamiento para su paciente. Tener mejor información no impide que se cometan errores ni que se tomen decisiones equivocadas, pero sin dudas reduce las chances.</p>
 
 <p>Aunque a veces suena a ciencia ficción, la ciencia de datos es algo que se aplica a diario alrededor nuestro:</p>
 * Cuando le pedimos algo a "Ok Google" ¡y nos entiende!
