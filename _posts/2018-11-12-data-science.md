@@ -28,7 +28,7 @@ thumbnail: /assets/thumbnails/ciencia_datos.png
 <p><i>Nos persiguen con largos algoritmos perversos</i> dice Babasónicos y un poco de razón tienen. Los algoritmos llegaron para quedarse y hoy es raro encontrar una empresa grande que no tenga, o esté pensando en tener, un científico de datos. 
 </p>
 
-<p>Así comenzamos este blog con la idea de acercar la ciencia de datos a todes. Ahí vamos.</p>
+<p>Este crecimiento va a requerir de personal capacitado en áreas bastante disímiles, lo que conlleva un desafío más que interesante. Así comenzamos este blog con la idea de acercar la ciencia de datos a todes. Ahí vamos.</p>
 
 
 
