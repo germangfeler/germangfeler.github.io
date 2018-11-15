@@ -87,7 +87,7 @@ El violin plot es una especie de híbrido entre boxplot y density plot. Para hac
 {:.center}
 ![sop](/assets/img/dataviz/soplillo.jpeg)
 
-Si ahora lo aplicamos sobre nuestros datos de insecticidas tenemos:
+Si lo probamos sobre nuestros datos de insecticidas tenemos:
 
 ```{r}
 > ## Violin
