@@ -56,10 +56,10 @@ Lo mejor del boxplot es que permite comparar a simple vista las distribuciones d
 
 ```
 
-Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variabilidad (C, D y E), lo que implica que son más efectivos matando insectos. Podemos mejorar este gráfico agregando todos los puntos, de manera de tener un panorama más completo:
-
 {:.center}
 ![internet](/assets/img/dataviz/boxplot.png)
+
+Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variabilidad (C, D y E), lo que implica que son más efectivos matando insectos. Podemos mejorar este gráfico agregando todos los puntos, de manera de tener un panorama más completo:
 
 ```{r}
 > ## Boxplot + Jitter
