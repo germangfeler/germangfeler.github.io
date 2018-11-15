@@ -14,6 +14,8 @@ Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad
 <h2>Objetivos</h2>
 El curso tiene como finalidad brindar los conocimientos básicos necesarios para el diseño y análisis de experimentos transcriptómicos de alto rendimiento utilizando el software considerado como ‘estándar de facto’ en la literatura.
 
+![flyer](/assets/img/cursos/flyer-rna-seq.png)
+
 <h2>Docentes</h2>
 * Germán A. González, IDEA-CONICET. 
 * Natalia Servetto, IDEA-CONICET.
