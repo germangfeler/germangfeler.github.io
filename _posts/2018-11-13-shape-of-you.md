@@ -28,7 +28,7 @@ Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para tr
 
 ```
 
-Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>.
+Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>. Nuestro objetivo es visualizar como se comportan las distribuciones de conteos de cada spray. Aprender sobre su magnitud y variabilidad nos da mucha información para luego elegir como modelar estos datos. La primera idea que tuve fue hacer un histograma, o mejor aún, un density plot que es similar pero con un suavizado que permite visualizar mejor la forma de la distribución.
 
 ```{r}
 > library(ggplot2)
@@ -41,9 +41,13 @@ Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a e
 
 {:.center}
 ![internet](/assets/img/dataviz/density.png)
-<br>
+
+¿Cuál es el problema con este técnica? Es díficil comparar los tratamientos entre sí al estar en diferentes cuadros. Podríamos ponerlos en el mismo y usar transparencias pero tampoco sería un gráfico muy fácil de entender. Una alternativa mejor es el boxplot, o gráfico de cajas y tegobis*, que me gusta pensarlo como una "vista área" del histograma.
+
 {:.center}
-Density plot
+![internet](/assets/img/dataviz/boxplot-histograma.png)
+
+Pero lo mejor del boxplot es que permite comparar a simple vista las distribuciones de grupos de datos diferentes:
 
 ```{r}
 > ## Boxplot
@@ -54,9 +58,6 @@ Density plot
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplot.png)
-<br>
-{:.center}
-Boxplot
 
 ```{r}
 > ## Boxplot + Jitter
@@ -68,9 +69,6 @@ Boxplot
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplot_jitter.png)
-<br>
-{:.center}
-Boxplot + Jitter
 
 
 ```{r}
@@ -83,9 +81,6 @@ Boxplot + Jitter
 
 {:.center}
 ![internet](/assets/img/dataviz/violin.png)
-<br>
-{:.center}
-Violin plot
 
 
 ```{r}
@@ -99,9 +94,6 @@ Violin plot
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplot+violin.png)
-<br>
-{:.center}
-Boxplot + Violin plot
 
 
 ```{r}
@@ -114,9 +106,6 @@ Boxplot + Violin plot
 
 {:.center}
 ![internet](/assets/img/dataviz/beeswarm.png)
-<br>
-{:.center}
-Beeswarm
 
 
 ```{r}
@@ -129,6 +118,9 @@ Beeswarm
 
 {:.center}
 ![internet](/assets/img/dataviz/joyplot.png)
-<br>
-{:.center}
-Joy plot
+
+
+-----
+Notas al pie
+
+*tegobi = bigote, en lunfardo.
