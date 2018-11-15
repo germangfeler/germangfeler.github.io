@@ -72,12 +72,12 @@ Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variab
 {:.center}
 ![internet](/assets/img/dataviz/boxplot_jitter.png)
 
-Todo piola con los boxplot, salvo que... los datos no tengan forma "de campana". Cuando los datos son bimodales (que haya dos montañitas en su histograma, como un lomo de camello) o con distribución uniforme, por citar dos ejemplos, esta herramienta deja de ser buena para representarlos. Así lo mostraron los amigos Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: el <strong>violin plot</strong>.
+Todo piola con los boxplot, salvo que... los datos no tengan forma "de campana". Cuando los datos son bimodales (con dos montañitas en su histograma, como un lomo de camello) o con distribución uniforme, por citar dos ejemplos, esta herramienta deja de ser buena para representarlos. Así lo mostraron Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: el <strong>violin plot</strong>.
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplotVsviolin.png)
 
-Mucho mejor, ¿no? distribuciones diferentes, gráficos diferentes, tal como esperaríamos. Una animación que me gusta mucho para resaltar este punto es esta (tomada de <a href="https://www.autodeskresearch.com/publications/samestats">acá</a>) que muestra como datos muy diferentes pueden dar lugar al mismo boxplot pero no pueden engañar al violin plot.
+Mucho mejor el violin, ¿no? distribuciones diferentes, gráficos diferentes, tal como esperaríamos. Una animación que me gusta mucho para resaltar este punto es esta (tomada de <a href="https://www.autodeskresearch.com/publications/samestats">acá</a>) que muestra como datos muy diferentes pueden dar lugar al mismo boxplot pero no pueden engañar al violin plot.
 
 {:.center}
 ![boxvio](/assets/img/dataviz/BoxViolinSmaller.gif)
@@ -157,7 +157,7 @@ Así terminamos este primer posts de DataViz, pueden comentar en twitter ¿cuál
 
 
 -----
-<h2>Notas al pie</h2>
+<h3>Notas al pie</h3>
 
 *tegobi es bigote en lunfardo.<br>
 *soplillo es la forma que tenemos en Entre Ríos (Argentina) de nombrar a los adornos del árbol de navidad. Propongo que sea adoptada por el resto del mundo hispanoparlante debido a su brevedad.
