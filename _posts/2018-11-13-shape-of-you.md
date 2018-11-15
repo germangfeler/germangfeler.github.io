@@ -72,7 +72,7 @@ Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variab
 {:.center}
 ![internet](/assets/img/dataviz/boxplot_jitter.png)
 
-Todo piola con los boxplot, salvo que... los datos sean bimodales (que haya dos montañitas en su histograma, como un lomo de camello) o con distribución uniforme. Así lo mostraron los amigos Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: el <strong>violin plot</strong>.
+Todo piola con los boxplot, salvo que... los datos no tengan forma "de campana". Cuando los datos son bimodales (que haya dos montañitas en su histograma, como un lomo de camello) o con distribución uniforme, por citar dos ejemplos, esta herramienta deja de ser buena para representarlos. Así lo mostraron los amigos Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: el <strong>violin plot</strong>.
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplotVsviolin.png)
