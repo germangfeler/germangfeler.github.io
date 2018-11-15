@@ -6,7 +6,7 @@ header:
   teaser: /assets/img/dataviz/violin.png
 ---
 
-I'm in love with your body.
+Escribiendo.
 <!--more-->
 
 ```{r, echo=TRUE}

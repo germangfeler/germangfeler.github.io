@@ -1,9 +1,18 @@
 ---
-layout: archive
-entries_layout: grid
+layout: home
 author_profile: true
 ---
 
+<p>Bienvenidos a mi blog sobre ciencia de datos, estadística y cosas de la vida.</p>
+
+<h3 class="archive__subtitle">Últimos Posts</h3> 
+
+
+{% for post in paginator.posts %}
+  {% include archive-single.html type=grid %}
+{% endfor %}
+
+{% include paginator.html %}
 
 
 
