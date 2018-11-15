@@ -122,6 +122,8 @@ Disculpas, me equivoqué de imagen, ahora así:
 {:.center}
 ![internet](/assets/img/dataviz/boxplot+violin.png)
 
+La combinación de boxplot y violin plot es algo que me gusta mucho pero debo decir que este comic de <a href="https://xkcd.com/1967/">xkcd</a> las arruinó un poco para mi XD (<i>once you see it, you can't unsee it</i>).
+
 
 ```{r}
 > ## Beeswarm
