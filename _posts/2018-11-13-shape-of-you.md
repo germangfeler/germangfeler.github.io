@@ -124,6 +124,9 @@ Disculpas, me equivoqué de imagen, ahora así:
 
 La combinación de boxplot y violin plot es algo que me gusta mucho pero debo decir que este comic de <a href="https://xkcd.com/1967/">xkcd</a> las arruinó un poco para mi XD (<i>once you see it, you can't unsee it</i>).
 
+En esta selección de métodos estoy dejando muchas otras alternativas de lado pero quiero cerrar con estas últimas dos: <strong>beeswarm</strong> y <strong>joy plot</strong>.
+
+<strong>beeswarm</strong> es una nube de puntos "no solapados" que es muy útil en especial cuando tenemos muchos datos (no es este caso).
 
 ```{r}
 > ## Beeswarm
@@ -136,6 +139,8 @@ La combinación de boxplot y violin plot es algo que me gusta mucho pero debo de
 {:.center}
 ![internet](/assets/img/dataviz/beeswarm.png)
 
+Mientras que el <strong>joy plot</strong> es otra forma de mostrar los density plots de manera de que sea más fácil de comparar entre grupos. Es una alternativa al violin plot para aquellas personas que no se acostumbran a ver las densidades en forma vertical.
+
 
 ```{r}
 > ## joy
@@ -147,6 +152,8 @@ La combinación de boxplot y violin plot es algo que me gusta mucho pero debo de
 
 {:.center}
 ![internet](/assets/img/dataviz/joyplot.png)
+
+Así terminamos este primer posts de DataViz, pueden comentar en twitter ¿cuál es el gráfico que más les gusta para describir los datos? ¿conocen algún otro que les guste más que los que vimos aquí?
 
 
 -----
