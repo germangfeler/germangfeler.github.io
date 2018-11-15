@@ -93,7 +93,7 @@ Si lo probamos sobre nuestros datos de insecticidas tenemos:
 ```{r}
 > ## Violin
 > ggplot(InsectSprays, aes(x=spray, y=count, fill=spray)) + 
-     geom_violin() + theme_classic() + 
+     geom_violin(trim = FALSE) + theme_classic() + 
      geom_jitter(shape=16, position=position_jitter(0.2))
 
 ```
