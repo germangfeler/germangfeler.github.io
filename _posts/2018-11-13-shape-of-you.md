@@ -77,7 +77,7 @@ Todo piola con los boxplot, salvo que... los datos sean bimodales (que haya dos 
 {:.center}
 ![internet](/assets/img/dataviz/boxplotVsviolin.png)
 
-Este gif (tomado de <a href="https://www.autodeskresearch.com/publications/samestats">acá</a> muestra como datos muy diferentes pueden dar lugar al mismo boxplot, mientras que esto no sucede con el violin plot.
+Este gif (tomado de <a href="https://www.autodeskresearch.com/publications/samestats">acá</a>) muestra como datos muy diferentes pueden dar lugar al mismo boxplot pero no pueden engañar al violin plot.
 
 {:.center}
 ![boxvio](/assets/img/dataviz/BoxViolinSmaller.gif)
@@ -101,6 +101,14 @@ Si ahora lo aplicamos sobre nuestros datos de insecticidas tenemos:
 ![violin](/assets/img/dataviz/violin.png)
 
 Pero para qué alimentar la grieta entre boxplot y violin plot si podemos tener lo mejor de los dos mundos: 
+
+{:.center}
+![violin](/assets/img/dataviz/lomipizza.jpeg)
+<br>
+{:.center}
+<i>Lomipizza</i>
+
+Disculpas, me equivoqué de imagen, ahora así:
 
 ```{r}
 > ## Boxplot + violin  
