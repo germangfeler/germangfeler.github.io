@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title: "DataViz I: Shape of You"
 categories: datascience
 header:
@@ -9,7 +9,7 @@ header:
 Escribiendo.
 <!--more-->
 
-```{r, echo=TRUE}
+```{r}
 library(ggplot2)
 head(InsectSprays)
 
