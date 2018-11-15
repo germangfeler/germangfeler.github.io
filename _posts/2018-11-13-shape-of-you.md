@@ -40,12 +40,12 @@ Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a e
 ```
 
 {:.center}
-![internet](/assets/img/dataviz/density.png)
+![density](/assets/img/dataviz/density.png)
 
 ¿Cuál es el problema con este técnica? Es díficil comparar los grupos entre sí al estar en diferentes cuadros. Podríamos ponerlos en el mismo cuadro y usar transparencias pero tampoco sería un gráfico muy fácil de entender. Una alternativa mejor es el <strong>boxplot</strong>, o gráfico de cajas y tegobis*, que me gusta pensarlo como una "vista área" del histograma.
 
 {:.center}
-![internet](/assets/img/dataviz/boxplot-histograma.png)
+![histbox](/assets/img/dataviz/boxplot-histograma.png)
 
 Lo mejor del boxplot es que permite comparar a simple vista las distribuciones de diferentes grupos de datos:
 
@@ -57,7 +57,7 @@ Lo mejor del boxplot es que permite comparar a simple vista las distribuciones d
 ```
 
 {:.center}
-![internet](/assets/img/dataviz/boxplot.png)
+![boxplot](/assets/img/dataviz/boxplot.png)
 
 Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variabilidad (C, D y E), lo que implica que son más efectivos matando insectos. Podemos mejorar este gráfico agregando todos los puntos, de manera de tener un panorama más completo:
 
@@ -70,12 +70,12 @@ Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variab
 ```
 
 {:.center}
-![internet](/assets/img/dataviz/boxplot_jitter.png)
+![boxjitt](/assets/img/dataviz/boxplot_jitter.png)
 
 Todo piola con los boxplot, salvo que... los datos no tengan forma "de campana". Cuando los datos son bimodales (con dos montañitas en su histograma, como un lomo de camello) o con distribución uniforme, por citar dos ejemplos, esta herramienta deja de ser buena para representarlos. Así lo mostraron Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: el <strong>violin plot</strong>.
 
 {:.center}
-![internet](/assets/img/dataviz/boxplotVsviolin.png)
+![boxviol](/assets/img/dataviz/boxplotVsviolin.png)
 
 Mucho mejor el violin, ¿no? distribuciones diferentes, gráficos diferentes, tal como esperaríamos. Una animación que me gusta mucho para resaltar este punto es esta (tomada de <a href="https://www.autodeskresearch.com/publications/samestats">acá</a>) que muestra como datos muy diferentes pueden dar lugar al mismo boxplot pero no pueden engañar al violin plot.
 
@@ -103,9 +103,8 @@ Si lo probamos sobre nuestros datos de insecticidas tenemos:
 
 Pero para qué alimentar la grieta entre boxplot y violin plot si podemos tener lo mejor de los dos mundos: 
 
-{:refdef: style="text-align: center;"}
-![violin](/assets/img/dataviz/lomipizza.jpeg)
-{: refdef}
+{:.center} 
+![lomipizza](/assets/img/dataviz/lomipizza.jpeg)
 <br>
 <p class="center"><i>Lomipizza</i></p>
 
@@ -121,7 +120,7 @@ Disculpas, me equivoqué de imagen, ahora así:
 ```
 
 {:.center}
-![internet](/assets/img/dataviz/boxplot+violin.png)
+![boxviol2](/assets/img/dataviz/boxplot+violin.png)
 
 La combinación de boxplot y violin plot es algo que me gusta mucho pero debo decir que este comic de <a href="https://xkcd.com/1967/">xkcd</a> la arruinó un poco para mi XD (<i>once you see it, you can't unsee it</i>).
 
@@ -138,7 +137,7 @@ En esta selección de métodos estoy dejando muchas otras alternativas de lado p
 ```
 
 {:.center}
-![internet](/assets/img/dataviz/beeswarm.png)
+![beeswarm](/assets/img/dataviz/beeswarm.png)
 
 Mientras que el <strong>joy plot</strong> es otra forma de mostrar los density plots de manera de que sea más fácil de comparar entre grupos. Es una alternativa al violin plot para aquellas personas que no se acostumbran a ver las densidades en forma vertical.
 
@@ -152,7 +151,7 @@ Mientras que el <strong>joy plot</strong> es otra forma de mostrar los density p
 ```
 
 {:.center}
-![internet](/assets/img/dataviz/joyplot.png)
+![joyplot](/assets/img/dataviz/joyplot.png)
 
 Así terminamos este primer posts de DataViz, pueden comentar en twitter ¿cuál es el gráfico que más les gusta para describir los datos? ¿conocen algún otro que les guste más que los que vimos aquí?
 
