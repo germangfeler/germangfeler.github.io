@@ -72,11 +72,12 @@ Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variab
 {:.center}
 ![internet](/assets/img/dataviz/boxplot_jitter.png)
 
-Todo piola con los boxplot, salvo que... los datos sean bimodales (que haya dos montañitas en su histograma, como lomo de camello) o con distribución uniforme. Así lo mostraron los amigos Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: los <strong>violin plot</strong>.
+Todo piola con los boxplot, salvo que... los datos sean bimodales (que haya dos montañitas en su histograma, como un lomo de camello) o con distribución uniforme. Así lo mostraron los amigos Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: el <strong>violin plot</strong>.
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplotVsviolin.png)
 
+El violin plot es una especie de híbrido entre boxplot y density plot. Para hacerlo se toma el density, se crea una copia "espejada" y se pegan juntas las dos partes. El nombre se debe a que, aparentemente, se parece a un violín pero me sumo al comentario de Rafael Ririzarry de que en realidad son más parecidos a soplillos*.
 
 
 ```{r}
@@ -132,3 +133,4 @@ Todo piola con los boxplot, salvo que... los datos sean bimodales (que haya dos 
 <h2>Notas al pie</h2>
 
 *tegobi = bigote, en lunfardo.
+*soplillo es la forma que tenemos en Entre Ríos (Argentina) de nombrar a los adornos del árbol de navidad. Propongo que sea adoptada por el resto del mundo hispanoparlante debido a su brevedad.
