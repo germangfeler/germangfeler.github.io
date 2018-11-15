@@ -159,5 +159,5 @@ Así terminamos este primer posts de DataViz, pueden comentar en twitter ¿cuál
 -----
 <h2>Notas al pie</h2>
 
-*tegobi = bigote, en lunfardo.<br>
+*tegobi es bigote en lunfardo.<br>
 *soplillo es la forma que tenemos en Entre Ríos (Argentina) de nombrar a los adornos del árbol de navidad. Propongo que sea adoptada por el resto del mundo hispanoparlante debido a su brevedad.
