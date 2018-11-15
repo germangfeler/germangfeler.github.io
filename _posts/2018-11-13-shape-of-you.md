@@ -103,8 +103,9 @@ Si lo probamos sobre nuestros datos de insecticidas tenemos:
 
 Pero para qué alimentar la grieta entre boxplot y violin plot si podemos tener lo mejor de los dos mundos: 
 
-{:.center} 
+{:refdef: style="text-align: center;"}
 ![violin](/assets/img/dataviz/lomipizza.jpeg)
+{: refdef}
 <br>
 <p class="center"><i>Lomipizza</i></p>
 
