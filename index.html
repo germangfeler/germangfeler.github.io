@@ -7,12 +7,11 @@ author_profile: true
 
 <h3 class="archive__subtitle">Últimos Posts</h3> 
 
-
-{% for post in paginator.posts %}
-  {% include archive-single.html type=grid %}
-{% endfor %}
-
-{% include paginator.html %}
+<div class="grid__wrapper">
+  {% for post in site.posts limit:4 %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
 
 
 
