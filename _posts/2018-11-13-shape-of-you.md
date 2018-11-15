@@ -42,12 +42,12 @@ Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a e
 {:.center}
 ![internet](/assets/img/dataviz/density.png)
 
-¿Cuál es el problema con este técnica? Es díficil comparar los tratamientos entre sí al estar en diferentes cuadros. Podríamos ponerlos en el mismo y usar transparencias pero tampoco sería un gráfico muy fácil de entender. Una alternativa mejor es el boxplot, o gráfico de cajas y tegobis*, que me gusta pensarlo como una "vista área" del histograma.
+¿Cuál es el problema con este técnica? Es díficil comparar los grupos entre sí al estar en diferentes cuadros. Podríamos ponerlos en el mismo cuadro y usar transparencias pero tampoco sería un gráfico muy fácil de entender. Una alternativa mejor es el <strong>boxplot</strong>, o gráfico de cajas y tegobis*, que me gusta pensarlo como una "vista área" del histograma.
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplot-histograma.png)
 
-Pero lo mejor del boxplot es que permite comparar a simple vista las distribuciones de grupos de datos diferentes:
+Lo mejor del boxplot es que permite comparar a simple vista las distribuciones de diferentes grupos de datos:
 
 ```{r}
 > ## Boxplot
@@ -55,6 +55,8 @@ Pero lo mejor del boxplot es que permite comparar a simple vista las distribucio
      geom_boxplot() + theme_classic()
 
 ```
+
+Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variabilidad (C, D y E), lo que implica que son más efectivos matando insectos. Podemos mejorar este gráfico agregando todos los puntos, de manera de tener un panorama más completo:
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplot.png)
@@ -69,6 +71,12 @@ Pero lo mejor del boxplot es que permite comparar a simple vista las distribucio
 
 {:.center}
 ![internet](/assets/img/dataviz/boxplot_jitter.png)
+
+Todo piola con los boxplot, salvo que... los datos sean bimodales (que haya dos montañitas en su histograma, como lomo de camello) o con distribución uniforme. Así lo mostraron los amigos Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: los <strong>violin plot</strong>.
+
+{:.center}
+![internet](/assets/img/dataviz/boxplotVsviolin.png)
+
 
 
 ```{r}
@@ -121,6 +129,6 @@ Pero lo mejor del boxplot es que permite comparar a simple vista las distribucio
 
 
 -----
-Notas al pie
+<h2>Notas al pie</h2>
 
 *tegobi = bigote, en lunfardo.
