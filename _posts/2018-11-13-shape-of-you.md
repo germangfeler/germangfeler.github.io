@@ -80,7 +80,7 @@ Todo piola con los boxplot, salvo que... los datos sean bimodales (que haya dos 
 El violin plot es una especie de híbrido entre boxplot y density plot. Para hacerlo se toma el density, se crea una copia "espejada" y se pegan juntas las dos partes. El nombre se debe a que, aparentemente, se parece a un violín pero me sumo al comentario de Rafael Ririzarry de que en realidad son más parecidos a soplillos*.
 
 {:.center}
-![internet](/assets/img/dataviz/soplillos.jpeg)
+![internet](/assets/img/dataviz/soplillo.jpeg)
 
 
 ```{r}
@@ -135,5 +135,5 @@ El violin plot es una especie de híbrido entre boxplot y density plot. Para hac
 -----
 <h2>Notas al pie</h2>
 
-*tegobi = bigote, en lunfardo.
+*tegobi = bigote, en lunfardo.<br>
 *soplillo es la forma que tenemos en Entre Ríos (Argentina) de nombrar a los adornos del árbol de navidad. Propongo que sea adoptada por el resto del mundo hispanoparlante debido a su brevedad.
