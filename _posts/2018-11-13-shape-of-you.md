@@ -84,9 +84,9 @@ Mucho mejor el violin, ¿no? distribuciones diferentes, gráficos diferentes, ta
 
 El violin plot es una especie de híbrido entre boxplot y density plot. Para hacerlo se toma el density, se crea una copia "espejada" y se pegan juntas las dos partes. El nombre se debe a que, aparentemente, se parece a un violín pero me sumo al comentario de Rafael Ririzarry de que en realidad son más parecidos a soplillos*.
 
-<div style="text-align: center;">
+{:.center} 
 ![sop](/assets/img/dataviz/soplillo.jpeg)
-</div>
+
 
 Si lo probamos sobre nuestros datos de insecticidas tenemos:
 
@@ -103,9 +103,8 @@ Si lo probamos sobre nuestros datos de insecticidas tenemos:
 
 Pero para qué alimentar la grieta entre boxplot y violin plot si podemos tener lo mejor de los dos mundos: 
 
-<div style="text-align: center;">
+{:.center} 
 ![violin](/assets/img/dataviz/lomipizza.jpeg)
-</div>
 <br>
 <p class="center"><i>Lomipizza</i></p>
 
