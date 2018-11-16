@@ -77,7 +77,7 @@ Todo piola con los boxplot, salvo que... los datos no tengan forma "de campana".
 {:.center}
 ![boxviol](/assets/img/dataviz/boxplotVsviolin.png)
 
-Mucho mejor el violin, ¿no? distribuciones diferentes, gráficos diferentes, tal como esperaríamos. Una animación que me gusta mucho para resaltar este punto es esta (tomada de <a href="https://www.autodeskresearch.com/publications/samestats">acá</a>) que muestra como datos muy diferentes pueden dar lugar al mismo boxplot pero no pueden engañar al violin plot.
+Mucho mejor el violin, ¿no? distribuciones diferentes, gráficos diferentes, tal como esperaríamos. Una animación que me gusta mucho para resaltar este punto es ésta (tomada de <a href="https://www.autodeskresearch.com/publications/samestats">acá</a>) que muestra como datos muy diferentes pueden dar lugar al mismo boxplot pero no pueden engañar al violin plot.
 
 {:.center}
 ![boxvio](/assets/img/dataviz/BoxViolinSmaller.gif)
