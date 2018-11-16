@@ -3,7 +3,7 @@ layout: single
 title: "La ciencia de datos, ese raro bicho ¿nuevo?"
 categories: datascience
 tags:
-  - DataScience
+  - Data Science
 header:
   teaser: /assets/thumbnails/ciencia_datos.png
 excerpt: "Qué es, para que sirve y otras respuestas al pasar"
