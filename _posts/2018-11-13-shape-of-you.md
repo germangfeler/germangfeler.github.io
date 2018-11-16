@@ -11,7 +11,7 @@ Hablando de palabras nuevas para nombrar cosas viejas, hoy empezamos una serie d
 
 Un error frecuente en analistas de datos <i>newbies</i> es querer ir directo a los bifes sin juego previo. Si antes de modelar datos paramos la pelota para estudiar su naturaleza y su forma nos ahorraremos unos cuantos dolores de cabeza. Ahí es donde las herramientas que veremos hoy entran en juego.
 
-Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para trabajar. Por eso elegí <i>InsectSprays</i> una tabla con la cantidad de insectos encontrados en parcelas agrícolas tratadas con diferentes sprays de insecticidas. Con las funciones <i>head</i> y <i>tail</i> podemos ver las primeras y últimas filas de la tabla.
+Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para trabajar. En este caso elegí <i>InsectSprays</i> una tabla con la cantidad de insectos encontrados en parcelas agrícolas tratadas con diferentes sprays de insecticidas. Con las funciones <i>head</i> y <i>tail</i> podemos ver las primeras y últimas filas de la tabla.
 
 
 ```{r}
