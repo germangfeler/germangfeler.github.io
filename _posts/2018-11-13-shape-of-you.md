@@ -2,6 +2,12 @@
 layout: single
 title: "DataViz I: Shape of You"
 categories: datascience
+tags:
+  - DataViz
+  - Visualización
+  - Exploración
+  - ggplot2
+  - R
 header:
   teaser: /assets/img/dataviz/violin.png
 excerpt: "Conociendo la forma de mis datos"  
