@@ -155,6 +155,7 @@ Mientras que el <strong>joy plot</strong> es otra forma de mostrar los density p
 
 Así terminamos este primer posts de DataViz, pueden comentar en twitter ¿cuál es el gráfico que más les gusta para describir los datos? ¿conocen algún otro que les guste más que los que vimos aquí?
 
+Desde <a href="/assets/scripts/shapeofyou.R">aquí</a> pueden descargar el script completo para R.
 
 -----
 <h3>Notas al pie</h3>
