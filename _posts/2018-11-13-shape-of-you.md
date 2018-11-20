@@ -31,7 +31,6 @@ Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para tr
 70    26     F
 71    24     F
 72    13     F
-
 ```
 
 Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>. Nuestro objetivo es visualizar como se comportan las distribuciones de conteos de cada spray. Aprender sobre su magnitud y variabilidad nos da mucha información para luego elegir como modelar estos datos. La primera idea que tuve fue hacer un histograma, o mejor aún, un density plot que es similar pero con un suavizado que permite visualizar mejor la forma de la distribución.
