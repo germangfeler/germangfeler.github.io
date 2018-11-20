@@ -2,6 +2,7 @@
 layout: single
 title: "Draft"
 categories: datascience
+permalink: /draft/
 tags:
   - DataViz
   - Visualización
