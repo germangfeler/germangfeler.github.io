@@ -4,6 +4,7 @@ title: Análisis de datos biológicos
 categories: servicios
 header:
   teaser: /assets/thumbnails/niche.png
+excerpt: "Diseño y análisis mediante variadas técnicas estadísticas y computacionales"  
 ---
 
 Diseño de experimentos y análisis de datos de biología, ecología y medicina utilizando métodos bioestadísticos modernos. Además, se brinda asesoramiento en la interpretación de los resultados y redacción de informes o publicaciones. Destinado a grupos de investigación y empresas que apliquen estas metodologías en su trabajo.

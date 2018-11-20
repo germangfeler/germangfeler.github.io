@@ -4,6 +4,7 @@ title: 2019 - R Aplicado a Ecología, de Individuos a Comunidades
 categories: cursos
 header:
   teaser: /assets/thumbnails/niche.png
+excerpt: "Curso de posgrado del Doctorado en Cs. Biológicas UNC"  
 ---
 
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad Nacional de Córdoba.

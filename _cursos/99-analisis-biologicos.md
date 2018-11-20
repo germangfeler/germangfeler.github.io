@@ -4,6 +4,7 @@ title: 2016 - Análisis de datos biológicos, del bit a la publicación científ
 categories: cursos
 header:
   teaser: /assets/thumbnails/array.jpeg
+excerpt: "Curso de posgrado del Doctorado en Cs. Biológicas UNL" 
 ---
 
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Facultad de Bioquímica y Ciencias Biológicas, Universidad Nacional del Litoral.

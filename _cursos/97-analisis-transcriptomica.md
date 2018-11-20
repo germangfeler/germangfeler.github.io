@@ -4,6 +4,7 @@ title: 2018 - Análisis de experimentos transcriptómicos (RNA-Seq)
 categories: cursos
 header:
   teaser: /assets/thumbnails/rna.jpeg
+excerpt: "Curso de posgrado del Doctorado en Cs. Biológicas UNC"   
 ---
 
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad Nacional de Córdoba.
