@@ -33,15 +33,16 @@ Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para tr
 72    13     F
 ```
 
-Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>. Nuestro objetivo es visualizar como se comportan las distribuciones de conteos de cada spray. Aprender sobre su magnitud y variabilidad nos da mucha información para luego elegir como modelar estos datos. La primera idea que tuve fue hacer un histograma, o mejor aún, un density plot que es similar pero con un suavizado que permite visualizar mejor la forma de la distribución.
+Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>. Nuestro objetivo es visualizar como se comportan las distribuciones de conteos de cada spray. Aprender sobre su magnitud y variabilidad nos da mucha información para luego elegir como modelar estos datos. La primera idea que tuve fue hacer un histograma y agregarle encima un density plot que es una clase de suavizado que permite visualizar mejor la forma de la distribución.
 
 ```r
 > library(ggplot2)
 
 > ## Density
 > ggplot(InsectSprays, aes(count)) + 
-    geom_density(fill="grey60") +
-    facet_grid(.~spray, scales="free_x") + theme_classic()
+        geom_histogram(aes(y=..density..), binwidth = 2,  color = "grey30", fill = "white") +
+        geom_density(alpha = .2, fill = "grey60") +
+        facet_grid(.~spray, scales="free_x") + theme_classic() 
 ```
 
 {:.center}

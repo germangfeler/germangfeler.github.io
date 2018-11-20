@@ -16,7 +16,8 @@ tail(InsectSprays, 3)
 
 ## Density
 ggplot(InsectSprays, aes(count)) + 
-        geom_density(fill="grey60") +
+        geom_histogram(aes(y=..density..), binwidth = 2,  color = "grey30", fill = "white") +
+        geom_density(alpha = .2, fill = "grey60") +
         facet_grid(.~spray, scales="free_x") + theme_classic()
 
 ggsave(filename="density.png", width=7, height=4)
