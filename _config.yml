@@ -112,7 +112,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       #url: mailto:germangfeler@gmail.com
-    - label: "CV"
+    - label: "Curriculum"
       icon: "fas fa-fw fa-file-alt"
       url: "https://germangfeler.github.io/cv/"
     - label: "Twitter"

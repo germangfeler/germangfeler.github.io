@@ -2,6 +2,7 @@
 layout: collection
 title: "Servicios"
 collection: servicios
+entries_layout: grid
 permalink: /servicios/
 author_profile: true
 ---
