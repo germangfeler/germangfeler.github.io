@@ -9,7 +9,7 @@ tags:
   - ggplot2
   - R
 header:
-  teaser: /assets/img/dataviz/violin.png
+  teaser: /assets/thumbnails/dataviz.png
 excerpt: "Conociendo la forma de mis datos"  
 ---
 
