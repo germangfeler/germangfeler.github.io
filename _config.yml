@@ -113,7 +113,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       #url: mailto:germangfeler@gmail.com
     - label: "Curriculum"
-      icon: "fas fa-fw fa-file-alt"
+      icon: "far fa-fw fa-file-alt"
       url: "https://germangfeler.github.io/cv/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
