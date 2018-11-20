@@ -3,7 +3,7 @@ layout: single
 title: 2017 - Workshops de Estadística Aplicada
 categories: cursos
 header:
-  teaser: /assets/thumbnails/niche.png
+  teaser: /assets/thumbnails/instituto-idea-unc.jpg
 excerpt: "Talleres dictados en el IDEA-UNC-CONICET"  
 ---
 
