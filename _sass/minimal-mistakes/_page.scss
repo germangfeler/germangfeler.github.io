@@ -282,7 +282,7 @@
 
 .page__taxonomy-item {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 10px;
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
@@ -328,7 +328,7 @@
 
 .taxonomy__index {
   display: grid;
-  grid-column-gap: 5em;
+  grid-column-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
   margin: 1.414em 0;
   padding: 0;
