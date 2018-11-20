@@ -2,7 +2,8 @@
 layout: single
 title: 2017 - Workshops de Estadística Aplicada
 categories: cursos
-thumbnail: /assets/thumbnails/niche.png
+header:
+  teaser: /assets/thumbnails/niche.png
 ---
 
 Talleres teórico / prácticos sobre metodologías estadísticas y su aplicación en R. Fueron dictados al personal del Instituto de Diversidad y Ecología Animal (IDEA-CONICET).
