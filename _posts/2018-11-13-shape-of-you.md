@@ -36,7 +36,7 @@ Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para tr
 
 Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>. Nuestro objetivo es visualizar como se comportan las distribuciones de conteos de cada spray. Aprender sobre su magnitud y variabilidad nos da mucha información para luego elegir como modelar estos datos. La primera idea que tuve fue hacer un histograma, o mejor aún, un density plot que es similar pero con un suavizado que permite visualizar mejor la forma de la distribución.
 
-```{r}
+```r
 > library(ggplot2)
 
 > ## Density
@@ -55,7 +55,7 @@ Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a e
 
 Lo mejor del boxplot es que permite comparar a simple vista las distribuciones de diferentes grupos de datos:
 
-```{r}
+```r
 > ## Boxplot
 > ggplot(InsectSprays, aes(x=spray, y=count, fill=spray)) + 
      geom_boxplot() + theme_classic()
@@ -67,7 +67,7 @@ Lo mejor del boxplot es que permite comparar a simple vista las distribuciones d
 
 Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variabilidad (C, D y E), lo que implica que son más efectivos matando insectos. Podemos mejorar este gráfico agregando todos los puntos, de manera de tener un panorama más completo:
 
-```{r}
+```r
 > ## Boxplot + Jitter
 > ggplot(InsectSprays, aes(x=spray, y=count, fill=spray)) + 
      geom_boxplot() + theme_classic() + 
@@ -96,7 +96,7 @@ El violin plot es una especie de híbrido entre boxplot y density plot. Para hac
 
 Si lo probamos sobre nuestros datos de insecticidas tenemos:
 
-```{r}
+```r
 > ## Violin
 > ggplot(InsectSprays, aes(x=spray, y=count, fill=spray)) + 
      geom_violin(trim = FALSE) + theme_classic() + 
@@ -116,7 +116,7 @@ Pero para qué alimentar la grieta entre boxplot y violin plot si podemos tener 
 
 Disculpas, me equivoqué de imagen, ahora así:
 
-```{r}
+```r
 > ## Boxplot + violin  
 > ggplot(InsectSprays, aes(x=spray, y=count, fill=spray)) + 
      geom_violin(trim = FALSE) +
@@ -134,7 +134,7 @@ En esta selección de métodos estoy dejando muchas otras alternativas de lado p
 
 <strong>beeswarm</strong> es una nube de puntos "no solapados" que es muy útil en especial cuando tenemos muchos datos (no es este caso).
 
-```{r}
+```r
 > ## Beeswarm
 > library("ggbeeswarm")
 > ggplot(InsectSprays, aes(x=spray, y=count, fill=spray)) + 
@@ -148,7 +148,7 @@ En esta selección de métodos estoy dejando muchas otras alternativas de lado p
 Mientras que el <strong>joy plot</strong> es otra forma de mostrar los density plots de manera de que sea más fácil de comparar entre grupos. Es una alternativa al violin plot para aquellas personas que no se acostumbran a ver las densidades en forma vertical.
 
 
-```{r}
+```r
 > ## joy
 > library(ggjoy)
 > ggplot(InsectSprays, aes(x=count, y=spray, height=..density..)) +
