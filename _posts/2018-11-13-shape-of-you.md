@@ -20,7 +20,7 @@ Un error frecuente en analistas de datos <i>newbies</i> es querer ir directo a l
 Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para trabajar. En este caso elegí <i>InsectSprays</i> una tabla con la cantidad de insectos encontrados en parcelas agrícolas tratadas con diferentes sprays de insecticidas. Con las funciones <i>head</i> y <i>tail</i> podemos ver las primeras y últimas filas de la tabla.
 
 
-```{r}
+```r
 > head(InsectSprays,3)
   count spray
 1    10     A
