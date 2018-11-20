@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 2016 - Del bit a la publicación científica
+title: 2016 - Análisis de datos biológicos, del bit a la publicación científica
 categories: cursos
 header:
   teaser: /assets/thumbnails/array.jpeg
