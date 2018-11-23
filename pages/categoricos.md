@@ -70,3 +70,20 @@ Si nos gusta más que las barras sean horizontales podemos rotarlo agregando un 
 {:.center}
 ![bar2](/assets/img/dataviz2/barplot2.png)
 
+Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos saber cuantas de las personas con ojos marrones son hombres y cuantas mujeres.
+
+```r
+> g <- ggplot(humans, aes(eye_color)) + 
+     geom_bar(aes(fill=gender)) + theme_classic()
+> g
+```
+![bar3](/assets/img/dataviz2/barplot3.png)
+
+Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una al lado de la otra usando
+
+```r
+> g <- ggplot(humans, aes(eye_color)) + 
+     geom_bar(aes(fill=gender), position = "dodge") + theme_classic()
+> g
+```
+![bar4](/assets/img/dataviz2/barplot4.png)
