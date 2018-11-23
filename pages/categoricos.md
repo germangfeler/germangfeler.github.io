@@ -11,6 +11,8 @@ tags:
   - R
 header:
   teaser: /assets/img/dataviz/violin.png
+toc: true
+toc_label: "Secciones"
 excerpt: "Como visualizar y explorar datos categóricos"  
 ---
 
@@ -45,23 +47,25 @@ En esta oportunidad vamos a trabajar con el dataset de Star Wars que viene en el
 
 <h3>Gráfico de barras</h3>
 
+Construir un gráfico en ggplot2 es un proceso que sucede en etapas. Primero definimos el dataset y las variables que vamos a utilizar y luego le vamos sumando elementos como el tipo de gráfico (el <i>geom</i>), el aspecto general del gráfico (el <i>theme</i>), los nombres de los ejes y otros detalles que vamos a ir viendo.
+
+El gráfico de barras (o barplot) básico se hace de la siguiente manera:
+
 ```r
 > ## Barplot
 > g <- ggplot(humans, aes(eye_color)) + 
      geom_bar(fill="steelblue") + theme_classic()
 > g
 ```
-
 {:.center}
-![density](/assets/img/dataviz2/barplot1.png)
+![bar1](/assets/img/dataviz2/barplot1.png)
 
-Podemos rotarlo
+Si nos gusta más que las barras sean horizontales podemos rotarlo agregando un nuevo elemento:
 
 ```r
 > g  +  coord_flip() 
-
 ```
 
 {:.center}
-![density](/assets/img/dataviz2/barplot2.png)
+![bar2](/assets/img/dataviz2/barplot2.png)
 
