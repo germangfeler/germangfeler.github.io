@@ -8,6 +8,8 @@ tags:
   - Exploración
   - ggplot2
   - R
+toc: true
+toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/dataviz.png
 excerpt: "Conociendo la forma de mis datos"  
@@ -33,7 +35,11 @@ Pero primero lo primero, necesitamos un <i>dataset</i> a modo de ejemplo para tr
 72    13     F
 ```
 
-Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>. Nuestro objetivo es visualizar como se comportan las distribuciones de conteos de cada spray. Aprender sobre su magnitud y variabilidad nos da mucha información para luego elegir como modelar estos datos. La primera idea que tuve fue hacer un histograma y agregarle encima un density plot que es una clase de suavizado que permite visualizar mejor la forma de la distribución.
+Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a entrar en detalles de la sintaxis pero la pueden consultar <a href="https://ggplot2.tidyverse.org/">aquí</a>. Nuestro objetivo es visualizar como se comportan las distribuciones de conteos de cada spray. Aprender sobre su magnitud y variabilidad nos da mucha información para luego elegir como modelar estos datos. 
+
+<h3>Histograma y density plot</h3>
+
+La primera idea que tuve fue hacer un histograma y agregarle encima un density plot que es una clase de suavizado que permite visualizar mejor la forma de la distribución.
 
 ```r
 > library(ggplot2)
@@ -48,7 +54,10 @@ Para los gráficos vamos a usar un paquete llamado ggplot2, del que no vamos a e
 {:.center}
 ![density](/assets/img/dataviz/density.png)
 
-¿Cuál es el problema con este técnica? Es díficil comparar los grupos entre sí al estar en diferentes cuadros. Podríamos ponerlos en el mismo cuadro y usar transparencias pero tampoco sería un gráfico muy fácil de entender. Una alternativa mejor es el <strong>boxplot</strong>, o gráfico de cajas y tegobis*, que me gusta pensarlo como una "vista área" del histograma.
+¿Cuál es el problema con este técnica? Es díficil comparar los grupos entre sí al estar en diferentes cuadros. Podríamos ponerlos en el mismo cuadro y usar transparencias pero tampoco sería un gráfico muy fácil de entender. 
+
+<h3>Boxplot</h3>
+Una alternativa mejor es el <strong>boxplot</strong>, o gráfico de cajas y tegobis*, que me gusta pensarlo como una "vista área" del histograma.
 
 {:.center}
 ![histbox](/assets/img/dataviz/boxplot-histograma.png)
@@ -78,6 +87,7 @@ Podemos ver muy fácilmente que hay tres sprays medias más bajas y menor variab
 {:.center}
 ![boxjitt](/assets/img/dataviz/boxplot_jitter.png)
 
+<h3>Violin plot</h3>
 Todo piola con los boxplot, salvo que... los datos no tengan forma "de campana". Cuando los datos son bimodales (con dos montañitas en su histograma, como un lomo de camello) o con distribución uniforme, por citar dos ejemplos, esta herramienta deja de ser buena para representarlos. Así lo mostraron Hintze y Nelson en 1998 cuando presentaron un nuevo tipo de gráfico: el <strong>violin plot</strong>.
 
 {:.center}
@@ -130,6 +140,7 @@ Disculpas, me equivoqué de imagen, ahora así:
 
 La combinación de boxplot y violin plot es algo que me gusta mucho pero debo decir que este comic de <a href="https://xkcd.com/1967/">xkcd</a> la arruinó un poco para mi XD (<i>once you see it, you can't unsee it</i>).
 
+<h3>Otras alternativas</h3>
 En esta selección de métodos estoy dejando muchas otras alternativas de lado pero quiero cerrar con estas últimas dos: <strong>beeswarm</strong> y <strong>joy plot</strong>.
 
 <strong>beeswarm</strong> es una nube de puntos "no solapados" que es muy útil en especial cuando tenemos muchos datos (no es este caso).
