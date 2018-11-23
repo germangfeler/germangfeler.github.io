@@ -57,6 +57,7 @@ El gráfico de barras (o barplot) básico se hace de la siguiente manera:
      geom_bar(fill="steelblue") + theme_classic()
 > g
 ```
+
 {:.center}
 ![bar1](/assets/img/dataviz2/barplot1.png)
 
