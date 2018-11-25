@@ -51,8 +51,11 @@ ggsave(filename="barplot4.png", width=5, height=4)
 
 ## Pie chart
 g <- ggplot(humans_pct) + 
-     geom_bar(aes(x="", y=porcentaje, fill=eye_color), stat="identity", width = 1)+
+     geom_bar(aes(x="", y=percentage, fill=eye_color), stat="identity", width = 1)+
      theme_void() + coord_polar("y", start=0) + 
-     geom_text(aes(x=1, y = cumsum(porcentaje) - porcentaje/2, label=round(porcentaje,1), 
-     label_pos = sum(porcentaje) - cumsum(porcentaje) + porcentaje / 2))
+     geom_text(aes(x=1, y = cumsum(percentage) - percentage/2, label=round(percentage,1), 
+     label_pos = sum(percentage) - cumsum(percentage) + percentage / 2))
 g
+
+
+ 
