@@ -114,6 +114,16 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 
 ¿Cómo se hace un gráfico de torta (o pie chart) en ggplot2? Aunque nos llame la atención no es con un nuevo geom sino que se trata de una transformación sobre el geom_bar (convertirlo a coordenadas polares).
 
+```r
+> g <- ggplot(humans_pct, aes(x=1, y=percentage, fill=eye_color)) +
+        geom_bar(stat="identity") +
+        geom_text(aes(label = paste0(round(percentage,1),"%")), position = position_stack(vjust = 0.5))+
+        coord_polar(theta = "y") + 
+        theme_void()
+> g 
+```
+![bar4](/assets/img/dataviz2/piechart.png)
+
 
 Ahora una trivia con opciones: ¿Cuándo es buena idea usar gráficos de torta?
 1) Nunca

@@ -29,7 +29,8 @@ humans_pct <- humans %>%
                 group_by(eye_color) %>% 
                 count() %>% 
                 ungroup() %>% 
-                mutate(percentage=`n`/sum(`n`) * 100) 
+                mutate(percentage=`n`/sum(`n`) * 100) %>%
+                arrange(-percentage)
 ## Barplot  
 g <- ggplot(humans_pct, aes(x=eye_color, y=percentage)) + 
      geom_bar(stat="identity", fill="steelblue") + theme_classic() + coord_flip()
@@ -50,12 +51,13 @@ g
 ggsave(filename="barplot4.png", width=5, height=4)
 
 ## Pie chart
-g <- ggplot(humans_pct) + 
-     geom_bar(aes(x="", y=percentage, fill=eye_color), stat="identity", width = 1)+
-     theme_void() + coord_polar("y", start=0) + 
-     geom_text(aes(x=1, y = cumsum(percentage) - percentage/2, label=round(percentage,1), 
-     label_pos = sum(percentage) - cumsum(percentage) + percentage / 2))
-g
-
+g <- ggplot(humans_pct, aes(x=1, y=percentage, fill=eye_color)) +
+        geom_bar(stat="identity") +
+        geom_text(aes(label = paste0(round(percentage,1),"%")), position = position_stack(vjust = 0.5))+
+        coord_polar(theta = "y") + 
+        theme_void()
+g 
+ggsave(filename="piechart.png", width=6, height=5)
+  
 
  
