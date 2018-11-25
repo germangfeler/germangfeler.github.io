@@ -90,7 +90,7 @@ Si lo que nos interesa grafica es el porcentaje, en lugar de la frecuencia absol
 ![bar2pct](/assets/img/dataviz2/barplot2_pct.png)
 
 
-<h2>Gráfico de barras para dos variables</h3>
+<h2>Gráfico de barras para dos variables</h2>
 
 Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos saber cuantas de las personas con ojos marrones son hombres y cuantas mujeres. Para hacer esto vamos a pasarle el dato del género (columna gender) al argumento fill, de manera que utilice diferentes colores para cada uno.
 
