@@ -45,7 +45,7 @@ En esta oportunidad vamos a trabajar con el dataset de Star Wars que viene en el
 
 ```
 
-<h2>Gráfico de barras para una variable</h3>
+<h2>Gráfico de barras para una variable</h2>
 
 Construir un gráfico en ggplot2 es un proceso que sucede en etapas. Primero definimos el dataset y las variables que vamos a utilizar y luego le vamos sumando elementos como el tipo de gráfico (el <i>geom</i>), el aspecto general del gráfico (el <i>theme</i>), los nombres de los ejes y otros detalles que vamos a ir viendo.
 
@@ -110,7 +110,7 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 ```
 ![bar4](/assets/img/dataviz2/barplot4.png)
 
-<h3>Gráfico de torta</h3>
+<h2>Gráfico de torta</h2>
 
 ¿Cómo se hace un gráfico de torta (o pie chart) en ggplot2? Aunque nos llame la atención no es con un nuevo geom sino que se trata de una transformación sobre el geom_bar (convertirlo a coordenadas polares).
 
