@@ -45,7 +45,7 @@ En esta oportunidad vamos a trabajar con el dataset de Star Wars que viene en el
 
 ```
 
-<h3>Gráfico de barras</h3>
+<h2>Gráfico de barras para una variable</h3>
 
 Construir un gráfico en ggplot2 es un proceso que sucede en etapas. Primero definimos el dataset y las variables que vamos a utilizar y luego le vamos sumando elementos como el tipo de gráfico (el <i>geom</i>), el aspecto general del gráfico (el <i>theme</i>), los nombres de los ejes y otros detalles que vamos a ir viendo.
 
@@ -70,7 +70,29 @@ Si nos gusta más que las barras sean horizontales podemos rotarlo agregando un 
 {:.center}
 ![bar2](/assets/img/dataviz2/barplot2.png)
 
-Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos saber cuantas de las personas con ojos marrones son hombres y cuantas mujeres.
+Si lo que nos interesa grafica es el porcentaje, en lugar de la frecuencia absoluta, primero vamos a tener que calcular ese dato. En este caso lo hice utlizando las funciones del paquete dplyr que aplican transformaciones en cascada sobre los datos: contar cuantos elementos hay en cada grupo (color de ojos, en este caso) y luego calcular el porcentaje. Luego hacemos el gráfico de barras de forma similar a lo que aplicamos antes pero con el argumento stat="identity" para indicar que los valores a graficar ya están calculados y no hay que hacer ningún calculo adicional.
+
+```r
+> ## Convertimos a porcentaje
+> humans_pct <- humans %>% 
+                group_by(eye_color) %>% 
+                count() %>% 
+                ungroup() %>% 
+                mutate(percentage=`n`/sum(`n`) * 100) 
+
+> ## Barplot  
+> g <- ggplot(humans_pct, aes(x=eye_color, y=percentage)) + 
+     geom_bar(stat="identity", fill="steelblue") + theme_classic() + coord_flip()
+> g
+```
+
+{:.center}
+![bar2pct](/assets/img/dataviz2/barplot2_pct.png)
+
+
+<h2>Gráfico de barras para dos variables</h3>
+
+Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos saber cuantas de las personas con ojos marrones son hombres y cuantas mujeres. Para hacer esto vamos a pasarle el dato del género (columna gender) al argumento fill, de manera que utilice diferentes colores para cada uno.
 
 ```r
 > g <- ggplot(humans, aes(eye_color)) + 
@@ -79,7 +101,7 @@ Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos
 ```
 ![bar3](/assets/img/dataviz2/barplot3.png)
 
-Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una al lado de la otra usando
+Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una al lado de la otra usando el argumento position="dodge".
 
 ```r
 > g <- ggplot(humans, aes(eye_color)) + 
@@ -87,3 +109,8 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 > g
 ```
 ![bar4](/assets/img/dataviz2/barplot4.png)
+
+<h3>Gráfico de torta</h3>
+
+¿Cómo se hace un gráfico de torta (o pie chart) en ggplot2? Aunque nos llame la atención no es con un nuevo geom sino que se trata de una transformación sobre el geom_bar (convertirlo a coordenadas polares).
+
