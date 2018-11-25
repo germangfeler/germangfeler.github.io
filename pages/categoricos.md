@@ -126,9 +126,9 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 
 
 Ahora una trivia con opciones: ¿Cuándo es buena idea usar gráficos de torta?
-# Nunca
-# Nunca
-# Nunca
+1. Nunca
+2. Nunca
+3. Nunca
 
 <strong>WARNING:</strong> Siempre que sea posible manténganse lejos de los gráficos de torta. Las dos principales razones son: 1) el ojo humano no es muy bueno estimando áreas 2) es díficil comparar "porciones" de la torta entre sí y entre diferentes gráficos. Siempre es preferible quedarse con el gráfico de barras.
 
