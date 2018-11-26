@@ -89,7 +89,7 @@ Si lo que nos interesa grafica es el porcentaje, en lugar de la frecuencia absol
 {:.center}
 ![bar2pct](/assets/img/dataviz2/barplot2_pct.png)
 
-<strong>WARNING:</strong> evitar los gráficos de barras en 3D, hacen más confusa la interpretación y no agregan información útil.
+<strong>WARNING:</strong> evitar los gráficos de barras en 3D, agregar una falsa tercera dimensión solo hace más confusa la interpretación sin agregar información. Como dicen Good y Hardin "no hagas gráficos que muestren más dimensiones que las que existen en los datos".
 
 {:.center}
 ![bar3D](/assets/img/dataviz2/barplot3D.png)
