@@ -1,9 +1,9 @@
 ##-----------------------------------------------------
 ##
-## DataViz II: Tortas y barras
+## DataViz II: Barras y tortas
 ## Autor: German A. Gonzalez
 ## Fecha: Nov-2018
-## germangfeler.github.io/datascience/shape-of-you/
+## germangfeler.github.io/datascience/barras-y-tortas/
 ##
 ##-----------------------------------------------------
 

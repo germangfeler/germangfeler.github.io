@@ -18,7 +18,7 @@ excerpt: "Como visualizar y explorar datos categóricos"
 
 <i>Previously on this blog...</i> analizamos algunas alternativas para <a href="https://germangfeler.github.io/datascience/shape-of-you/">visualizar datos continuos</a>. Hoy le toca el turno a los datos categóricos, es decir, variables que pueden tomar una cantidad limitada de valores. Ejemplos de esto pueden ser: el grupo sanguíneo (A, B, AB o 0), el barrio en que uno vive (Alberdi, Güemes, Nueva Córdoba, entre otros) o la religión que profesa (cristiano, musulmán, judío, entre otros).
 
-En esta oportunidad vamos a trabajar con el dataset de Star Wars que viene en el paquete dplyr. Para simplificar un poco usaremos solo a los personajes humanos.
+Después de bucear la web en busca de un dataset interesante para mostrar estas técnicas llegué a éste que tiene información sobre los personajes de la saga Star Wars (<i>alerta nerd</i>). Para simplificar un poco usaremos solo los personajes humanos.
 
 ```r
 > library(ggplot2)
@@ -45,9 +45,12 @@ En esta oportunidad vamos a trabajar con el dataset de Star Wars que viene en el
 
 ```
 
+En particular nos va a interesar explorar el color de ojos de los personajes.
+
+
 <h2>Gráfico de barras para una variable</h2>
 
-Construir un gráfico en ggplot2 es un proceso que sucede en etapas. Primero definimos el dataset y las variables que vamos a utilizar y luego le vamos sumando elementos como el tipo de gráfico (el <i>geom</i>), el aspecto general del gráfico (el <i>theme</i>), los nombres de los ejes y otros detalles que vamos a ir viendo.
+Un gráfico en ggplot2 es como una cebolla, está formado por capas, que iremos agregando con el operador "+". Primero definimos el dataset y las variables que vamos a utilizar y luego le vamos sumando elementos como el tipo de gráfico (el <i>geom</i>), el aspecto general del gráfico (el <i>theme</i>), los nombres de los ejes (<i>xlab</i>, <i>ylab</i>) y otros detalles que vamos a ir viendo.
 
 El gráfico de barras (o barplot) básico se hace de la siguiente manera:
 
@@ -57,6 +60,8 @@ El gráfico de barras (o barplot) básico se hace de la siguiente manera:
      geom_bar(fill="steelblue") + theme_classic()
 > g
 ```
+
+Como le estamos pasando una columna con datos categóricos a ggplot2 y pidiendole un geom_bar sabe que debe generar un gráfico de barras contando la frecuencia de cada categoría.
 
 {:.center}
 ![bar1](/assets/img/dataviz2/barplot1.png)
@@ -70,7 +75,7 @@ Si nos gusta más que las barras sean horizontales podemos rotarlo agregando un 
 {:.center}
 ![bar2](/assets/img/dataviz2/barplot2.png)
 
-Si lo que nos interesa grafica es el porcentaje, en lugar de la frecuencia absoluta, primero vamos a tener que calcular ese dato. En este caso lo hice utlizando las funciones del paquete dplyr que aplican transformaciones en cascada sobre los datos: contar cuantos elementos hay en cada grupo (color de ojos, en este caso) y luego calcular el porcentaje. Luego hacemos el gráfico de barras de forma similar a lo que aplicamos antes pero con el argumento stat="identity" para indicar que los valores a graficar ya están calculados y no hay que hacer ningún calculo adicional.
+Si lo que nos interesa graficar es el porcentaje, en lugar de la frecuencia absoluta, primero vamos a tener que calcular ese dato. En este caso lo hice utlizando las funciones del paquete dplyr que aplican transformaciones en cascada sobre los datos: contar cuantos elementos hay en cada grupo (color de ojos, en este caso) y luego calcular el porcentaje. Luego hacemos el gráfico de barras de forma similar a lo que aplicamos antes pero con el argumento <i>stat="identity"</i> para indicar que los valores a graficar ya están calculados y no hay que hacer ningún calculo adicional.
 
 ```r
 > ## Convertimos a porcentaje
@@ -98,7 +103,7 @@ Si lo que nos interesa grafica es el porcentaje, en lugar de la frecuencia absol
 
 <h2>Gráfico de barras para dos variables</h2>
 
-Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos saber cuantas de las personas con ojos marrones son hombres y cuantas mujeres. Para hacer esto vamos a pasarle el dato del género (columna gender) al argumento fill, de manera que utilice diferentes colores para cada uno.
+Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos saber cuantas de las personas con ojos marrones son hombres y cuantas mujeres. Para hacer esto vamos a pasarle el dato del género (columna gender) al argumento <i>fill</i>, de manera que utilice diferentes colores para cada uno.
 
 ```r
 > g <- ggplot(humans, aes(eye_color)) + 
@@ -109,7 +114,9 @@ Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos
 {:.center}
 ![bar3](/assets/img/dataviz2/barplot3.png)
 
-Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una al lado de la otra usando el argumento position="dodge".
+Ahora para cada color de ojos la barra aparece particionada entre sexos.
+
+Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una al lado de la otra usando el argumento <i>position="dodge"</i>.
 
 ```r
 > g <- ggplot(humans, aes(eye_color)) + 
@@ -156,8 +163,8 @@ No se ve mal pero ¿está bien usarlo? preguntémosle a Alberto:
 {:.center}
 ![korn](/assets/img/dataviz2/kornblihtt.jpeg)
 
-El problema con este gráfico es que al agregarle una línea uniendo los puntos da una falsa idea de relación. Este tipo de gráficos es útil, por ejemplo, cuando se analizan tendencias y en el eje X tenemos el tiempo pero en este caso no está bien usarlo. 
+El problema con este gráfico es que al agregarle una línea uniendo los puntos da una falsa idea de relación lineal entre las categorías. Este tipo de gráficos es útil, por ejemplo, cuando se analizan tendencias y en el eje X tenemos el tiempo pero en este caso no está bien usarlo. 
 
 Así terminamos este breve <i>Dos and Don'ts</i> de la visualización de datos categóricos. Nos vemos la próxima y si les gustó el post recuerden comentar / compartir / megustear.
 
-Desde <a href="/assets/scripts/tortasybarras.R">aquí</a> pueden descargar el script completo para R.
+Desde <a href="/assets/scripts/barrasytortas.R">aquí</a> pueden descargar el script completo para R.
