@@ -10,7 +10,7 @@ tags:
   - ggplot2
   - R
 header:
-  teaser: /assets/img/dataviz/violin.png
+  teaser: /assets/img/thumbnails/barras-y-tortas.png
 toc: true
 toc_label: "Secciones"
 excerpt: "Como visualizar y explorar datos categóricos"  
@@ -61,7 +61,7 @@ El gráfico de barras (o barplot) básico se hace de la siguiente manera:
 > g
 ```
 
-Como le estamos pasando una columna con datos categóricos a ggplot2 y pidiendole un geom_bar sabe que debe generar un gráfico de barras contando la frecuencia de cada categoría.
+Como le estamos pasando una columna con datos categóricos a ggplot2 y pidiendole un <i>geom_bar</i> sabe que debe generar un gráfico de barras contando la frecuencia de cada categoría.
 
 {:.center}
 ![bar1](/assets/img/dataviz2/barplot1.png)
@@ -129,7 +129,7 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 
 <h2>Cosas a evitar: gráfico de torta</h2>
 
-¿Cómo se hace un gráfico de torta (o pie chart) en ggplot2? Aunque nos llame la atención no es con un nuevo geom sino que se trata de una transformación sobre el geom_bar (convertirlo a coordenadas polares).
+¿Cómo se hace un gráfico de torta (o pie chart) en ggplot2? Aunque nos llame la atención no es con un nuevo geom sino que se trata de una transformación sobre el <i>geom_bar</i> (convertirlo a coordenadas polares).
 
 ```r
 > g <- ggplot(humans_pct, aes(x=1, y=percentage, fill=eye_color)) +
