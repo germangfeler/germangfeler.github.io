@@ -89,6 +89,11 @@ Si lo que nos interesa grafica es el porcentaje, en lugar de la frecuencia absol
 {:.center}
 ![bar2pct](/assets/img/dataviz2/barplot2_pct.png)
 
+<strong>WARNING:</strong> evitar los gráficos de barras en 3D, hacen más confusa la interpretación y no agregan información útil.
+
+{:.center}
+![bar3D](/assets/img/dataviz2/barplot3D.png)
+<i>Gráfico de barras en 3D tomado de Common Errors in Statistics de Good & Hardin.</i>
 
 <h2>Gráfico de barras para dos variables</h2>
 
@@ -127,8 +132,8 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 
 Ahora una trivia con opciones: ¿Cuándo es buena idea usar gráficos de torta?
 1. Nunca
-2. Nunca
-3. Nunca
+2. Jamás
+3. Ni en un millón de años
 
 <strong>WARNING:</strong> Siempre que sea posible manténganse lejos de los gráficos de torta. Las dos principales razones son: 1) el ojo humano no es muy bueno estimando áreas 2) es díficil comparar "porciones" de la torta entre sí y entre diferentes gráficos. Siempre es preferible quedarse con el gráfico de barras.
 
