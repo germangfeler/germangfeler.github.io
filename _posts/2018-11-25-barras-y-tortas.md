@@ -12,7 +12,7 @@ header:
   teaser: /assets/thumbnails/barras-y-tortas.png
 toc: true
 toc_label: "Secciones"
-excerpt: "Como visualizar y explorar <br>datos categóricos"  
+excerpt: "Visualizando datos categóricos"  
 ---
 
 <i>Previously on this blog...</i> analizamos algunas alternativas para <a href="https://germangfeler.github.io/datascience/shape-of-you/">visualizar datos continuos</a>. Hoy le toca el turno a los datos categóricos, es decir, variables que pueden tomar una cantidad limitada de valores. Ejemplos de esto pueden ser: el grupo sanguíneo (A, B, AB o 0), el barrio en que uno vive (Alberdi, Güemes, Nueva Córdoba, entre otros) o la religión que profesa (cristiano, musulmán, judío, entre otros).
