@@ -93,6 +93,7 @@ Si lo que nos interesa grafica es el porcentaje, en lugar de la frecuencia absol
 
 {:.center}
 ![bar3D](/assets/img/dataviz2/barplot3D.png)
+<br>
 <i>Gráfico de barras en 3D tomado de Common Errors in Statistics de Good & Hardin.</i>
 
 <h2>Gráfico de barras para dos variables</h2>
@@ -104,6 +105,8 @@ Muchas veces queremos visualizar dos factores a la vez. Por ejemplo, si queremos
      geom_bar(aes(fill=gender)) + theme_classic()
 > g
 ```
+
+{:.center}
 ![bar3](/assets/img/dataviz2/barplot3.png)
 
 Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una al lado de la otra usando el argumento position="dodge".
@@ -113,9 +116,11 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
      geom_bar(aes(fill=gender), position = "dodge") + theme_classic()
 > g
 ```
+
+{:.center}
 ![bar4](/assets/img/dataviz2/barplot4.png)
 
-<h2>Gráfico de torta</h2>
+<h2>Cosas a evitar: gráfico de torta</h2>
 
 ¿Cómo se hace un gráfico de torta (o pie chart) en ggplot2? Aunque nos llame la atención no es con un nuevo geom sino que se trata de una transformación sobre el geom_bar (convertirlo a coordenadas polares).
 
@@ -127,7 +132,9 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
         theme_void()
 > g 
 ```
-![bar4](/assets/img/dataviz2/piechart.png)
+
+{:.center}
+![pie](/assets/img/dataviz2/piechart.png)
 
 
 Ahora una trivia con opciones: ¿Cuándo es buena idea usar gráficos de torta?
@@ -135,5 +142,22 @@ Ahora una trivia con opciones: ¿Cuándo es buena idea usar gráficos de torta?
 2. Jamás
 3. Ni en un millón de años
 
-<strong>WARNING:</strong> Siempre que sea posible manténganse lejos de los gráficos de torta. Las dos principales razones son: 1) el ojo humano no es muy bueno estimando áreas 2) es díficil comparar "porciones" de la torta entre sí y entre diferentes gráficos. Siempre es preferible quedarse con el gráfico de barras.
+<strong>WARNING:</strong> Siempre que sea posible manténganse lejos de los gráficos de torta. Las dos principales razones son: 1) el ojo humano no es muy bueno estimando áreas 2) es díficil comparar "porciones" de la torta entre sí y entre diferentes gráficos. El gráfico de barras puede mostrar la misma información de una forma más sencilla de comparar para nuestros ojos.
 
+<h2>Cosas a evitar: gráfico de líneas</h2>
+
+Un día nos despertamos con ganas de innovar y decidimos hacer un gráfico de líneas para estos datos:
+
+{:.center}
+![line](/assets/img/dataviz2/linechart.png)
+
+No se ve mal pero ¿está bien usarlo? preguntémosle a Alberto:
+
+{:.center}
+![korn](/assets/img/dataviz2/kornblihtt.jpeg)
+
+El problema con este gráfico es que al agregarle una línea uniendo los puntos da una falsa idea de relación. Este tipo de gráficos es útil, por ejemplo, cuando se analizan tendencias y en el eje X tenemos el tiempo pero en este caso no está bien usarlo. 
+
+Así terminamos este breve <i>Dos and Don'ts</i> de la visualización de datos categóricos. Nos vemos la próxima y si les gustó el post recuerden comentar / compartir / megustear.
+
+Desde <a href="/assets/scripts/tortasybarras.R">aquí</a> pueden descargar el script completo para R.

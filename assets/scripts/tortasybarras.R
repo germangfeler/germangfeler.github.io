@@ -7,11 +7,14 @@
 ##
 ##-----------------------------------------------------
 
-## Cargamos ggplot2
+## Cargamos ggplot2 y dplyr
 library(ggplot2)
 library(dplyr)
 
+## Dataset
 starwars
+
+## Nos quedamos solo con los datos de humanos
 humans <- filter(starwars, species=="Human")
 
 ## Barplot
@@ -31,20 +34,21 @@ humans_pct <- humans %>%
                 ungroup() %>% 
                 mutate(percentage=`n`/sum(`n`) * 100) %>%
                 arrange(-percentage)
-## Barplot  
+
+## Barplot de los porcentajes 
 g <- ggplot(humans_pct, aes(x=eye_color, y=percentage)) + 
      geom_bar(stat="identity", fill="steelblue") + theme_classic() + coord_flip()
 g
 ggsave(filename="barplot2_pct.png", width=5, height=4)
   
 
-## Barplot con sexo
+## Barplot de color de ojos y sexo
 g <- ggplot(humans, aes(eye_color)) + 
      geom_bar(aes(fill=gender)) + theme_classic()
 g
 ggsave(filename="barplot3.png", width=5, height=4)
 
-## Barplot con sexo dodge
+## Barplot de color de ojos y sexo con barras agrupadas
 g <- ggplot(humans, aes(eye_color)) + 
      geom_bar(aes(fill=gender), position = "dodge") + theme_classic()
 g
@@ -59,5 +63,9 @@ g <- ggplot(humans_pct, aes(x=1, y=percentage, fill=eye_color)) +
 g 
 ggsave(filename="piechart.png", width=6, height=5)
   
-
- 
+## Line and points (incorrecto para este caso)
+g <- ggplot(humans_pct, aes(x = reorder(eye_color, -percentage), y = percentage,  group = 1)) + 
+  geom_point() + geom_line() + xlab("eye color") + theme_classic()
+g  
+ggsave(filename="linechart.png", width=6, height=5)
+  
