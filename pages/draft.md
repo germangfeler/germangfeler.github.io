@@ -15,3 +15,6 @@ Cinco ideas:
 3.
 4.
 5.
+
+## Referencias
+* Campbell, J. (2012). Building an IT economy: South Korean science and technology policy. Issues in Technology and Innovation, 19.
