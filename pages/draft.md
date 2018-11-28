@@ -31,6 +31,10 @@ Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente
 <br>
 <p class="center"><i>Imagen tomada de la presentación <a href="https://www.access4.eu/_media/Korea_ST_Policy_Koo.pdf">Evolution of Korean Science and Technology Policy</a> de Hyuk-Chae Koo.</i></p>
 
+
+Cada tanto reaparece una mirada xenófoba pidiendo que expulsemos a los extranjeros que vienen aquí a estudiar o trabajar. A mí damelos, siempre. Necesitamos a los mejores, sin importar de donde vienen. Si queremos ser un jugador relevante
+
+
 ## Referencias
 * Perfil.com. Escasa presencia de docentes con dedicación exclusiva. <a href="https://www.perfil.com/noticias/universidades/escasa-presencia-de-docentes-con-dedicacion-exclusiva.phtml">Link</a>.
 * Campbell, J. (2012). Building an IT economy: South Korean science and technology policy. Issues in Technology and Innovation, 19.
