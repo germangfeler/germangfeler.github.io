@@ -32,7 +32,18 @@ Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente
 <p class="center"><i>Imagen tomada de la presentación <a href="https://www.access4.eu/_media/Korea_ST_Policy_Koo.pdf">Evolution of Korean Science and Technology Policy</a> de Hyuk-Chae Koo.</i></p>
 
 
-Cada tanto reaparece una mirada xenófoba pidiendo que expulsemos a los extranjeros que vienen aquí a estudiar o trabajar. A mí damelos, siempre. Necesitamos a los mejores, sin importar de donde vienen. Si queremos ser un jugador relevante
+Cada tanto reaparece una mirada xenófoba pidiendo que expulsemos a los extranjeros que vienen aquí a estudiar o trabajar. A mí damelos, siempre. Si queremos ser un jugador relevante en I+D+i necesitamos a los mejores, sin importar de donde vienen. Así construyen su sistema científico en Europa, Estados Unidos y demás. Para eso necesitamos brindar condiciones de trabajo adecuadas.
+
+Tenemos ejemplos de los cuales aprender. Corea pasó de una economía agraria a una de las economías industriales más innovadores y pujantes del mundo en cuatro décadas.
+
+
+The
+empirical study shows that companies with higher export intensity (export volume/total sales)
+tend to invest more in R&D and innovation. (Shin and others 2006) The study also found that
+there exists a negative relationship between innovation activities and market concentration
+n. In
+other words, the study confirmed that companies operating in a more competitive market invest
+more in R&D and innovation. 
 
 
 ## Referencias
