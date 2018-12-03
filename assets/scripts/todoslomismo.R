@@ -8,7 +8,6 @@
 ##-----------------------------------------------------
 
 ## Cargamos los datos
-library("ggplot2")
 seguro <- read.csv("assets/datasets/insurance.csv")
 
 ## Exploramos los datos
@@ -22,8 +21,7 @@ par(mfrow=c(2,2))
 plot(modelo1)
 
 ## Categorizamos la variable
-seguro$bmicat <- ifelse(seguro$bmi < 25, "normal", "sobrepreso")
-seguro$bmicat <- ifelse(seguro$bmi > 29, "obeso", seguro$bmicat)
+seguro$bmicat <- cut(seguro$bmi, breaks=c(0,25,29,100), labels=c("normal", "sobrepeso", "obeso"))
 
 ## Creamos variables dummy
 seguro <- cbind(seguro, with(seguro, model.matrix(~bmicat))[,2:3])
