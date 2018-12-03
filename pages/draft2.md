@@ -61,7 +61,6 @@ En este ejemplo solo utilizaremos el BMI. Podemos correr una regresión simple e
 
 ```r
 > modelo1 <- lm(charges ~ bmi, data=seguro)
-
 ```
 
 El nombre de la función ya nos está diciendo algo: <strong>lm</strong> es el acrónimo de <strong>linear model</strong> y es la misma función que utilizaremos para el ANOVA. Para ver los resultados usamos la función <i>summary</i>:
@@ -87,7 +86,59 @@ Multiple R-squared:  0.6664,    Adjusted R-squared:  0.6658
 F-statistic:  1109 on 1 and 555 DF,  p-value: < 2.2e-16
 ```
 
-En este caso vemos que existe una relación lineal entre los gastos en cobertura médica y el índice de masa corporal del individuo. 
+En este caso vemos que existe una relación lineal entre los gastos en cobertura médica y el índice de masa corporal del individuo (p<0.01). Este es un caso típico de regresión: queremos ver si existe una relación lineal entre dos variables continuas.
+
+¿Que pasaría si la variable explicativa fuera categórica? Siguiendo con el ejemplo de la cobertura médica, discreticemos la variable bmi en intervalos:
+* BMI < 25: normal
+* BMI >= 25 y <= 29: sobrepeso
+* BMi > 29: obeso
+
+```r
+> seguro$bmicat <- ifelse(seguro$bmi < 25, "normal", "sobrepreso")
+> seguro$bmicat <- ifelse(seguro$bmi > 29, "obeso", seguro$bmicat)
+```
+
+¿Cómo analizamos ahora la relación entre el costo y el bmi discretizado? una opción en ese caso sería hacer una regresión con variables dummy. Las variables dummy son variables (valga la redundancia) que solo aceptan dos valores: 1 (se cumple la condición) o 0 (no se cumple). Si tenemos 3 posibles valores como en este caso, la cantidad de variables dummy necesarias son 2. Donde bmicatobeso sea 1 indica a los sujetos obesos, donde bmicatsobrepreso sea 1 indica a los con sobrepreso y los normales son aquellos que tienen 0 en ambas variables.
+
+```r
+> seguro <- cbind(seguro, with(seguro, model.matrix(~bmicat))[,2:3])
+> head(seguro)
+  age    sex    bmi smoker   charges     bmicat bmicatobeso bmicatsobrepreso
+1  19 female 27.900    yes 16884.924 sobrepreso           0                1
+2  33   male 22.705     no 21984.471     normal           0                0
+3  60 female 25.840     no 28923.137 sobrepreso           0                1
+4  62 female 26.290    yes 27808.725 sobrepreso           0                1
+5  27   male 42.130    yes 39611.758      obeso           1                0
+6  19   male 24.600     no  1837.237     normal           0                0
+```
+
+Ahora corremos la regresión para esta variable dummy:
+
+```r
+> modelo2 <- lm(charges ~ bmidummy, data=seguro)
+> summary(modelo2)
+
+Call:
+lm(formula = charges ~ bmidummy, data = seguro)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-22407  -7696  -1553   8216  32563 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  10282.2      656.3   15.67   <2e-16 ***
+bmidummy     19747.8      877.0   22.52   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Residual standard error: 10270 on 555 degrees of freedom
+Multiple R-squared:  0.4774,    Adjusted R-squared:  0.4765 
+F-statistic: 507.1 on 1 and 555 DF,  p-value: < 2.2e-16
+```
+
+## ANOVA
+
+
 
 
 
