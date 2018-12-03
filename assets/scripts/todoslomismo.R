@@ -37,3 +37,15 @@ summary(modelo2)
 modelo3 <- lm(charges ~ bmicat, data=seguro)
 summary(modelo3)
 
+## Solo dos categorías
+seguro2 <- seguro[seguro$bmicat != "obeso", ]
+
+## Test t
+t.test(charges ~ bmicat, data=seguro2, var.equal=TRUE)
+summary(lm(charges ~ bmicat, data=seguro2))
+
+
+
+
+
+

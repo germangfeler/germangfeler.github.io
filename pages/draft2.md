@@ -183,11 +183,52 @@ Recordarán que el test-t para dos muestras sirve para comparar las medias de do
 <br/>
 <i>Me ofrezco para este experimento</i>
 
+Siguiendo con nuestro dataset, podemos usar un test-t considerando solo a los sujetos normales y a los con sobrepreso (descartaremos de este análisis a los obesos). 
 
+```r
+> seguro2 <- seguro[seguro$bmicat != "obeso", ]
+```
 
+Ahora comparemos los resultados del test-t y de un ANOVA usando lm:
 
+```r
+> t.test(charges ~ bmicat, data=seguro2, var.equal=TRUE)
 
+        Two Sample t-test
 
+data:  charges by bmicat
+t = -11.03, df = 365, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -10440.43  -7281.01
+sample estimates:
+    mean in group normal mean in group sobrepreso 
+                10282.22                 19142.95 
+
+> summary(lm(charges ~ bmicat, data=seguro2))
+
+Call:
+lm(formula = charges ~ bmicat, data = seguro2)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-11519  -6263  -1391   4427  24787 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       10282.2      463.2   22.20   <2e-16 ***
+bmicatsobrepreso   8860.7      803.3   11.03   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 7250 on 365 degrees of freedom
+Multiple R-squared:   0.25,     Adjusted R-squared:  0.2479 
+F-statistic: 121.7 on 1 and 365 DF,  p-value: < 2.2e-16
+```
+
+Vemos que coinciden los valores reportados (t = 11.03, df = 365, p-value < 2.2e-16). Las medias estimadas también son idénticas   10282.22 para el grupo normal y 19142.95 para el grupo con sobrepeso (en el caso del lm este número sale de sumar los estimados del intercepto y el sobrepeso, 10282.2 + 8860.7 = 19142.9).
+
+¿Por qué sucede esto? porque el test-t no es otra cosa que un caso particular del ANOVA (y por lo tanto del modelo lineal) donde la cantidad de tratamientos es igual a dos.
 
 
 
