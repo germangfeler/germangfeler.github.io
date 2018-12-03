@@ -140,7 +140,7 @@ F-statistic: 614.5 on 2 and 554 DF,  p-value: < 2.2e-16
 
 ## ANOVA
 
-El anova lo hacemo así:
+Seguramente ya se dieron cuenta de que en lugar de hacer una regresión con variables dummy podemos hacer un ANOVA usando como variable explicativa el bmi categorizado (bmicat) que defimos antes:
 
 ```r
 > modelo3 <- lm(charges ~ bmicat, data=seguro)
@@ -165,6 +165,20 @@ Residual standard error: 7929 on 554 degrees of freedom
 Multiple R-squared:  0.6893,    Adjusted R-squared:  0.6881 
 F-statistic: 614.5 on 2 and 554 DF,  p-value: < 2.2e-16
 ```
+
+Como ya dijimos, la función que se usa para ajustar el modelo es la misma que en el caso de la regresión: <strong>lm</strong>. Entonces, pasando en limpio: la regresión y el ANOVA son casos particulares del modelo lineal que se diferencian únicamente en la naturaleza de las explicativas. Si las explicativas son continuas estamos en presencia de una regresión, mientras que si son categóricas estamos ante un ANOVA. Cuando hacemos un ANOVA implícitamente estamos haciendo una regresión con variables dummy, por eso los resultados que obtuvimos en ambos casos son exactamente iguales (pueden chequearlo).
+
+## Test t
+Ahora que está clara la relación entre ANOVA y regresión...
+
+{:.center}
+![corea](/assets/img/modelos-lineales/pito.jpg)
+¿Qué pito toca el test t en todo esto?
+
+
+
+
+
 
 
 
