@@ -13,7 +13,7 @@ toc: true
 toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/regresion.png
-excerpt: "Porqué ANOVA, regresión y test-t son el mismo análisis"
+excerpt: "ANOVA, regresión y test-t"
 ---
 
 Es muy probable que si tuvieron cursos de estadística en la facultad estén familiarizados (al menos de nombre) con el <strong>test t</strong>, la <strong>regresión</strong> y el <strong>análisis de la varianza</strong> (ANOVA). En estos cursos usualmente se presentan como técnicas para diferentes situaciones y que no tienen nada en común. Por eso puede resultarles extraño si les digo que en realidad <strong>son todos el mismo análisis</strong>.
