@@ -42,6 +42,13 @@ seguro2 <- seguro[seguro$bmicat != "obeso", ]
 t.test(charges ~ bmicat, data=seguro2, var.equal=TRUE)
 summary(lm(charges ~ bmicat, data=seguro2))
 
+## Plot
+library("ggplot2")
+ggplot(data = seguro, aes(x = bmi, y = charges)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) + theme_classic()
+ggsave(filename="regresion.png", width=5, height=4)
+
 
 
 

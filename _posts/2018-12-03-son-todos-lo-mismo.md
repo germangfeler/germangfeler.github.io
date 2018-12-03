@@ -1,12 +1,19 @@
 ---
 layout: single
 title: "Son todos lo mismo"
-permalink: /draft2/
+categories: datascience
+tags:
+  - R
+  - Estadística
+  - Regresión
+  - ANOVA
+  - test-t
+  - Modelos lineales
 toc: true
 toc_label: "Secciones"
 header:
-  teaser: /assets/thumbnails/ciencia_datos.png
-excerpt: "Porqué ANOVA, regresión y test t son el mismo análisis"
+  teaser: /assets/thumbnails/regresion.png
+excerpt: "Porqué ANOVA, regresión y test-t son el mismo análisis"
 ---
 
 Es muy probable que si tuvieron cursos de estadística en la facultad estén familiarizados (al menos de nombre) con el <strong>test t</strong>, la <strong>regresión</strong> y el <strong>análisis de la varianza</strong> (ANOVA). En estos cursos usualmente se presentan como técnicas para diferentes situaciones y que no tienen nada en común. Por eso puede resultarles extraño si les digo que en realidad <strong>son todos el mismo análisis</strong>.
@@ -94,10 +101,11 @@ En este caso vemos que existe una relación lineal entre los gastos en cobertura
 En R lo podemos hacer así:
 
 ```r
-> seguro$bmicat <- cut(seguro$bmi, breaks=c(0,25,29,100), labels=c("normal", "sobrepeso", "obeso"))
+> seguro$bmicat <- cut(seguro$bmi, breaks=c(0,25,29,100),
+                      labels=c("normal", "sobrepeso", "obeso"))
 ```
 
-¿Cómo analizamos ahora la relación entre el costo y el bmi discretizado? una opción en ese caso sería hacer una regresión con variables dummy. Las variables dummy son variables (valga la redundancia) que solo aceptan dos valores: 1 (se cumple la condición) o 0 (no se cumple). Si tenemos 3 posibles valores como en este caso, la cantidad de variables dummy necesarias son 2. Donde bmicatobeso sea 1 indica a los sujetos obesos, donde bmicatsobrepreso sea 1 indica a los con sobrepreso y los normales son aquellos que tienen 0 en ambas variables.
+¿Cómo analizamos ahora la relación entre el costo y el bmi discretizado? una opción sería hacer una regresión con variables dummy. Las variables dummy son variables (valga la redundancia) que solo aceptan dos valores: 1 (se cumple la condición) o 0 (no se cumple). La cantidad de dummies siempre será igual a la cantidad de categorías - 1, en este caso 2. La forma más sencilla de crearlas en R es con la función <i>model.matrix</i>:
 
 ```r
 > seguro <- cbind(seguro, with(seguro, model.matrix(~bmicat))[,2:3])
@@ -111,7 +119,14 @@ En R lo podemos hacer así:
 6  19   male 24.600     no  1837.237     normal           0                0
 ```
 
-Ahora corremos la regresión para esta variable dummy:
+¿Cómo codificaríamos a un sujeto normal, a uno con sobrepeso y a uno obeso con dummies? Pues de esta manera:
+
+            bmicatobeso     bmicatsobrepreso
+normal                0                    0 
+sobrepeso             0                    1
+obeso                 1                    0
+    
+Ahora podemos proceder a correr la regresión para esta variable dummy:
 
 ```r
 > modelo2 <- lm(charges ~ bmicatobeso + bmicatsobrepreso, data=seguro)
@@ -135,10 +150,11 @@ Residual standard error: 7929 on 554 degrees of freedom
 Multiple R-squared:  0.6893,    Adjusted R-squared:  0.6881 
 F-statistic: 614.5 on 2 and 554 DF,  p-value: < 2.2e-16
 ```
+De la misma forma que antes, podemos observar que existe un efecto (p<0.01) del BMI en el costo de la cobertura médica.
 
 ## ANOVA
 
-Seguramente ya se dieron cuenta de que en lugar de hacer una regresión con variables dummy podemos hacer un ANOVA usando como variable explicativa el bmi categorizado (bmicat) que defimos antes:
+Una alternativa al análisis con variables dummies que hicimos recién es hacer un ANOVA usando como variable explicativa el bmi categorizado (bmicat) que defimos antes:
 
 ```r
 > modelo3 <- lm(charges ~ bmicat, data=seguro)
@@ -163,7 +179,7 @@ Multiple R-squared:  0.6906,    Adjusted R-squared:  0.6895
 F-statistic: 618.3 on 2 and 554 DF,  p-value: < 2.2e-16
 ```
 
-Como ya dijimos, la función que se usa para ajustar el modelo es la misma que en el caso de la regresión: <strong>lm</strong>. Entonces, pasando en limpio: la regresión y el ANOVA son casos particulares del modelo lineal que se diferencian únicamente en la naturaleza de las explicativas. Si las explicativas son continuas estamos en presencia de una regresión, mientras que si son categóricas estamos ante un ANOVA. Cuando hacemos un ANOVA implícitamente estamos haciendo una regresión con variables dummy, por eso los resultados que obtuvimos en ambos casos son exactamente iguales (pueden chequearlo).
+Como ya dijimos, la función que se usa para ajustar el modelo es la misma que en el caso de la regresión: <strong>lm</strong>. Entonces, pasando en limpio: la regresión y el ANOVA son casos particulares del modelo lineal que se diferencian únicamente en la naturaleza de las explicativas. Si las explicativas son continuas estamos en presencia de una regresión, mientras que si son categóricas estamos ante un ANOVA. Cuando hacemos un ANOVA implícitamente estamos haciendo una regresión con variables dummy, por eso los resultados que obtenemos en ambos casos son exactamente iguales (pueden chequearlo).
 
 ## Prueba t de Student
 Ahora que está clara la relación entre ANOVA y regresión...
@@ -221,8 +237,10 @@ Multiple R-squared:  0.2559,    Adjusted R-squared:  0.2538
 F-statistic: 125.5 on 1 and 365 DF,  p-value: < 2.2e-16
 ```
 
-Vemos que coinciden los valores reportados (t = 11.03, df = 365, p-value < 2.2e-16). Las medias estimadas también son idénticas   10282.22 para el grupo normal y 19142.95 para el grupo con sobrepeso (en el caso del lm este número sale de sumar los estimados del intercepto y el sobrepeso, 10282.2 + 8860.7 = 19142.9).
+Vemos que coinciden los valores reportados (t = 11.03, df = 365, p-value < 2.2e-16). Las medias estimadas también son idénticas 10284.29 para el grupo normal y 19286.37 para el grupo con sobrepeso (en el caso del lm este número sale de sumar los estimados del intercepto y el sobrepeso, 10284.3 + 9002.1 = 19286.37).
 
 ¿Por qué sucede esto? porque el test-t no es otra cosa que un caso particular del ANOVA (y por lo tanto del modelo lineal) donde la cantidad de tratamientos es igual a dos.
+
+Como dice Vox Dei <i>"todo concluye al fin nada puede escapar, todo tiene un final, todo termina"</i> y así como quien no quiere la cosa llegamos al final. Nos vemos la próxima y si les gustó el post recuerden comentar / compartir / megustear.
 
 Desde <a href="/assets/scripts/todoslomismo.R">aquí</a> pueden descargar el script completo para R.
