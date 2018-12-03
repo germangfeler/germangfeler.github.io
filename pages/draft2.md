@@ -2,6 +2,8 @@
 layout: single
 title: "Son todos lo mismo"
 permalink: /draft2/
+toc: true
+toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/ciencia_datos.png
 excerpt: "Porqué ANOVA, regresión y test t son el mismo análisis"
@@ -15,7 +17,7 @@ En los cursos de estadística básica es frecuente que se vean el <strong>test t
 ¿Cómo es eso de que son todos el mismo análisis? bueno, son todos casos particulares de algo más general que se llama <strong>modelos lineales</strong>. Pero no necesitás creer en mi palabra lo podemos ver con un ejemplo práctico.
 
 ## Regresión
-En este dataset, que viene del libro Machine Learning with R de Brett Lantz, se busca predecir el costo que tendrá la cobertura médica para un ciudadano de Estados Unidos. Descargaremos el dataset de internet directamente a R de la siguiente forma:
+En este problema lo que buscamos es poder predecir cuanto le va a costar la cobertura médica a un ciudadano de Estados Unidos. Descargaremos el dataset de internet directamente a R de la siguiente forma:
 
 ```r
 > require(RCurl)
@@ -26,22 +28,24 @@ Podemos ver los datos que tiene haciendo:
 
 ```r
 > str(seguro)
-'data.frame':   1338 obs. of  7 variables:
- $ age     : int  19 18 28 33 32 31 46 37 37 60 ...
- $ sex     : Factor w/ 2 levels "female","male": 1 2 2 2 2 1 1 1 2 1 ...
- $ bmi     : num  27.9 33.8 33 22.7 28.9 ...
- $ children: int  0 1 3 0 0 0 1 3 2 0 ...
- $ smoker  : Factor w/ 2 levels "no","yes": 2 1 1 1 1 1 1 1 1 1 ...
- $ region  : Factor w/ 4 levels "northeast","northwest",..: 4 3 3 2 2 3 3 2 1 2 ...
- $ charges : num  16885 1726 4449 21984 3867 ...
+'data.frame':   557 obs. of  7 variables:
+ $ age     : int  19 33 60 62 27 19 23 30 34 59 ...
+ $ sex     : Factor w/ 2 levels "female","male": 1 2 1 1 2 2 2 2 1 1 ...
+ $ bmi     : num  27.9 22.7 25.8 26.3 42.1 ...
+ $ children: int  0 0 0 0 0 1 0 0 1 3 ...
+ $ smoker  : Factor w/ 2 levels "no","yes": 2 1 1 2 2 1 1 2 2 1 ...
+ $ region  : Factor w/ 4 levels "northeast","northwest",..: 4 2 2 3 3 4 1 4 1 3 ...
+ $ charges : num  16885 21984 28923 27809 39612 ...
+
 > head(seguro)
-  age    sex    bmi children smoker    region   charges
-1  19 female 27.900        0    yes southwest 16884.924
-2  18   male 33.770        1     no southeast  1725.552
-3  28   male 33.000        3     no southeast  4449.462
-4  33   male 22.705        0     no northwest 21984.471
-5  32   male 28.880        0     no northwest  3866.855
-6  31 female 25.740        0     no southeast  3756.622
+   age    sex    bmi children smoker    region   charges
+1   19 female 27.900        0    yes southwest 16884.924
+4   33   male 22.705        0     no northwest 21984.471
+10  60 female 25.840        0     no northwest 28923.137
+12  62 female 26.290        0    yes southeast 27808.725
+15  27   male 42.130        0    yes southeast 39611.758
+16  19   male 24.600        1     no southwest  1837.237
+
 ```
 
 Las variables predictivas que tenemos son:
@@ -52,4 +56,40 @@ Las variables predictivas que tenemos son:
 * smoker: si fuma
 * region: región de EE.UU. donde vive
 
-En este ejemplo solo utilizaremos el BMI.
+En este ejemplo solo utilizaremos el BMI. Podemos correr una regresión simple en R de la siguiente forma:
+
+
+```r
+> modelo1 <- lm(charges ~ bmi, data=seguro)
+
+```
+
+El nombre de la función ya nos está diciendo algo: <strong>lm</strong> es el acrónimo de <strong>linear model</strong> y es la misma función que utilizaremos para el ANOVA. Para ver los resultados usamos la función <i>summary</i>:
+
+```r
+> summary(modelo1)                                                                                                                              
+                                                                                                                                                
+Call:                                                                                                                                           
+lm(formula = charges ~ bmi, data = seguro)                                                                                                      
+                                                                                                                                                
+Residuals:                                                                                                                                      
+   Min     1Q Median     3Q    Max                                                                                                              
+-25407  -5916   -582   5784  35621                                                                                                              
+                                                                                                                                                
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -31617.21    1628.28  -19.42   <2e-16 ***
+bmi           1929.82      57.96   33.29   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Residual standard error: 8209 on 555 degrees of freedom
+Multiple R-squared:  0.6664,    Adjusted R-squared:  0.6658 
+F-statistic:  1109 on 1 and 555 DF,  p-value: < 2.2e-16
+```
+
+En este caso vemos que existe una relación lineal entre los gastos en cobertura médica y el índice de masa corporal del individuo. 
+
+
+
+
+
