@@ -121,10 +121,11 @@ En R lo podemos hacer así:
 
 ¿Cómo codificaríamos a un sujeto normal, a uno con sobrepeso y a uno obeso con dummies? Pues de esta manera:
 
-            bmicatobeso     bmicatsobrepreso
-normal                0                    0 
-sobrepeso             0                    1
-obeso                 1                    0
+|           | bmicatobeso | bmicatsobrepreso |
+|-----------|------------:|-----------------:|
+| normal    |           0 |                0 |
+| sobrepeso |           0 |                1 |
+| obeso     |           1 |                0 |
     
 Ahora podemos proceder a correr la regresión para esta variable dummy:
 
