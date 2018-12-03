@@ -168,12 +168,27 @@ F-statistic: 614.5 on 2 and 554 DF,  p-value: < 2.2e-16
 
 Como ya dijimos, la función que se usa para ajustar el modelo es la misma que en el caso de la regresión: <strong>lm</strong>. Entonces, pasando en limpio: la regresión y el ANOVA son casos particulares del modelo lineal que se diferencian únicamente en la naturaleza de las explicativas. Si las explicativas son continuas estamos en presencia de una regresión, mientras que si son categóricas estamos ante un ANOVA. Cuando hacemos un ANOVA implícitamente estamos haciendo una regresión con variables dummy, por eso los resultados que obtuvimos en ambos casos son exactamente iguales (pueden chequearlo).
 
-## Test t
+## Prueba t de Student
 Ahora que está clara la relación entre ANOVA y regresión...
 
 {:.center}
 ![corea](/assets/img/modelos-lineales/pito.jpg)
-¿Qué pito toca el test t en todo esto?
+<br/>
+¿Qué pito toca el test-t en todo esto?
+
+Recordarán que el test-t para dos muestras sirve para comparar las medias de dos poblaciones con distribución normal. Es lo que utilizaríamos, por ejemplo, si queremos comparar el efecto de un medicamento con un placebo, la cantidad de masa muscular ganada mediante dos planes de entrenamiento diferentes o la cantidad promedio de queso que llevan las pizzas italianas y las argentinas.
+
+{:.center}
+![corea](/assets/img/modelos-lineales/pizzas.jpg)
+<br/>
+<i>Me ofrezco para este experimento</i>
+
+
+
+
+
+
+
 
 
 
