@@ -172,14 +172,14 @@ Como ya dijimos, la función que se usa para ajustar el modelo es la misma que e
 Ahora que está clara la relación entre ANOVA y regresión...
 
 {:.center}
-![corea](/assets/img/modelos-lineales/pito.jpg)
+![pito](/assets/img/modelos-lineales/pito.jpg)
 <br/>
 ¿Qué pito toca el test-t en todo esto?
 
 Recordarán que el test-t para dos muestras sirve para comparar las medias de dos poblaciones con distribución normal. Es lo que utilizaríamos, por ejemplo, si queremos comparar el efecto de un medicamento con un placebo, la cantidad de masa muscular ganada mediante dos planes de entrenamiento diferentes o la cantidad promedio de queso que llevan las pizzas italianas y las argentinas.
 
 {:.center}
-![corea](/assets/img/modelos-lineales/pizzas.jpg)
+![pizzas](/assets/img/modelos-lineales/pizzas.jpeg)
 <br/>
 <i>Me ofrezco para este experimento</i>
 
