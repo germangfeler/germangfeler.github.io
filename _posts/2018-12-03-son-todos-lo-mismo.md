@@ -195,7 +195,7 @@ Recordarán que el test-t para dos muestras sirve para comparar las medias de do
 {:.center}
 ![pizzas](/assets/img/modelos-lineales/pizzas.jpeg)
 <br/>
-<i>Me ofrezco para este experimento</i>
+<p class="center"><i>Me ofrezco para este experimento</i></p>
 
 Siguiendo con nuestro dataset, podemos usar un test-t considerando solo a los sujetos normales y a los con sobrepreso (descartaremos de este análisis a los obesos). 
 
