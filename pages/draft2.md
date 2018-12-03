@@ -9,15 +9,15 @@ header:
 excerpt: "Porqué ANOVA, regresión y test t son el mismo análisis"
 ---
 
-En los cursos de estadística básica es frecuente que se vean el <strong>test t</strong>, la <strong>regresión</strong> y el <strong>análisis de la varianza</strong> (ANOVA). Lo más frecuente es que los hayamos aprendido como técnicas independientes, que se aplican a diferentes situaciones. Por eso puede resulados extraño cuando aprendemos que en realidad <strong>son todos el mismo análisis</strong>.
+Es muy probable que si tuvieron cursos de estadística en la facultad estén familiarizados (al menos de nombre) con el <strong>test t</strong>, la <strong>regresión</strong> y el <strong>análisis de la varianza</strong> (ANOVA). En estos cursos usualmente se presentan como técnicas para diferentes situaciones y que no tienen nada en común. Por eso puede resultarles extraño si les digo que en realidad <strong>son todos el mismo análisis</strong>.
 
 {:.center}
 ![corea](/assets/img/modelos-lineales/nick-young-meme.jpg)
 
-¿Cómo es eso? bueno, son todos casos particulares de algo más general que se llama <strong>modelos lineales</strong>. Pero no necesitás creer en mi palabra lo podemos ver con un ejemplo práctico.
+¿Cómo es eso? ¿estás tomando desde temprano, Ger? no, en serio son todos casos particulares de algo que se llama <strong>modelo lineal</strong>. Pero no necesitás creer en mi palabra lo podemos ver con un ejemplo práctico.
 
 ## Regresión
-En este problema lo que buscamos es poder predecir cuanto le va a costar la cobertura médica a un ciudadano de Estados Unidos. El dataset se puede descargar desde <a href="/assets/datasets/insurance.csv">aquí</a>. 
+En este problema lo que buscamos es predecir cuanto le va a costar la cobertura médica a un ciudadano de Estados Unidos. El dataset se puede descargar desde <a href="/assets/datasets/insurance.csv">aquí</a>. 
 
 ```r
 > seguro <- read.csv("insurance.csv")
