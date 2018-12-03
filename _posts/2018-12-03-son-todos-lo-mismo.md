@@ -130,28 +130,28 @@ En R lo podemos hacer así:
 Ahora podemos proceder a correr la regresión para esta variable dummy:
 
 ```r
-> modelo2 <- lm(charges ~ bmicatobeso + bmicatsobrepreso, data=seguro)
+> modelo2 <- lm(charges ~ bmicatsobrepeso + bmicatobeso, data=seguro)
 > summary(modelo2)
+
 Call:
-lm(formula = charges ~ bmicatobeso + bmicatsobrepreso, data = seguro)
+lm(formula = charges ~ bmicatsobrepeso + bmicatobeso, data = seguro)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--21191.9  -6148.1   -427.1   5283.0  25572.1 
+-21191.9  -6159.7   -429.2   5226.7  25572.1 
 
 Coefficients:
-                 Estimate Std. Error t value Pr(>|t|)    
-(Intercept)       10282.2      506.6   20.30   <2e-16 ***
-bmicatobeso       26738.5      766.5   34.88   <2e-16 ***
-bmicatsobrepreso   8860.7      878.6   10.09   <2e-16 ***
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      10284.3      503.4   20.43   <2e-16 ***
+bmicatsobrepeso   9002.1      880.4   10.22   <2e-16 ***
+bmicatobeso      26736.4      763.5   35.02   <2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 7929 on 554 degrees of freedom
-Multiple R-squared:  0.6893,    Adjusted R-squared:  0.6881 
-F-statistic: 614.5 on 2 and 554 DF,  p-value: < 2.2e-16
+Residual standard error: 7912 on 554 degrees of freedom
+Multiple R-squared:  0.6906,    Adjusted R-squared:  0.6895 
+F-statistic: 618.3 on 2 and 554 DF,  p-value: < 2.2e-16
 ```
-De la misma forma que antes, podemos observar que existe un efecto (p<0.01) del BMI en el costo de la cobertura médica.
 
 ## ANOVA
 

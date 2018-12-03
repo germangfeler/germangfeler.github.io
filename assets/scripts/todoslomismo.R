@@ -28,7 +28,7 @@ seguro <- cbind(seguro, with(seguro, model.matrix(~bmicat))[,2:3])
 head(seguro)
 
 ## Corremos una regresion con variables dummy
-modelo2 <- lm(charges ~ bmicatobeso + bmicatsobrepreso, data=seguro)
+modelo2 <- lm(charges ~ bmicatsobrepeso + bmicatobeso, data=seguro)
 summary(modelo2)
 
 ## ANOVA
