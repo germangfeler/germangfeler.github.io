@@ -115,32 +115,56 @@ En este caso vemos que existe una relación lineal entre los gastos en cobertura
 Ahora corremos la regresión para esta variable dummy:
 
 ```r
-> modelo2 <- lm(charges ~ bmidummy, data=seguro)
+> modelo2 <- lm(charges ~ bmicatobeso + bmicatsobrepreso, data=seguro)
 > summary(modelo2)
 
 Call:
-lm(formula = charges ~ bmidummy, data = seguro)
+lm(formula = charges ~ bmicatobeso + bmicatsobrepreso, data = seguro)
 
 Residuals:
-   Min     1Q Median     3Q    Max 
--22407  -7696  -1553   8216  32563 
+     Min       1Q   Median       3Q      Max 
+-21191.9  -6148.1   -427.1   5283.0  25572.1 
 
 Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  10282.2      656.3   15.67   <2e-16 ***
-bmidummy     19747.8      877.0   22.52   <2e-16 ***
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       10282.2      506.6   20.30   <2e-16 ***
+bmicatobeso       26738.5      766.5   34.88   <2e-16 ***
+bmicatsobrepreso   8860.7      878.6   10.09   <2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-Residual standard error: 10270 on 555 degrees of freedom
-Multiple R-squared:  0.4774,    Adjusted R-squared:  0.4765 
-F-statistic: 507.1 on 1 and 555 DF,  p-value: < 2.2e-16
+
+Residual standard error: 7929 on 554 degrees of freedom
+Multiple R-squared:  0.6893,    Adjusted R-squared:  0.6881 
+F-statistic: 614.5 on 2 and 554 DF,  p-value: < 2.2e-16
 ```
 
 ## ANOVA
 
+El anova lo hacemo así:
 
+```r
+> modelo3 <- lm(charges ~ bmicat, data=seguro)
+> summary(modelo3)
 
+Call:
+lm(formula = charges ~ bmicat, data = seguro)
 
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-21191.9  -6148.1   -427.1   5283.0  25572.1 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       10282.2      506.6   20.30   <2e-16 ***
+bmicatobeso       26738.5      766.5   34.88   <2e-16 ***
+bmicatsobrepreso   8860.7      878.6   10.09   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 7929 on 554 degrees of freedom
+Multiple R-squared:  0.6893,    Adjusted R-squared:  0.6881 
+F-statistic: 614.5 on 2 and 554 DF,  p-value: < 2.2e-16
+```
 
 
 
