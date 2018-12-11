@@ -129,7 +129,7 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 
 <h2>Lollipop</h2>
 
-Lollipop
+Una alternativa al gráfico de barras es el Lollipop, que como podemos imaginar recibe su nombre por su parecido con el chupetín.
 
 ```r
 > ggdotchart(humans_pct, x = "eye_color", y = "n",
@@ -143,7 +143,8 @@ Lollipop
 
 <h2>Cleveland dot plot</h2>
 
-Cleve
+Un gráfico muy similar al anterior es el Cleveland dot plot:
+
 
 ```r
 > ggdotchart(humans_pct, x = "eye_color", y = "n",
@@ -151,13 +152,15 @@ Cleve
            ggtheme = theme_pubr()) + theme_cleveland()
 ```
 
+Estos gráficos son muy simples de leer y tienen la ventaja con respecto a los gráficos de barra de usar menos "tinta" para contar la misma historia.
+
 {:.center}
 ![lolli](/assets/img/dataviz2/cleveland.png)
 
 
-<h2>Cleveland dot plot</h2>
+<h2>Treemap</h2>
 
-Cleve
+Una de las visualizaciones de moda (aunque existe desde hace décadas) son los Treemaps. En estos gráficos se muestra la información en bloques anidados que tienen un tamaño proporcional a la variable graficada.
 
 ```r
 > library("treemapify")
@@ -175,7 +178,9 @@ Cleve
 ```
 
 {:.center}
-![lolli](/assets/img/dataviz2/treemap.png)
+![treemap](/assets/img/dataviz2/treemap.png)
+
+La belleza de este gráfico es algo que no se puede negar. Como punto en contra está el hecho de que si tenemos muchas categorías y/o algunas muy pequeñas será difícil visualizarlas adecuadamente.
 
 <h2>Cosas a evitar: gráfico de torta</h2>
 
