@@ -205,15 +205,6 @@ select(starwars, name:hair_color)
 # 10 Obi-Wan Kenobi        182    77 auburn, white
 # ... with 77 more rows
 
-# Además tiene un montón de funciones piolas como:
-# • starts_with("abc") matches names that begin with “abc”.
-# • ends_with("xyz") matches names that end with “xyz”.
-# • contains("ijk") matches names that contain “ijk”.
-# • matches("(.)\\1") selects variables that match a regular
-# expression. This one matches any variables that contain
-# repeated characters. You’ll learn more about regular expressions
-# in Chapter 11.
-# • num_range("x", 1:3) matches x1, x2, and x3.
 
 ##-------- Agregar columnas ----------
 
