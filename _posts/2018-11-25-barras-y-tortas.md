@@ -137,6 +137,9 @@ Los gráficos de barra siguen siendo muy usados hasta el dia de hoy pero tienen 
            theme_cleveland()
 ```
 
+{:.center}
+![cleve](/assets/img/dataviz2/cleveland.png)
+
 En algunas ocasiones se utiliza una versión ligeramente diferente que se conoce como Lollipop. Como podemos imaginar, recibe su nombre por el parecido que tiene con un chupetín.
 
 {:.center}
@@ -154,10 +157,9 @@ En algunas ocasiones se utiliza una versión ligeramente diferente que se conoce
 
 {:.center}
 ![lolli](/assets/img/dataviz2/Lollipop.png)
+<p class="center"><i>Chupetín</i></p>
 
-{:.center}
-![lolli](/assets/img/dataviz2/cleveland.png)
-
+Otra característica interesante de estos gráficos es que son muy buenos para mostrar cambios en dos momentos de tiempo. Pero eso quedará para otra oportunidad.
 
 <h2>Treemap</h2>
 
