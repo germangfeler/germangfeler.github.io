@@ -214,7 +214,7 @@ Ahora una trivia con opciones: ¿Cuándo es buena idea usar gráficos de torta?
 
 <h2>Cosas a evitar: gráfico de líneas</h2>
 
-Un día nos despertamos con ganas de innovar y decidimos hacer un gráfico de líneas para estos datos:
+¿Y que tal si unimos todos los puntos con una línea así?
 
 {:.center}
 ![line](/assets/img/dataviz2/linechart.png)
