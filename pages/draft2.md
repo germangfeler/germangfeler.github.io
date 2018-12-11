@@ -14,7 +14,7 @@ excerpt: "De que lados estás amigo"
 > library(tidyverse)
 ```
 
-<strong>Old school</strong>
+<strong>Old School</strong>
 ```r
 > humans <- starwars[starwars$species=="Human",]
 > humans
@@ -61,6 +61,7 @@ A tibble: 35 x 13
 
 Filtramos por dos criterios
 
+<strong>Old School</strong>
 ```r
 > altos.s <- starwars[starwars$species == "Human" & starwars$height > 185,]
 > altos.s
@@ -84,7 +85,7 @@ A tibble: 12 x 13
   vehicles <list>, starships <list>
 ```
 
-Tidyverse
+<strong>Tidyverse</strong>
 ```r
 > altos.t <- filter(starwars, species=="Human", starwars$height > 185)
 > altos.t
@@ -106,8 +107,7 @@ A tibble: 7 x 13
 
 <h2>Reordenar filas</h2>
 
-Old school
-
+<strong>Old School</strong>
 ```r
 altos.s[order(altos.s$height, altos.s$mass),]
 # A tibble: 12 x 13
@@ -127,7 +127,7 @@ altos.s[order(altos.s$height, altos.s$mass),]
 # 12 NA                NA    NA NA         NA         NA              NA   NA    
 ```
 
-tidyverse
+<strong>Tidyverse</strong>
 ```r
 arrange(altos.t, height, mass)
 # A tibble: 7 x 13
@@ -146,8 +146,7 @@ arrange(altos.t, height, mass)
 
 <h2>Seleccion de columnas</h2>
 
-Old school
-
+<strong>Old School</strong>
 ```r
 ## Forma 1: usando los nombres de columna
 altos.s[,c("name", "height", "mass", "hair_color")]
@@ -185,8 +184,7 @@ altos.s[,1:4]
 # 12 NA                      NA    NA NA       
 ```
 
-Tidyverse
-
+<strong>Tidyverse</strong>
 ```r
 ## Forma 1: nombrando explicitamente las columnas
 select(starwars, name, height, mass, hair_color)
@@ -236,8 +234,7 @@ in Chapter 11.
 
 <h2>Agregar columnas</h2>
 
-Old school
-
+<strong>Old School</strong>
 ```r
 > altos.s$bmi <-  altos.s$mass / (altos.s$height/100)^2
 > altos.s[,c("name", "height", "mass", "bmi"),]
@@ -258,8 +255,7 @@ Old school
 # 12 NA                      NA    NA  NA  
 ```
 
-tidyverse
-
+<strong>Tidyverse</strong>
 ```r
 > altos.t <- mutate(altos.t,
      bmi = mass / (height/100)^2)
