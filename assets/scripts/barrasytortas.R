@@ -68,4 +68,33 @@ g <- ggplot(humans_pct, aes(x = reorder(eye_color, -percentage), y = percentage,
   geom_point() + geom_line() + xlab("eye color") + theme_classic()
 g  
 ggsave(filename="linechart.png", width=6, height=5)
-  
+
+## Treemap
+library("treemapify")
+library("glue")
+
+## Creamos la etiqueta con el porcentaje y la categoria
+lab <- humans_pct %>%
+           glue_data('{round(percentage,1)}% \n{eye_color}')
+
+ggplot(humans_pct, aes(area = percentage, fill = eye_color, label = lab)) +
+  geom_treemap()  + theme(legend.position="none") +
+  geom_treemap_text(fontface = "italic", colour = "white", place = "topleft",
+                    grow = TRUE) +
+  scale_fill_manual(values = c("dodgerblue3", "cadetblue4", "chocolate4", "black", "burlywood4", "gold2"))                  
+                    
+ggsave(filename="treemap.png", width=4, height=4)
+
+
+## Lollipop
+ggdotchart(humans_pct, x = "eye_color", y = "n",
+           sorting = "descending", add = "segments", rotate = TRUE, dot.size = 6,
+           label = round(humans_pct$n), font.label = list(color = "white", size = 9, vjust = 0.5),
+           ggtheme = theme_pubr())
+ggsave(filename="Lollipop.png", width=6, height=6)
+
+## Cleveland
+ggdotchart(humans_pct, x = "eye_color", y = "n",
+           sorting = "descending", rotate = TRUE, dot.size = 6,
+           ggtheme = theme_pubr()) + theme_cleveland()
+ggsave(filename="cleveland.png", width=6, height=6)

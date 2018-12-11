@@ -126,6 +126,57 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 {:.center}
 ![bar4](/assets/img/dataviz2/barplot4.png)
 
+
+<h2>Lollipop</h2>
+
+Lollipop
+
+```r
+> ggdotchart(humans_pct, x = "eye_color", y = "n",
+           sorting = "descending", add = "segments", rotate = TRUE, dot.size = 6,
+           label = round(humans_pct$n), font.label = list(color = "white", size = 9, vjust = 0.5),
+           ggtheme = theme_pubr())
+```
+
+{:.center}
+![lolli](/assets/img/dataviz2/Lollipop.png)
+
+<h2>Cleveland dot plot</h2>
+
+Cleve
+
+```r
+> ggdotchart(humans_pct, x = "eye_color", y = "n",
+           sorting = "descending", rotate = TRUE, dot.size = 6,
+           ggtheme = theme_pubr()) + theme_cleveland()
+```
+
+{:.center}
+![lolli](/assets/img/dataviz2/cleveland.png)
+
+
+<h2>Cleveland dot plot</h2>
+
+Cleve
+
+```r
+> library("treemapify")
+> library("glue")
+
+> ## Creamos la etiqueta con el porcentaje y la categoria
+> lab <- humans_pct %>%
+           glue_data('{round(percentage,1)}% \n{eye_color}')
+
+> ggplot(humans_pct, aes(area = percentage, fill = eye_color, label = lab)) +
+    geom_treemap()  + theme(legend.position="none") +
+    geom_treemap_text(fontface = "italic", colour = "white", place = "topleft",
+                    grow = TRUE) +
+    scale_fill_manual(values = c("dodgerblue3", "cadetblue4", "chocolate4", "black", "burlywood4", "gold2"))                  
+```
+
+{:.center}
+![lolli](/assets/img/dataviz2/treemap.png)
+
 <h2>Cosas a evitar: gráfico de torta</h2>
 
 ¿Cómo se hace un gráfico de torta (o pie chart) en ggplot2? Aunque nos llame la atención no es con un nuevo geom sino que se trata de una transformación sobre el <i>geom_bar</i> (convertirlo a coordenadas polares).
