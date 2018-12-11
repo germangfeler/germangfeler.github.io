@@ -181,15 +181,15 @@ El resultados en todos los casos es:
 ```r
    name               height  mass hair_color   
    <chr>               <int> <dbl> <chr>        
-1 Luke Skywalker        172    77 blond        
-2 C-3PO                 167    75 NA           
-3 R2-D2                  96    32 NA           
-4 Darth Vader           202   136 none         
-5 Leia Organa           150    49 brown        
-6 Owen Lars             178   120 brown, grey  
-7 Beru Whitesun lars    165    75 brown        
-8 R5-D4                  97    32 NA           
-9 Biggs Darklighter     183    84 black        
+ 1 Luke Skywalker        172    77 blond        
+ 2 C-3PO                 167    75 NA           
+ 3 R2-D2                  96    32 NA           
+ 4 Darth Vader           202   136 none         
+ 5 Leia Organa           150    49 brown        
+ 6 Owen Lars             178   120 brown, grey  
+ 7 Beru Whitesun lars    165    75 brown        
+ 8 R5-D4                  97    32 NA           
+ 9 Biggs Darklighter     183    84 black        
 10 Obi-Wan Kenobi        182    77 auburn, white
 # ... with 77 more rows
 ```
