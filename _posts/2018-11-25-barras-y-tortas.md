@@ -144,6 +144,7 @@ En algunas ocasiones se utiliza una versión ligeramente diferente que se conoce
 
 {:.center}
 ![chupetin](/assets/img/dataviz2/chupetin.jpeg)
+<p class="center"><i>Chupetín</i></p>
 
 ```r
 > ggdotchart(humans_pct, x = "eye_color", y = "n",
@@ -157,7 +158,6 @@ En algunas ocasiones se utiliza una versión ligeramente diferente que se conoce
 
 {:.center}
 ![lolli](/assets/img/dataviz2/Lollipop.png)
-<p class="center"><i>Chupetín</i></p>
 
 Otra característica interesante de estos gráficos es que son muy buenos para mostrar cambios en dos momentos de tiempo. Pero eso quedará para otra oportunidad.
 
