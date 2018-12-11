@@ -131,7 +131,7 @@ A tibble: 12 x 13
 
 <strong>Tidyverse</strong>
 ```r
-arrange(altos.t, height, mass)
+> arrange(altos.t, height, mass)
 A tibble: 7 x 13
   name           height  mass hair_color skin_color eye_color birth_year gender
   <chr>           <int> <dbl> <chr>      <chr>      <chr>          <dbl> <chr> 
