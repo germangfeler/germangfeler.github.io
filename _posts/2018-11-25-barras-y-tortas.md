@@ -129,12 +129,15 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 
 <h2>Lollipop</h2>
 
-Una alternativa al gráfico de barras es el Lollipop, que como podemos imaginar recibe su nombre por su parecido con el chupetín.
+Una alternativa al gráfico de barras es el Lollipop que, como podemos imaginar, recibe su nombre por el parecido que tiene con un chupetín.
 
 ```r
 > ggdotchart(humans_pct, x = "eye_color", y = "n",
-           sorting = "descending", add = "segments", rotate = TRUE, dot.size = 6,
-           label = round(humans_pct$n), font.label = list(color = "white", size = 9, vjust = 0.5),
+           sorting = "descending", add = "segments", 
+           rotate = TRUE, dot.size = 6,
+           label = round(humans_pct$n), 
+           font.label = list(color = "white", 
+                        size = 9, vjust = 0.5),
            ggtheme = theme_pubr())
 ```
 
@@ -148,11 +151,12 @@ Un gráfico muy similar al anterior es el Cleveland dot plot:
 
 ```r
 > ggdotchart(humans_pct, x = "eye_color", y = "n",
-           sorting = "descending", rotate = TRUE, dot.size = 6,
-           ggtheme = theme_pubr()) + theme_cleveland()
+           sorting = "descending", rotate = TRUE, 
+           dot.size = 6, ggtheme = theme_pubr()) + 
+           theme_cleveland()
 ```
 
-Estos gráficos son muy simples de leer y tienen la ventaja con respecto a los gráficos de barra de usar menos "tinta" para contar la misma historia.
+Estos dos gráficos son muy simples de leer y tienen la ventaja con respecto a los gráficos de barra de usar menos "tinta" para contar la misma historia.
 
 {:.center}
 ![lolli](/assets/img/dataviz2/cleveland.png)
@@ -160,7 +164,7 @@ Estos gráficos son muy simples de leer y tienen la ventaja con respecto a los g
 
 <h2>Treemap</h2>
 
-Una de las visualizaciones de moda (aunque existe desde hace décadas) son los Treemaps. En estos gráficos se muestra la información en bloques anidados que tienen un tamaño proporcional a la variable graficada.
+Una de las visualizaciones de moda (aunque existe desde hace décadas) definitivamente son los Treemaps. Se trata de graficar los datos con rectángulos de tamaño proporcional al valor de alguna variable.
 
 ```r
 > library("treemapify")
@@ -170,11 +174,14 @@ Una de las visualizaciones de moda (aunque existe desde hace décadas) son los T
 > lab <- humans_pct %>%
            glue_data('{round(percentage,1)}% \n{eye_color}')
 
-> ggplot(humans_pct, aes(area = percentage, fill = eye_color, label = lab)) +
-    geom_treemap()  + theme(legend.position="none") +
-    geom_treemap_text(fontface = "italic", colour = "white", place = "topleft",
-                    grow = TRUE) +
-    scale_fill_manual(values = c("dodgerblue3", "cadetblue4", "chocolate4", "black", "burlywood4", "gold2"))                  
+> ggplot(humans_pct, aes(area = percentage, fill = eye_color,
+        label = lab)) + geom_treemap() + 
+        theme(legend.position="none") +
+        geom_treemap_text(fontface = "italic", 
+             colour = "white", place = "topleft",
+             grow = TRUE) +
+        scale_fill_manual(values = c("dodgerblue3", "cadetblue4", 
+                "chocolate4", "black", "burlywood4", "gold2"))                  
 ```
 
 {:.center}
