@@ -13,7 +13,7 @@ toc_label: "Secciones"
 excerpt: "Comparamos los dos universos"  
 ---
 
-Hace algunos años este pibe de moñito vino a sacarnos de la modorra y cambiar totalmente la forma de programar en R.
+Hace algunos años este pibe de moñito vino a sacarnos de la modorra y cambiar la forma de programar en R.
 
 ![wickham](/assets/img/basevstidy/wickham.jpg)
 <p><i>Hadley Wickham</i></p>
