@@ -1,24 +1,30 @@
 ---
 layout: single
-title: "Old School vs tidyverse"
-permalink: /draft2/
+title: "R: Old School vs tidyverse"
+categories: datascience
+tags:
+  - tidyverse
+  - R
+  - Exploración
 header:
-  teaser: /assets/thumbnails/ciencia_datos.png
-excerpt: "De que lados estás amigo"
+  teaser: /assets/img/basevstidy/tidyverse.png
+toc: true
+toc_label: "Secciones"
+excerpt: "Comparamos los dos universos"  
 ---
 
 Hace algunos años este pibe de moñito vino a sacarnos de la modorra y cambiar totalmente la forma de programar en R.
 
 ![wickham](/assets/img/basevstidy/wickham.jpg)
-<i>Hadley Wickham</i>
+<p><i>Hadley Wickham</i></p>
 
 Hadley creó un ecosistema de paquetes, conocido como <strong>tidyverse</strong>, que permite manipular, explorar y visualizar datos.   
 
 ![wickham](/assets/img/basevstidy/tidyverse.png)
 
-Estas cosas ya se podían hacer en R base, entonces ¿qué aportó el tidyverse? principalmente coherencia, algo en lo que R estaba escaso. Trabajar en un equipo pequeño permitió asegurar que todos los paquetes respetan la misma lógica y filosofía. Además se simplificaron algunas tareas básicas, poniendo énfasis en que sea más fácil de aprender y más productivo, al requerir menos tiempo de programación.
+Estas cosas ya se podían hacer en R base, entonces ¿qué aportó el tidyverse? principalmente coherencia, algo en lo que R estaba escaso. Trabajar en un equipo pequeño permitió asegurar que todos los paquetes respetan la misma lógica y filosofía. Además se simplificaron algunas tareas básicas, poniendo énfasis en que sea más fácil de aprender y más productivo, requiriendo menos tiempo de programación.
 
-Sin embargo, el tidyverse tiene sus limitaciones. En especial cuando trabajamos con datos que no tienen formato de "tabla". Por esta razón siempre van a convivir los dos sistema y está en cada analista de datos decidir cual es la mejor alternativa para su problema particular.
+No todo es color de rosa, el tidyverse tiene sus limitaciones. En especial cuando trabajamos con datos que no tienen formato de tabla. Por esta razón siempre van a convivir los dos sistema y está en cada analista de datos decidir cual es la mejor alternativa para su problema particular.
 
 Hoy vamos a comparar como se realiza la misma tarea en R base (Old School) y tidyverse, usando nuevamente el dataset starwars.
 
@@ -32,7 +38,7 @@ Una de las operaciones que hacemos más a menudo cuando analizamos datos es sele
 
 <strong>Old School</strong>
 
-En R base esto lo vamos a hacer utilizando el operador de selección [ ] junto con el operador de comparación == 
+Lo vamos a hacer utilizando el operador de selección [ ] junto con el operador de comparación == 
 
 ```r
 > humans <- starwars[starwars$species=="Human",]
@@ -40,7 +46,7 @@ En R base esto lo vamos a hacer utilizando el operador de selección [ ] junto c
 
 <strong>tidyverse</strong>
 
-En el tidyverse debemos utilizar la función <i>filter</i> junto con el operador de comparación == 
+Debemos utilizar la función <i>filter</i> junto con el operador de comparación ==.
 
 ```r
 > humant <- filter(starwars, species=="Human")
@@ -72,7 +78,8 @@ También podemos querer filtrar por dos criterios al mismo tiempo. En este caso 
 Similar al caso anterior pero ahora tenemos dos condiciones, que relacionaremos mediante el operador &. 
 
 ```r
-> altos.s <- starwars[starwars$species == "Human" & starwars$height > 185,]
+> altos.s <- starwars[starwars$species == "Human" & 
+                      starwars$height > 185,]
 ```
 
 <strong>tidyverse</strong>
@@ -80,7 +87,8 @@ Similar al caso anterior pero ahora tenemos dos condiciones, que relacionaremos 
 En el caso de filter, podemos agregar más condiciones simplemente separándolas con comas.
 
 ```r
-> altos.t <- filter(starwars, species=="Human", starwars$height > 185)
+> altos.t <- filter(starwars, species=="Human", 
+                    starwars$height > 185)
 ```
 
 El resultados en ambos casos es:
@@ -114,7 +122,7 @@ Usamos la función <i>order</i> en conjunto con el operador de selección [ ].
 
 <strong>tidyverse</strong>
 
-Para reordenar usamos la función <i>arrange</i>
+Usamos la función <i>arrange</i>
 
 ```r
 > arrange(altos.t, height, mass)
@@ -197,11 +205,16 @@ Algo interesante de <i>select</i> es que tiene un montón de funciones auxiliare
 Queremos crear una nueva columna, llamada bmi, con el índice de masa corporal de cada personaje. El bmi se calcula como peso / altura^2.
 
 <strong>Old School</strong>
+
+El operador $ permite acceder al contenido de una columna. En este caso, como estamos accediendo a una columna que aún no existe (bmi), de hecho la estamos creando.
+
 ```r
 > altos.s$bmi <-  altos.s$mass / (altos.s$height/100)^2
 ```
 
 <strong>tidyverse</strong>
+
+La función <i>mutate</i> permite crear nuevas variables que sean transformaciones de otras.
 
 ```r
 > altos.t <- mutate(altos.t,
