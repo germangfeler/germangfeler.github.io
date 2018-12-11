@@ -144,7 +144,7 @@ En algunas ocasiones se utiliza una versión ligeramente diferente que se conoce
 
 {:.center}
 ![chupetin](/assets/img/dataviz2/chupetin.jpeg)
-<p class="center"><i>Chupetín</i></p>
+<i>Chupetín</i>
 
 ```r
 > ggdotchart(humans_pct, x = "eye_color", y = "n",
