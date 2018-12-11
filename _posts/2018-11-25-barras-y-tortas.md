@@ -126,9 +126,21 @@ Si las barras apiladas no son lo nuestro le podemos pedir a ggplot que ponga una
 ![bar4](/assets/img/dataviz2/barplot4.png)
 
 
-<h2>Lollipop</h2>
+<h2>Cleveland dot plot</h2>
 
-Una alternativa al gráfico de barras es el Lollipop que, como podemos imaginar, recibe su nombre por el parecido que tiene con un chupetín.
+Los gráficos de barra siguen siendo muy usados hasta el dia de hoy pero tienen una pequeña contra: usan demasiada "tinta" para contar su historia. Por eso en los '80 Cleveland y McGill propusieron otra técnica de visualización más simple que solo usa líneas y puntos:
+
+```r
+> ggdotchart(humans_pct, x = "eye_color", y = "n",
+           sorting = "descending", rotate = TRUE, 
+           dot.size = 6, ggtheme = theme_pubr()) + 
+           theme_cleveland()
+```
+
+En algunas ocasiones se utiliza una versión ligeramente diferente que se conoce como Lollipop. Como podemos imaginar, recibe su nombre por el parecido que tiene con un chupetín.
+
+{:.center}
+![chupetin](/assets/img/dataviz2/chupetin.jpeg)
 
 ```r
 > ggdotchart(humans_pct, x = "eye_color", y = "n",
@@ -142,20 +154,6 @@ Una alternativa al gráfico de barras es el Lollipop que, como podemos imaginar,
 
 {:.center}
 ![lolli](/assets/img/dataviz2/Lollipop.png)
-
-<h2>Cleveland dot plot</h2>
-
-Un gráfico muy similar al anterior es el Cleveland dot plot:
-
-
-```r
-> ggdotchart(humans_pct, x = "eye_color", y = "n",
-           sorting = "descending", rotate = TRUE, 
-           dot.size = 6, ggtheme = theme_pubr()) + 
-           theme_cleveland()
-```
-
-Estos dos gráficos son muy simples de leer y tienen la ventaja con respecto a los gráficos de barra de usar menos "tinta" para contar la misma historia.
 
 {:.center}
 ![lolli](/assets/img/dataviz2/cleveland.png)
