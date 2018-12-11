@@ -20,7 +20,7 @@ Hace algunos años este pibe de moñito vino a sacarnos de la modorra y cambiar 
 
 Hadley creó un ecosistema de paquetes, conocido como <strong>tidyverse</strong>, que permite manipular, explorar y visualizar datos.   
 
-![wickham](/assets/img/basevstidy/tidyverse.png)
+![wickham](/assets/thumbnails/tidyverse.png)
 
 Estas cosas ya se podían hacer en R base, entonces ¿qué aportó el tidyverse? principalmente coherencia, algo en lo que R estaba escaso. Trabajar en un equipo pequeño permitió asegurar que todos los paquetes respetan la misma lógica y filosofía. Además se simplificaron algunas tareas básicas, poniendo énfasis en que sea más fácil de aprender y más productivo, requiriendo menos tiempo de programación.
 
