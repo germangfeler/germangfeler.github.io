@@ -41,7 +41,7 @@ Una de las operaciones que hacemos más a menudo cuando analizamos datos es sele
 Lo vamos a hacer utilizando el operador de selección [ ] junto con el operador de comparación == 
 
 ```r
-> humans <- starwars[starwars$species=="Human",]
+> humans <- starwars[starwars$species == "Human",]
 ```
 
 <strong>tidyverse</strong>
@@ -49,7 +49,7 @@ Lo vamos a hacer utilizando el operador de selección [ ] junto con el operador 
 Debemos utilizar la función <i>filter</i> junto con el operador de comparación ==.
 
 ```r
-> humant <- filter(starwars, species=="Human")
+> humant <- filter(starwars, species == "Human")
 ```
 
 El resultado es:
@@ -87,7 +87,7 @@ Similar al caso anterior pero ahora tenemos dos condiciones, que relacionaremos 
 En el caso de filter, podemos agregar más condiciones simplemente separándolas con comas.
 
 ```r
-> altos.t <- filter(starwars, species=="Human", 
+> altos.t <- filter(starwars, species == "Human", 
                     starwars$height > 185)
 ```
 
@@ -241,7 +241,7 @@ Una de las características más relevantes del tidyverse es que permite combina
 
 ```r
 > altos.t <- starwars %>% 
-             filter(species=="Human", starwars$height > 185) %>%
+             filter(species == "Human", starwars$height > 185) %>%
              select(name:hair_color) %>%
              mutate(bmi = mass / (height/100)^2)
 > altos.t
