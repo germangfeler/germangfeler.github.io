@@ -127,10 +127,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=fgD8CFYAAAAJ&hl=es"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/germanglz/"
-      
 
 # Site Footer
 footer:
