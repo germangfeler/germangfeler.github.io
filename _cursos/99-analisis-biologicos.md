@@ -7,6 +7,8 @@ header:
 excerpt: "Curso de posgrado del Doctorado en Cs. Biológicas UNL" 
 toc: true
 toc_label: "Secciones"
+author_profile: true
+share: true
 ---
 
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Facultad de Bioquímica y Ciencias Biológicas, Universidad Nacional del Litoral.

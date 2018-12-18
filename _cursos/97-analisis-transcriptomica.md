@@ -7,6 +7,8 @@ header:
 excerpt: "Curso de posgrado del Doctorado en Cs. Biológicas UNC" 
 toc: true
 toc_label: "Secciones"
+author_profile: true
+share: true
 ---
 
 Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad Nacional de Córdoba.

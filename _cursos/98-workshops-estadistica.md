@@ -7,6 +7,8 @@ header:
 excerpt: "Talleres dictados en el IDEA-UNC-CONICET"
 toc: true
 toc_label: "Secciones"
+author_profile: true
+share: true
 ---
 
 Talleres teórico / prácticos sobre metodologías estadísticas y su aplicación en R. Fueron dictados al personal del Instituto de Diversidad y Ecología Animal (IDEA-CONICET).
