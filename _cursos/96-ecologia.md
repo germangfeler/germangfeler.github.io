@@ -5,6 +5,8 @@ categories: cursos
 header:
   teaser: /assets/thumbnails/niche.png
 excerpt: "Curso de posgrado del Doctorado en Cs. Biológicas UNC"  
+toc: true
+toc_label: "Secciones"
 ---
 
 Este curso pretende brindar los conocimientos básicos necesarios para el análisis, la interpretación y el reporte de datos ecológicos. Avalado por el Doctorado en Ciencias Biológicas de la Universidad Nacional de Córdoba.

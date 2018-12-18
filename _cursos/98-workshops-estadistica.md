@@ -4,7 +4,9 @@ title: 2017 - Workshops de Estadística Aplicada
 categories: cursos
 header:
   teaser: /assets/thumbnails/instituto-idea-unc.jpg
-excerpt: "Talleres dictados en el IDEA-UNC-CONICET"  
+excerpt: "Talleres dictados en el IDEA-UNC-CONICET"
+toc: true
+toc_label: "Secciones"
 ---
 
 Talleres teórico / prácticos sobre metodologías estadísticas y su aplicación en R. Fueron dictados al personal del Instituto de Diversidad y Ecología Animal (IDEA-CONICET).
