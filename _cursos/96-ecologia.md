@@ -22,7 +22,7 @@ Del 15 al 19 de abril de 2019
 
 <h2>Temario</h2>
 * <strong>Modelos clásicos:</strong> test de proporciones, Chi cuadrado, Test T, modelos lineales y modelos no paramétricos. Introducción a R. 
-* <strong>Modelos lineales generalizados:</strong> Modelos para datos de presencia / ausencia y abundancia. Modelos de ocupación. Análisis de datos no independientes:</strong> modelos para muestreos con transectas.
+* <strong>Modelos lineales generalizados:</strong> Modelos para datos de presencia / ausencia y abundancia. Modelos de ocupación. Análisis de datos no independientes: modelos para muestreos con transectas.
 * <strong>Análisis multivariados:</strong> Estandarización y transformación de datos. Medidas de distancia en ecología y métodos de agrupamiento. Métodos de ordenación y asociación con variables ambientales. 
 * <strong>Ecología de comunidades:</strong> conceptos básicos sobre ecología de comunidades y nichos ecológicos. Análisis de datos utilizando permutaciones. Integrando información filogenética en el análisis. 
 
