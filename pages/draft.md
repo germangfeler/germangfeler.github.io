@@ -34,7 +34,7 @@ Y empezar a pensarla como una red donde hay interacciones entre el conocimiento 
 {:.center}
 ![multicausal](/assets/img/5ideas/multicausal.png)
 <br>
-<p class="center"><i>Imagen tomada de Beyond Sputnik U.S. Science Policy in the Twenty-First Century</p>
+<p class="center"><i>Imagen tomada de Beyond Sputnik U.S. Science Policy in the Twenty-First Century</i></p>
 
 ¿Qué están haciendo los países que se destacan en innovación tecnológica? Miremos el caso de Corea del Sur, un país con una fuerte tradición de "ciencia aplicada", que desde los '90 está impulsando diversos programas para darle más peso a la ciencia básica. 
 
