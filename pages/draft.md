@@ -9,7 +9,7 @@ excerpt: "Algunas reflexiones al pasarr"
 
 Un brainstorming en (permamente) construcción sobre como podemos mejorar la ciencia argentina.
 
-<h3>1- Dar un cargo sin asignarle fondos es como mandarlo a pescar con los manos</h3>
+<h3>1- Dar un cargo sin asignarle fondos es como mandar a pescar con los manos</h3>
 El sistema científico actualmente compartamentaliza los dos aspectos del financiamiento: los salarios y los fondos para equipamiento y gastos operativos. Por este motivo un científico que ha ganado un concurso para ingresar a CONICET puede pasar años sin tener fondos para llevar a cabo su investigación. Esto, sobre todo en ciencias experimentales, puede significar la parálisis de una línea de investigación. La solución que propongo es que por cada beca otorgada por CONICET se adicione un monto fijo anual para gastos correspondientes al proyecto.
 
 <h3>2- Subsidios más ambiciosos</h3>
@@ -18,8 +18,13 @@ El punto anterior viene de la mano con una reforma del sistema de subsidios que 
 <h3>3- Jerarquizar la investigación universitaria</h3> 
 Mientras la mayoría de los países del mundo apuesta por un sistema científico público con base en las universidades, Argentina parece ir a contramano. Solo cerca del 10% de los docentes universitarios tienen dedicación <i>full-time</i> que le permite dedicarse a la investigación y/o la extensión. La mayoría cuenta con una dedicación "simple" que implica el dictado de 8 horas de clases semanales. Para ver lo disparatado de la situación no hace falta ir muy lejos: en la Universidad de San Pablo en Brasil el 76% de los docentes tienen dedicación exclusiva. Algunos me dirán que la situación en Argentina es diferente porque tenemos un sistema "híbrido" donde muchos investigadores reciben parte de su sueldo de CONICET y otra parte de la universidad, compensando de cierta forma la escasez de puestos <i>full-time</i>. Esto es en parte cierto pero conduce a un sistema más centralizado y frágil, creo que jerarquizar la investigación universitaria aumentaría el federalismo y la pluralidad de temas de investigación, además de mejorar el sistema educativo inyectando docentes más actualizados y focalizados en enseñar. 
 
-<h3>4- Focalizar los esfuerzos</h3>
-El plan Argentina 2020 fue un paso adelante en varios aspectos, uno de ellos es el intento de focalizar las investigaciones. Es la primera vez en que el estado se puso en rol de "orientador" de las investigaciones para alinearlas con los objetivos del país. Esta un idea loable pero debe escapar de la falsa dictomía entre ciencia básica y aplicada. Corea, un país con una fuerte tradición de "ciencia aplicada", desde los '90 está impulsando diversos programas para darle más peso a la ciencia básica.
+<h3>4- Focalizar está bien, crear falsas dicotomías no</h3>
+El plan Argentina 2020 fue un paso adelante en varios aspectos, uno de ellos es el intento de focalizar las investigaciones. Es la primera vez en que el estado se puso en rol de "orientador" de las investigaciones para alinearlas con los objetivos del país. Esta un idea loable pero debe escapar de la falsa dictomía entre ciencia básica y aplicada. En 1997, Donald Stokes presentó el libro El cuadrante de Pasteur,  donde propone que toda investigación cae en alguno de estos cuatro cuadrantes:
+
+{:.center}
+![tabla](/assets/img/5ideas/tabla.png)
+
+Corea, un país con una fuerte tradición de "ciencia aplicada", desde los '90 está impulsando diversos programas para darle más peso a la ciencia básica.
 
 <h3>5- La integración sudamericana</h3>
 El sistema científico nacional se debería complementar con un sistema científico regional, como lo ha hecho Europa con el  Laboratorio Europeo de Biología Molecular (EMBL) o la Organización Europea para la Investigación Nuclear (CERN). No hay que inventar nada, copiemos lo que funciona. Abramos un instituto sudamericano de agrobiotecnología en Argentina y traigamos a los mejores investigadores de sudamerica. Hagamos un instituto de investigaciones sobre el litio en Bolivia y enviemos a los mejores. Y así sucesivamente. Europa con un modelo similar consiguió formar a una elite de científicos que ahora son la cabeza de institutos en sus países de origen.
