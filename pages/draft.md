@@ -24,11 +24,9 @@ El plan Argentina 2020 fue un paso adelante en varios aspectos, uno de ellos es 
 <h3>5- La integración sudamericana</h3>
 El sistema científico nacional se debería complementar con un sistema científico regional, como lo ha hecho Europa con el  Laboratorio Europeo de Biología Molecular (EMBL) o la Organización Europea para la Investigación Nuclear (CERN). No hay que inventar nada, copiemos lo que funciona. Abramos un instituto sudamericano de agrobiotecnología en Argentina y traigamos a los mejores investigadores de sudamerica. Hagamos un instituto de investigaciones sobre el litio en Bolivia y enviemos a los mejores. Y así sucesivamente. Europa con un modelo similar consiguió formar a una elite de científicos que ahora son la cabeza de institutos en sus países de origen.
 
+La organización y coordinación a nivel regional nos daría además más fuerza para plantarnos en el mundo en otros temas importantes como el sistema de publicaciones científicas. 
 
-Sistema de publicaciones
-Crear una editorial regional?
-
-<h3>5- La integración sudamericana</h3>
+<h3>Para cerrar</h3>
 Más allá de estos cinco puntos (que bien podrían ser 10 o 20) lo que el sistema de CyT argentino necesita son <strong>políticas consistentes en el tiempo</strong>. Probablemente sea mucho pedir en un país que no es consistente en ningún aspecto pero en un área donde los resultados se ven en el mediano-largo plazo es un requisito vital.
 
 Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente dos etapas: recuperar terreno e innovar. Muchas veces nos vence la ansiedad y queremos ser los reyes de la innovación sin nunca pasar por la etapa del "catching up": crear la infraestructura y formar los recursos humanos para que la segunda etapa sea posible. Para que exista el nivel de inversión privada en I+D que existe actualmente antes hubo un apoyo fuerte y sostenido del estado para crear las condiciones necesarias. Si queremos que los privados inviertan, necesitamos que el estado lo haga a un nivel relevante (arriba del 1% del PBI) durante un tiempo prolongado (más de 20 años).
