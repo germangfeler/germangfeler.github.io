@@ -24,12 +24,29 @@ El plan Argentina 2020 fue un paso adelante en varios aspectos, uno de ellos es 
 {:.center}
 ![tabla](/assets/img/5ideas/tabla.png)
 
-Corea, un país con una fuerte tradición de "ciencia aplicada", desde los '90 está impulsando diversos programas para darle más peso a la ciencia básica.
+Lo que Stokes plantea es que una investigación puede iniciarse en cualquiera de esos cuadrantes y tener un impacto en los otros. Por eso hay que dejar de pensar en la ciencia como un proceso secuencial:
+
+{:.center}
+![lineal](/assets/img/5ideas/lineal.png)
+
+Y empezar a pensarla como una red donde hay interacciones entre el conocimiento básico, el aplicado y la innovación tecnológica:
+
+{:.center}
+![multicausal](/assets/img/5ideas/multicausal.png)
+<br>
+<p class="center"><i>Imagen tomada de Beyond Sputnik U.S. Science Policy in the Twenty-First Century</p>
+
+¿Qué están haciendo los países que se destacan en innovación tecnológica? Miremos el caso de Corea del Sur, un país con una fuerte tradición de "ciencia aplicada", que desde los '90 está impulsando diversos programas para darle más peso a la ciencia básica. 
 
 <h3>5- La integración sudamericana</h3>
 El sistema científico nacional se debería complementar con un sistema científico regional, como lo ha hecho Europa con el  Laboratorio Europeo de Biología Molecular (EMBL) o la Organización Europea para la Investigación Nuclear (CERN). No hay que inventar nada, copiemos lo que funciona. Abramos un instituto sudamericano de agrobiotecnología en Argentina y traigamos a los mejores investigadores de sudamerica. Hagamos un instituto de investigaciones sobre el litio en Bolivia y enviemos a los mejores. Y así sucesivamente. Europa con un modelo similar consiguió formar a una elite de científicos que ahora son la cabeza de institutos en sus países de origen.
 
 La organización y coordinación a nivel regional nos daría además más fuerza para plantarnos en el mundo en otros temas importantes como el sistema de publicaciones científicas. El sistema actual donde los investigadores regalan su trabajo (la revisión de artículos) y los únicos que ganan son las editoriales (cobran por publicar y por acceder) es inviable y son cada vez más los países que están pensando en alternativas. La ciencia necesita de un nuevo modelo basado en el libre acceso a las publicaciones y en buenas prácticas científicas (acceso a los datos y métodos reproducibles).
+
+<h3>Bonus track - Mejorar las condiciones laborales</h3>
+¿Qué implica esto? en breve:
+* Reemplazar las becas doctorales y posdoctorales por contratos a término. Esto ya se hace en varios paises de Europa.
+* Convenio Colectivo de Trabajo. Los empleados y becarios de CONICET estamos regidos por un regimen vetusto, que hay que modernizar. Esto nos permitiría discutir nuestro salario por fuera de la paritaria general del estado (y porqué no junto a otros entes científicos como INTA, INTI o CNEA) y derechos y obligaciones propias de la carrera científica.
 
 <h3>Para cerrar</h3>
 Más allá de estos cinco puntos (que bien podrían ser 10 o 20) lo que el sistema de CyT argentino necesita son <strong>políticas consistentes en el tiempo</strong>. Probablemente sea mucho pedir en un país que no es consistente en ningún aspecto pero en un área donde los resultados se ven en el mediano-largo plazo es un requisito vital.
@@ -44,3 +61,4 @@ Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente
 ## Referencias
 * Perfil.com. Escasa presencia de docentes con dedicación exclusiva. <a href="https://www.perfil.com/noticias/universidades/escasa-presencia-de-docentes-con-dedicacion-exclusiva.phtml">Link</a>.
 * Campbell, J. (2012). Building an IT economy: South Korean science and technology policy. Issues in Technology and Innovation, 19.
+* Neal, H. A., Smith, T., & McCormick, J. (2008). Beyond Sputnik: US science policy in the twenty-first century. University of Michigan Press.
