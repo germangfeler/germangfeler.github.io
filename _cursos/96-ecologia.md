@@ -32,6 +32,5 @@ Del 15 al 19 de abril de 2019
 Modalidad presencial. Consta de módulos teóricos y módulos prácticos en R donde se analizarán diferentes casos de estudio.
 
 <h2>Inscripción</h2>
-PRÓXIMAMENTE MÁS INFO.
-
+Complete <a href="https://docs.google.com/forms/d/e/1FAIpQLSdteZtInHTWaF7urlfi42EGNu0n_r8BFN5RJmGT-NUrz0JJsA/viewform?usp=sf_link">este formulario</a>. La inscripción está abierta hasta el 31 de marzo de 2019. Si se sobrepasa el cupo de 30 inscriptos, los organizadores harán una selección de los participantes que será comunicada oportunamente.
 
