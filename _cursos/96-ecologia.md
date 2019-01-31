@@ -28,7 +28,7 @@ Del 15 al 19 de abril de 2019
 * <strong>Modelando datos de presencia / ausencia:</strong> modelos lineales generalizados (GLM) y modelos de ocupación. Interpretación y reporte.
 * <strong>Modelando datos de abundancia:</strong> modelos lineales generalizados (GLM). Interpretación y reporte.
 * <strong>Análisis multivariados:</strong> Medidas de distancia en ecología. Métodos de ordenación y asociación con variables ambientales (PCA, CA, CCA, PCoA, NMDS). 
-* Evaluando las diferencias entre comunidades: permanova, anosim, mantel. Integrando información filogenética en el análisis. 
+* <strong>Evaluando las diferencias entre comunidades:</strong> permanova, anosim, mantel. Integrando información filogenética en el análisis. 
 
 <h2>Metodología</h2>
 Modalidad presencial. Consta de módulos teóricos y módulos prácticos en R donde se analizarán diferentes casos de estudio.
