@@ -23,7 +23,7 @@ Del 15 al 19 de abril de 2019
 * Lic. Germán González, IDEA-CONICET
 
 <h2>Temario</h2>
-* <strong>Ecología de comunidades:</strong> conceptos básicos sobre ecología de comunidades y nichos ecológicos. Formato de los datos de comunidades. Estimadores de riqueza y diversidad. Estandarización y transformación de datos. Introducción a R. 
+* <strong>Ecología de comunidades:</strong> conceptos básicos sobre ecología de comunidades y nichos ecológicos. Formato de los datos de comunidades. Estimadores de riqueza y diversidad. Introducción a R: carga, manejo y transformación de datos. 
 * <strong>Modelando datos normales:</strong> regresión, anova, ancova. Supuestos e interpretación de resultados. Tests de posteriori. 
 * <strong>Modelando datos de presencia / ausencia:</strong> modelos lineales generalizados (GLM) y modelos de ocupación. Interpretación y reporte.
 * <strong>Modelando datos de abundancia:</strong> modelos lineales generalizados (GLM). Interpretación y reporte.
