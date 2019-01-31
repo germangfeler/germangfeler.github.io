@@ -23,10 +23,12 @@ Del 15 al 19 de abril de 2019
 * Lic. Germán González, IDEA-CONICET
 
 <h2>Temario</h2>
-* <strong>Modelos clásicos:</strong> test de proporciones, Chi cuadrado, Test T, modelos lineales y modelos no paramétricos. Introducción a R. 
-* <strong>Modelos lineales generalizados:</strong> Modelos para datos de presencia / ausencia y abundancia. Modelos de ocupación. Análisis de datos no independientes: modelos para muestreos con transectas.
-* <strong>Análisis multivariados:</strong> Estandarización y transformación de datos. Medidas de distancia en ecología y métodos de agrupamiento. Métodos de ordenación y asociación con variables ambientales. 
-* <strong>Ecología de comunidades:</strong> conceptos básicos sobre ecología de comunidades y nichos ecológicos. Análisis de datos utilizando permutaciones. Integrando información filogenética en el análisis. 
+* <strong>Ecología de comunidades:</strong> conceptos básicos sobre ecología de comunidades y nichos ecológicos. Como son los datos de comunidades. Estimadores de riqueza y diversidad. Estandarización y transformación de datos. Introducción a R. 
+* <strong>Modelando datos normales:</strong> regresión, anova, ancova. Supuestos e interpretación de resultados. Tests de posteriori. 
+* <strong>Modelando datos de presencia / ausencia:</strong> modelos lineales generalizados (GLM) y modelos de ocupación. Interpretación y reporte.
+* <strong>Modelando datos de abundancia:</strong> modelos lineales generalizados (GLM). Interpretación y reporte.
+* <strong>Análisis multivariados:</strong> Medidas de distancia en ecología. Métodos de ordenación y asociación con variables ambientales (PCA, CA, CCA, PCoA, NMDS). 
+* Evaluando las diferencias entre comunidades: permanova, anosim, mantel. Integrando información filogenética en el análisis. 
 
 <h2>Metodología</h2>
 Modalidad presencial. Consta de módulos teóricos y módulos prácticos en R donde se analizarán diferentes casos de estudio.
