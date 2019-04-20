@@ -18,8 +18,3 @@ Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente
 ![corea](/assets/img/5ideas/corea.png)
 <br>
 <p class="center"><i>Imagen tomada de la presentación <a href="https://www.access4.eu/_media/Korea_ST_Policy_Koo.pdf">Evolution of Korean Science and Technology Policy</a> de Hyuk-Chae Koo.</i></p>
-
-<h3> Referencias</h3>
-* Perfil.com. Escasa presencia de docentes con dedicación exclusiva. <a href="https://www.perfil.com/noticias/universidades/escasa-presencia-de-docentes-con-dedicacion-exclusiva.phtml">Link</a>.
-* Campbell, J. (2012). Building an IT economy: South Korean science and technology policy. Issues in Technology and Innovation, 19.
-* Neal, H. A., Smith, T., & McCormick, J. (2008). Beyond Sputnik: US science policy in the twenty-first century. University of Michigan Press.
