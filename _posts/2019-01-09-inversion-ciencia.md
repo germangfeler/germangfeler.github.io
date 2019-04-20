@@ -9,7 +9,7 @@ tags:
   - argentina
 header:
   teaser: /assets/img/5ideas/ciencia-argentina.jpg
-excerpt: "Donde estamos y adónde vamos"
+excerpt: "Venciendo el cortoplacismo"
 ---
 
 Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente dos etapas: recuperar terreno e innovar. Muchas veces nos vence la ansiedad y queremos ser los reyes de la innovación sin nunca pasar por la etapa del "catching up": crear la infraestructura y formar los recursos humanos para que la segunda etapa sea posible. Para que exista el nivel de inversión privada en I+D que existe actualmente antes hubo un apoyo fuerte y sostenido del estado para crear las condiciones necesarias. Si queremos que los privados inviertan, necesitamos que el estado lo haga a un nivel relevante (arriba del 1% del PBI) durante un tiempo prolongado (más de 20 años).
