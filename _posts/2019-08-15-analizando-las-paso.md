@@ -140,7 +140,7 @@ Esta tabla contiene los resultados de todas las elecciones que ocurrieron el dom
 mesas <- mesas %>% filter(NOMBRE_CATEGORIA == "Presidente y Vicepresidente de la República")
 ```
 
-Ahora a la tabla con los votos por mesa la voy a condensar para obtener los resultados a nivel de provincia:
+A la tabla con los votos por mesa la voy a condensar para obtener los resultados a nivel de provincia:
 
 ```r
 xprov <- mesas %>% select(PROV, NOMBRE_AGRUPACION, VOTOS_LISTA) %>% 
@@ -198,7 +198,7 @@ NOTA: hay un problema en este cálculo de porcentaje. En la tabla de datos no en
 
 <h2>Creación de los mapas</h2>
 
-Ahora que tenemos los datos limpios y listos vamos a llevarlos a un formato que nos sirva para crear los mapas. Lo que voy a hacer es crear una tabla que en las filas tiene las provincias (24) y en las columnas los partidos políticos (11). Dentro de la tabla estarán los porcentajes que obtuvo cada partido político en cada provincia:
+Vamos a llevar los datos a un formato que nos sirva para crear los mapas. Lo que voy a hacer es crear una tabla que en las filas tiene las provincias (24) y en las columnas los partidos políticos (11). Dentro de la tabla estarán los porcentajes que obtuvo cada partido político en cada provincia:
 
 ```r
 xprov_wide <- xprov %>%
@@ -225,7 +225,7 @@ xprov_wide
 #   Y LA DIGNIDAD` <dbl>   
 ```
 
-Ahora necesitamos obtener el mapa de Argentina con las divisiones políticas, para lo que voy a usar la Database of Global Administrative Areas (GADM):
+Primero necesitamos obtener el mapa de Argentina con las divisiones políticas, para lo que voy a usar la Database of Global Administrative Areas (GADM):
 
 ```r   
 argentina <- getData("GADM", country="Argentina", level=1)
@@ -237,10 +237,10 @@ El siguiente paso es unir la información de la elección con la geográfica:
 argentina@data <- left_join(argentina@data, xprov_wide, by=c("NAME_1" = "PROV"))
 ```
 
-Ahora si, podemos crear nuestro mapa. En este código de ejemplo muestro como hacer el mapa para el Frente de Todos pero lo mismo se puede aplicar para el resto simplemente cambiando donde dice FRENTE DE TODOS por el nombre el partido deseado.
+Ahora podemos crear nuestro mapa. En este código de ejemplo muestro como hacer el mapa para el Frente de Todos pero lo mismo se puede aplicar para el resto simplemente cambiando donde dice FRENTE DE TODOS por el nombre el partido deseado. Para esta parte del código me inspiré *cof cof* en este <a href="https://pmoracho.github.io/blog/2017/05/11/Graficos-con-mapas-en-R/">post</a>.
 
 ```r   
-state_popup <- paste0("<strong>Provincia: </strong>", 
+contenido_popup <- paste0("<strong>Provincia: </strong>", 
                       argentina$NAME_1, 
                       "<br><strong>Votos: </strong>", 
                       argentina$`FRENTE DE TODOS`,
@@ -253,7 +253,7 @@ leaflet(data = argentina) %>%
               fillOpacity = 0.8, 
               color = "#BDBDC3", 
               weight = 1, 
-              popup = state_popup)
+              popup = contenido_popup)
 ```
 
 Pueden dejarme sus comentarios sobre otras cosas que les gustaría aprender o si ven algún error en el post.
