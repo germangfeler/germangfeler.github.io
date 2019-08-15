@@ -9,7 +9,7 @@ tags:
   - Elecciones
   - R
 header:
-  teaser: /assets/thumbnails/treemap.png
+  teaser: /assets/thumbnails/mapa.png
 toc: true
 toc_label: "Secciones"
 excerpt: "Usando R para leer los resultados de las PASO"  
