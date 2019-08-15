@@ -26,8 +26,8 @@ Cuando descarguen y descompriman los datos van a ver los siguientes archivos:
 
 En este post vamos a usar dos de ellos: mesas_totales y descripcion_postulaciones. Los pueden abrir con el bloc de notas y van a ver que son archivos de texto separados por barras verticales. ¿Cómo los leemos en R?
 
-```{r}
-## Cargamos los paquetes 
+```r
+## Cargamos los paquetes necesarios
 library("raster")
 library("leaflet")
 library("tidyverse")
@@ -35,7 +35,7 @@ library("tidyverse")
 ## Seteamos el directorio de trabajo
 setwd("/home/datos/paso2019/120819-054029/")
 
-## Cargamos datos de las Mesas
+## Cargamos datos de las mesas
 mesas_lista <- read_delim("mesas_totales_lista.dsv", delim="|")
 mesas_lista
 
