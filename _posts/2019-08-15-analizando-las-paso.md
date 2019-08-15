@@ -12,7 +12,7 @@ header:
   teaser: /assets/thumbnails/mapa.png
 toc: true
 toc_label: "Secciones"
-excerpt: "Usando R para leer los resultados de las PASO"  
+excerpt: "Cálculos y mapas de la elección"  
 ---
 
 Hace unos días tuvimos elecciones en Argentina. Unas multitudinarias primarias que no eligen nada pero a la vez eligieron todo. La importancia del evento, y el hecho de que los datos de cada mesa de votación son publicados en la web (ver <a href="http://descargaresultados.s3-sa-east-1.amazonaws.com/resultados.zip">aquí</a>), me hizo pensar que era una idea interesante mostrar como leer estos datos en R y hacer algunos cálculos y visualizaciones simples. La idea es que, partiendo de estos archivos de texto, vamos a generar mapas con el porcentaje de voto que sacó cada partido. ¡Arranquemos!
