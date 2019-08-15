@@ -15,7 +15,7 @@ toc_label: "Secciones"
 excerpt: "Usando R para leer los resultados de las PASO"  
 ---
 
-Hace unos días tuvimos elecciones en Argentina. Unas multitudinarias primarias que no eligen nada pero a la vez eligieron todo. La importancia del evento, y el hecho de que los datos de cada mesa de votación son publicados en la web (ver <a href="http://descargaresultados.s3-sa-east-1.amazonaws.com/resultados.zip">aquí</a>), me hizo pensar que era una idea interesante mostrar como leer estos datos en R y hacer algunos cálculos y visualizaciones simples.
+Hace unos días tuvimos elecciones en Argentina. Unas multitudinarias primarias que no eligen nada pero a la vez eligieron todo. La importancia del evento, y el hecho de que los datos de cada mesa de votación son publicados en la web (ver <a href="http://descargaresultados.s3-sa-east-1.amazonaws.com/resultados.zip">aquí</a>), me hizo pensar que era una idea interesante mostrar como leer estos datos en R y hacer algunos cálculos y visualizaciones simples. La idea es que, partiendo de estos archivos de texto, vamos a generar mapas con el porcentaje de voto que sacó cada partido. ¡Arranquemos!
 
 Cuando descarguen y descompriman los datos van a ver los siguientes archivos:
 * descripcion_postulaciones.dsv 
@@ -193,7 +193,10 @@ xprov
 # … with 230 more rows    
 ```
 
-Lo pri 
+NOTA: hay un problema en este cálculo de porcentaje. En la tabla de datos no encuentro los votos en blanco (ayuda?) por lo que no los puedo usar para calcular el dominador. En las PASO los porcentajes se calculan sobre el total de votos positivos válidos (incluye voto en blanco) mientras que en las generales se calcula sobre el total de votos válidos (no los incluye). Por lo tanto los resultados que muestro aquí son diferentes de los que salen en la web de la dirección electoral, cuando encuentre la forma de solucionarlo actualizo el post.
+
+Ahora que tenemos los datos limpios y listos vamos a llevarlos a un formato que nos sirva para crear los mapas. Lo que voy a hacer es crear una tabla que en las filas tiene las provincias (24) y en las columnas los partidos políticos (11). Dentro de la tabla estarán los porcentajes que obtuvo cada partido político en cada provincia:
+
 ```r
 xprov_wide <- xprov %>%
    select(-VOTOS) %>%
@@ -219,16 +222,21 @@ xprov_wide
 #   Y LA DIGNIDAD` <dbl>   
 ```
 
-Creamos mapa
+Ahora necesitamos obtener el mapa de Argentina con las divisiones políticas, para lo que voy a usar la Database of Global Administrative Areas (GADM):
 
 ```r   
-## Obtengo el mapa de Argentina
 argentina <- getData("GADM", country="Argentina", level=1)
+```
 
-## Incluyo los votos en la tabla del mapa
+El siguiente paso es unir la información de la elección con la geográfica:
+
+```r   
 argentina@data <- left_join(argentina@data, xprov_wide, by=c("NAME_1" = "PROV"))
+```
 
-## Mapa Frente de Todos
+Ahora si, podemos crear nuestro mapa. En este código de ejemplo muestro como hacer el mapa para el Frente de Todos pero lo mismo se puede aplicar para el resto simplemente cambiando donde dice FRENTE DE TODOS por el nombre el partido deseado.
+
+```r   
 state_popup <- paste0("<strong>Provincia: </strong>", 
                       argentina$NAME_1, 
                       "<br><strong>Votos: </strong>", 
