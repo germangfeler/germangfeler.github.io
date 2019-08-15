@@ -24,6 +24,7 @@ Cuando descarguen y descompriman los datos van a ver los siguientes archivos:
 * mesas_totales_agrp_politica.dsv
 * mesas_totales_lista.dsv
 
+<h2>Preparación de las tablas</h2>
 En este post vamos a usar dos de ellos: mesas_totales y descripcion_postulaciones. Los pueden abrir con el bloc de notas y van a ver que son archivos de texto separados por barras verticales. ¿Cómo los leemos en R?
 
 ```r
@@ -194,6 +195,8 @@ xprov
 ```
 
 NOTA: hay un problema en este cálculo de porcentaje. En la tabla de datos no encuentro los votos en blanco (ayuda?) por lo que no los puedo usar para calcular el dominador. En las PASO los porcentajes se calculan sobre el total de votos válidos (incluye voto en blanco) mientras que en las generales se calcula sobre el total de votos válidos positivos (no los incluye). Por lo tanto los resultados que muestro aquí son diferentes de los que salen en la web de la dirección electoral, cuando encuentre la forma de solucionarlo actualizo el post.
+
+<h2>Creación de los mapas</h2>
 
 Ahora que tenemos los datos limpios y listos vamos a llevarlos a un formato que nos sirva para crear los mapas. Lo que voy a hacer es crear una tabla que en las filas tiene las provincias (24) y en las columnas los partidos políticos (11). Dentro de la tabla estarán los porcentajes que obtuvo cada partido político en cada provincia:
 
