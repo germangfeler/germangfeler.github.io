@@ -256,4 +256,11 @@ leaflet(data = argentina) %>%
               popup = contenido_popup)
 ```
 
-Pueden dejarme sus comentarios sobre otras cosas que les gustaría aprender o si ven algún error en el post.
+El resultado final es un mapa interactivo que se puede hacer zoom y al hacer click sobre una provincia muestra el porcentaje de voto. Esta es una captura de los resultados de cuatro partidos en esta elección:
+
+{:.center}
+![corea](/assets/img/mapas/mapas.png)
+
+Así terminamos este post sobre las PASO. Nos vemos la próxima y si les gustó el post recuerden comentar / compartir / megustear. Si ven algún error en el post o tienen alguna sugerencia haganmelo saber.
+
+Desde <a href="https://github.com/germangfeler/paso2019">aquí</a> pueden descargar el script completo para R.
