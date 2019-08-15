@@ -9,7 +9,7 @@ tags:
   - Elecciones
   - R
 header:
-  teaser: /assets/thumbnails/mapa.png
+  teaser: /assets/thumbnails/mapa2.png
 toc: true
 toc_label: "Secciones"
 excerpt: "Cálculos y mapas de la elección"  
