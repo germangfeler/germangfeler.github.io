@@ -57,6 +57,29 @@ mesas_lista
 #   CODIGO_LISTA <chr>, VOTOS_LISTA <dbl>
 ```
 
+En las PASO los porcentajes se calculan sobre el total de votos válidos (incluye voto en blanco) mientras que en las generales se calcula sobre el total de votos válidos positivos (no los incluye). Por lo tanto necesitamos obtener el número de votos en blanco, que no está en la tavla mesas_totales_agrp_politica sino en mesas_totales:
+
+```r
+## Voto por categoria (blanco, impugnado, etc) 
+vcat <- read_delim("mesas_totales.dsv", delim="|")
+vcat
+
+# A tibble: 1,719,994 x 7
+   CODIGO_DISTRITO CODIGO_SECCION CODIGO_CIRCUITO CODIGO_MESA CODIGO_CATEGORIA
+   <chr>           <chr>          <chr>           <chr>       <chr>           
+ 1 01              01001          01001000001     0100100001X 000100000000000 
+ 2 01              01001          01001000001     0100100001X 000100000000000 
+ 3 01              01001          01001000001     0100100001X 000100000000000 
+ 4 01              01001          01001000001     0100100001X 000100000000000 
+ 5 01              01001          01001000001     0100100001X 000201000000000 
+ 6 01              01001          01001000001     0100100001X 000201000000000 
+ 7 01              01001          01001000001     0100100001X 000201000000000 
+ 8 01              01001          01001000001     0100100001X 000201000000000 
+ 9 01              01001          01001000001     0100100001X 000301000000000 
+10 01              01001          01001000001     0100100001X 000301000000000 
+# … with 1,719,984 more rows, and 2 more variables: CONTADOR <chr>, VALOR <dbl>
+```
+
 Como se puede ver los datos de la mesa y de los partidos políticos están codificados. Para saber a que corresponden necesitamos la información que está en el archivo descripcion_postulaciones:
 
 ```r
@@ -95,50 +118,52 @@ desc_post
 Ahora podemos relacionar las dos tablas mediante los códigos y reemplazarlos por el nombre que corresponde:
 
 ```r
-## Agregamos descripcion de categoria
-categoria <- desc_post %>%
-   select(CODIGO_CATEGORIA, NOMBRE_CATEGORIA) %>%
-   distinct()
-
-mesas <- left_join(mesas_lista, categoria, by="CODIGO_CATEGORIA") %>%
-                   select(CODIGO_DISTRITO, CODIGO_AGRUPACION, NOMBRE_CATEGORIA, VOTOS_LISTA)
-
-## Agregamos descripcion de agrup politica
 agrup <- desc_post %>%
    select(CODIGO_AGRUPACION, NOMBRE_AGRUPACION) %>%
    distinct()
                    
-mesas <- left_join(mesas, agrup, by="CODIGO_AGRUPACION") %>%
-                   select(CODIGO_DISTRITO,NOMBRE_CATEGORIA, NOMBRE_AGRUPACION, VOTOS_LISTA)
+mesas <- left_join(mesas_lista, agrup, by="CODIGO_AGRUPACION") %>%
+          select(-CODIGO_AGRUPACION, -CODIGO_LISTA)
+```
 
-## Agregamos nombre de provincia
-mesas <- left_join(mesas, desc_prov, by="CODIGO_DISTRITO") %>%
-                   select(PROV,NOMBRE_CATEGORIA, NOMBRE_AGRUPACION, VOTOS_LISTA)
-                
-mesas
+El siguiente paso es agregar los votos en blanco:
 
-# A tibble: 988,340 x 4
-   PROV        NOMBRE_CATEGORIA           NOMBRE_AGRUPACION          VOTOS_LISTA
-   <fct>       <chr>                      <chr>                            <dbl>
- 1 Ciudad de … Presidente y Vicepresiden… MOVIMIENTO AL SOCIALISMO             1
- 2 Ciudad de … Presidente y Vicepresiden… FRENTE NOS                           5
- 3 Ciudad de … Presidente y Vicepresiden… FRENTE PATRIOTA                      2
- 4 Ciudad de … Presidente y Vicepresiden… FRENTE DE IZQUIERDA Y DE …          15
- 5 Ciudad de … Presidente y Vicepresiden… JUNTOS POR EL CAMBIO                85
- 6 Ciudad de … Presidente y Vicepresiden… FRENTE DE TODOS                    101
- 7 Ciudad de … Presidente y Vicepresiden… CONSENSO FEDERAL                    20
- 8 Ciudad de … Presidente y Vicepresiden… PARTIDO AUTONOMISTA                  0
- 9 Ciudad de … Presidente y Vicepresiden… MOVIMIENTO DE ACCION VECI…           1
-10 Ciudad de … Presidente y Vicepresiden… UNITE POR LA LIBERTAD Y L…           4
-# … with 988,330 more rows
+```r
+vblanco <- vcat %>% 
+   filter(CONTADOR == "VB") %>%
+   rename("VOTOS_LISTA" = VALOR) %>%
+   mutate(NOMBRE_AGRUPACION = "EN BLANCO") %>%
+   select(-CONTADOR)
+
+mesas <- bind_rows(mesas, vblanco) %>% arrange(CODIGO_MESA)
+```
+
+Agregamos la descripción de la categoría (presidente, diputados, etc):
+
+```r
+categoria <- desc_post %>%
+   select(CODIGO_CATEGORIA, NOMBRE_CATEGORIA) %>%
+   distinct()
+
+mesas <- left_join(mesas, categoria, by="CODIGO_CATEGORIA") %>%
+                   select(CODIGO_DISTRITO, NOMBRE_AGRUPACION, NOMBRE_CATEGORIA, VOTOS_LISTA)
 
 ```
 
-Esta tabla contiene los resultados de todas las elecciones que ocurrieron el domingo, incluyendo elecciones provinciales y municipales. Como en este momento solo nos interesan las presidenciales voy a filtrar la tabla:
+Y el nombre de la provincia:
+
+```r
+mesas <- left_join(mesas, desc_prov, by="CODIGO_DISTRITO") %>%
+                   select(PROV,NOMBRE_CATEGORIA, NOMBRE_AGRUPACION, VOTOS_LISTA)
+```
+
+El último paso de esta etapa es filtrar la tabla. Esta tabla contiene los resultados de todas las elecciones que ocurrieron el domingo, incluyendo elecciones provinciales y municipales. En este momento solo nos interesan las presidenciales:
 
 ```r
 mesas <- mesas %>% filter(NOMBRE_CATEGORIA == "Presidente y Vicepresidente de la República")
 ```
+
+<h2>Cálculo de totales y porcentajes por provincia</h2>
 
 A la tabla con los votos por mesa la voy a condensar para obtener los resultados a nivel de provincia:
 
@@ -150,7 +175,7 @@ xprov <- mesas %>% select(PROV, NOMBRE_AGRUPACION, VOTOS_LISTA) %>%
           
 xprov
 
-# A tibble: 240 x 3
+# A tibble: 264 x 3
 # Groups:   PROV [24]
    PROV         NOMBRE_AGRUPACION                                VOTOS
    <fct>        <chr>                                            <dbl>
@@ -158,15 +183,13 @@ xprov
  2 Buenos Aires JUNTOS POR EL CAMBIO                           2749946
  3 Buenos Aires CONSENSO FEDERAL                                711181
  4 Buenos Aires FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD  319253
- 5 Buenos Aires UNITE POR LA LIBERTAD Y LA DIGNIDAD             174887
- 6 Buenos Aires FRENTE NOS                                      171376
- 7 Buenos Aires MOVIMIENTO AL SOCIALISMO                         71935
- 8 Buenos Aires FRENTE PATRIOTA                                  22581
- 9 Buenos Aires PARTIDO AUTONOMISTA                               8783
-10 Buenos Aires MOVIMIENTO DE ACCION VECINAL                      5908
-# … with 230 more rows
-> 
-
+ 5 Buenos Aires EN BLANCO                                       304904
+ 6 Buenos Aires UNITE POR LA LIBERTAD Y LA DIGNIDAD             174887
+ 7 Buenos Aires FRENTE NOS                                      171376
+ 8 Buenos Aires MOVIMIENTO AL SOCIALISMO                         71935
+ 9 Buenos Aires FRENTE PATRIOTA                                  22581
+10 Buenos Aires PARTIDO AUTONOMISTA                               8783
+# … with 254 more rows
 ```
 
 Y voy a calcular los porcentajes que obtuvo cada partido en cada provincia:
@@ -178,23 +201,21 @@ xprov %<>%
     ungroup()    
     
 xprov
-# A tibble: 240 x 4
+# A tibble: 264 x 4
    PROV         NOMBRE_AGRUPACION                                VOTOS   PCT
    <fct>        <chr>                                            <dbl> <dbl>
- 1 Buenos Aires FRENTE DE TODOS                                4661554 52.4 
- 2 Buenos Aires JUNTOS POR EL CAMBIO                           2749946 30.9 
- 3 Buenos Aires CONSENSO FEDERAL                                711181  7.99
- 4 Buenos Aires FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD  319253  3.59
- 5 Buenos Aires UNITE POR LA LIBERTAD Y LA DIGNIDAD             174887  1.97
- 6 Buenos Aires FRENTE NOS                                      171376  1.93
- 7 Buenos Aires MOVIMIENTO AL SOCIALISMO                         71935  0.81
- 8 Buenos Aires FRENTE PATRIOTA                                  22581  0.25
- 9 Buenos Aires PARTIDO AUTONOMISTA                               8783  0.1 
-10 Buenos Aires MOVIMIENTO DE ACCION VECINAL                      5908  0.07
-# … with 230 more rows    
+ 1 Buenos Aires FRENTE DE TODOS                                4661554 50.7 
+ 2 Buenos Aires JUNTOS POR EL CAMBIO                           2749946 29.9 
+ 3 Buenos Aires CONSENSO FEDERAL                                711181  7.73
+ 4 Buenos Aires FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD  319253  3.47
+ 5 Buenos Aires EN BLANCO                                       304904  3.31
+ 6 Buenos Aires UNITE POR LA LIBERTAD Y LA DIGNIDAD             174887  1.9 
+ 7 Buenos Aires FRENTE NOS                                      171376  1.86
+ 8 Buenos Aires MOVIMIENTO AL SOCIALISMO                         71935  0.78
+ 9 Buenos Aires FRENTE PATRIOTA                                  22581  0.25
+10 Buenos Aires PARTIDO AUTONOMISTA                               8783  0.1 
+# … with 254 more rows
 ```
-
-NOTA: hay un problema en este cálculo de porcentaje. En la tabla de datos no encuentro los votos en blanco (ayuda?) por lo que no los puedo usar para calcular el dominador. En las PASO los porcentajes se calculan sobre el total de votos válidos (incluye voto en blanco) mientras que en las generales se calcula sobre el total de votos válidos positivos (no los incluye). Por lo tanto los resultados que muestro aquí son diferentes de los que salen en la web de la dirección electoral, cuando encuentre la forma de solucionarlo actualizo el post.
 
 <h2>Creación de los mapas</h2>
 
@@ -203,26 +224,64 @@ Vamos a llevar los datos a un formato que nos sirva para crear los mapas. Lo que
 ```r
 xprov_wide <- xprov %>%
    select(-VOTOS) %>%
-   spread(NOMBRE_AGRUPACION, PCT)
-   
+   spread(NOMBRE_AGRUPACION, PCT)   
 xprov_wide
-# A tibble: 24 x 11
-   PROV  `CONSENSO FEDER… `FRENTE DE IZQU… `FRENTE DE TODO… `FRENTE NOS`
-   <fct>            <dbl>            <dbl>            <dbl>        <dbl>
- 1 Buen…             7.99             3.59             52.4         1.93
- 2 Cata…             6.92             1.44             62.0         1.12
- 3 Chaco             3.68             1.43             59.8         5.14
- 4 Chub…             8.7              3.77             54.1         4.82
- 5 Ciud…             9.03             4.05             34.2         1.21
- 6 Córd…             8.24             2.79             31.6         2.96
- 7 Corr…             4.99             1.13             53.7         3.53
- 8 Entr…             8.74             2.03             46           2.61
- 9 Form…             3.74             0.8              66.6         2.43
-10 Jujuy            10.4              3.37             47.8         4.37
-# … with 14 more rows, and 6 more variables: `FRENTE PATRIOTA` <dbl>, `JUNTOS
-#   POR EL CAMBIO` <dbl>, `MOVIMIENTO AL SOCIALISMO` <dbl>, `MOVIMIENTO DE
-#   ACCION VECINAL` <dbl>, `PARTIDO AUTONOMISTA` <dbl>, `UNITE POR LA LIBERTAD
-#   Y LA DIGNIDAD` <dbl>   
+
+# A tibble: 264 x 3
+# Groups:   PROV [24]
+   PROV         NOMBRE_AGRUPACION                                VOTOS
+   <fct>        <chr>                                            <dbl>
+ 1 Buenos Aires FRENTE DE TODOS                                4661554
+ 2 Buenos Aires JUNTOS POR EL CAMBIO                           2749946
+ 3 Buenos Aires CONSENSO FEDERAL                                711181
+ 4 Buenos Aires FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD  319253
+ 5 Buenos Aires EN BLANCO                                       304904
+ 6 Buenos Aires UNITE POR LA LIBERTAD Y LA DIGNIDAD             174887
+ 7 Buenos Aires FRENTE NOS                                      171376
+ 8 Buenos Aires MOVIMIENTO AL SOCIALISMO                         71935
+ 9 Buenos Aires FRENTE PATRIOTA                                  22581
+10 Buenos Aires PARTIDO AUTONOMISTA                               8783
+# … with 254 more rows
+> xprov %<>% 
++     group_by(PROV) %>%
++     mutate(PCT=round(VOTOS / sum(VOTOS) * 100,2)) %>%
++     ungroup()    
+> xprov
+# A tibble: 264 x 4
+   PROV         NOMBRE_AGRUPACION                                VOTOS   PCT
+   <fct>        <chr>                                            <dbl> <dbl>
+ 1 Buenos Aires FRENTE DE TODOS                                4661554 50.7 
+ 2 Buenos Aires JUNTOS POR EL CAMBIO                           2749946 29.9 
+ 3 Buenos Aires CONSENSO FEDERAL                                711181  7.73
+ 4 Buenos Aires FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD  319253  3.47
+ 5 Buenos Aires EN BLANCO                                       304904  3.31
+ 6 Buenos Aires UNITE POR LA LIBERTAD Y LA DIGNIDAD             174887  1.9 
+ 7 Buenos Aires FRENTE NOS                                      171376  1.86
+ 8 Buenos Aires MOVIMIENTO AL SOCIALISMO                         71935  0.78
+ 9 Buenos Aires FRENTE PATRIOTA                                  22581  0.25
+10 Buenos Aires PARTIDO AUTONOMISTA                               8783  0.1 
+# … with 254 more rows
+> xprov_wide <- xprov %>%
++    select(-VOTOS) %>%
++    spread(NOMBRE_AGRUPACION, PCT)
+> xprov_wide
+# A tibble: 24 x 12
+   PROV  `CONSENSO FEDER… `EN BLANCO` `FRENTE DE IZQU… `FRENTE DE TODO…
+   <fct>            <dbl>       <dbl>            <dbl>            <dbl>
+ 1 Buen…             7.73        3.31             3.47             50.7
+ 2 Cata…             6.41        7.4              1.33             57.4
+ 3 Chaco             3.44        6.48             1.33             56.0
+ 4 Chub…             8.19        5.8              3.55             51.0
+ 5 Ciud…             8.73        3.23             3.92             33.0
+ 6 Córd…             7.92        3.85             2.68             30.4
+ 7 Corr…             4.93        1.26             1.12             53.0
+ 8 Entr…             8.58        1.89             1.99             45.1
+ 9 Form…             3.7         0.97             0.8              65.9
+10 Jujuy            10.0         3.61             3.25             46.1
+# … with 14 more rows, and 7 more variables: `FRENTE NOS` <dbl>, `FRENTE
+#   PATRIOTA` <dbl>, `JUNTOS POR EL CAMBIO` <dbl>, `MOVIMIENTO AL
+#   SOCIALISMO` <dbl>, `MOVIMIENTO DE ACCION VECINAL` <dbl>, `PARTIDO
+#   AUTONOMISTA` <dbl>, `UNITE POR LA LIBERTAD Y LA DIGNIDAD` <dbl> 
 ```
 
 Primero necesitamos obtener el mapa de Argentina con las divisiones políticas, para lo que voy a usar la Database of Global Administrative Areas (GADM):
