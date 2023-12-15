@@ -5,8 +5,6 @@ categories: cafe
 tags:
   - política
   - ciencia
-  - estado
-  - argentina
 header:
   teaser: /assets/img/posts/nurture/nurture-portada.png
 excerpt: "Determinismo genético vs libre albedrío"
