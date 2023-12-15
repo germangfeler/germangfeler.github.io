@@ -14,6 +14,7 @@ excerpt: "Donde estamos y adónde vamos"
 
 Un brainstorming en (permamente) construcción sobre como podemos mejorar la ciencia argentina.
 
+
 <h3>1 - Solucionar lo coyuntural para sentarnos a pensar el larzo plazo</h3>
 El sistema de CyT arrastra malas condiciones laborales desde hace años. Sin intención de ser exhaustivos podemos nombrar algunas: la precarización del trabajo de los becarios, la falta de un marco propio para tratar las discusiones laborales del ámbito científico, la brecha de género y las malas condiciones edilicias en las que trabaja buena parte de los institutos, entre otras.
 
