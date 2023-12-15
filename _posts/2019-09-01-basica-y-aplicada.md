@@ -12,6 +12,8 @@ header:
 excerpt: ""
 ---
 
+Una de las discusiones que vuelve durante cada gobierno promercado es que la Argentina debería dejar de hacer ciencia básica y dedicarse solo a hacer ciencia aplicada ya que nuestros recursos son escasos y deberíamos utilizarlos en proyectos que puedan tener un rédito económico.
+
 En 1997, Donald Stokes presentó el libro El cuadrante de Pasteur,  donde propone que toda investigación cae en alguno de estos cuatro cuadrantes:
 
 {:.center}
