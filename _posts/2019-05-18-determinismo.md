@@ -20,7 +20,36 @@ En “La falsa medida del hombre” Gould describe al determinismo como la creen
 
 En el siglo XVIII, Samuel Morton fundó el campo de la craneometría (hoy considerado una pseudociencia)  que planteaba que el tamaño del cráneo era un indicador confiable de la capacidad intelectual de una persona (abajo imagen del argentino más inteligente según este criterio).
 
-/assets/img/posts/nurture/nurture1.jpeg
+{:.center}
+![nur1](/assets/img/posts/nurture/nurture1.jpeg)
+
+{:.center}
+![nur1](/assets/img/posts/nurture/nurture1.jpeg)
+
+{:.center}
+![nur2](/assets/img/posts/nurture/nurture2.png)
+
+{:.center}
+![nur3](/assets/img/posts/nurture/nurture3.png)
+
+{:.center}
+![nur4](/assets/img/posts/nurture/nurture4.png)
+
+{:.center}
+![nur5](/assets/img/posts/nurture/nurture5.jpeg)
+
+{:.center}
+![nur6](/assets/img/posts/nurture/nurture6.jpeg)
+
+{:.center}
+![nur7](/assets/img/posts/nurture/nurture7.jpeg)
+
+{:.center}
+![nur8](/assets/img/posts/nurture/nurture8.png)
+
+{:.center}
+![nur9](/assets/img/posts/nurture/nurture9.png)
+
 
 A través del estudio de cráneos de diferentes etnias Morton concluyó que los caucásicos eran los más inteligentes, seguidos por los indígenas americanos y por último los negros.
 
