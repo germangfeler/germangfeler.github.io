@@ -42,12 +42,12 @@ realizado en gran medida por el estado. </p>
 
 <p>Hasta aquí vimos una visión “macro” (si se me permite el término) de cómo funciona la política científica en innovación pero alguno de uds se puede estar preguntando ¿qué cosas concretas han salido de la investigación estatal?  Veamos algunos ejemplos, que no intentan ser exhaustivos pero sí relevantes.</p>
 
-- <strong>Internet</strong>. Lo que conocemos ahora como internet tuvo sus primeros pasos en los años 60 con ARPANET en EEUU (creado por DARPA) y NPL network en Inglaterra (del Laboratorio Nacional de Física). Durante los siguientes años se extendió a universidades e instituciones científicas y recién a partir de los 90 comenzó a llegar al público general con la aparición de los proveedores privados (ISP). 
+* <strong>Internet</strong>. Lo que conocemos ahora como internet tuvo sus primeros pasos en los años 60 con ARPANET en EEUU (creado por DARPA) y NPL network en Inglaterra (del Laboratorio Nacional de Física). Durante los siguientes años se extendió a universidades e instituciones científicas y recién a partir de los 90 comenzó a llegar al público general con la aparición de los proveedores privados (ISP). 
 Internet solo definió la manera en la que se transfería la información de una computadora a otra pero lo que terminaría de 
 hacerla popular sería la aparición de la web (páginas con textos, multimedia y links). Ésta también un origen gubernamental: 
 el CERN (si, los del colisionador de hadrones).
 
-- <strong>Google</strong>. Al hablar de internet probablemente se les vino Google a la cabeza. Este (ahora) gigante de la tecnología comenzó como un trabajo académico de Brin y Page (en ese momento estudiantes de Stanford) que fue financiado por las agencias estatales NSF, DARPA y NASA.
+* <strong>Google</strong>. Al hablar de internet probablemente se les vino Google a la cabeza. Este (ahora) gigante de la tecnología comenzó como un trabajo académico de Brin y Page (en ese momento estudiantes de Stanford) que fue financiado por las agencias estatales NSF, DARPA y NASA.
 
 {:.center}
 ![google1](/assets/img/estado-ciencia/google1.png)
@@ -55,13 +55,13 @@ el CERN (si, los del colisionador de hadrones).
 {:.center}
 ![google2](/assets/img/estado-ciencia/google2.png)
 
-- <strong>iPhone</strong>. El dispositivo estrella de la última década no hubiera podido existir sin las decenas de tecnologías que desarrollaron las agencias estatales en EEUU (en especial las militares). Desde las baterías de litio hasta las pantallas multi-táctiles, pasando por el GPS y los microprocesadores.
+* <strong>iPhone</strong>. El dispositivo estrella de la última década no hubiera podido existir sin las decenas de tecnologías que desarrollaron las agencias estatales en EEUU (en especial las militares). Desde las baterías de litio hasta las pantallas multi-táctiles, pasando por el GPS y los microprocesadores.
 
 {:.center}
 ![iph](/assets/img/estado-ciencia/iphone-slide.jpeg)
 El origen de las partes del iPhone (Mazzucato, 2013).
 
-- <strong>Farmas</strong> ¿Quién es el actor fundamental de la innovación en la industria farmaceútica y biotecnológica? Si, adivinaste, es el Estado. En EEUU la mayor fuente de financiamiento de estas investigaciones es el NIH, que ha visto aumentar su presupuesto año a año independientemente del gobierno de turno. Desde 1930 han invertido casi 900 mil millones de dólares. 
+* <strong>Farmas</strong> ¿Quién es el actor fundamental de la innovación en la industria farmaceútica y biotecnológica? Si, adivinaste, es el Estado. En EEUU la mayor fuente de financiamiento de estas investigaciones es el NIH, que ha visto aumentar su presupuesto año a año independientemente del gobierno de turno. Desde 1930 han invertido casi 900 mil millones de dólares. 
 El 75% de las drogas innovadoras (NME, new molecular entities) que se patentan en EEUU tienen su origen en investigaciones 
 financiadas por el NIH. Y esto se está profundizando con el tiempo: si miramos solo el período 2010-2016 el porcentaje 
 sube al 100%. Si las farmas no innovan ¿en qué invierten? bueno, en gran medida, en marketing. Y cuando se dedican a 
@@ -70,9 +70,7 @@ investigar suelen poner más énfasis en drogas “me too” (variaciones de otr
 {:.center}
 ![nih](/assets/img/estado-ciencia/nih.png)
 
-El Estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún países serio del mundo, es la sinergia entre ambos lo que da los mejores resultados.
-
-No está de más decir que la innovación no es, ni debe ser, el único fin de la ciencia y que el único garante de que se 
+A modo de reflexión personal final: el Estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún países serio del mundo, es la sinergia entre ambos lo que da los mejores resultados. No está de más decir que la innovación no es, ni debe ser, el único fin de la ciencia y que el único garante de que se 
 estudien temas que no tienen un fin económico (al menos inmediato) es el Estado.
 
 <h3>Referencias</h3>
