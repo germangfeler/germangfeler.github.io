@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Sobre el rol del Estado en I+D
+title: Lecturas sobre Mariana Mazzucato
 categories: cafe
 tags:
   - política
@@ -8,8 +8,12 @@ tags:
   - estado
   - innovación
 header:
-  teaser: /assets/img/estado-ciencia/estado-ciencia.png
+  teaser: /assets/img/posts/Mazzucato.png
 ---
+
+Mariana Mazzucato es hoy una de las principales economistas heterodoxas. Su principal aporte ha sido mostrar como en muchos de los productos innovadores que producen las empresas privadas estuvo el Estado por detrás realizando contribuciones indispensables. En muchas de sus entrevistas habla de que el discurso económico progresista no puede quedarse solo en "repartir la torta" (porque eso tiene un limite) sino que tiene que proponer nuevas formas de crear riqueza. Sus propuestas se pueden encontrar en su siguiente libro, Mission Economy, donde propone utilizar una metodología basada en misiones (como la que llevó al hombre a la Luna) para generar innovaciones disruptivas.
+
+<h3>El Estado emprendedor</h3>
 
 <p>Desde algunos sectores del liberalismo se ha agitado una campaña contra los organismos científicos estatales. Que son ineficientes. Que estudian cosas inútiles. Que si fueran tan buenos investigando conseguirían trabajo en el sector privado. Que los privados deberían ser los únicos que lleven adelante la ciencia. ¿Es eso factible? ¿Cómo funciona la ciencia en el mundo?</p>
 <!--more-->
@@ -89,5 +93,7 @@ Para cerrar este post quiero redondear algunas ideas: el estado es un actor clav
 No está de más decir que la innovación no es, ni debe ser, el único fin de la ciencia y que el único garante de que se 
 estudien temas que no tienen un fin económico (al menos inmediato) es el estado.
 
-Muchas de las ideas desarrolladas fueron tomadas del libro The Entrepreneurial State (2013) de Mariana Mazzucato y 
-complementadas con información de otras fuentes.
+<h3>Referencias</h3>
+* Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
+* Mazzucato, M. (2021). Mission economy: A moonshot guide to changing capitalism. Penguin UK.
+
