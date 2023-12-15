@@ -26,26 +26,6 @@ Algunas propuestas para solucionar estos problemas son:
 * Plan Federal de Infraestructura. Se necesitan retomar los planes comenzados en las gestiones 2007-2015 y 2019-2023 para brindar condiciones de trabajo apropiadas.
 * Las estadísticas oficiales de CONICET muestran que en las primeras categorías de la carrera de investigador científico las mujeres superan a los hombres en cantidad pero esto después se revierte en las categorías superiores. Necesitamos políticas que permitan achicar la brecha de género, por ejemplo, mediante la creación de guaderías en cada CCT que permitan a las investigadoras que son madres no verse sobrecargadas por las tareas de cuidado.
 
-<h3>2- Ciencia básica y ciencia aplicada</h3>
-En 1997, Donald Stokes presentó el libro El cuadrante de Pasteur,  donde propone que toda investigación cae en alguno de estos cuatro cuadrantes:
-
-{:.center}
-![tabla](/assets/img/5ideas/tabla.png)
-
-Lo que Stokes plantea es que una investigación puede iniciarse en cualquiera de esos cuadrantes y tener un impacto en los otros. Por eso hay que dejar de pensar en la ciencia como un proceso secuencial:
-
-{:.center}
-![lineal](/assets/img/5ideas/lineal.png)
-
-Y empezar a pensarla como una red donde hay interacciones entre el conocimiento básico, el aplicado y la innovación tecnológica:
-
-{:.center}
-![multicausal](/assets/img/5ideas/multicausal.png)
-<br>
-<p class="center"><i>Imagen tomada de Beyond Sputnik U.S. Science Policy in the Twenty-First Century</i></p>
-
-¿Qué están haciendo los países que se destacan en innovación tecnológica? Miremos el caso de Corea del Sur, un país con una fuerte tradición de "ciencia aplicada", que desde los '90 está impulsando diversos programas para darle más peso a la ciencia básica. Dejar de lado a la ciencia básica sería un error que nos llevaría mucho tiempo enmendar.
-
 <h3>2- Una reforma audaz de las instituciones del sistema de CyT</h3>
 El sistema cíentifico-tecnológico argentino es Conicet-céntrico, lo cual lo diferencia de la mayoría de los países del mundo donde el sistema está basado en las universidades. Conicet tiene algunas ventajas pero también desventajas. La principal desventaja creo que es que Conicet es un ente de <strong>ciencia</strong>, aunque haya habido algunos intentos de reformas en los últimos años, es difícil pedirle a Conicet que haga tecnología porque simplemente <strong>no lo siente</strong>. La forma de medir resultados sigue siendo en gran medida el <i>paper</i>.
 
