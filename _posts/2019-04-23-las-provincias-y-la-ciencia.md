@@ -1,6 +1,6 @@
 ---
 layout: single
-title: El rol de las privincias en la I+D
+title: El rol de las provincias en la I+D
 categories: cafe
 tags:
   - política
