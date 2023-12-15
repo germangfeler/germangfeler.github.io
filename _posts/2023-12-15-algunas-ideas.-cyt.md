@@ -26,6 +26,21 @@ Algunas propuestas para solucionar estos problemas son:
 * Plan Federal de Infraestructura. Se necesitan retomar los planes comenzados en las gestiones 2007-2015 y 2019-2023 para brindar condiciones de trabajo apropiadas.
 * Las estadísticas oficiales de CONICET muestran que en las primeras categorías de la carrera de investigador científico las mujeres superan a los hombres en cantidad pero esto después se revierte en las categorías superiores. Necesitamos políticas que permitan achicar la brecha de género, por ejemplo, mediante la creación de guaderías en cada CCT que permitan a las investigadoras que son madres no verse sobrecargadas por las tareas de cuidado.
 
+<h3>2- La ciencia como política de Estado</h3>
+Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente dos etapas: recuperar terreno e innovar. Muchas veces nos vence la ansiedad y queremos ser los reyes de la innovación sin nunca pasar por la etapa del "catching up": crear la infraestructura y formar los recursos humanos para que la segunda etapa sea posible. Para que exista el nivel de inversión privada en I+D que existe actualmente antes hubo un apoyo fuerte y sostenido del estado para crear las condiciones necesarias. Si queremos que los privados inviertan, necesitamos que el estado lo haga a un nivel relevante (arriba del 1% del PBI) durante un tiempo prolongado (más de 20 años).
+
+{:.center}
+![corea](/assets/img/5ideas/corea.png)
+<br>
+<p class="center"><i>Imagen tomada de la presentación <a href="https://www.access4.eu/_media/Korea_ST_Policy_Koo.pdf">Evolution of Korean Science and Technology Policy</a> de Hyuk-Chae Koo.</i></p>
+
+La gestión de Alberto Fernández impulsó la <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/347804/norma.htm">ley de financimiento de la ciencia</a> que planteó un cronograma de aumento del presupuesto del área que llevaría la participación en el PBI al 1% para 2030.
+
+{:.center}
+![corea](/assets/img/estado-ciencia/ley-de-financiamiento.jpg)
+<br>
+<p class="center"><i>Imagen tomada de <a href="https://chequeado.com/hilando-fino/cuanto-invierte-la-argentina-en-ciencia-y-que-dice-el-proyecto-aprobado-por-diputados/">Cuánto invierte la Argentina en Ciencia y qué dice la ley aprobada por el Congreso</a> (Chequeado, 2021)</i></p>
+
 <h3>2- Una reforma audaz de las instituciones del sistema de CyT</h3>
 El sistema cíentifico-tecnológico argentino es Conicet-céntrico, lo cual lo diferencia de la mayoría de los países del mundo donde el sistema está basado en las universidades. Conicet tiene algunas ventajas pero también desventajas. La principal desventaja creo que es que Conicet es un ente de <strong>ciencia</strong>, aunque haya habido algunos intentos de reformas en los últimos años, es difícil pedirle a Conicet que haga tecnología porque simplemente <strong>no lo siente</strong>. La forma de medir resultados sigue siendo en gran medida el <i>paper</i>.
 
