@@ -19,9 +19,15 @@ author_profile: true
 * Curso de posgrado: Análisis de experimentos transcriptómicos (RNA-Seq) (UNC, 2018) [responsable]
 * Curso de posgrado: R Aplicado a Ecología: de Individuos a Comunidades (UNC, 2019) [corresponsable junto a Nicolás Pelegrin]
 
+<h2>Cargos de gestión</h2>
+* Miembro suplente del Consejo Directivo, IDEA
+* Coordinador alterno de la comisión de CPA, IDEA
+* Miembro de la comisión editorial de la revista +IDEA sobre Fauna, IDEA
+
 <h2>Divulgación científica</h2>
 * <strong>bioinformaticos.com.ar</strong> (2007-2017), administración, edición y redacción de artículos  
 * <strong>Instituto de Diversidad y Ecología Animal</strong> (2018-actualidad), creación de contenido para la web y redes sociales
+* <strong>Revista +IDEA sobre Fauna</strong> (actualidad), comité editorial
 
 <h2>Libros</h2>
 * <strong>Vida.exe. Desafíos y aventuras de la bioinformática</strong>. Coeditores: <strong>Germán A. González</strong>, Lionel Uran Landaburu, Nicolás Palopoli (2021). Fondo de Cultura Económica.
