@@ -8,7 +8,7 @@ tags:
   - estado
   - innovación
 header:
-  teaser: /assets/img/posts/Mazzucato.png
+  teaser: /assets/img/posts/lecturas/Mazzucato.png
 ---
 
 Mariana Mazzucato es hoy una de las principales economistas heterodoxas. Su principal aporte ha sido mostrar como en muchos de los productos innovadores que producen las empresas privadas estuvo el Estado por detrás realizando contribuciones indispensables. En muchas de sus entrevistas habla de que el discurso económico progresista no puede quedarse solo en "repartir la torta" (porque eso tiene un limite) sino que tiene que proponer nuevas formas de crear riqueza. Sus propuestas se pueden encontrar en su siguiente libro, Mission Economy, donde propone utilizar una metodología basada en misiones (como la que llevó al hombre a la Luna) para generar innovaciones disruptivas.
