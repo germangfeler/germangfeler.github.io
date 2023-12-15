@@ -7,7 +7,7 @@ tags:
   - R
   - Exploración
 header:
-  teaser: /assets/img/basevstidy/tidyverse.png
+  teaser: /assets/img/data-science/tidyverse.png
 toc: true
 toc_label: "Secciones"
 excerpt: "Comparamos los dos universos"  
@@ -15,7 +15,7 @@ excerpt: "Comparamos los dos universos"
 
 Hace algunos años este pibe de moñito vino a sacarnos de la modorra y cambiar la forma de programar en R.
 
-![wickham](/assets/img/basevstidy/wickham.jpg)
+![wickham](/assets/img/data-science/wickham.jpg)
 <p><i>Hadley Wickham</i></p>
 
 Hadley creó un ecosistema de paquetes, conocido como <strong>tidyverse</strong>, que permite manipular, explorar y visualizar datos.   
