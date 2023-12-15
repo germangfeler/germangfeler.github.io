@@ -8,7 +8,7 @@ tags:
   - estado
   - argentina
 header:
-  teaser: /assets/img/5ideas/ciencia-argentina.jpg
+  teaser: /assets/img/estado-ciencia/politicas-de-estado.png
 excerpt: "Venciendo el cortoplacismo"
 ---
 
@@ -18,3 +18,8 @@ Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente
 ![corea](/assets/img/5ideas/corea.png)
 <br>
 <p class="center"><i>Imagen tomada de la presentación <a href="https://www.access4.eu/_media/Korea_ST_Policy_Koo.pdf">Evolution of Korean Science and Technology Policy</a> de Hyuk-Chae Koo.</i></p>
+
+Actualización 2021: la gestión de Alberto Fernández impulsó la <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/347804/norma.htm">ley de financimiento de la ciencia</a> que planteó un cronograma de aumento del presupuesto del área que llevaría la participación en el PBI al 1% para 2030.
+
+<h3>Referencias</h3>
+Chequeado. <a href="https://chequeado.com/hilando-fino/cuanto-invierte-la-argentina-en-ciencia-y-que-dice-el-proyecto-aprobado-por-diputados/">Cuánto invierte la Argentina en Ciencia y qué dice la ley aprobada por el Congreso</a>
