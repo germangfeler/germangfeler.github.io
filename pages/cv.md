@@ -17,7 +17,7 @@ author_profile: true
 <h2>Docencia</h2>
 * Curso de posgrado: Análisis de datos biológicos, del bit a la publicación científica (UNL, 2016) [responsable]
 * Curso de posgrado: Análisis de experimentos transcriptómicos (RNA-Seq) (UNC, 2018) [responsable]
-* Curso de posgrado: R Aplicado a Ecología: de Individuos a Comunidades (UNC, 2019). [corresponsable junto a Nicolás Pelegrin]
+* Curso de posgrado: R Aplicado a Ecología: de Individuos a Comunidades (UNC, 2019) [corresponsable junto a Nicolás Pelegrin]
 
 <h2>Divulgación científica</h2>
 * <strong>bioinformaticos.com.ar</strong> (2007-2017), administración, edición y redacción de artículos  
