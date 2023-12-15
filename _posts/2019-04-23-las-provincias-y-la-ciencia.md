@@ -21,23 +21,11 @@ En 1962 el gobierno estadual funda FAPESP, la Fundación de Apoyo a la Investiga
 ![saopaulo](/assets/img/estado-ciencia/sao-paulo.jpeg)
 <br>
 
-En Argentina tenemos algunos tímidos avances en este sentido con la creación de los Ministerios de Ciencia de Santa Fe (
-@CienciaSantaFe
- con 
-@erica_hynes
- a la cabeza) y de Córdoba (
-@mincytcordoba
- con Walter Robledo). Falta mucho.
+En Argentina los avances han sido mucho más tímidos. Podemos destacar algunos avances en provincias como Buenos Aires, Córdoba y Santa Fe.
 
-¿Veremos algún dia un plan tan ambicioso y constante como el de Sao Paulo? Está por verse.
+La Comisión de Investigaciones Científicas (CIC) de la Provincia de Buenos Aires que fue creada en 1956. Este ente se encarga de financiar becas, salarios de investigadores y personal de apoyo y subsidios a la investigación. Además cuenta con institutos de investigación propios y asociados.
 
-Fuente: https://nature.com/articles/d41586-018-07536-1 entre otras
-
-Siguiendo con la experiencia santafesina en 2017 aprobaron la ley 13742 que establece un aumento gradual del presupuesto en ciencia hasta llegar al 0.5% en 2021. Además establece la elaboración de un Plan Estratégico para el área.
-
-https://santafe.gov.ar/boletinoficial/recursos/boletines/19-7-2018ley13742-2018.html
-
-Sin embargo, el gobernador Lifschitz vetó los artículos referidos a financiamiento. La legislatura luego rechazó el veto pero en la práctica sigue sin aplicarse.
+En la provincia de Santa Fe, durante la gobernación de Miguel Lifchitz, se creó el Ministerio de Ciencia, Tecnología e Innovación Productiva. En 2017 aprobaron la <a href="https://santafe.gov.ar/boletinoficial/recursos/boletines/19-7-2018ley13742-2018.html">ley 13742</a> que establece un aumento gradual del presupuesto en ciencia hasta llegar al 0.5% en 2021. Además establece la elaboración de un Plan Estratégico para el área. Sin embargo, el gobernador Lifschitz vetó los artículos referidos a financiamiento. La legislatura luego rechazó el veto pero en la práctica <a href="https://x.com/pablo_bolcatto/status/1071494081203896320?s=20">no se aplicó</a>.
 
 El ejemplo argentino emblemático de inversión provincial en CyT sin dudas es INVAP. Esta empresa que pertenece al gobierno de Rio Negro emplea a más de 1300 personas y abarca áreas como la construcción de centrales nucleares, satélites y radares, entre otros.
 
@@ -45,10 +33,10 @@ En Córdoba, la suma de los distintos programas del MinCyT provincial en el pres
 
 http://cba.gov.ar/presupuesto-provincial-ano-2019/
 
-Agrego, gracias a los comentarios, que la Provincia de Buenos Aires tiene la CIC desde 1956. Este ente se encarga de financiar becas, salarios de investigadores y personal de apoyo y subsidios a la investigación. Además cuenta con institutos de investigación propios y asociados.
 
 La política científica en CABA
 
 Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1120878140526616577">hilo en Twitter</a>.
 
- ¿Veremos algún dia un plan tan ambicioso y constante como el de Sao Paulo? Está por verse.
+<h3>Referencias</h3> 
+Nature, 2018. <a href="https://nature.com/articles/d41586-018-07536-1">How science supports São Paulo</a>
