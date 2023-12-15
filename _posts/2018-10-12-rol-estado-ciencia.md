@@ -14,9 +14,7 @@ header:
 Mariana Mazzucato es hoy una de las principales economistas heterodoxas. Su principal aporte ha sido mostrar como en muchos de los productos innovadores que producen las empresas privadas estuvo el Estado por detrás realizando contribuciones indispensables. En muchas de sus entrevistas habla de que el discurso económico progresista no puede quedarse solo en "repartir la torta" (porque eso tiene un limite) sino que tiene que proponer nuevas formas de crear riqueza. Sus propuestas se pueden encontrar en su siguiente libro, Mission Economy, donde propone utilizar una metodología basada en misiones (como la que llevó al hombre a la Luna) para generar innovaciones disruptivas.
 
 <h3>El Estado emprendedor</h3>
-
-
-<p>¿Y en el <strong>ámbito privado</strong>? en los papeles es la empresa la que se debe hacer cargo de ambos aspectos. Pero en la práctica muchas veces las investigaciones son subsidiadas por el estado. Por ejemplo, como veremos más adelante, la mayoría de las investigaciones biomédicas en EE.UU. son financiadas por el NIH, independientemente de si se realizan en una empresa privada o en un organismo público.</p>
+Según la visión liberal de la economía las empresas privadas son las que realizan las innovaciones en la economía. Por esto consideran que la mejor política industrial y de innovación que puede tener un país es no tener ninguna. Simplemente bastaría con bajar los impuestos y las regulaciones para que los privados puedan desarrollarse. Sin embargo, en la práctica muchas veces las innovaciones privadas son subsidiadas por el Estado o se basan en investigaciones realizadas por el sector público. Por ejemplo, como veremos más adelante, la mayoría de las investigaciones biomédicas en EE.UU. son financiadas por el NIH, independientemente de si se realizan en una empresa privada o en un organismo público.
 
 <p>Ahora los invito a que intentemos un juego. Pensemos cuáles han sido las tecnologías que han cambiado nuestra vida durante los últimos 50 años. Internet, los nuevos fármacos, el GPS, las pantallas táctiles, probablemente vendrán a nuestra mente. Pero lo que quizás no es tan conocido es que la mayoría han tenido su origen en una investigación financiada por el estado.</p> 
 
@@ -69,7 +67,7 @@ La Internet.
 ![iph](/assets/img/estado-ciencia/iphone-slide.jpeg)
 El origen de las partes del iPhone (Mazzucato, 2013).
 
-- <strong>Farmas</strong> ¿Quién es el actor fundamental de la innovación en la industria farmaceútica y biotecnológica? Si, adivinaste, es el estado. En EEUU la mayor fuente de financiamiento de estas investigaciones es el NIH, que ha visto aumentar su presupuesto año a año independientemente del gobierno de turno. Desde 1930 han invertido casi 900 mil millones de dólares. 
+- <strong>Farmas</strong> ¿Quién es el actor fundamental de la innovación en la industria farmaceútica y biotecnológica? Si, adivinaste, es el Estado. En EEUU la mayor fuente de financiamiento de estas investigaciones es el NIH, que ha visto aumentar su presupuesto año a año independientemente del gobierno de turno. Desde 1930 han invertido casi 900 mil millones de dólares. 
 El 75% de las drogas innovadoras (NME, new molecular entities) que se patentan en EEUU tienen su origen en investigaciones 
 financiadas por el NIH. Y esto se está profundizando con el tiempo: si miramos solo el período 2010-2016 el porcentaje 
 sube al 100%. Si las farmas no innovan ¿en qué invierten? bueno, en gran medida, en marketing. Y cuando se dedican a 
@@ -78,10 +76,10 @@ investigar suelen poner más énfasis en drogas “me too” (variaciones de otr
 {:.center}
 ![nih](/assets/img/estado-ciencia/nih.png)
 
-Para cerrar este post quiero redondear algunas ideas: el estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún países serio del mundo, es la sinergia entre ambos lo que da los mejores resultados.
+El Estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún países serio del mundo, es la sinergia entre ambos lo que da los mejores resultados.
 
 No está de más decir que la innovación no es, ni debe ser, el único fin de la ciencia y que el único garante de que se 
-estudien temas que no tienen un fin económico (al menos inmediato) es el estado.
+estudien temas que no tienen un fin económico (al menos inmediato) es el Estado.
 
 <h3>Referencias</h3>
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
