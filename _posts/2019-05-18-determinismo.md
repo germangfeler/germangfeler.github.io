@@ -8,7 +8,7 @@ tags:
   - estado
   - argentina
 header:
-  teaser: /assets/img/5ideas/ciencia%20básica.png
+  teaser: /assets/img/posts/nurture/nurture-portada.png
 excerpt: "Determinismo genético vs libre albedrío"
 ---
 
