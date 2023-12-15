@@ -11,15 +11,12 @@ header:
   teaser: /assets/img/estado-ciencia/provincias.png
 ---
 
-Siempre hablamos del estado nacional pero... ¿qué rol les toca a las provincias en el sistema de CyT? La experiencia de Sao Paulo puede tener algunas cosas que enseñarnos.
+Siempre hablamos del Estado nacional pero... ¿qué rol les toca a las provincias en el sistema de CyT? La experiencia de Sao Paulo puede tener algunas cosas que enseñarnos.
 
-En 1962 el gobierno estadual funda FAPESP, la Fundación de Apoyo a la Investigación del Estado de São Paulo. Se encarga de dar becas y subsidios para instituciones (públicas y privadas) y empresas radicadas en Sao Paulo. Por ley el estado tiene que invertir el 1% de sus ingresos en I+D. Esto es un presupuesto más que interesante teniendo en cuenta que es el estado más rico de Brasil con una economía que representa un tercio del PBI del país.
+En 1962 el gobierno estadual funda FAPESP, la Fundación de Apoyo a la Investigación del Estado de São Paulo. Se encarga de dar becas y subsidios para instituciones (públicas y privadas) y empresas radicadas en São Paulo. Por ley el Estado tiene que invertir el 1% de sus ingresos en I+D. Esto es un presupuesto más que interesante teniendo en cuenta que es el estado más rico de Brasil con una economía que representa un tercio del PBI del país. São Paulo tiene dos de las universidades más importantes de Latinoamérica y 34 institutos tecnológicos. La mitad de los papers de Brasil salen de este estado y supera en producción científica a todos los país de América Latina.
 
-São Paulo tiene dos de las universidades más importantes de Latinoamérica y 34 institutos tecnológicos. La mitad de los papers de Brasil salen de este estado y supera en producción científica a todos los país de América Latina.
+¿Cuál fue el efecto de esta inversión pública constante en el tiempo? Que los privados comenzaron a invertir y hoy representan más de la mitad de la inversión en I+D en Sao Paulo. Desde hace 20 años FAPESP lleva adelante un programa para transferir los desarrollos de las universidades a las pequeñas empresas.
 
-¿Cuál fue el efecto de esta inversión pública constante en el tiempo? Que los privados comenzaron a invertir y hoy representan más de la mitad de la inversión en I+D en Sao Paulo.
-
-Desde hace 20 años FAPESP llva adelante un programa para transferir los desarrollos de las universidades a las pequeñas empresas.
 
 En Argentina tenemos algunos tímidos avances en este sentido con la creación de los Ministerios de Ciencia de Santa Fe (
 @CienciaSantaFe
