@@ -35,6 +35,8 @@ La ciudad autónoma de Buenos Aires (CABA) aprobó en 2007 la <a href="https://b
 
 El ejemplo argentino emblemático de inversión provincial en CyT sin dudas es INVAP. Esta empresa que pertenece al gobierno de Rio Negro emplea a más de 1300 personas y abarca áreas como la construcción de centrales nucleares, satélites y radares, entre otros.
 
+En la <a href="https://x.com/ferpeirano/status/1121056481388965888?s=20">conversación en Twitter</a>, Fernado Peirano (presidente de la Agencia I+D+i entre 2019 y 2023), plantea otra cuestión muy interesante y es que no solo se necesita de más presupuesto sino de una nueva división de tareas entre nación, provincias y municipios. "En mi impresión, cuando el Estado Nacional se fortalece, las provincias se desinflan. Y viceversa. Hay sustitución más que complementación. Esto vale con las grandes."
+
 <h3>Referencias</h3> 
 Nature, 2018. <a href="https://nature.com/articles/d41586-018-07536-1">How science supports São Paulo</a>
 
