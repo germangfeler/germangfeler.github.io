@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "Algunas ideas sobre el sistema científico argentino"
-categories: cafe
 tags:
   - política
   - ciencia
