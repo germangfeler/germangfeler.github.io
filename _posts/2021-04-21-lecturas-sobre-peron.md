@@ -1,7 +1,6 @@
 ---
 layout: single
 title: Lecturas sobre Perón
-categories: cafe
 tags:
   - política
   - estado
