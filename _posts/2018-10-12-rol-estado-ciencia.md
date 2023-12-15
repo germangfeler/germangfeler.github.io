@@ -47,12 +47,6 @@ Internet solo definió la manera en la que se transfería la información de una
 hacerla popular sería la aparición de la web (páginas con textos, multimedia y links). Ésta también un origen gubernamental: 
 el CERN (si, los del colisionador de hadrones).
 
-{:.center}
-![internet](/assets/img/estado-ciencia/internet.png)
-<br>
-{:.center}
-La Internet.
-
 - <strong>Google</strong>. Al hablar de internet probablemente se les vino Google a la cabeza. Este (ahora) gigante de la tecnología comenzó como un trabajo académico de Brin y Page (en ese momento estudiantes de Stanford) que fue financiado por las agencias estatales NSF, DARPA y NASA.
 
 {:.center}
