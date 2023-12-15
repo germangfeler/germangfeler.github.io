@@ -17,6 +17,7 @@ En 1962 el gobierno estadual funda FAPESP, la Fundación de Apoyo a la Investiga
 
 ¿Cuál fue el efecto de esta inversión pública constante en el tiempo? Que los privados comenzaron a invertir y hoy representan más de la mitad de la inversión en I+D en Sao Paulo. Desde hace 20 años FAPESP lleva adelante un programa para transferir los desarrollos de las universidades a las pequeñas empresas.
 
+/assets/img/estado-ciencia/sao-paulo.jpeg
 
 En Argentina tenemos algunos tímidos avances en este sentido con la creación de los Ministerios de Ciencia de Santa Fe (
 @CienciaSantaFe
