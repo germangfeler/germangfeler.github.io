@@ -8,11 +8,15 @@ tags:
   - estado
   - argentina
 header:
-  teaser: 
+  teaser: /assets/img/estado-ciencia/how-asia.png
 excerpt: "Algunas ideas del libro How Asia Works"
 ---
 
 ¿Cómo sucedió el “milagro asiático? ¿Qué recetas aplicaron estos países? ¿Podemos aprender algo de ellos en Latinoamérica? Acá van algunas ideas tomadas del libro How Asia Works de Joe Studwell.
+
+{:.center}
+![asia1](/assets/img/estado-ciencia/asia1.jpeg)
+<br>
 
 “Los observadores de izquierda regresan de Japón convencidos de que han visto un ejemplo sobresaliente de planificación estatal, mientras los de derecha regresan llenos de orgullo por las virtudes del sistema de libre mercado japonés.” dijo el economista desarrollista Ronald Dore.
 
@@ -53,7 +57,7 @@ Los países en desarrollo tienen que invertir en aprender antes de preocuparse d
 <h3>Referencias</h3>
 * Studwell, J. (2013). How Asia works: Success and failure in the world's most dynamic region. Open Road+ Grove/Atlantic.
 
-
+Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1191450464073736193">hilo de Twitter</a>.
 
 
 
