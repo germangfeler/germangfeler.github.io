@@ -8,7 +8,7 @@ tags:
   - estado
   - argentina
 header:
-  teaser: /assets/img/5ideas/ciencia-argentina.jpg
+  teaser: /assets/img/posts/cyt/ciencia-argentina.jpg
 excerpt: "Donde estamos y adónde vamos"
 ---
 
@@ -30,7 +30,7 @@ Algunas propuestas para solucionar estos problemas son:
 Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente dos etapas: recuperar terreno e innovar. Muchas veces nos vence la ansiedad y queremos ser los reyes de la innovación sin nunca pasar por la etapa del "catching up": crear la infraestructura y formar los recursos humanos para que la segunda etapa sea posible. Para que exista el nivel de inversión privada en I+D que existe actualmente antes hubo un apoyo fuerte y sostenido del estado para crear las condiciones necesarias. Si queremos que los privados inviertan, necesitamos que el estado lo haga a un nivel relevante (arriba del 1% del PBI) durante un tiempo prolongado (más de 20 años).
 
 {:.center}
-![corea](/assets/img/5ideas/corea.png)
+![corea](/assets/img/posts/cyt/corea.png)
 <br>
 <p class="center"><i>Imagen tomada de la presentación <a href="https://www.access4.eu/_media/Korea_ST_Policy_Koo.pdf">Evolution of Korean Science and Technology Policy</a> de Hyuk-Chae Koo.</i></p>
 
@@ -60,9 +60,6 @@ La organización y coordinación a nivel regional nos daría además más fuerza
 
 <h3>6 - Impulsar el desarrollo tecnológico a través de empresas estatales de I+D</h3> 
 INVAP, una empresa del gobierno de Rio Negro y la CNEA, es el mejor ejemplo de empresa de alta tecnología en el país ya que producen reactores nucleares, satélites y radares con estándares internacionales. Necesitamos decenas de INVAPs. Hay muchos sectores que se podrían beneficiar con empresas de este tipo como: la producción de baterías a partir del litio y las energías renovables, entre otros.
-
-<h3>Para cerrar</h3>
-Más allá de estos puntos (que bien podrían ser 10 o 20) lo que el sistema de CyT argentino necesita son <strong>políticas consistentes en el tiempo</strong>. Probablemente sea mucho pedir en un país que no es consistente en ningún aspecto pero en un área donde los resultados se ven en el mediano-largo plazo es un requisito vital. <a href="https://germangfeler.github.io/cafe/inversion-ciencia/">Aquí</a> hablo un poco más sobre esto.
 
 <h3> Referencias</h3>
 * Campbell, J. (2012). Building an IT economy: South Korean science and technology policy. Issues in Technology and Innovation, 19.
