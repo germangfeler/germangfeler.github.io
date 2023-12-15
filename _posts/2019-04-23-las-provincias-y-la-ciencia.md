@@ -21,20 +21,20 @@ En 1962 el gobierno estadual funda FAPESP, la Fundación de Apoyo a la Investiga
 ![saopaulo](/assets/img/estado-ciencia/sao-paulo.jpeg)
 <br>
 
+Según Nature: "En 2016, Brasil invirtió 79.2 mil millones de reales (cerca de US$20 mil millones de dólares) en I+D. En 2017, el estado de São Paulo solo invirtió 25.8 mil millones de reales en I+D, más de la mitad de los cuales vinieron directamente del sector privado. De acuerdo con los indicadores oficiales, más científicos trabajan en laboratorios privados que en las universidades."
+
 En Argentina los avances han sido mucho más tímidos. Podemos destacar algunos avances en provincias como Buenos Aires, Córdoba y Santa Fe.
 
 La Comisión de Investigaciones Científicas (CIC) de la Provincia de Buenos Aires que fue creada en 1956. Este ente se encarga de financiar becas, salarios de investigadores y personal de apoyo y subsidios a la investigación. Además cuenta con institutos de investigación propios y asociados.
 
 En la provincia de Santa Fe, durante la gobernación de Miguel Lifchitz, se creó el Ministerio de Ciencia, Tecnología e Innovación Productiva. En 2017 aprobaron la <a href="https://santafe.gov.ar/boletinoficial/recursos/boletines/19-7-2018ley13742-2018.html">ley 13742</a> que establece un aumento gradual del presupuesto en ciencia hasta llegar al 0.5% en 2021. Además establece la elaboración de un Plan Estratégico para el área. Sin embargo, el gobernador Lifschitz vetó los artículos referidos a financiamiento. La legislatura luego rechazó el veto pero en la práctica <a href="https://x.com/pablo_bolcatto/status/1071494081203896320?s=20">no se aplicó</a>.
 
-El ejemplo argentino emblemático de inversión provincial en CyT sin dudas es INVAP. Esta empresa que pertenece al gobierno de Rio Negro emplea a más de 1300 personas y abarca áreas como la construcción de centrales nucleares, satélites y radares, entre otros.
-
-En Córdoba, la suma de los distintos programas del MinCyT provincial en el presupuesto 2019 me da que va a invertir 275 millones de pesos este año. Un poco más de la mitad de estos fondos (157 millones) corresponden al CEPROCOR.
-
-http://cba.gov.ar/presupuesto-provincial-ano-2019/
-
+En Córdoba, la suma de los distintos programas del MinCyT provincial en el presupuesto 2019 me da que va a invertir 275 millones de pesos este año. En 2019, un poco más de la <a href="http://cba.gov.ar/presupuesto-provincial-ano-2019/">mitad de estos fondos</a> (157 millones) corresponden al CEPROCOR.
 
 La política científica en CABA
+
+El ejemplo argentino emblemático de inversión provincial en CyT sin dudas es INVAP. Esta empresa que pertenece al gobierno de Rio Negro emplea a más de 1300 personas y abarca áreas como la construcción de centrales nucleares, satélites y radares, entre otros.
+
 
 Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1120878140526616577">hilo en Twitter</a>.
 
