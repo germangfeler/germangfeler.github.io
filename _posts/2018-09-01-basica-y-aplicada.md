@@ -8,7 +8,7 @@ tags:
   - estado
   - argentina
 header:
-  teaser: /assets/img/5ideas/ciencia%20básica.png
+  teaser: /assets/img/posts/cyt/ciencia%20básica.png
 excerpt: "Una falsa dicotomía"
 ---
 
@@ -19,17 +19,17 @@ La realidad muestra que la división entre ciencia básica y aplicada suele ser 
 En 1997, Donald Stokes presentó el libro El cuadrante de Pasteur,  donde propone que toda investigación cae en alguno de estos cuatro cuadrantes:
 
 {:.center}
-![tabla](/assets/img/5ideas/tabla.png)
+![tabla](/assets/img/posts/cyttabla.png)
 
 Lo que Stokes plantea es que una investigación puede iniciarse en cualquiera de esos cuadrantes y tener un impacto en los otros. Por eso hay que dejar de pensar en la ciencia como un proceso secuencial:
 
 {:.center}
-![lineal](/assets/img/5ideas/lineal.png)
+![lineal](/assets/img/posts/cyt/lineal.png)
 
 Y empezar a pensarla como una red donde hay interacciones entre el conocimiento básico, el aplicado y la innovación tecnológica:
 
 {:.center}
-![multicausal](/assets/img/5ideas/multicausal.png)
+![multicausal](/assets/img/posts/cyt/multicausal.png)
 <br>
 <p class="center"><i>Imagen tomada de Beyond Sputnik U.S. Science Policy in the Twenty-First Century</i></p>
 
