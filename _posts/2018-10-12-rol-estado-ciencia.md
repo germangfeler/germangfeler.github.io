@@ -1,6 +1,6 @@
 ---
 layout: single
-title: ¿Cuál es el rol del estado en la investigación científica y tecnológica?
+title: Sobre el rol del Estado en I+D
 categories: cafe
 tags:
   - política
