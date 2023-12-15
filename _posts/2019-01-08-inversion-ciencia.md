@@ -24,5 +24,5 @@ Actualización 2021: la gestión de Alberto Fernández impulsó la <a href="http
 {:.center}
 ![corea](/assets/img/estado-ciencia/ley-de-financiamiento.jpg)
 <br>
-<p class="center"><i>Imagen tomada de <a href="https://chequeado.com/hilando-fino/cuanto-invierte-la-argentina-en-ciencia-y-que-dice-el-proyecto-aprobado-por-diputados/">Cuánto invierte la Argentina en Ciencia y qué dice la ley aprobada por el Congreso</a> (Chequerado, 2021)</i></p>
+<p class="center"><i>Imagen tomada de <a href="https://chequeado.com/hilando-fino/cuanto-invierte-la-argentina-en-ciencia-y-que-dice-el-proyecto-aprobado-por-diputados/">Cuánto invierte la Argentina en Ciencia y qué dice la ley aprobada por el Congreso</a> (Chequeado, 2021)</i></p>
 
