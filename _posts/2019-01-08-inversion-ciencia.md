@@ -21,5 +21,8 @@ Me gustó esta imagen sobre el desarrollo de CyT en Corea que muestra claramente
 
 Actualización 2021: la gestión de Alberto Fernández impulsó la <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/347804/norma.htm">ley de financimiento de la ciencia</a> que planteó un cronograma de aumento del presupuesto del área que llevaría la participación en el PBI al 1% para 2030.
 
-<h3>Referencias</h3>
-Chequeado. <a href="https://chequeado.com/hilando-fino/cuanto-invierte-la-argentina-en-ciencia-y-que-dice-el-proyecto-aprobado-por-diputados/">Cuánto invierte la Argentina en Ciencia y qué dice la ley aprobada por el Congreso</a>
+{:.center}
+![corea](/assets/img/estado-ciencia/ley-de-financiamiento.jpg)
+<br>
+<p class="center"><i>Imagen tomada de <a href="https://chequeado.com/hilando-fino/cuanto-invierte-la-argentina-en-ciencia-y-que-dice-el-proyecto-aprobado-por-diputados/">Cuánto invierte la Argentina en Ciencia y qué dice la ley aprobada por el Congreso</a> (Chequerado, 2021)</i></p>
+
