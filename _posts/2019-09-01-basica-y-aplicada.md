@@ -8,7 +8,7 @@ tags:
   - estado
   - argentina
 header:
-  teaser: /assets/img/5ideas/ciencia-argentina.jpg
+  teaser: /assets/img/5ideas/ciencia%20básica.png
 excerpt: ""
 ---
 
