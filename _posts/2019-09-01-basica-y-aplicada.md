@@ -9,7 +9,7 @@ tags:
   - argentina
 header:
   teaser: /assets/img/5ideas/ciencia%20básica.png
-excerpt: ""
+excerpt: "Una falsa dicotomía"
 ---
 
 Podríamos definir a la ciencia básica como aquella que solo busca el conocimiento por el conocimiento mismo, mientras que la ciencia aplicada sería aquella que busca utilizar este conocimiento para resolver un problema práctico. Una de las discusiones que vuelve durante cada gobierno promercado es que la Argentina debería dejar de hacer ciencia básica y dedicarse solo a hacer ciencia aplicada ya que nuestros recursos son escasos y deberíamos utilizarlos en proyectos que puedan tener un rédito económico.
