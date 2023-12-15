@@ -13,9 +13,9 @@ header:
 
 Siempre hablamos del estado nacional pero... ¿qué rol les toca a las provincias en el sistema de CyT? La experiencia de Sao Paulo puede tener algunas cosas que enseñarnos.
 
-En 1962 el gobierno estadual funda FAPESP, la Fundación de Apoyo a la Investigación del Estado de Sao Paulo. Se encarga de dar becas y subsidios para instituciones (públicas y privadas) y empresas radicadas en Sao Paulo. Por ley el estado tiene que invertir el 1% de sus ingresos en I+D. Esto es un presupuesto más que interesante teniendo en cuenta que es el estado más rico de Brasil con una economía que representa un tercio del PBI del país.
+En 1962 el gobierno estadual funda FAPESP, la Fundación de Apoyo a la Investigación del Estado de São Paulo. Se encarga de dar becas y subsidios para instituciones (públicas y privadas) y empresas radicadas en Sao Paulo. Por ley el estado tiene que invertir el 1% de sus ingresos en I+D. Esto es un presupuesto más que interesante teniendo en cuenta que es el estado más rico de Brasil con una economía que representa un tercio del PBI del país.
 
-Sao Paulo tiene dos de las universidades más importantes de Latinoamérica y 34 institutos tecnológicos. La mitad de los papers de Brasil salen de este estado y supera en producción científica a todos los país de América Latina.
+São Paulo tiene dos de las universidades más importantes de Latinoamérica y 34 institutos tecnológicos. La mitad de los papers de Brasil salen de este estado y supera en producción científica a todos los país de América Latina.
 
 ¿Cuál fue el efecto de esta inversión pública constante en el tiempo? Que los privados comenzaron a invertir y hoy representan más de la mitad de la inversión en I+D en Sao Paulo.
 
@@ -48,4 +48,7 @@ http://cba.gov.ar/presupuesto-provincial-ano-2019/
 Agrego, gracias a los comentarios, que la Provincia de Buenos Aires tiene la CIC desde 1956. Este ente se encarga de financiar becas, salarios de investigadores y personal de apoyo y subsidios a la investigación. Además cuenta con institutos de investigación propios y asociados.
 
 La política científica en CABA
+
+Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1120878140526616577">hilo en Twitter</a>.
+
  ¿Veremos algún dia un plan tan ambicioso y constante como el de Sao Paulo? Está por verse.
