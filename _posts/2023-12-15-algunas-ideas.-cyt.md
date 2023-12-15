@@ -50,6 +50,4 @@ INVAP, una empresa del gobierno de Rio Negro y la CNEA, es el mejor ejemplo de e
 Más allá de estos puntos (que bien podrían ser 10 o 20) lo que el sistema de CyT argentino necesita son <strong>políticas consistentes en el tiempo</strong>. Probablemente sea mucho pedir en un país que no es consistente en ningún aspecto pero en un área donde los resultados se ven en el mediano-largo plazo es un requisito vital. <a href="https://germangfeler.github.io/cafe/inversion-ciencia/">Aquí</a> hablo un poco más sobre esto.
 
 <h3> Referencias</h3>
-* Perfil.com. Escasa presencia de docentes con dedicación exclusiva. <a href="https://www.perfil.com/noticias/universidades/escasa-presencia-de-docentes-con-dedicacion-exclusiva.phtml">Link</a>.
 * Campbell, J. (2012). Building an IT economy: South Korean science and technology policy. Issues in Technology and Innovation, 19.
-* Neal, H. A., Smith, T., & McCormick, J. (2008). Beyond Sputnik: US science policy in the twenty-first century. University of Michigan Press.
