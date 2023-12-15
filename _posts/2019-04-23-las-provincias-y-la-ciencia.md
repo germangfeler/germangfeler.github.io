@@ -29,14 +29,13 @@ La Comisión de Investigaciones Científicas (CIC) de la Provincia de Buenos Air
 
 En la provincia de Santa Fe, durante la gobernación de Miguel Lifchitz, se creó el Ministerio de Ciencia, Tecnología e Innovación Productiva. En 2017 aprobaron la <a href="https://santafe.gov.ar/boletinoficial/recursos/boletines/19-7-2018ley13742-2018.html">ley 13742</a> que establece un aumento gradual del presupuesto en ciencia hasta llegar al 0.5% en 2021. Además establece la elaboración de un Plan Estratégico para el área. Sin embargo, el gobernador Lifschitz vetó los artículos referidos a financiamiento. La legislatura luego rechazó el veto pero en la práctica <a href="https://x.com/pablo_bolcatto/status/1071494081203896320?s=20">no se aplicó</a>.
 
-En Córdoba, la suma de los distintos programas del MinCyT provincial en el presupuesto 2019 me da que va a invertir 275 millones de pesos este año. En 2019, un poco más de la <a href="http://cba.gov.ar/presupuesto-provincial-ano-2019/">mitad de estos fondos</a> (157 millones) corresponden al CEPROCOR.
+En Córdoba, la suma de los distintos programas del MinCyT provincial en el presupuesto 2019 me da que va a invertir 275 millones de pesos este año. En 2019, un poco más de la <a href="http://cba.gov.ar/presupuesto-provincial-ano-2019/">mitad de estos fondos</a> (157 millones) correspondían al CEPROCOR.
 
-La política científica en CABA
+La ciudad autónoma de Buenos Aires (CABA) aprobó en 2007 la <a href="https://boletinoficial.buenosaires.gob.ar/normativaba/norma/111824">ley 2511 de Ciencia, Tecnología e Innovación</a>. Esta ley crea diversos organismos como el Consejo de Ciencia, Tecnología e Innovación y el Gabinete de Ciencia, Tecnología e Innovación y estipula que la autoridad de aplicación debe implementar el Plan Cuatrienal de Ciencia, Tecnología e Innovación. Sin embargo, con el posterior arrivo del PRO al gobierno de la ciudad la ley nunca se aplicó completamente. En la actualidad, a pesar de ser el distrito más rico del país, no cuenta con una agencia de promoción científica y tecnológica.
 
 El ejemplo argentino emblemático de inversión provincial en CyT sin dudas es INVAP. Esta empresa que pertenece al gobierno de Rio Negro emplea a más de 1300 personas y abarca áreas como la construcción de centrales nucleares, satélites y radares, entre otros.
 
-
-Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1120878140526616577">hilo en Twitter</a>.
-
 <h3>Referencias</h3> 
 Nature, 2018. <a href="https://nature.com/articles/d41586-018-07536-1">How science supports São Paulo</a>
+
+Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1120878140526616577">hilo en Twitter</a>.
