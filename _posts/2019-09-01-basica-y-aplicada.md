@@ -12,9 +12,9 @@ header:
 excerpt: ""
 ---
 
-Una de las discusiones que vuelve durante cada gobierno promercado es que la Argentina debería dejar de hacer ciencia básica y dedicarse solo a hacer ciencia aplicada ya que nuestros recursos son escasos y deberíamos utilizarlos en proyectos que puedan tener un rédito económico.
+Podríamos definir a la ciencia básica como aquella que solo busca el conocimiento por el conocimiento mismo, mientras que la ciencia aplicada sería aquella que busca utilizar este conocimiento para resolver un problema práctico. Una de las discusiones que vuelve durante cada gobierno promercado es que la Argentina debería dejar de hacer ciencia básica y dedicarse solo a hacer ciencia aplicada ya que nuestros recursos son escasos y deberíamos utilizarlos en proyectos que puedan tener un rédito económico.
 
-La realidad muestra que la división entre ciencia básica y aplicada suele ser más difusa de lo que se tiende a pensar. Desarrollos biotecnológicos como las semillas HB4 tolerantes a la sequía, llevados adelante por la investogadora del CONICET<a href="https://www.lanacion.com.ar/opinion/la-repregunta-raquel-chan-en-la-ciencia-argentina-la-resistencia-al-mundo-del-agro-es-muy-nid25092022/">Raquel Chan</a>, tuvieron su origen en proyectos de ciencia básica.
+La realidad muestra que la división entre ciencia básica y aplicada suele ser más difusa de lo que se tiende a pensar. Desarrollos biotecnológicos como las semillas HB4 tolerantes a la sequía, llevados adelante por la investigadora del CONICET <a href="https://www.lanacion.com.ar/opinion/la-repregunta-raquel-chan-en-la-ciencia-argentina-la-resistencia-al-mundo-del-agro-es-muy-nid25092022/">Raquel Chan</a>, tuvieron su origen en proyectos de ciencia básica. Como dijo Bernardo Houssay, "no hay ciencia aplicada sin ciencia [básica] que aplicar”.
 
 En 1997, Donald Stokes presentó el libro El cuadrante de Pasteur,  donde propone que toda investigación cae en alguno de estos cuatro cuadrantes:
 
