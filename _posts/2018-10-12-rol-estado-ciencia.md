@@ -15,16 +15,6 @@ Mariana Mazzucato es hoy una de las principales economistas heterodoxas. Su prin
 
 <h3>El Estado emprendedor</h3>
 
-<p>Desde algunos sectores del liberalismo se ha agitado una campaña contra los organismos científicos estatales. Que son ineficientes. Que estudian cosas inútiles. Que si fueran tan buenos investigando conseguirían trabajo en el sector privado. Que los privados deberían ser los únicos que lleven adelante la ciencia. ¿Es eso factible? ¿Cómo funciona la ciencia en el mundo?</p>
-<!--more-->
-
-
-<p> Para entender como se financia la ciencia primero tenemos que definir que es "financiar la ciencia". De modo amplio podemos decir que hay dos cuestiones principales:</p>
-1. Los sueldos de investigadores y becarios
-2. Los fondos para comprar insumos y equipamiento.
-
-<p>¿Cómo funciona esto en el <strong>ámbito público</strong>?  
-En muchos países los sueldos dependen de las universidades y los subsidios de las agencias científicas. En el caso de EE.UU., por ejemplo, existen agencias que financian investigaciones en áreas específicas: NIH (salud), NSF (ciencia básica), NASA (espacial), DARPA (militar), etc. En Argentina es un poco diferente porque, si bien muchos investigadores dependen de las universidades, el principal empleador es el CONICET, un ente gubernamental centralizado que abarca todas las áreas de la ciencia. Los subsidios a su vez provienen del mismo CONICET o de la Agencia Nacional de Promoción Científica y Tecnológica (ANPCyT).</p>
 
 <p>¿Y en el <strong>ámbito privado</strong>? en los papeles es la empresa la que se debe hacer cargo de ambos aspectos. Pero en la práctica muchas veces las investigaciones son subsidiadas por el estado. Por ejemplo, como veremos más adelante, la mayoría de las investigaciones biomédicas en EE.UU. son financiadas por el NIH, independientemente de si se realizan en una empresa privada o en un organismo público.</p>
 
