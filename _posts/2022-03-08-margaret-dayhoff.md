@@ -6,7 +6,7 @@ tags:
   - bioinformatica
   - ciencia
 header:
-  teaser: /assets/img/posts/bioinfo/BIOINFO101.png
+  teaser: /assets/img/posts/bioinfo/md1.jpeg
 excerpt: "Homaneje a la gran pionera"
 ---
 
