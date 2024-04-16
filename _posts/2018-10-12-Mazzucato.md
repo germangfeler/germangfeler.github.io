@@ -99,10 +99,8 @@ Tomando por ejemplo el desafío sobre movilidad podemos descomponerlo en misione
 {:.center}
 ![mision2](/assets/img/estado-ciencia/mision2.png)
 
-También podemos aplicar el enfoque de misiones a otros desafíos como la vida acuática: 
+<h3>El enfoque basado en misiones en Argentina</h3>
 
-{:.center}
-![mision3](/assets/img/estado-ciencia/mision3.png)
 
 <h3>Referencias</h3>
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
