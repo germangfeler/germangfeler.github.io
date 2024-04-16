@@ -95,17 +95,17 @@ Mazzucato sostiene que este enfoque “basado en misiones”, donde los sectores
 En este sentido la agenda 2030 de metas de desarrollo sustentable de la ONU (no, no es para nada terrible como piensan los conspiranoicos), plantea una serie de desafíos que podrían ser abordados mediante el enfoque de misiones.
 
 {:.center}
-![mision1](/assets/img/estado-ciencia/mision1.jpg)
+![mision1](/assets/img/estado-ciencia/mision1.png)
 
-Tomando por ejemplo el desafío sobre el cambio climático podemos descomponerlo en misiones, de las cuales una puede ser tener 100 ciudades europeas neutrales en carbono para 2030. Una misión de este tipo implica innovaciones en múltiples áreas como movilidad, transporte, alimentación y materiales de construcción.
+Tomando por ejemplo el desafío sobre movilidad podemos descomponerlo en misiones. Una misión de este tipo implica innovaciones en múltiples áreas.
 
 {:.center}
-![mision2](/assets/img/estado-ciencia/mision2.jpg)
+![mision2](/assets/img/estado-ciencia/mision2.png)
 
 También podemos aplicar el enfoque de misiones a otros desafíos como la vida acuática: 
 
 {:.center}
-![mision3](/assets/img/estado-ciencia/mision3.jpg)
+![mision3](/assets/img/estado-ciencia/mision3.png)
 
 <h3>Referencias</h3>
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
