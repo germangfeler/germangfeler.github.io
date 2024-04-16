@@ -73,6 +73,35 @@ investigar suelen poner más énfasis en drogas “me too” (variaciones de otr
 A modo de reflexión personal final: el Estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún países serio del mundo, es la sinergia entre ambos lo que da los mejores resultados. No está de más decir que la innovación no es, ni debe ser, el único fin de la ciencia y que el único garante de que se 
 estudien temas que no tienen un fin económico (al menos inmediato) es el Estado.
 
+<h3>Misión economía</h3>
+En 2021, Mazzucato publicó el libro Misión economía donde propone un enfoque “basado en misiones” en el que se coordinan a gran escala los esfuerzos estatales y privados con un objetivo concreto en mente. 
+
+La idea se inspira en el programa Apollo, con el que Kennedy anunció que Estados Unidos llegaría a la luna en los años ‘60. Este programa costó 283 mil millones de dólares (a precios de 2020) e involucró a 400 mil trabajadores de la NASA, universidades y contratistas. El alunizaje, dice Mazzucato, fue un gran ejercicio de resolución de problemas, con el sector público liderando y trabajando en conjunto con empresas —pequeñas, medianas y grandes— en cientos de problemas individuales. Hubo varias claves que hicieron exitoso a este proyecto:
+* Un liderazgo con una visión clara y dispuesto a tomar riesgos
+* Innovación y apertura a la experimentación
+* Agilidad y flexibilidad organizacional: buena comunicación vertical y horizontal, no solo dentro de la NASA sino también con los contratistas
+* La evaluación del costo debe basarse en los resultados integrales: Apollo costó 283 mil millones pero permitió crear nuevas tecnologías que a su vez crearon nuevas empresas y mercados. En comparación costó solo un 10% de lo que costaron las invasiones a Irak y Afganistán.
+* Los privados y el Estado asociados con un propósito común: la NASA diseñó los contratos de forma de trabajar con empresas confiables y probadas pero sin descuidar la competencia. Los contratos se diseñaron de manera de ser claros en sus objetivos pero permitiendo libertad en la forma de alcanzarlos.
+
+El programa Apollo generó innovaciones técnicas y organizacionales que tuvieron un gran impacto y sin las cuales no existirían tecnologías modernas como:
+* las cámaras de celulares, los cristales antirayas, la tomografía computada, los LEDs, zapatillas deportivas, sistemas de purificación de agua, aspiradoras, auriculares inalámbricos, la computadora portátil y el mouse, entre otros. 
+* métodos de management para descomponer problemas complejos en paquetes más pequeños, que fueron usados luego por Boeing para construir el 747.
+
+Mazzucato sostiene que este enfoque “basado en misiones”, donde los sectores público y privado cooperan para resolver problemas sociales claves, es más necesario que nunca. Esto implica descomponer los grandes desafíos del presente en misiones con objetivos claros, definiendo los proyectos concretos y los sectores que participarán con aportes innovadores.
+
+[IMAGEN]
+
+En este sentido la agenda 2030 de metas de desarrollo sustentable de la ONU (no, no es para nada terrible como piensan los conspiranoicos), plantea una serie de desafíos que podrían ser abordados mediante el enfoque de misiones.
+
+[IMAGEN]
+
+Tomando por ejemplo el desafío sobre el cambio climático podemos descomponerlo en misiones, de las cuales una puede ser tener 100 ciudades europeas neutrales en carbono para 2030. Una misión de este tipo implica innovaciones en múltiples áreas como movilidad, transporte, alimentación y materiales de construcción.
+
+[IMAGEN]
+
+También podemos aplicar el enfoque de misiones a otros desafíos como la vida acuática: 
+
+
 <h3>Referencias</h3>
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
 * Mazzucato, M. (2021). Mission economy: A moonshot guide to changing capitalism. Penguin UK.
