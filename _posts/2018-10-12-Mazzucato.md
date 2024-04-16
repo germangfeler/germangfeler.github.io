@@ -35,9 +35,6 @@ realizado en gran medida por el estado. </p>
 {:.center}
 ![eeuu1](/assets/img/estado-ciencia/eeuu1.png)
 
-{:.center}
-![eeuu2](/assets/img/estado-ciencia/eeuu2.png)
-
 <p>Esto refuerza lo que hablamos hasta ahora: hay un estado que se encarga de financiar la investigación básica (más innovadora, más arriesgada) y un sector privado que acompaña financiando el desarrollo en las etapas finales y la comercialización.</p>
 
 <p>Hasta aquí vimos una visión “macro” (si se me permite el término) de cómo funciona la política científica en innovación pero alguno de uds se puede estar preguntando ¿qué cosas concretas han salido de la investigación estatal?  Veamos algunos ejemplos, que no intentan ser exhaustivos pero sí relevantes.</p>
