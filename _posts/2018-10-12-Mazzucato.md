@@ -89,18 +89,23 @@ El programa Apollo generó innovaciones técnicas y organizacionales que tuviero
 
 Mazzucato sostiene que este enfoque “basado en misiones”, donde los sectores público y privado cooperan para resolver problemas sociales claves, es más necesario que nunca. Esto implica descomponer los grandes desafíos del presente en misiones con objetivos claros, definiendo los proyectos concretos y los sectores que participarán con aportes innovadores.
 
-[IMAGEN]
+{:.center}
+![agenda](/assets/img/estado-ciencia/agenda2030.jpg)
 
 En este sentido la agenda 2030 de metas de desarrollo sustentable de la ONU (no, no es para nada terrible como piensan los conspiranoicos), plantea una serie de desafíos que podrían ser abordados mediante el enfoque de misiones.
 
-[IMAGEN]
+{:.center}
+![mision1](/assets/img/estado-ciencia/mision1.jpg)
 
 Tomando por ejemplo el desafío sobre el cambio climático podemos descomponerlo en misiones, de las cuales una puede ser tener 100 ciudades europeas neutrales en carbono para 2030. Una misión de este tipo implica innovaciones en múltiples áreas como movilidad, transporte, alimentación y materiales de construcción.
 
-[IMAGEN]
+{:.center}
+![mision2](/assets/img/estado-ciencia/mision2.jpg)
 
 También podemos aplicar el enfoque de misiones a otros desafíos como la vida acuática: 
 
+{:.center}
+![mision3](/assets/img/estado-ciencia/mision3.jpg)
 
 <h3>Referencias</h3>
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
