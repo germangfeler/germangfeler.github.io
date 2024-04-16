@@ -7,7 +7,7 @@ tags:
   - R
   - Exploración
 header:
-  teaser: /assets/img/data-science/tidyverse.png
+  teaser: /assets/thumbnails/tidyverse.png
 toc: true
 toc_label: "Secciones"
 excerpt: "Comparamos los dos universos"  
