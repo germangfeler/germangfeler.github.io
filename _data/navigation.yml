@@ -2,6 +2,8 @@
 main:
    - title: "Data Science"
      url: /datascience/
+   - title: "Bioinformática"
+     url: /bioinformatica/
    - title: "Café"
      url: /cafe/
    - title: "Cursos"
