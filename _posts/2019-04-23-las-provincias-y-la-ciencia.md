@@ -9,6 +9,7 @@ tags:
   - innovación
 header:
   teaser: /assets/img/estado-ciencia/provincias.png
+excerpt: "La experiencia en Brasil y Argentina"
 ---
 
 Siempre hablamos del Estado nacional pero... ¿qué rol les toca a las provincias en el sistema de CyT? La experiencia de Sao Paulo puede tener algunas cosas que enseñarnos.
