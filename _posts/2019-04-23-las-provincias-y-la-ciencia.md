@@ -8,7 +8,7 @@ tags:
   - estado
   - innovación
 header:
-  teaser: /assets/img/estado-ciencia/provincias.png
+  teaser: /assets/thumbnails/provincias.png
 excerpt: "La experiencia en Brasil y Argentina"
 ---
 
