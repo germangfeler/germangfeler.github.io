@@ -106,6 +106,7 @@ En el primer caso podemos nombrar el proyecto del rector CAREM, un reactor nucle
 
 En el sector satelital tenemos el caso de los satélites geoestacionarios ARSAT 1 y 2. El desafío que orientó este proyecto fue la necesidad de brindar servicios de comunicación satelital en el territorio argentino. El desarrollo fue llevado adelante por INVAP y los satélites son operados por la también estatal ARSAT. La construcción de diversos elementos del satélite fue adjudicada a empresas reconocidas del sector como Astrium, Thales Alenia Space y Honeywell. En el espacio sobrante del ARSAT-1 se incluyeron cargas científicas financiadas por CONICET: un instrumento para medir electrones, protones y alfas cargadas, una medida de fluorescencia atmosférica desde una órbita geoestacionaria y un estudio sobre la degradación de las células solares.  
 
+Por último podemos citar lo sucedido durante la pandemia de COVID-19 en nuestro país. En marzo de 2020 se creó la Unidad Coronavirus, integrada  por el MinCyT, CONICET y la Agencia I+D+i, con el fin de llevar adelante proyectos de investigación y desarrollo tecnológico con capacidad de dar respuesta a la pandemia de COVID-19 en el país. En este sentido se realizó la convocatoria de Ideas Proyecto (IP) con el objetivo de mejorar la capacidad nacional de respuesta a la pandemia en la Argentina,
 
 <h3>Referencias</h3>
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
