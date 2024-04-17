@@ -8,7 +8,7 @@ tags:
   - estado
   - innovación
 header:
-  teaser: /assets/img/posts/lecturas/Mazzucato.jpg
+  teaser: /assets/thumbnails/Mazzucato.jpg
 excerpt: "El Estado Emprendedor y Misión Economía"
 ---
 
