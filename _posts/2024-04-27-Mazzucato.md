@@ -100,9 +100,14 @@ Tomando por ejemplo el desafío sobre movilidad podemos descomponerlo en misione
 ![mision2](/assets/img/estado-ciencia/mision2.png)
 
 <h3>El enfoque basado en misiones en Argentina</h3>
+Argentina cuenta con algunos ejemplos de innovaciones orientadas por misiones, especialmente en el sector nuclear y satelital.
+
+En el primer caso podemos nombrar el proyecto del rector CAREM, un reactor nuclear modular de baja potencia que se encuentra entre los más avanzados en su desarrollo en el mundo. El desafío que viene a resolver es el de brindar energía a regiones aisladas, polos industriales o plantas de desalinización de agua. El proyecto es llevado adelante por la Comisión Nacional de Energía Atómica (CNEA) e INVAP, una empresa pública de alta tecnología. Como contratistas externos participan un total de 1400 empresas privadas.
+
+En el sector satelital tenemos el caso de los satélites geoestacionarios ARSAT 1 y 2. El desafío que orientó este proyecto fue la necesidad de brindar servicios de comunicación satelital en el territorio argentino. El desarrollo fue llevado adelante por INVAP y los satélites son operados por la también estatal ARSAT. La construcción de diversos elementos del satélite fue adjudicada a empresas reconocidas del sector como Astrium, Thales Alenia Space y Honeywell. En el espacio sobrante del ARSAT-1 se incluyeron cargas científicas financiadas por CONICET: un instrumento para medir electrones, protones y alfas cargadas, una medida de fluorescencia atmosférica desde una órbita geoestacionaria y un estudio sobre la degradación de las células solares.  
 
 
 <h3>Referencias</h3>
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
 * Mazzucato, M. (2021). Mission economy: A moonshot guide to changing capitalism. Penguin UK.
-
+* El Cronista, <a href="https://www.cronista.com/negocios/el-sueno-nuclear-argentino-vuelve-en-formato-pequeno-y-con-destino-de-exportacion/">https://www.cronista.com/negocios/el-sueno-nuclear-argentino-vuelve-en-formato-pequeno-y-con-destino-de-exportacion/</a>
