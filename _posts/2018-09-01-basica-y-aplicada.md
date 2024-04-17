@@ -8,7 +8,7 @@ tags:
   - estado
   - argentina
 header:
-  teaser: /assets/img/posts/cyt/ciencia%20básica.png
+  teaser: /assets/thumbnails/ciencia%20básica.png
 excerpt: "Una falsa dicotomía"
 ---
 
