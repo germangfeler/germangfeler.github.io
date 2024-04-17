@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Lecturas sobre Mariana Mazzucato
+title: Lecturas sobre Mazzucato
 categories: cafe
 tags:
   - política
