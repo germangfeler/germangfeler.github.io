@@ -8,7 +8,7 @@ tags:
   - estado
   - argentina
 header:
-  teaser: /assets/img/estado-ciencia/how-asia.png
+  teaser: /assets/thumbnails/how-asia.png
 excerpt: "Algunas ideas del libro How Asia Works"
 ---
 
