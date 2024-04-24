@@ -6,9 +6,8 @@ tags:
   - política
   - ciencia
   - estado
-  - innovación
 header:
-  teaser: /assets/thumbnails/Mazzucato.jpg
+  teaser: /assets/thumbnails/Peron.jpg
 excerpt: "Lecturas sobre Perón"
 ---
 
