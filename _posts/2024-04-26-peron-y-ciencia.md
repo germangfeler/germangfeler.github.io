@@ -29,6 +29,9 @@ Con el segundo plan quinquenal el gobierno busca organizar la actividad científ
 
 >[...] crear todas las condiciones necesarias a fin de que la ciencia y la técnica argentinas se desarrollen plenamente como instrumentos de la felicidad del Pueblo y de la grandeza de la Nación, contribuyendo asimismo al progreso universal.
 
+{:.center}
+![quinque](/assets/img/posts/lecturas/quinquenal.png)
+
 El plan define una serie de objetivos generales y especiales que buscaba conseguir. 
 
 <h3>Objetivos generales</h3>
