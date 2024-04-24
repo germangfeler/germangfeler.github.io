@@ -1,3 +1,17 @@
+---
+layout: single
+title: Perón y la ciencia
+categories: cafe
+tags:
+  - política
+  - ciencia
+  - estado
+  - innovación
+header:
+  teaser: /assets/thumbnails/Mazzucato.jpg
+excerpt: "Lecturas sobre Perón"
+---
+
 Durante el primer gobierno de Perón, a semejanza de lo que sucedió durante la posguerra en otros países, se comenzó a organizar el sistema nacional de ciencia y tecnología. En este sentido se destacan la creación de la Comisión Nacional de Energía Atómica (CNEA) y de la Dirección Nacional de Investigaciones Técnicas (DNIT) en 1950, el Instituto Antártico Argentino y el Consejo Nacional de Investigaciones Científicas y Técnicas (CNICyT) en 1951 y el Instituto de Investigaciones Científicas y Técnicas de las Fuerzas Armadas (CITEFA) en 1954. 
 
 Es importante resaltar que la política científica del primer peronismo estuvo más orientada a la técnica que a la ciencia, poniendo énfasis en la aplicación social, económica y militar del conocimiento. Para Perón la ciencia solo tenía sentido si servía para mejorar la vida del pueblo y era el Estado el que debía organizar sus tareas en ese sentido. 
@@ -19,25 +33,25 @@ Con el segundo plan quinquenal el gobierno busca organizar la actividad científ
 El plan define una serie de objetivos generales y especiales que buscaba conseguir. 
 
 <h3>Objetivos generales</h3>
-Función social de la ciencia y de la técnicas: se auspiciará las investigaciones en medida que cumplan con esta función social
-Función social de los investigadores: se auspiciará su tarea en tanto sea útil al bien común
-Conciencia científica y técnica: se promoverá la creación de una cultura nacional
-Conducción de las investigaciones científica y técnicas: el Estado, por medio del Consejo Nacional de Investigaciones Científicas y Técnicas, conducirá las investigaciones de centros públicos y las coordinará con las de centros privados
-Asistencia técnica y económica: se prestará asistencia económica y técnica a los centros de investigación en función de que cumplan con la función social
-Formación de investigadores: se auspiciará, promoverá y realizará la formación de investigadores y el estímulo a estudiantes
-Investigaciones básicas: se auspiciarán las investigaciones básicas debido a que constituyen la base de las investigaciones técnicas y a que cada país debe contar con su propio capital científico
-Investigaciones especiales para la planificación nacional y su desarrollo: el Estado las auspiciará como insumo para planes de gobierno 
+* Función social de la ciencia y de la técnicas: se auspiciará las investigaciones en medida que cumplan con esta función social
+* Función social de los investigadores: se auspiciará su tarea en tanto sea útil al bien común
+* Conciencia científica y técnica: se promoverá la creación de una cultura nacional
+* Conducción de las investigaciones científica y técnicas: el Estado, por medio del Consejo Nacional de Investigaciones Científicas y Técnicas, conducirá las investigaciones de centros públicos y las coordinará con las de centros privados
+* Asistencia técnica y económica: se prestará asistencia económica y técnica a los centros de investigación en función de que cumplan con la función social
+* Formación de investigadores: se auspiciará, promoverá y realizará la formación de investigadores y el estímulo a estudiantes
+* Investigaciones básicas: se auspiciarán las investigaciones básicas debido a que constituyen la base de las investigaciones técnicas y a que cada país debe contar con su propio capital científico
+* Investigaciones especiales para la planificación nacional y su desarrollo: el Estado las auspiciará como insumo para planes de gobierno 
 
 <h3>Objetivos especiales</h3>
-Prioridades: se fijará un sistema de prioridades para las investigaciones científicas y técnicas
-Servicio civil científico y técnico: se establecerá un escalafón único para el servicio civil científico y técnico, con características propias de selección, remuneración y ascensos
-Organización de los investigadores científicos y técnicos: se auspiciará la organización nacional de los investigadores
-Información científica y técnica: se creará el Centro Nacional de Documentación Científica y Técnica como servicio público para investigadores públicos y privados
-Potencial científico y técnico: se practicarán censos destinados a conocer el potencial científico y técnico del país
-Intercambio científico y técnico: se facilitará la realización de congresos, la publicación de trabajos científicos y el intercambio internacional
-Agregados científicos y técnicos: en las embajadas argentinas en el exterior se crearán agregados científicos y técnicos con el fin de coordinar la tarea científica nacional con la de otros países
-Investigaciones científicas y técnicas y política de fomento económico: todas las medidas de fomento económico que tome el Estado tendrán en cuenta el perfeccionamiento de la ciencia y la tecnología
-Impuestos e investigaciones: los gastos que las empresas realicen en ciencia y tecnología serán deducibles de los impuestos
+* Prioridades: se fijará un sistema de prioridades para las investigaciones científicas y técnicas
+* Servicio civil científico y técnico: se establecerá un escalafón único para el servicio civil científico y técnico, con características propias de selección, remuneración y ascensos
+* Organización de los investigadores científicos y técnicos: se auspiciará la organización nacional de los investigadores
+* Información científica y técnica: se creará el Centro Nacional de Documentación Científica y Técnica como servicio público para investigadores públicos y privados
+* Potencial científico y técnico: se practicarán censos destinados a conocer el potencial científico y técnico del país
+* Intercambio científico y técnico: se facilitará la realización de congresos, la publicación de trabajos científicos y el intercambio internacional
+* Agregados científicos y técnicos: en las embajadas argentinas en el exterior se crearán agregados científicos y técnicos con el fin de coordinar la tarea científica nacional con la de otros países
+* Investigaciones científicas y técnicas y política de fomento económico: todas las medidas de fomento económico que tome el Estado tendrán en cuenta el perfeccionamiento de la ciencia y la tecnología
+* Impuestos e investigaciones: los gastos que las empresas realicen en ciencia y tecnología serán deducibles de los impuestos
 
 Muchos de estos objetivos no se cumplirían debido a la interrupción del mandato democrático por el golpe militar de 1955. 
 
