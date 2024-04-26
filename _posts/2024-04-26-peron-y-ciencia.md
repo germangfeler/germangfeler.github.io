@@ -11,15 +11,15 @@ header:
 excerpt: "Lecturas sobre Perón"
 ---
 
-Durante el primer gobierno de Perón, a semejanza de lo que sucedió durante la posguerra en otros países, se comenzó a organizar el sistema nacional de ciencia y tecnología. En este sentido se destacan la creación de la Comisión Nacional de Energía Atómica (CNEA) y de la Dirección Nacional de Investigaciones Técnicas ('''DNIT''') en 1950, el Instituto Antártico Argentino y el Consejo Nacional de Investigaciones Científicas y Técnicas ('''CNICyT''') en 1951 y el Instituto de Investigaciones Científicas y Técnicas de las Fuerzas Armadas ('''CITEFA''') en 1954. En este post no me interesa entrar en detalles sobre los avances científico-tecnológicos que se dieron durante los gobiernos de Perón (para eso están los excelentes libros de Hurtado y Feld) sino profundizar sobre su obra escrita para entender que es lo que pensaba sobre este tema.
+Durante el primer gobierno de Perón, a semejanza de lo que sucedió durante la posguerra en otros países, se comenzó a organizar el sistema nacional de ciencia y tecnología. En este sentido se destacan la creación de la Comisión Nacional de Energía Atómica (**CNEA**) y de la Dirección Nacional de Investigaciones Técnicas (**DNIT**) en 1950, el Instituto Antártico Argentino y el Consejo Nacional de Investigaciones Científicas y Técnicas (**CNICyT**) en 1951 y el Instituto de Investigaciones Científicas y Técnicas de las Fuerzas Armadas (**CITEFA**) en 1954. En este post no me interesa entrar en detalles sobre los avances científico-tecnológicos que se dieron durante los gobiernos de Perón (para eso están los excelentes libros de Hurtado y Feld) sino profundizar sobre su obra escrita para entender que es lo que pensaba sobre este tema.
 
-En primer lugar, es importante resaltar que la política científica del primer peronismo estuvo más orientada a la técnica que a la ciencia, poniendo énfasis en la aplicación social, económica y militar del conocimiento. Para Perón la ciencia solo tenía sentido ==si servía para mejorar la vida del pueblo== y era el Estado el que debía organizar sus tareas en ese sentido. 
+En primer lugar, es importante resaltar que la política científica del primer peronismo estuvo más orientada a la técnica que a la ciencia, poniendo énfasis en la aplicación social, económica y militar del conocimiento. Para Perón la ciencia solo tenía sentido si servía para mejorar la vida del pueblo y era el Estado el que debía organizar sus tareas en ese sentido. 
 
 Los científicos opositores consideraban que los intentos del gobierno peronista de planificar la ciencia ponían en peligro la libertad de investigación, buscando subordinarla al Estado. La posición de este grupo era que la autonomía para elegir los temas de investigación y para trabajar era una condición necesaria para el desarrollo de la ciencia. El gobierno les responde a través del Segundo plan quinquenal donde dice:
 
->El general Perón auspicia la investigación científica privada, de las universidades y del Estado, pero establece una condición que fue la que no comprendió ese sector de los investigadores técnicos y científicos, que es la ciencia al servicio del Pueblo, y que es la ciencia al servicio de los fines del gobierno, que, a fin de cuentas, no es más que una expresión del Pueblo sirviendo al Pueblo.
+>El general Perón auspicia la investigación científica privada, de las universidades y del Estado, pero establece una condición que fue la que no comprendió ese sector de los investigadores técnicos y científicos, que es **la ciencia al servicio del Pueblo**, y que es la ciencia al servicio de los fines del gobierno, que, a fin de cuentas, no es más que una expresión del Pueblo sirviendo al Pueblo.
 En este plan de investigaciones técnicas, ahora que ha pasado un poco ya la resistencia de tantos seudoinvestigadores técnicos y científicos, firmantes de tantos manifiestos políticos en nombre de la ciencia, lo que quiere y lo que se pretende es que cumpla en este sentido, mediante la facilitación de ambientes propicios, todo lo que ha Perón ha querido en esta materia, para felicidad del Pueblo y al servicio del país.
-La independencia científica tiene, también el mismo sentido que hemos expuesto con respecto a la actividad cultural. Queremos formar nuestro propio capital científico y técnico. Esa es una expresión muchas veces repetida en las distintas afirmaciones de la Doctrina Peronista. La función social de la ciencia tiene también el mismo sentido que la función social de la cultura. La ciencia ha de servir al Pueblo. Este es otro pensamiento esencialmente peronista. La ciencia por la ciencia misma no tiene sentido. La ciencia como instrumento de felicidad de los demás, si lo tiene. 
+La independencia científica tiene, también el mismo sentido que hemos expuesto con respecto a la actividad cultural. Queremos formar nuestro propio capital científico y técnico. Esa es una expresión muchas veces repetida en las distintas afirmaciones de la Doctrina Peronista. La función social de la ciencia tiene también el mismo sentido que la función social de la cultura. La ciencia ha de servir al Pueblo. Este es otro pensamiento esencialmente peronista. **La ciencia por la ciencia misma no tiene sentido. La ciencia como instrumento de felicidad de los demás, si lo tiene.**
 
 Los científicos agrupados en la Asociación Argentina para el Progreso de la Ciencia (AAPC) consideraba que el gobierno confundía ciencia con técnica y que el “criterio estrechamente utilitario” del segundo plan quinquenal llevaría a “resultados contraproducentes”. Existían dos modelos de política científica difíciles de conciliar: uno orientado a la ciencia básica y basado en la libertad y la autonomía académica; otro con eje en la tecnología y con la función social como objetivo.
 
@@ -35,31 +35,31 @@ Con el segundo plan quinquenal el gobierno busca organizar la actividad científ
 El plan define una serie de objetivos generales y especiales que buscaba conseguir. 
 
 <h3>Objetivos generales</h3>
-* Función social de la ciencia y de la técnicas: se auspiciará las investigaciones en medida que cumplan con esta función social
-* Función social de los investigadores: se auspiciará su tarea en tanto sea útil al bien común
-* Conciencia científica y técnica: se promoverá la creación de una cultura nacional
-* Conducción de las investigaciones científica y técnicas: el Estado, por medio del Consejo Nacional de Investigaciones Científicas y Técnicas, conducirá las investigaciones de centros públicos y las coordinará con las de centros privados
-* Asistencia técnica y económica: se prestará asistencia económica y técnica a los centros de investigación en función de que cumplan con la función social
-* Formación de investigadores: se auspiciará, promoverá y realizará la formación de investigadores y el estímulo a estudiantes
-* Investigaciones básicas: se auspiciarán las investigaciones básicas debido a que constituyen la base de las investigaciones técnicas y a que cada país debe contar con su propio capital científico
-* Investigaciones especiales para la planificación nacional y su desarrollo: el Estado las auspiciará como insumo para planes de gobierno 
+* **Función social de la ciencia y de la técnicas:** se auspiciará las investigaciones en medida que cumplan con esta función social
+* **Función social de los investigadores:** se auspiciará su tarea en tanto sea útil al bien común
+* **Conciencia científica y técnica:** se promoverá la creación de una cultura nacional
+* **Conducción de las investigaciones científica y técnicas:** el Estado, por medio del Consejo Nacional de Investigaciones Científicas y Técnicas, conducirá las investigaciones de centros públicos y las coordinará con las de centros privados
+* **Asistencia técnica y económica:** se prestará asistencia económica y técnica a los centros de investigación en función de que cumplan con la función social
+* **Formación de investigadores:** se auspiciará, promoverá y realizará la formación de investigadores y el estímulo a estudiantes
+* **Investigaciones básicas:** se auspiciarán las investigaciones básicas debido a que constituyen la base de las investigaciones técnicas y a que cada país debe contar con su propio capital científico
+* **Investigaciones especiales para la planificación nacional y su desarrollo:** el Estado las auspiciará como insumo para planes de gobierno 
 
 <h3>Objetivos especiales</h3>
-* Prioridades: se fijará un sistema de prioridades para las investigaciones científicas y técnicas
-* Servicio civil científico y técnico: se establecerá un escalafón único para el servicio civil científico y técnico, con características propias de selección, remuneración y ascensos
-* Organización de los investigadores científicos y técnicos: se auspiciará la organización nacional de los investigadores
-* Información científica y técnica: se creará el Centro Nacional de Documentación Científica y Técnica como servicio público para investigadores públicos y privados
-* Potencial científico y técnico: se practicarán censos destinados a conocer el potencial científico y técnico del país
-* Intercambio científico y técnico: se facilitará la realización de congresos, la publicación de trabajos científicos y el intercambio internacional
-* Agregados científicos y técnicos: en las embajadas argentinas en el exterior se crearán agregados científicos y técnicos con el fin de coordinar la tarea científica nacional con la de otros países
-* Investigaciones científicas y técnicas y política de fomento económico: todas las medidas de fomento económico que tome el Estado tendrán en cuenta el perfeccionamiento de la ciencia y la tecnología
-* Impuestos e investigaciones: los gastos que las empresas realicen en ciencia y tecnología serán deducibles de los impuestos
+* **Prioridades:** se fijará un sistema de prioridades para las investigaciones científicas y técnicas
+* **Servicio civil científico y técnico:** se establecerá un escalafón único para el servicio civil científico y técnico, con características propias de selección, remuneración y ascensos
+* **Organización de los investigadores científicos y técnicos:** se auspiciará la organización nacional de los investigadores
+* **Información científica y técnica:** se creará el Centro Nacional de Documentación Científica y Técnica como servicio público para investigadores públicos y privados
+* **Potencial científico y técnico:** se practicarán censos destinados a conocer el potencial científico y técnico del país
+* **Intercambio científico y técnico:** se facilitará la realización de congresos, la publicación de trabajos científicos y el intercambio internacional
+* **Agregados científicos y técnicos:** en las embajadas argentinas en el exterior se crearán agregados científicos y técnicos con el fin de coordinar la tarea científica nacional con la de otros países
+* **Investigaciones científicas y técnicas y política de fomento económico:** todas las medidas de fomento económico que tome el Estado tendrán en cuenta el perfeccionamiento de la ciencia y la tecnología
+* **Impuestos e investigaciones:** los gastos que las empresas realicen en ciencia y tecnología serán deducibles de los impuestos
 
 Muchos de estos objetivos no se cumplirían debido a la interrupción del mandato democrático por el golpe militar de 1955. 
 
 El plan tiene algunos puntos muy interesantes que luego fueron implementados durante diferentes gobiernos: la priorización de temas de investigación, el intercambio con el exterior y la posibilidad de que las empresas deduzcan impuestos por los gastos que realicen en I+D. Un punto que considero importante y que no ha podido ser implementado es el escalafón único para el personal científico y técnico, que unifique las condiciones laborales entre los diferentes entes del sistema. 
 
-Los salarios promedios del sistema científico-tecnológico hoy muestran una gran dispersión, con algunos entre los más altos (CONAE) y otros al fondo de la tabla (Instituto Nacional del Cáncer):
+Los salarios promedios del sistema científico-tecnológico en abril 2024 muestran una gran dispersión, con algunos entre los más altos (CONAE) y otros al fondo de la tabla (Instituto Nacional del Cáncer):
 
 {:.center}
 ![salarios](/assets/img/posts/lecturas/salarios.jpeg)
@@ -70,7 +70,7 @@ En 1974, se publica el último libro de Perón, editado de manera póstuma: Mode
 
 Perón dedica varias páginas a hablar sobre el sistema científico-tecnológico. Sobre cuáles deben ser los objetivos del mismo dice:
 
->Considero que el campo científico-tecnológico debe aportar conocimientos para: desarrollar una capacidad adecuada que permita disponer de suficiente poder nacional de decisión, pues cada sector de conocimiento contribuye a fortalecer este poder; tener disponible, en el momento preciso, la tecnología adecuada para lograr los mejores resultados en cada una de las actividades económicas; exportar tecnología con el máximo grado de complejidad posible; sustituir progresivamente la importación de tecnología, realizándola a niveles adecuadamente económicos; establecer los sectores de conocimiento necesario, para que sean asumidos por la sociedad, a fin de estar en condiciones de adoptar las pautas que se ajusten a su propia fisonomía; y alcanzar una conducta lo suficientemente prudente como para que nuestro país no sufra los mismos males del desarrollo tecnológico cuyas consecuencias estamos viendo en los países superdesarrollados.
+>Considero que el campo científico-tecnológico debe aportar conocimientos para: **desarrollar una capacidad adecuada** que permita disponer de suficiente poder nacional de decisión, pues cada sector de conocimiento contribuye a fortalecer este poder; **tener disponible, en el momento preciso, la tecnología adecuada** para lograr los mejores resultados en cada una de las actividades económicas; **exportar tecnología** con el máximo grado de complejidad posible; **sustituir progresivamente la importación de tecnología**, realizándola a niveles adecuadamente económicos; **establecer los sectores de conocimiento necesario**, para que sean asumidos por la sociedad, a fin de estar en condiciones de adoptar las pautas que se ajusten a su propia fisonomía; y alcanzar una conducta lo suficientemente prudente como para que **nuestro país no sufra los mismos males del desarrollo tecnológico** cuyas consecuencias estamos viendo en los países superdesarrollados.
 
 Como vimos antes en el segundo plan quinquenal, Perón consideraba necesario centralizar la conducción del sector científico-tecnológico. Sobre esto decía:
 
