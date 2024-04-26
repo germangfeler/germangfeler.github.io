@@ -21,7 +21,7 @@ Los científicos opositores consideraban que los intentos del gobierno peronista
 En este plan de investigaciones técnicas, ahora que ha pasado un poco ya la resistencia de tantos seudoinvestigadores técnicos y científicos, firmantes de tantos manifiestos políticos en nombre de la ciencia, lo que quiere y lo que se pretende es que cumpla en este sentido, mediante la facilitación de ambientes propicios, todo lo que ha Perón ha querido en esta materia, para felicidad del Pueblo y al servicio del país.
 La independencia científica tiene, también el mismo sentido que hemos expuesto con respecto a la actividad cultural. Queremos formar nuestro propio capital científico y técnico. Esa es una expresión muchas veces repetida en las distintas afirmaciones de la Doctrina Peronista. La función social de la ciencia tiene también el mismo sentido que la función social de la cultura. La ciencia ha de servir al Pueblo. Este es otro pensamiento esencialmente peronista. **La ciencia por la ciencia misma no tiene sentido. La ciencia como instrumento de felicidad de los demás, si lo tiene.**
 
-Los científicos agrupados en la Asociación Argentina para el Progreso de la Ciencia (AAPC) consideraba que el gobierno confundía ciencia con técnica y que el “criterio estrechamente utilitario” del segundo plan quinquenal llevaría a “resultados contraproducentes”. Existían dos modelos de política científica difíciles de conciliar: uno orientado a la ciencia básica y basado en la libertad y la autonomía académica; otro con eje en la tecnología y con la función social como objetivo.
+Los científicos agrupados en la Asociación Argentina para el Progreso de la Ciencia (AAPC) consideraban que el gobierno confundía ciencia con técnica y que el “criterio estrechamente utilitario” del segundo plan quinquenal llevaría a “resultados contraproducentes”. Existían dos modelos de política científica difíciles de conciliar: uno orientado a la ciencia básica y basado en la libertad y la autonomía académica; otro con eje en la tecnología y con la función social como objetivo.
 
 <H2>Segundo plan quinquenal</H2>
 
@@ -57,7 +57,7 @@ El plan define una serie de objetivos generales y especiales que buscaba consegu
 
 Muchos de estos objetivos no se cumplirían debido a la interrupción del mandato democrático por el golpe militar de 1955. 
 
-El plan tiene algunos puntos muy interesantes que luego fueron implementados durante diferentes gobiernos: la priorización de temas de investigación, el intercambio con el exterior y la posibilidad de que las empresas deduzcan impuestos por los gastos que realicen en I+D. Un punto que considero importante y que no ha podido ser implementado es el escalafón único para el personal científico y técnico, que unifique las condiciones laborales entre los diferentes entes del sistema. 
+El plan tiene algunos puntos muy interesantes que luego fueron implementados durante diferentes gobiernos posteriores: la priorización de temas de investigación, el intercambio con el exterior y la posibilidad de que las empresas deduzcan impuestos por los gastos que realicen en I+D. Un punto que considero importante y que no ha podido ser implementado es el escalafón único para el personal científico y técnico, que unifique las condiciones laborales entre los diferentes entes del sistema. 
 
 Los salarios promedios del sistema científico-tecnológico en abril 2024 muestran una gran dispersión, con algunos entre los más altos (CONAE) y otros al fondo de la tabla (Instituto Nacional del Cáncer):
 
@@ -66,7 +66,7 @@ Los salarios promedios del sistema científico-tecnológico en abril 2024 muestr
 <i>Fuente:</i> <a href="https://www.lanacion.com.ar/economia/cuanto-ganan-los-estatales-privilegios-para-los-recaudadores-de-impuestos-y-padecimientos-para-los-nid24042024/">La Nación</a>
 
 <h2>El tercer Perón</h2>
-En 1974, se publica el último libro de Perón, editado de manera póstuma: Modelo argentino para el proyecto nacional donde busca sintetizar la doctrina del movimiento justicialista. Allí aborda diferentes temas que siguen siendo actuales al día de hoy como la comunidad organizada, el desarrollo económico, la ciencia y la tecnología, la ecología y la organización institucional.
+En 1974, se publica de manera póstuma el último libro de Perón: Modelo argentino para el proyecto nacional donde busca sintetizar la doctrina del movimiento justicialista. Allí aborda diferentes temas que siguen siendo actuales al día de hoy como la comunidad organizada, el desarrollo económico, la ciencia y la tecnología, la ecología y la organización institucional.
 
 Perón dedica varias páginas a hablar sobre el sistema científico-tecnológico. Sobre cuáles deben ser los objetivos del mismo dice:
 
@@ -76,13 +76,13 @@ Como vimos antes en el segundo plan quinquenal, Perón consideraba necesario cen
 
 >La indispensable organización en este ámbito debe contar con un ente dotado de máximo nivel de decisión, tal vez **un Ministerio de Ciencia y Tecnología**, que asuma el control de conducción del sistema, que asegure una total unidad de inteligencia y de control nacional, que oriente y regule la oferta y la demanda de conocimientos científico-tecnológicos con cabal especialidad, y que sirva como fuente de información especializada.
 
-La constitución del Ministerio de Ciencia y Tecnología se lograría recién más de 30 años después durante el primer gobierno de CFK.
+La creación del Ministerio de Ciencia y Tecnología se lograría recién más de 30 años después durante el primer gobierno de CFK.
 
 Aunque algunos sectores caracterizan al peronismo como un partido «estatista», Perón se muestra a favor de la participación de privados en la financiación de la innovación: «**Estado y sector privado deben volcar todos su esfuerzos en ese sentido, cada uno en la medida de sus posibilidades**». Luego continúa hablando sobre cómo deber ser la inversión:
 
 >El gasto en investigación y desarrollo debe ser tan grande como jamás lo haya sido hasta ahora pero tan bien programado como para soslayar cualquier posibilidad de despilfarro. Deben aprenderse bien estos conceptos, pues son absolutamente esenciales: **sin tecnología nacional no habrá una industria realmente argentina**, y sin tal industria podrá existir crecimiento pero nunca desarrollo.
 
-Ahí está la clave del modelo científico-tecnológico peronista: sino invertimos para desarrollar nuestra propia tecnología nunca nos podremos desarrollar como país, y para esto debemos aumentar el gasto en I+D a niveles históricos pero bajo una planificación adecuada para evitar tirar plata a la basura. Sino desarrollamos nuestra tecnología se produce una dependencia de la tecnología extranjera tal como lo explica Perón:
+Ahí está la clave del modelo científico-tecnológico peronista: invertir para desarrollar nuestra propia tecnología dado que de otra manera nunca nos podremos desarrollar como país, y para esto debemos aumentar el gasto en I+D a niveles históricos pero bajo una planificación adecuada para evitar tirar plata a la basura. Sino desarrollamos nuestra tecnología se produce una dependencia de la tecnología extranjera tal como lo explica Perón:
 
 >Ciertos sectores de nuestra economía han dependido y aún **dependen de la importación de tecnología extranjera**. Tal dependencia constituye en alguna medida un aspecto particular de dominación.
 Eliminar totalmente la importación de tecnología no constituye un paso próximo a lograr, pero si debe ser reducida a lo estrictamente imprescindible.
