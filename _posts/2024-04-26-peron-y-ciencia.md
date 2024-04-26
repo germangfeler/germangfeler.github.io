@@ -59,6 +59,12 @@ Muchos de estos objetivos no se cumplirían debido a la interrupción del mandat
 
 El plan tiene algunos puntos muy interesantes que luego fueron implementados durante diferentes gobiernos: la priorización de temas de investigación, el intercambio con el exterior y la posibilidad de que las empresas deduzcan impuestos por los gastos que realicen en I+D. Un punto que considero importante y que no ha podido ser implementado es el escalafón único para el personal científico y técnico, que unifique las condiciones laborales entre los diferentes entes del sistema. 
 
+Los salarios promedios del sistema científico-tecnológico hoy muestran una gran dispersión, con algunos entre los más altos (CONAE) y otros al fondo de la tabla (Instituto Nacional del Cáncer):
+
+{:.center}
+![salarios](/assets/img/posts/lecturas/salarios.jpeg)
+<i>Fuente:</i> <a href="https://www.lanacion.com.ar/economia/cuanto-ganan-los-estatales-privilegios-para-los-recaudadores-de-impuestos-y-padecimientos-para-los-nid24042024/">La Nación</a>
+
 <h2>El tercer Perón</h2>
 En 1974, se publica el último libro de Perón, editado de manera póstuma: Modelo argentino para el proyecto nacional donde busca sintetizar la doctrina del movimiento justicialista. Allí aborda diferentes temas que siguen siendo actuales al día de hoy como la comunidad organizada, el desarrollo económico, la ciencia y la tecnología, la ecología y la organización institucional.
 
