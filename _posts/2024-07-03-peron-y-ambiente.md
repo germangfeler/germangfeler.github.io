@@ -27,9 +27,9 @@ El ser humano no puede ser concebido aisladamente del medio que él mismo ha cre
 <h2>Panorama de la situación en los ‘70</h2>
 Una de las críticas principales de Perón hacia la sociedad de ese momento, y que no ha hecho más que acentuarse hasta la actualidad, es el consumismo. En ese sentido dice:
 
->Las mal llamadas “Sociedades de Consumo”, son, en realidad sistemas sociales de despilfarro masivo, basados en el gasto, por el que el gusto produce lucro. 
+>Las mal llamadas “Sociedades de Consumo”, son, en realidad sistemas sociales de despilfarro masivo, basados en el gasto, por el que el gasto produce lucro. 
 [...]
-No menos grave resulta el hecho de que los sistemas sociales de despilfarro de los países tecnológicamente más avanzados funciones mediante el consumo de ingentes recursos naturales aportados por el Tercer Mundo. 
+No menos grave resulta el hecho de que los sistemas sociales de despilfarro de los países tecnológicamente más avanzados funcionen mediante el consumo de ingentes recursos naturales aportados por el Tercer Mundo. 
 
 El ejemplo de despilfarro que da Perón muestra lo adelantado que está a su época, al hablar de autos eléctricos que recién comenzaron a  comercializarse en el siglo XXI.
 
