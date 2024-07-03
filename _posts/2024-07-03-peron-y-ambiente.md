@@ -22,8 +22,7 @@ En Modelo argentino Perón profundiza en las críticas hacia la acción perjudic
 
 >Ya el hombre ha tomado conciencia de su capacidad para alterar el medio en que vive, como también del uso indebido del avance tecnológico respecto de dicho medio. El tema no es nuevo. La concientización mundial, sí. Factores tales como la polución, el sobrecultivo, la deforestación, la acumulación de desperdicios, entre otros, indican claramente el perjuicio que ocasionan a los seres vivos.
 [...]
-El ser humano no puede ser concebido aisladamente del medio que él mismo ha creado. Ya es una poderosa fuerza biológica, y si continúa destruyendo los 
-Todos estos problemas están ligados de manera indisoluble con el de la justicia social, el de la soberanía política y de la independencia económica del Tercer Mundo y la distensión y la cooperación internacionales.
+El ser humano no puede ser concebido aisladamente del medio que él mismo ha creado. Ya es una poderosa fuerza biológica, y si continúa destruyendo los recursos vitales que le brinda la Tierra, sólo puede esperar verdaderas catástrofes sociales para las próximas décadas. [...] Todos estos problemas están ligados de manera indisoluble con el de la justicia social, el de la soberanía política y de la independencia económica del Tercer Mundo y la distensión y la cooperación internacionales.
 
 <h2>Panorama de la situación en los ‘70</h2>
 Una de las críticas principales de Perón hacia la sociedad de ese momento, y que no ha hecho más que acentuarse hasta la actualidad, es el consumismo. En ese sentido dice:
