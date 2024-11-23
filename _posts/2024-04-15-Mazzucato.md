@@ -17,15 +17,15 @@ Mariana Mazzucato es hoy una de las principales economistas heterodoxas. Su prin
 <h3>El Estado emprendedor</h3>
 Según la visión liberal de la economía las empresas privadas son las que realizan las innovaciones en la economía. Por esto consideran que la mejor política industrial y de innovación que puede tener un país es no tener ninguna. Simplemente bastaría con bajar los impuestos y las regulaciones para que los privados puedan desarrollarse. Sin embargo, en la práctica muchas veces las innovaciones privadas son subsidiadas por el Estado o se basan en investigaciones realizadas por el sector público. Por ejemplo, como veremos más adelante, la mayoría de las investigaciones biomédicas en EE.UU. son financiadas por el NIH, independientemente de si se realizan en una empresa privada o en un organismo público.
 
-<p>Ahora los invito a que intentemos un juego. Pensemos cuáles han sido las tecnologías que han cambiado nuestra vida durante los últimos 50 años. Internet, los nuevos fármacos, el GPS, las pantallas táctiles, probablemente vendrán a nuestra mente. Pero lo que quizás no es tan conocido es que la mayoría han tenido su origen en una investigación financiada por el estado.</p> 
+<p>Ahora los invito a que intentemos un juego. Pensemos cuáles han sido las tecnologías que han cambiado nuestra vida durante los últimos 50 años. Internet, los nuevos fármacos, el GPS, las pantallas táctiles, probablemente vendrán a nuestra mente. Pero lo que quizás no es tan conocido es que la mayoría han tenido su origen en una investigación financiada por el Estado.</p> 
 
-<p>¿Por qué el estado es el motor detrás de estas innovaciones? hay dos motivos centrales:</p>
+<p>¿Por qué el Estado es el motor detrás de estas innovaciones? hay dos motivos centrales:</p>
 1. Las investigaciones en ciencia básica y aplicada suelen necesitar de muchos años de trabajo 
 2. La incertidumbre es muy alta (y por lo tanto el riesgo). Cuando se comienza una investigación es imposible saber cuál será el resultado. Por cada producto que llega al mercado hay decenas de miles que mueren en el camino. Incluso antes de nacer.
 
 <p>El capital privado no está dispuesto a afrontar un riesgo tan alto por lo cual recién entra en el proceso de innovación en 
 la segunda o tercera etapa. Es por esto que el financiamiento de la investigación básica y aplicada en todo el mundo es 
-realizado en gran medida por el estado. </p>
+realizado en gran medida por el Estado. </p>
 
 {:.center}
 ![estado](/assets/img/estado-ciencia/estado.png)
@@ -36,7 +36,7 @@ realizado en gran medida por el estado. </p>
 {:.center}
 ![eeuu1](/assets/img/estado-ciencia/eeuu1.png)
 
-<p>Esto refuerza lo que hablamos hasta ahora: hay un estado que se encarga de financiar la investigación básica (más innovadora, más arriesgada) y un sector privado que acompaña financiando el desarrollo en las etapas finales y la comercialización.</p>
+<p>Esto refuerza lo que hablamos hasta ahora: hay un Estado que se encarga de financiar la investigación básica (más innovadora, más arriesgada) y un sector privado que acompaña financiando el desarrollo en las etapas finales y la comercialización.</p>
 
 <p>Hasta aquí vimos una visión “macro” (si se me permite el término) de cómo funciona la política científica en innovación pero alguno de uds se puede estar preguntando ¿qué cosas concretas han salido de la investigación estatal?  Veamos algunos ejemplos, que no intentan ser exhaustivos pero sí relevantes.</p>
 
@@ -68,7 +68,7 @@ investigar suelen poner más énfasis en drogas “me too” (variaciones de otr
 {:.center}
 ![nih](/assets/img/estado-ciencia/nih.png)
 
-A modo de reflexión personal final: el Estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún países serio del mundo, es la sinergia entre ambos lo que da los mejores resultados. No está de más decir que la innovación no es, ni debe ser, el único fin de la ciencia y que el único garante de que se 
+A modo de reflexión personal final: el Estado es un actor clave en la innovación al sostener en el tiempo líneas de investigación y empujar la frontera de la ciencia a través de la financiación de trabajos con pronóstico incierto. El sector privado también cumple un rol importante, al contribuir en las etapas avanzadas del proceso de desarrollo y realizar la comercialización de los productos. La falsa dicotomía público vs privado no se sostiene en ningún pais serio del mundo, es la sinergia entre ambos lo que da los mejores resultados. No está de más decir que la innovación no es, ni debe ser, el único fin de la ciencia y que el único garante de que se 
 estudien temas que no tienen un fin económico (al menos inmediato) es el Estado.
 
 <h3>Misión economía</h3>
