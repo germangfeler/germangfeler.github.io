@@ -7,7 +7,7 @@ tags:
   - ambiente
   - economia
 header:
-  teaser: /assets/thumbnails/peron_azul.png
+  teaser: /assets/thumbnails/laudato_si.jpg
 excerpt: "Sobre Laudato Si'"
 ---
 
