@@ -116,3 +116,9 @@ En cuanto a **la relación entre el Estado nacional y las provincias** es necesa
 
 <h2>Un futuro posible</h2>
 Este documento intenta plantear algunas ideas para el futuro del peronismo, que no se queden en volver a un pasado que fue mejor sino que intenten construir una Argentina para el siglo XXI. Una Argentina con **inflación baja**; con **un sistema impositivo simple** y donde el que más tiene, más paga; una **Argentina innovadora**, que produce más y con más valor agregado, le vende más al mundo y lo hace cuidando el ambiente. Un país que busca **crear trabajo** y mejorar la vida de los trabajadores; con un **Estado eficiente**, que cumple adecuadamente sus funciones básicas (educación, salud y seguridad) e interviene inteligentemente para dinamizar la economía de todo el país.
+
+---
+
+La mayoría de estas ideas salieron de conversaciones con compañaeros, especialmente con el grupo Productivistas. Si alguna te gustó seguramente me la robé, si te pareció mala seguro se me ocurrió a mí. Este es un texto vivo que probablemente vaya mutando en el tiempo.
+
+
