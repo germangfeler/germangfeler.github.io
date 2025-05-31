@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Germán A. González"
 title_separator          : "-"
 name                     : ""
-description              : "Ciencia de datos, R, estadística y cosas de la vida"
+description              : "Ciencia de datos, R, estadística y política"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -105,7 +105,7 @@ analytics:
 author:
   name             : ""
   avatar           : "/assets/GG4.JPG"
-  bio              : "Bioinformático / Bioestadístico / <br>Data Scientist / Fundamentalista <br>de R / Jedi Master"
+  bio              : "Bioinformático / Bioestadístico / <br>Data Scientist / Peronista"
   location         : "Córdoba, Argentina"
   email            :
   links:
