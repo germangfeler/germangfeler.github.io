@@ -119,6 +119,6 @@ Este documento intenta plantear algunas ideas para el futuro del peronismo, que 
 
 ---
 
-La mayoría de estas ideas salieron de conversaciones con compañaeros, especialmente con el grupo Productivistas. Si alguna te gustó seguramente me la robé, si te pareció mala seguro se me ocurrió a mí. Este es un texto vivo que probablemente vaya mutando en el tiempo.
+La mayoría de estas ideas salieron de conversaciones con compañeros, especialmente con el grupo Productivistas. Si alguna te gustó seguramente me la robé, si te pareció mala seguro se me ocurrió a mí. Este es un texto vivo que probablemente vaya mutando en el tiempo.
 
 
