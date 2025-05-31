@@ -16,15 +16,15 @@ Mientras tanto la juventud cada vez se aleja más del peronismo y se acerca al l
 Si miramos las propuestas de los diferentes sectores del peronismo queda claro que lo único que tenemos para ofrecer son retroutopías que intentan volver a un pasado que fue mejor. Un pasado que las generaciones jóvenes ni siquiera vivieron. Las más modestas de estas retroutopías proponen un regreso al 2010, las más osadas que volvamos a 1945. Como si nada hubiera pasado en el medio. Como si el país y el mundo fueran el mismo. 
 «Hay que volver a la doctrina peronista» se repite casi como un mantra. La mayoría podemos estar de acuerdo pero el problema comienza cuando nos preguntamos qué significa exactamente «volver a la doctrina». Para algunos sectores que se identifican como «ortodoxos» parece significar que hay que repetir lo que hizo Perón entre 1946 y 1955 sin modificar una coma. Sin embargo, el General en su Manual de Conducción Política nos dice:
 
-«Las doctrinas no son eternas sino en sus grandes principios, pero es necesario ir adaptándolas a los tiempos, al progreso y a las necesidades. Y ello influye en la propia doctrina, porque una verdad que hoy nos parece incontrovertible, quizá dentro de pocos años resulte una cosa totalmente fuera de lugar, fuera de tiempo y fuera de circunstancias.»
+>«Las doctrinas no son eternas sino en sus grandes principios, pero es necesario ir adaptándolas a los tiempos, al progreso y a las necesidades. Y ello influye en la propia doctrina, porque una verdad que hoy nos parece incontrovertible, quizá dentro de pocos años resulte una cosa totalmente fuera de lugar, fuera de tiempo y fuera de circunstancias.»
 
 Perón nos invita a identificar estos grandes principios y a diferenciarlos de lo que puede ir cambiando con el tiempo. Para ello es necesario entender el contexto histórico y geopolítico en el que se tomó cada decisión. Pensemos, por ejemplo, en el estatismo que algunos ven como una propiedad intrínseca del peronismo. No es posible separar al primer peronismo de la geopolítica de la posguerra, que nos marginó de las inversiones y los apoyos comerciales de Estados Unidos. En ese contexto, la fuerte presencia estatal en la economía surge más como una necesidad que como una parte constituyente del peronismo. De hecho, cuando Perón se dió cuenta que con las inversiones estatales no iba a alcanzar para desarrollar el sector petrolero no tuvo problema en firmar un contrato con la Standard Oil de California. Tampoco le tembló el pulso en 1952 para aplicar medidas de «ajuste» que permitieran corregir desequilibrios y bajar la inflación.
 Pero entonces, ¿cuáles son esos grandes principios eternos en los que se sustenta la doctrina justicialista? Es un tema para debatir un rato largo pero a fines de mantener la brevedad voy a plantear cinco puntos que considero fundamentales:
-# El peronismo es una doctrina profundamente cristiana y humanista. Tiene como eje a la dignidad de la persona humana pero no desde una posición individualista sino como parte de una comunidad en la que puede realizarse y realizarla en simultáneo. 
-# El peronismo busca el desarrollo del país a través de la industrialización 
-# El peronismo tiene su base social en la clase trabajadora y cree en el trabajo como un valor ordenador
-# El peronismo es nacionalista
-# El peronismo tiene tres banderas: la independencia económica, la soberanía política y la justicia social
+1. El peronismo es una doctrina profundamente cristiana y humanista. Tiene como eje a la dignidad de la persona humana pero no desde una posición individualista sino como parte de una comunidad en la que puede realizarse y realizarla en simultáneo. 
+2. El peronismo busca el desarrollo del país a través de la industrialización 
+3. El peronismo tiene su base social en la clase trabajadora y cree en el trabajo como un valor ordenador
+4. El peronismo es nacionalista
+5. El peronismo tiene tres banderas: la independencia económica, la soberanía política y la justicia social
 Teniendo en cuenta estos grandes principios en las siguientes secciones vamos a pensar en diferentes aspectos de la Argentina del futuro.
 
 <h2>Tenemos que tomarnos en serio la macro</h2>
