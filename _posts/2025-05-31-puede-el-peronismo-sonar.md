@@ -10,7 +10,7 @@ header:
   teaser: /assets/thumbnails/peronismo_futuro.jpg
 excerpt: "Algunas ideas para pensar el peronismo del siglo XXI"
 ---
-
+![futuro](/assets/thumbnails/peronismo_futuro.jpg)estado
 Que el peronismo está sumergido en una crisis no es novedad. Un movimiento que sabe de liderazgos fuertes —Perón mismo, Menem, Kirchner, Cristina—, hace años que no encuentra una conducción clara para llevar adelante el «poskirchnerismo». Pero la crisis no es solo de conducción sino que se entrelaza con una crisis de identidad en la que las diferentes tribus que conforman el movimiento se disputan la elección del camino que debe seguir el peronismo.
 
 Mientras tanto la juventud cada vez se aleja más del peronismo y se acerca al liberalismo. Algunos hablan de una «derechización de los jóvenes», concepto que sirve para lavar culpas y **no aceptar nuestra parte de responsabilidad**. Pongámonos por un rato en los zapatos de un joven de 20 años. Lo único que ha conocido desde que tiene uso de razón es un país que **no crece** (no lo hacemos desde 2011), donde **los precios suben** todos los meses y el **cepo y las trabas a las importaciones** no le permiten comprar las cosas que quiere. El futuro no pinta mucho mejor: si consigue trabajo posiblemente sea en negro y con un sueldo que no alcance para vivir dignamente. Es en este contexto que los jóvenes dicen «ya les dimos muchas oportunidades y nos fallaron, probemos otra cosa». Milei no es un extraterrestre que un día llegó a Argentina sino un producto a la imposibilidad de los partidos tradicionales (no solo el peronismo) de darle a los jóvenes **un país normal y un horizonte de futuro**.
