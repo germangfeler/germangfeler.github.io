@@ -8,7 +8,7 @@ tags:
   - economia
 header:
   teaser: /assets/thumbnails/impuestos.jpg
-excerpt: "Propuestas de todo el arco'"
+excerpt: "Propuestas de todo el arco"
 ---
 
 El sistema impositivo argentino tiene muchos problemas, todos estamos de acuerdo: es regresivo, complejo y no da los incentivos correctos para producir y exportar más. 
