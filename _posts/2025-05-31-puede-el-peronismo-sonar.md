@@ -8,7 +8,7 @@ tags:
   - politica
 header:
   teaser: /assets/thumbnails/peronismo_futuro.jpg
-excerpt: "Algunas ideas para pensar el peronismo del siglo XXI"
+excerpt: "Ideas para pensar el peronismo del siglo XXI"
 ---
 ![futuro](/assets/thumbnails/peronismo_futuro.jpg)
 
