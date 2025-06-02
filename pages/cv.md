@@ -22,17 +22,18 @@ author_profile: true
 <h2>Cargos de gestión</h2>
 * Miembro suplente del Consejo Directivo, IDEA
 * Coordinador alterno de la comisión de CPA, IDEA
-* Miembro de la comisión editorial de la revista +IDEA sobre Fauna, IDEA
 
-<h2>Divulgación científica</h2>
+<h2>Comunicación pública de la ciencia</h2>
 * <strong>bioinformaticos.com.ar</strong> (2007-2017), administración, edición y redacción de artículos  
 * <strong>Instituto de Diversidad y Ecología Animal</strong> (2018-actualidad), creación de contenido para la web y redes sociales
-* <strong>Revista +IDEA sobre Fauna</strong> (actualidad), comité editorial
+* <strong>Revista +IDEA sobre Fauna</strong> (actualidad), editor general
 
 <h2>Libros</h2>
 * <strong>Vida.exe. Desafíos y aventuras de la bioinformática</strong>. Coeditores: <strong>Germán A. González</strong>, Lionel Uran Landaburu, Nicolás Palopoli (2021). Fondo de Cultura Económica.
 
 <h2>Publicaciones</h2>
+* Fatty acid response of calcifying benthic Antarctic species to ocean acidification and warming. Servetto, N., De Troch, M., Gazeau, F., de Aranzamendi, C., Alurralde, G., González, G., & Sahade, R. (2025). Marine Pollution Bulletin, 217, 118111.
+* Microplastic pollution in waters of the Antarctic coastal environment of Potter Cove (25 de Mayo Island/King George Island, South Shetlands). Antacli, J. C., Di Mauro, R., Rimondino, G. N., Alurralde, G., Schloss, I. R., González, G. A., ... & Vodopivez, C. (2024). Science of The Total Environment, 915, 170155.
 * Patterns of morphological variation and ecological correlates in the skull of vipers (Serpentes: Viperidae). Carrasco PA, Prystupczuk L, Koch C, <strong>González GA</strong>, Leynaud GC, Grazziotin FG (2023). Journal of Morphology, 284, 8.
 * Molecular mechanisms underlying responses of the Antarctic coral Malacobelemnon daytoni to ocean acidification. Servetto N, Aranzamendi MC, Bettencourt R, Held C, Abele D, Movilla J; <strong>González GA</strong>, Bustos DM, Sahade R (2021). Marine Environmental Research, 170, 105430.
 * The number of pores per area of the eggshells is not always a reliable indicator of Rheidae species. Navarro JL, García KA, <strong>González GA</strong> & Martella MB (2020). Archaeofauna, 29, 185-192.
