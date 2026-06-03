@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Lecturas sobre Mazzucato
+title: La Luna, Google y el CAREM: lo que Mariana Mazzucato entendió sobre la innovación
 categories: cafe
 tags:
   - política
