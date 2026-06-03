@@ -1,6 +1,6 @@
 ---
 layout: single
-title: La Luna, Google y el CAREM: lo que Mariana Mazzucato entendió sobre la innovación
+title: La Luna, Google y el CAREM. Lo que Mariana Mazzucato entendió sobre la innovación
 categories: cafe
 tags:
   - política
