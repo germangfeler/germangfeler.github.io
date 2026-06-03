@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Francisco y el ambiente
+title: Una sola crisis. Ambiente, pobreza y desarrollo en la visión de Francisco
 categories: cafe
 tags:
   - francisco
