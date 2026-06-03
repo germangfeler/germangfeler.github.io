@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Perón y el ambiente
+title: Cuando Perón advirtió sobre la crisis ambiental
 categories: cafe
 tags:
   - política
