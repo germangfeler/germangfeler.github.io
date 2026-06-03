@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Perón y la ciencia
+title: PSin tecnología nacional no hay desarrollo: qué pensaba Perón sobre la ciencia
 categories: cafe
 tags:
   - política
