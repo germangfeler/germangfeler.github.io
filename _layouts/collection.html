@@ -1,9 +1,15 @@
 ---
-layout: archive
+layout: default
 ---
-
-{{ content }}
-
-<div class="entries-{{ page.entries_layout }}">
-  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=page.entries_layout %}
-</div>
+{%- assign docs = site[page.collection] | sort: 'path' -%}
+<section class="listing">
+  <header class="listing__head">
+    <h1 class="listing__title">{{ page.title }}</h1>
+    <div class="listing__intro">{{ content }}</div>
+  </header>
+  <ol class="entries">
+    {%- for d in docs -%}
+      {% include entry.html post=d show_section=false %}
+    {%- endfor -%}
+  </ol>
+</section>

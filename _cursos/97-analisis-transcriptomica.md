@@ -17,17 +17,21 @@ Curso de Posgrado para la Carrera Doctorado en Ciencias Biológicas, Universidad
 ![flyer](/assets/img/cursos/flyer-rna-seq.png)
 
 <h2>Fecha</h2>
+
 7 al 11 de mayo de 2018.
 
 <h2>Objetivos</h2>
+
 El curso tiene como finalidad brindar los conocimientos básicos necesarios para el diseño y análisis de experimentos transcriptómicos de alto rendimiento utilizando el software considerado como ‘estándar de facto’ en la literatura.
 
 <h2>Docentes</h2>
+
 * Germán A. González, IDEA-CONICET. 
 * Natalia Servetto, IDEA-CONICET.
 * Micaela Ruiz, IDEA-CONICET
 
 <h2>Programa</h2>
+
 1. Conceptos básicos: Secuenciación de alto rendimiento. Tecnologías disponibles en el
 mercado. Formatos de archivo. Diseño de experimentos transcriptómicos: replicación,
 estrategias de diseño, multiplexado.

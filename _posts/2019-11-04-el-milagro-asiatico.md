@@ -71,6 +71,7 @@ Corea tuvo un inflación alta mientras se industrializaba. Japón, Corea, Taiwá
 Los países en desarrollo tienen que invertir en aprender antes de preocuparse demasiado en ser eficientes. Deben caminar antes que correr. Los problemas del desarrollo no son los mismos del mundo desarrollado.
 
 <h3>Referencias</h3>
+
 * Studwell, J. (2013). How Asia works: Success and failure in the world's most dynamic region. Open Road+ Grove/Atlantic.
 
 Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1191450464073736193">hilo de Twitter</a>.

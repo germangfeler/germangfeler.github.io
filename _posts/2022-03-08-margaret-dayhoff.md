@@ -7,7 +7,7 @@ tags:
   - ciencia
 header:
   teaser: /assets/img/posts/bioinfo/md1.jpeg
-excerpt: "Homaneje a la gran pionera"
+excerpt: "Homenaje a la gran pionera"
 ---
 
 Margaret se graduó con honores en matemáticas y luego realizó un doctorado en química. Tras doctorarse comenzó a trabajar en la Asoc. Nac. para la Investigación Biomédica en Estados Unidos buscando la forma de aplicar la entonces novedosa computación en problemas biológicos.
@@ -33,6 +33,7 @@ Margaret se presentó pero no ganó a pesar de ser la única con experiencia com
 ¿Y Margaret? Nunca consiguió financiamiento para su base de datos y tuvo que bancarla a pulmón recurriendo a subscripciones. La base de datos existe hasta el día de hoy bajo el nombre PIR.
 
 <h3>Referencias</h3>
+
 * Gonzalez, G., Uran Landaburu, L., Palopoli, N., Banchero, M., Bustamante, J. P., Lanzarotti, E., Revuelta, M. V., Teppa, E., Zea, D. J., & Stocchi, N. (2022). <strong>Vida. exe: Desafíos y aventuras de la bioinformática</strong>. Fondo de Cultura Económica Argentina.
 
 Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1271187214026903557">hilo de Twitter.</a>

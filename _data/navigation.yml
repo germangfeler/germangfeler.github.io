@@ -1,13 +1,14 @@
-# main links
+# Menú principal
 main:
-   - title: "Data Science"
-     url: /datascience/
-   - title: "Bioinformática"
-     url: /bioinformatica/
-   - title: "Café"
-     url: /cafe/
-   - title: "Cursos"
-     url: /cursos/
-   - title: "Servicios"
-     url: /servicios/
- 
+  - title: "Data Science"
+    url: /datascience/
+  - title: "Bioinformática"
+    url: /bioinformatica/
+  - title: "Café"
+    url: /cafe/
+  - title: "Servicios"
+    url: /servicios/
+  - title: "Publicaciones"
+    url: /publicaciones/
+  - title: "CV"
+    url: /cv/

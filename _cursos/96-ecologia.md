@@ -16,13 +16,16 @@ Este curso pretende brindar los conocimientos básicos necesarios para el análi
 <!--more-->
 
 <h2>Fecha</h2>
+
 Del 15 al 19 de abril de 2019
 
 <h2>Docentes</h2>
+
 * Dr. Nicolás Pelegrin, IDEA-CONICET
 * Lic. Germán González, IDEA-CONICET
 
 <h2>Temario</h2>
+
 * <strong>Ecología de comunidades:</strong> conceptos básicos sobre ecología de comunidades y nichos ecológicos. Formato de los datos de comunidades. Estimadores de riqueza y diversidad. Introducción a R: carga, manejo y transformación de datos. 
 * <strong>Modelando datos normales:</strong> regresión, anova, ancova. Supuestos e interpretación de resultados. Tests de posteriori. 
 * <strong>Modelando datos de presencia / ausencia:</strong> modelos lineales generalizados (GLM) y modelos de ocupación. Interpretación y reporte.
@@ -31,9 +34,11 @@ Del 15 al 19 de abril de 2019
 * <strong>Evaluando las diferencias entre comunidades:</strong> permanova, anosim, mantel. Integrando información filogenética en el análisis. 
 
 <h2>Metodología</h2>
+
 Modalidad presencial. Consta de módulos teóricos y módulos prácticos en R donde se analizarán diferentes casos de estudio.
 
 <h2>Inscripción</h2>
+
 PRE-INSCRIPCIONES CERRADAS. En breve anunciaremos a los seleccionados.
 
 

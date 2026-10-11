@@ -25,6 +25,7 @@ Cuando descarguen y descompriman los datos van a ver los siguientes archivos:
 * mesas_totales_lista.dsv
 
 <h2>Preparación de las tablas</h2>
+
 En este post vamos a usar dos de ellos: mesas_totales y descripcion_postulaciones. Los pueden abrir con el bloc de notas y van a ver que son archivos de texto separados por barras verticales. ¿Cómo los leemos en R?
 
 ```r

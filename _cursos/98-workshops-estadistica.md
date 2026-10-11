@@ -16,9 +16,11 @@ Talleres teórico / prácticos sobre metodologías estadísticas y su aplicació
 <!--more-->
 
 <h2>Docentes</h2>
+
 * Lic. Germán González, IDEA-CONICET
 
 <h2>Talleres</h2>
+
 * Introducción a R 
 * Entendimiento de datos 
 * Modelos lineales I: regresión 

@@ -1,0 +1,131 @@
+# Publicaciones seleccionadas: trabajos donde hice el análisis de datos.
+# Se muestran en /publicaciones/ en este orden.
+#
+# Campos:
+#   titulo, autores (tu nombre entre ** ** para resaltarlo), revista, detalle (volumen, páginas),
+#   anio, estado (opcional, ej. "En prensa"), doi (opcional, ej. "10.1016/j.marpolbul.2025.118111"),
+#   temas: de qué trata el trabajo
+#   aporte: técnicas que apliqué. Usá siempre el mismo nombre para la misma técnica,
+#           así el filtro las agrupa (ej. "Linear mixed models", no "LME models").
+
+- titulo: "Woody plant invasions restructure arthropod prey communities and cascade to insectivorous birds in the Chaco Serrano Forest"
+  autores: "Aguirre Vallés, T., Montejano, F. A., **González, G. A.** & Peluc, S. I."
+  revista: "Austral Ecology"
+  anio: 2026
+  estado: "En prensa"
+  temas: [Community ecology, Arthropod diversity, Invasive trees]
+  aporte:
+    - Hill numbers
+    - Rarefaction/extrapolation curves
+    - PERMANOVA
+    - Pairwise post hoc PERMANOVA
+    - Beta diversity
+    - SIMPER
+    - Indicator species analysis
+    - Generalized linear models (GLM)
+    - Post hoc comparisons
+    - Redundancy analysis (RDA)
+
+- titulo: "Mesozooplankton dynamics in a glacially influenced Antarctic coastal system: insights from three years of image-based monitoring in Potter Cove"
+  autores: "Antacli J., Ottero A., Schloss I. R., Sahade R., **González G. A.**, Garcia M. D., Morales S. & Di Mauro R."
+  revista: "Marine Ecology Progress Series"
+  anio: 2026
+  temas: [Mesozooplankton, Antarctic coastal ecosystem, Size structure]
+  aporte:
+    - ANOVA
+    - Linear models
+    - Non-metric multidimensional scaling (NMDS)
+    - BIOENV
+    - envfit
+    - Analysis of similarity (ANOSIM)
+    - SIMPER
+    - Permutation-based ANOVA
+
+- titulo: "A sensitive sentinel: Chironomus xanthus as a bioindicator of freshwater sediment quality in Southern Latin America"
+  autores: "Ortiz, C. M., Albá, M. L., Manetti, C., **González, G. A.**, Gonzalez, M., Arpellino, J. P. Z., … & Ballesteros, M. L."
+  revista: "Aquatic Toxicology"
+  detalle: "107790"
+  anio: 2026
+  temas: [Life-history traits, Behavioral variables, Sex ratio, Integrated biomarker response]
+  aporte:
+    - Generalized linear models (GLM)
+    - Linear models
+    - Permutation-based ANOVA
+    - Partial least squares (PLS) regression
+
+- titulo: "Fatty acid response of calcifying benthic Antarctic species to ocean acidification and warming"
+  autores: "Servetto, N., De Troch, M., Gazeau, F., de Aranzamendi, C., Alurralde, G., **González, G.**, & Sahade, R."
+  revista: "Marine Pollution Bulletin"
+  detalle: "217, 118111"
+  anio: 2025
+  temas: [Southern Ocean benthos, Corals]
+  aporte:
+    - ANOVA
+    - Linear models
+    - Permutation-based ANOVA
+
+- titulo: "Microplastic pollution in marine sediments of the Antarctic coastal environment of Potter Cove and nearby areas (25 de Mayo/King George Island, South Shetlands)"
+  autores: "Antacli, J. C., Rimondino, G. N., Di Mauro, R., Alurralde, G., Servetto, N., Garcia, M. D., **González, G. A.**, … & Schloss, I. R."
+  revista: "Marine Pollution Bulletin"
+  detalle: "209, 117236"
+  anio: 2024
+  temas: [Coastal Antarctica, Microplastic pollution]
+  aporte:
+    - Permutation-based ANOVA
+    - Post hoc comparisons
+    - Data visualization
+
+- titulo: "Microplastic pollution in waters of the Antarctic coastal environment of Potter Cove (25 de Mayo Island/King George Island, South Shetlands)"
+  autores: "Antacli, J. C., Di Mauro, R., Rimondino, G. N., Alurralde, G., Schloss, I. R., **González, G. A.**, … & Vodopivez, C."
+  revista: "Science of The Total Environment"
+  detalle: "915, 170155"
+  anio: 2024
+  temas: [Coastal Antarctica, Microplastic pollution]
+  aporte:
+    - Permutation-based ANOVA
+    - Post hoc comparisons
+    - Data visualization
+
+- titulo: "Patterns of morphological variation and ecological correlates in the skull of vipers (Serpentes: Viperidae)"
+  autores: "Carrasco P. A., Prystupczuk L., Koch C., **González G. A.**, Leynaud G. C., Grazziotin F. G."
+  revista: "Journal of Morphology"
+  detalle: "284(8)"
+  anio: 2023
+  temas: [Cranial osteology, Evolutionary allometry, Viperid snakes]
+  aporte:
+    - Linear morphometric analyses
+    - Principal component analysis (PCA)
+    - Partial least squares discriminant analysis (PLS-DA)
+    - Procrustes ANOVA
+    - Phylogenetic ANOVA
+
+- titulo: "Molecular mechanisms underlying responses of the Antarctic coral Malacobelemnon daytoni to ocean acidification"
+  autores: "Servetto N., Aranzamendi M. C., Bettencourt R., Held C., Abele D., Movilla J., **González G. A.**, Bustos D. M., Sahade R."
+  revista: "Marine Environmental Research"
+  detalle: "170, 105430"
+  anio: 2021
+  temas: [Ocean acidification, Coral Malacobelemnon daytoni, Antarctica, Gene expression]
+  aporte:
+    - Linear models
+    - Data visualization
+
+- titulo: "The number of pores per area of the eggshells is not always a reliable indicator of Rheidae species"
+  autores: "Navarro J. L., García K. A., **González G. A.** & Martella M. B."
+  revista: "Archaeofauna"
+  detalle: "29, 185–192"
+  anio: 2020
+  temas: [Eggshells, Rheidae, Species determination]
+  aporte:
+    - Linear mixed models
+    - Classification
+    - Sensitivity and specificity metrics
+
+- titulo: "Assessment of exposure to metals, As and Se in water and sediment of a freshwater reservoir and their bioaccumulation in fish species of different feeding and habitat preferences"
+  autores: "Garnero, P. L., Monferran, M. V., **González, G. A.**, Griboff, J., & de los Ángeles, B. M."
+  revista: "Ecotoxicology and Environmental Safety"
+  detalle: "163, 492–501"
+  anio: 2018
+  temas: [Exposure to metals, Bioaccumulation factor (BAF)]
+  aporte:
+    - Linear mixed models
+    - Post hoc comparisons

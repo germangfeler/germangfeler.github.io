@@ -5,7 +5,7 @@ categories: datascience
 tags:
   - Data Science
 header:
-  teaser: /assets/thumbnails/ciencia_datos.png
+  teaser: /assets/thumbnails/portadas/ese-raro-bicho.png
 excerpt: "Qué es y para qué sirve"
 ---
 

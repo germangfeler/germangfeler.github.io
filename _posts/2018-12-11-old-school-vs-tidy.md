@@ -7,7 +7,7 @@ tags:
   - R
   - Exploración
 header:
-  teaser: /assets/thumbnails/tidyverse.png
+  teaser: /assets/thumbnails/portadas/old-school-vs-tidy.png
 toc: true
 toc_label: "Secciones"
 excerpt: "Comparamos los dos universos"  
@@ -202,6 +202,7 @@ Algo interesante de <i>select</i> es que tiene un montón de funciones auxiliare
 * num_range("x", 1:3), selecciona x1, x2 y x3.
 
 <h2>Agregar columnas</h2>
+
 Queremos crear una nueva columna, llamada bmi, con el índice de masa corporal de cada personaje. El bmi se calcula como peso / altura^2.
 
 <strong>Old School</strong>
