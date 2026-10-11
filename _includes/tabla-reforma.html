@@ -1,0 +1,61 @@
+{%- comment -%}
+  Tabla comparativa de propuestas de reforma tributaria.
+  Datos en _data/reforma_tributaria.yml. Uso: {% include tabla-reforma.html %}
+{%- endcomment -%}
+{%- assign d = site.data.reforma_tributaria -%}
+<div class="tr" data-tr>
+  <div class="tr__scroll" tabindex="0" role="region" aria-label="Tabla comparativa de propuestas">
+    <table class="tr__table">
+      <caption class="tr__caption">Qué propone cada espacio, impuesto por impuesto</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="tr__corner"><span class="sr">Impuesto</span></th>
+          {%- for p in d.propuestas -%}<th scope="col" class="tr__prop tr__prop--{{ p.grupo }}">{{ p.nombre }}</th>{%- endfor -%}
+        </tr>
+      </thead>
+      <tbody>
+        {%- for imp in d.impuestos -%}
+        <tr>
+          <th scope="row" class="tr__tax">{% include icon.html name=imp.icono %}<span>{{ imp.nombre }}</span></th>
+          {%- for p in d.propuestas -%}
+            {%- assign c = imp.propuestas[p.id] -%}
+            {%- if c == 'sin cambios' -%}<td class="tr__sc">Sin cambios</td>
+            {%- elsif c.size == 1 -%}<td>{{ c[0] }}</td>
+            {%- else -%}<td><ul>{%- for item in c -%}<li>{{ item }}</li>{%- endfor -%}</ul></td>
+            {%- endif -%}
+          {%- endfor -%}
+        </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </div>
+  <div class="tr__mobile">
+    <p class="tr__hint" id="tr-hint">Elegí un impuesto para ver qué propone cada espacio:</p>
+    <div class="tr__tabs" role="tablist" aria-labelledby="tr-hint">
+      {%- for imp in d.impuestos -%}
+      <button type="button" role="tab" class="tr__tab" id="tr-tab-{{ forloop.index }}" aria-controls="tr-panel-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"{% unless forloop.first %} tabindex="-1"{% endunless %}>{% include icon.html name=imp.icono %}<span>{{ imp.nombre }}</span></button>
+      {%- endfor -%}
+    </div>
+    {%- for imp in d.impuestos -%}
+    <div class="tr__panel" role="tabpanel" id="tr-panel-{{ forloop.index }}" aria-labelledby="tr-tab-{{ forloop.index }}"{% unless forloop.first %} hidden{% endunless %}>
+      {%- for p in d.propuestas -%}
+        {%- assign c = imp.propuestas[p.id] -%}
+        <div class="tr__card tr__card--{{ p.grupo }}{% if c == 'sin cambios' %} tr__card--sc{% endif %}">
+          <p class="tr__who">{{ p.nombre }}</p>
+          {%- if c == 'sin cambios' -%}<p class="tr__none">Sin cambios</p>
+          {%- elsif c.size == 1 -%}<p>{{ c[0] }}</p>
+          {%- else -%}<ul>{%- for item in c -%}<li>{{ item }}</li>{%- endfor -%}</ul>{%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- endfor -%}
+  </div>
+  <div class="tr__sources">
+    <p class="tr__sources-title">Fuentes</p>
+    <ul>
+      {%- for p in d.propuestas -%}
+      <li><span class="tr__dot tr__dot--{{ p.grupo }}" aria-hidden="true"></span><strong>{{ p.nombre }}:</strong> {% if p.url %}<a href="{{ p.url }}">{{ p.fuente }}</a>{% else %}{{ p.fuente }}{% endif %}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>

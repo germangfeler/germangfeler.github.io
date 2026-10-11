@@ -9,12 +9,13 @@ tags:
 header:
   teaser: /assets/thumbnails/impuestos.jpg
 excerpt: "Propuestas de todo el arco"
+image: /assets/img/impuestos/tabla-propuestas.png
 ---
 
 El sistema impositivo argentino tiene muchos problemas, todos estamos de acuerdo: es regresivo, complejo y no da los incentivos correctos para producir y exportar más. 
 Pero, ¿que cambios se proponen? Hice una recopilación de las propuestas de todo el arco político.
 
-![futuro](/assets/img/impuestos/tabla.jpeg)
+{% include tabla-reforma.html %}
 
 * En cuanto al IVA no hay concenso. Fundar y FIEL proponen alícuota única. La izquierda peronista propone devolver el IVA en algunos casos. El más disruptivo es Giordano que quiere un súper IVA que cobren las provincias
 * En el caso de Ganancias, Fundar y Giordano coinciden en unificar Aportes y Ganancias en un solo impuesto. Hay diferencias sobre si los trabajadores deben pagar Ganancias. Varios proponen eliminar exenciones.
