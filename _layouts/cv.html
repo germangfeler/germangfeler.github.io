@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="post cv">
+  <header class="post__head">
+    <h1 class="post__title">{{ page.title }}</h1>
+  </header>
+  {%- if page.stats -%}
+  <ul class="stats" aria-label="Resumen">
+    {%- for st in page.stats -%}
+    <li class="stat">{% if st.url %}<a class="stat__link" href="{{ st.url | relative_url }}">{% endif %}<span class="stat__n">{{ st.n }}</span><span class="stat__l">{{ st.label }}</span>{% if st.url %}</a>{% endif %}</li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+  {%- for sec in site.data.cv -%}
+  <section class="cv-sec" aria-labelledby="cv-{{ forloop.index }}">
+    <h2 class="cv-sec__title" id="cv-{{ forloop.index }}"><span class="cv-sec__icon">{% include icon.html name=sec.icono %}</span>{{ sec.titulo }}</h2>
+    <ol class="cv-items">
+      {%- for it in sec.items -%}
+      <li class="cv-item">
+        <span class="cv-item__date">{{ it.fecha }}</span>
+        <div class="cv-item__body">
+          <p class="cv-item__title">{% if it.url %}<a href="{{ it.url | relative_url }}">{{ it.titulo }}</a>{% else %}{{ it.titulo }}{% endif %}</p>
+          {%- if it.lugar %}<p class="cv-item__place">{{ it.lugar }}</p>{% endif -%}
+          {%- if it.detalle %}<p class="cv-item__detail">{{ it.detalle | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif -%}
+        </div>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </section>
+  {%- endfor -%}
+  {{ content }}
+</article>

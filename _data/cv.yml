@@ -1,0 +1,81 @@
+# Contenido del CV (/cv/). Cada sección tiene un ícono y una lista de ítems.
+# Campos de cada ítem: fecha, titulo, url (opcional), lugar (opcional), detalle (opcional, admite **negrita**).
+# Íconos disponibles: formacion, experiencia, docencia, gestion, comunicacion, libros
+
+- titulo: Formación académica
+  icono: formacion
+  items:
+    - fecha: 2012–
+      titulo: Maestría en Estadística Aplicada
+      lugar: Universidad Nacional de Córdoba
+      detalle: Tesis pendiente.
+    - fecha: 2006–2011
+      titulo: Licenciatura en Bioinformática
+      lugar: Facultad de Ingeniería, Universidad Nacional de Entre Ríos (UNER)
+      detalle: "Promedio con aplazos: 7,75."
+
+- titulo: Experiencia laboral
+  icono: experiencia
+  items:
+    - fecha: 2016–actualidad
+      titulo: Instituto de Diversidad y Ecología Animal
+      lugar: CONICET-UNC
+      detalle: Profesional adjunto de CONICET a cargo del área de Bioestadística del instituto. Encargado del diseño y análisis de experimentos de biología animal y ecología.
+    - fecha: 2011–2016
+      titulo: Grupo de Minería de Datos en Biociencias
+      detalle: Analista de datos transcriptómicos y clínicos mediante técnicas estadísticas y computacionales.
+    - fecha: 2015–2016
+      titulo: Consorcio italiano CINECA
+      detalle: Desarrollo front-end y back-end para ensayos clínicos (02/2015 – 08/2016).
+
+- titulo: Docencia
+  icono: docencia
+  items:
+    - fecha: "2019"
+      titulo: "R Aplicado a Ecología: de Individuos a Comunidades"
+      url: /cursos/96-ecologia/
+      lugar: Curso de posgrado, Universidad Nacional de Córdoba
+      detalle: Corresponsable junto a Nicolás Pelegrin.
+    - fecha: "2018"
+      titulo: Análisis de experimentos transcriptómicos (RNA-Seq)
+      url: /cursos/97-analisis-transcriptomica/
+      lugar: Curso de posgrado, Universidad Nacional de Córdoba
+      detalle: Responsable.
+    - fecha: "2016"
+      titulo: Análisis de datos biológicos, del bit a la publicación científica
+      url: /cursos/99-analisis-biologicos/
+      lugar: Curso de posgrado, Universidad Nacional del Litoral
+      detalle: Responsable.
+
+- titulo: Gestión
+  icono: gestion
+  items:
+    - fecha: 2019–2026
+      titulo: Miembro suplente del Consejo Directivo
+      lugar: IDEA (CONICET-UNC)
+    - fecha: Actualidad
+      titulo: Representante del IDEA en la Red de Comunicación de CONICET Córdoba
+      lugar: CONICET Córdoba
+
+- titulo: Comunicación pública de la ciencia
+  icono: comunicacion
+  items:
+    - fecha: 2021–actualidad
+      titulo: +IDEA sobre Fauna
+      url: https://www.idea.conicet.unc.edu.ar/revista-idea/
+      detalle: Editor de la revista de comunicación científica del IDEA.
+    - fecha: 2018–actualidad
+      titulo: Instituto de Diversidad y Ecología Animal
+      detalle: Creación de contenido para la web y redes sociales.
+    - fecha: 2007–2017
+      titulo: bioinformaticos.com.ar
+      detalle: Administración, edición y redacción de artículos.
+
+- titulo: Libros
+  icono: libros
+  items:
+    - fecha: "2021"
+      titulo: Vida.exe. Desafíos y aventuras de la bioinformática
+      url: /bioinformatica/vida-exe/
+      lugar: Fondo de Cultura Económica
+      detalle: "Coeditores: **Germán A. González**, Lionel Uran Landaburu, Nicolás Palopoli."
