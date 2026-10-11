@@ -145,10 +145,18 @@ a { color: inherit; }
 .sec--cafe, .listing--cafe, [data-sec="cafe"] { --sec: var(--cafe); }
 
 /* ---------- portada ---------- */
+:root { --hero-bg: #203f6e; --hero-ink: #eef1ec; --hero-muted: rgba(238, 241, 236, .78); --hero-line: rgba(238, 241, 236, .3); }
+:root[data-theme="dark"] { --hero-bg: #1a2c47; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --hero-bg: #1a2c47; } }
 .hero {
   display: grid; grid-template-columns: auto 1fr; gap: clamp(1.25rem, 4vw, 3rem);
-  align-items: center; padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(2rem, 5vw, 3.5rem);
+  align-items: center; padding: clamp(2.5rem, 6vw, 4.5rem) 0;
+  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+  /* banda de color a todo el ancho */
+  background: var(--hero-bg); color: var(--hero-ink);
+  box-shadow: 0 0 0 100vmax var(--hero-bg); clip-path: inset(0 -100vmax);
 }
+.hero a:focus-visible { outline-color: #f2c14e; }
 .hero__avatar {
   width: clamp(5rem, 11vw, 8rem); aspect-ratio: 1; height: auto; object-fit: cover;
   border-radius: 50%; filter: grayscale(.15) contrast(1.02);
@@ -157,7 +165,7 @@ a { color: inherit; }
   font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: 1; font-weight: 800;
   letter-spacing: -.03em; margin: 0 0 .75rem; text-wrap: balance;
 }
-.hero__intro { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.45; color: var(--muted); max-width: 38rem; text-wrap: pretty; }
+.hero__intro { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.45; color: var(--hero-muted); max-width: 38rem; text-wrap: pretty; }
 .hero__intro p { margin: 0 0 1.25rem; }
 .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
 .links a {
@@ -165,6 +173,9 @@ a { color: inherit; }
   font-size: .9rem; font-weight: 500; padding: .4rem .75rem; border: 1px solid var(--rule); border-radius: 999px;
 }
 .links a:hover { border-color: var(--ink); }
+.links--hero a { color: var(--hero-ink); border-color: var(--hero-line); }
+.links--hero a:hover { border-color: var(--hero-ink); background: rgba(238, 241, 236, .08); }
+.hero__avatar { box-shadow: 0 0 0 4px var(--hero-line); }
 @media (max-width: 600px) {
   .hero { grid-template-columns: 1fr; }
 }
