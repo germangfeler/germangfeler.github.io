@@ -35,9 +35,9 @@ stats:
 
 ## Docencia
 
-* Curso de posgrado: Análisis de datos biológicos, del bit a la publicación científica (UNL, 2016) [responsable]
-* Curso de posgrado: Análisis de experimentos transcriptómicos (RNA-Seq) (UNC, 2018) [responsable]
-* Curso de posgrado: R Aplicado a Ecología: de Individuos a Comunidades (UNC, 2019) [corresponsable junto a Nicolás Pelegrin]
+* Curso de posgrado: [Análisis de datos biológicos, del bit a la publicación científica](/cursos/99-analisis-biologicos/) (UNL, 2016) [responsable]
+* Curso de posgrado: [Análisis de experimentos transcriptómicos (RNA-Seq)](/cursos/97-analisis-transcriptomica/) (UNC, 2018) [responsable]
+* Curso de posgrado: [R Aplicado a Ecología: de Individuos a Comunidades](/cursos/96-ecologia/) (UNC, 2019) [corresponsable junto a Nicolás Pelegrin]
 
 
 ## Gestión
@@ -50,9 +50,9 @@ stats:
 
 * <strong>bioinformaticos.com.ar</strong> (2007-2017), administración, edición y redacción de artículos  
 * <strong>Instituto de Diversidad y Ecología Animal</strong> (2018-actualidad), creación de contenido para la web y redes sociales
-* <strong>+IDEA sobre Fauna</strong> (2021-actualidad), editor de la revista de comunicación científica del IDEA
+* <strong><a href="https://www.idea.conicet.unc.edu.ar/revista-idea/">+IDEA sobre Fauna</a></strong> (2021-actualidad), editor de la revista de comunicación científica del IDEA
 
 
 ## Libros
 
-* <strong>Vida.exe. Desafíos y aventuras de la bioinformática</strong>. Coeditores: <strong>Germán A. González</strong>, Lionel Uran Landaburu, Nicolás Palopoli (2021). Fondo de Cultura Económica.
+* <strong><a href="/bioinformatica/vida-exe/">Vida.exe. Desafíos y aventuras de la bioinformática</a></strong>. Coeditores: <strong>Germán A. González</strong>, Lionel Uran Landaburu, Nicolás Palopoli (2021). Fondo de Cultura Económica.
