@@ -6,9 +6,6 @@ layout: default
   <img class="hero__avatar" src="{{ a.avatar | relative_url }}" alt="Foto de {{ a.name }}" width="168" height="168">
   <div class="hero__text">
     <h1 class="hero__name">{{ a.name }}</h1>
-    <p class="hero__roles">
-      {%- for r in a.roles -%}<span>{{ r }}</span>{%- unless forloop.last -%}<span class="slash" aria-hidden="true"> / </span>{%- endunless -%}{%- endfor -%}
-    </p>
     <div class="hero__intro">{{ content }}</div>
     <ul class="links links--hero">
       <li><a href="{{ '/cv/' | relative_url }}">{% include icon.html name='cv' %}<span>CV</span></a></li>

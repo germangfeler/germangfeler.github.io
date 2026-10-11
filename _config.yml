@@ -11,11 +11,6 @@ locale: es_AR
 author:
   name: "Germán A. González"
   avatar: "/assets/GG4.JPG"
-  roles:
-    - Bioinformático
-    - Bioestadístico
-    - Data Scientist
-    - Peronista
   location: "Córdoba, Argentina"
   twitter: germangfeler
 
