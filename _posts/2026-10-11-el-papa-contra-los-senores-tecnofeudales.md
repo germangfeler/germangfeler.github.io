@@ -16,7 +16,7 @@ canonical_url: https://germangfeler.substack.com/p/el-papa-contra-los-senores-te
 En la última semana se habló mucho sobre la primera encíclica de León XIV. Que el Papa estaba en contra de la inteligencia artificial, que quería “desarmarla”, que estaba en contra del progreso tecnológico. Incluso se llegó a decir que era un hipócrita porque un análisis señalaba que la encíclica estaba escrita con ayuda de la IA (nota al margen: ningún método puede decir esto con precisión). Como de costumbre, mucha gente opinó pero poca la leyó. Y si hay algo que a mí me gusta es leer, así que decidí hacerlo para contarles de que va Magnifica humanitas, que utiliza la inteligencia artificial como punto de partida para discutir otras cosas, incluso más relevantes.
 
 {:.center}
-![El Papa León XIV con campera de cuero, anteojos negros y escopeta, al estilo Terminator, frente a una ciudad en ruinas](/assets/img/posts/leon-xiv/portada.jpg)
+![Una torre oscura al estilo de Barad-dûr de la que salen cables hacia una multitud con pantallas; en primer plano, un mago de pelo blanco sostiene una esfera que muestra un centro de datos](/assets/img/posts/leon-xiv/portada.jpg)
 
 Empecemos por la estructura, de un primer vistazo podemos ver que la encíclica se divide en dos partes. En la primera, León XIV hace un racconto de la historia de la Doctrina social de la Iglesia, explicando las contribuciones de sus antecesores, desde León XIII hasta Francisco, y enumerando los cinco principios de la doctrina que considera fundamentales. Voy a resumir muy brevemente estos principios para quien no los conozca ya que son muy importantes para entender lo que viene después:
 
@@ -87,6 +87,9 @@ Lo que nos dice León es que es a partir de la suma de pequeños gestos que se p
 El transhumanismo consigue adeptos porque hace foco en un deseo que nos interpela a los seres humanos de esta época, «la necesidad de una vida más plena, menos expuesta a la fragilidad y al sufrimiento». Pero hay otro camino para llegar a ese objetivo, uno más humano, que se sostiene en ideas simples pero poderosas: ser fieles a la verdad (evitar las fake news), invertir en educación (para que la IA no nos controle sino que sea al revés), cuidar las relaciones (para que lo virtual no reemplace a lo real) y amar la justicia y la paz (para controlar que los avances nos sirvan a todos).
 
 Unas breves palabras para cerrar. En Magnifica humanitas no vamos a encontrar al Papa en modo Sarah Connor llamando a destruir la máquina como algunos piensan. Es  más bien una convocatoria a parar la pelota y cuestionarnos ciertas cosas que damos por sentadas: quién controla estas herramientas, quién se beneficia con ellas, quién paga sus costos y qué lugar ocupan los seres humanos en ese futuro que se nos presenta como inevitable. Es por eso que Magnifica humanitas habla menos de inteligencia artificial que de poder.
+
+{:.center}
+![El Papa León XIV con campera de cuero, anteojos negros y escopeta, al estilo Terminator, frente a una ciudad en ruinas](/assets/img/posts/leon-xiv/terminator.jpg)
 
 ---
 
