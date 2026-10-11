@@ -1,7 +1,53 @@
 ---
-layout: archive
+layout: default
 ---
+{%- assign a = site.author -%}
+<section class="hero">
+  <img class="hero__avatar" src="{{ a.avatar | relative_url }}" alt="Foto de {{ a.name }}" width="168" height="168">
+  <div class="hero__text">
+    <h1 class="hero__name">{{ a.name }}</h1>
+    <p class="hero__roles">
+      {%- for r in a.roles -%}<span>{{ r }}</span>{%- unless forloop.last -%}<span class="slash" aria-hidden="true"> / </span>{%- endunless -%}{%- endfor -%}
+    </p>
+    <div class="hero__intro">{{ content }}</div>
+    <ul class="links links--hero">
+      <li><a href="{{ '/cv/' | relative_url }}">{% include icon.html name='cv' %}<span>CV</span></a></li>
+      {%- for l in site.links -%}
+      <li><a href="{{ l.url }}" rel="me noopener">{% include icon.html name=l.icon %}<span>{{ l.label }}</span></a></li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
 
-{{ content }}
+<section class="index" aria-labelledby="titulo-posts">
+  <div class="index__head">
+    <h2 id="titulo-posts">Posts</h2>
+    <div class="filters" role="group" aria-label="Filtrar por sección">
+      <button type="button" class="chip" data-filter="all" aria-pressed="true">Todo <span class="chip__n">{{ site.posts.size }}</span></button>
+      {%- for s in site.sections -%}
+      {%- assign key = s[0] -%}
+      <button type="button" class="chip chip--{{ key }}" data-filter="{{ key }}" aria-pressed="false">{{ s[1].title }} <span class="chip__n">{{ site.categories[key].size }}</span></button>
+      {%- endfor -%}
+    </div>
+  </div>
 
+  {%- assign latest = site.posts.first -%}
+  {%- assign sec = latest.categories | first -%}
+  <article class="featured" data-section="{{ sec }}">
+    <a href="{{ latest.url | relative_url }}" class="featured__link">
+      {%- if latest.header.teaser %}<img class="featured__img" src="{{ latest.header.teaser | relative_url }}" alt="" loading="eager">{% endif %}
+      <div class="featured__body">
+        <p class="featured__kicker"><span class="sec sec--{{ sec }}">{{ site.sections[sec].title }}</span> <span>Lo más reciente</span></p>
+        <h3 class="featured__title">{{ latest.title }}</h3>
+        <p class="featured__dek">{{ latest.excerpt | strip_html | strip }}</p>
+        <p class="entry__meta"><time datetime="{{ latest.date | date_to_xmlschema }}">{% include fecha.html date=latest.date %}</time></p>
+      </div>
+    </a>
+  </article>
 
+  <ol class="entries">
+    {%- for post in site.posts offset:1 -%}
+      {% include entry.html post=post %}
+    {%- endfor -%}
+  </ol>
+</section>

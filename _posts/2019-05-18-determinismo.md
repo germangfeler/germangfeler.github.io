@@ -108,6 +108,7 @@ Genotipos idénticos en ambientes diferentes se desarrollarán diferente y lo mi
 ¿Que significa ambiente en este contexto? todo lo que nos rodea. La naturaleza, la cultura, la alimentación, el nivel socioeconómico y mil etceteras. Condiciones que díficilmente sean exactamente iguales para dos personas durante toda su vida.
 
 <h3>Referencias</h3>
+
 * Gould, S. J. (2012). The mismeasure of man. In Arguing About Science (pp. 59-73). Routledge.
 * Rose, S., Lewontin, R. C., & Kamin, L. (1984). Not in our genes: Biology, ideology and human nature. The Wilson Quarterly, 152.
 * Dawkins, R. (2016). The selfish gene. Oxford university press.

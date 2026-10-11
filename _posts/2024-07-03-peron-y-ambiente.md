@@ -25,6 +25,7 @@ En Modelo argentino Perón profundiza en las críticas hacia la acción perjudic
 El ser humano no puede ser concebido aisladamente del medio que él mismo ha creado. Ya es una poderosa fuerza biológica, y si continúa destruyendo los recursos vitales que le brinda la Tierra, sólo puede esperar verdaderas catástrofes sociales para las próximas décadas. [...] Todos estos problemas están ligados de manera indisoluble con el de la justicia social, el de la soberanía política y de la independencia económica del Tercer Mundo y la distensión y la cooperación internacionales.
 
 <h2>Panorama de la situación en los ‘70</h2>
+
 Una de las críticas principales de Perón hacia la sociedad de ese momento, y que no ha hecho más que acentuarse hasta la actualidad, es el consumismo. En ese sentido dice:
 
 >Las mal llamadas “Sociedades de Consumo”, son, en realidad sistemas sociales de despilfarro masivo, basados en el gasto, por el que el gasto produce lucro. 
@@ -48,10 +49,12 @@ Otra de las preocupaciones de Perón pasa por cómo llevar adelante una polític
 >El número de seres humanos que puebla el planeta se ha duplicado en el último siglo y volverá a duplicarse para fines del actual o comienzos del próximo, de continuar la actual ”ratio” de crecimiento. De seguir por este camino, en el año 2500 cada ser humano dispondrá de un solo metro cuadrado sobre el planeta. [...] Es indudable pues, que la humanidad necesita tener una política demográfica.
 
 <h2>Qué hacer frente a este situación</h2>
+
 Perón sostiene que para frenar el colapso ambiental  es necesario que los dirigentes lleven adelante una “revolución mental” que implica comprender que “el hombre no puede reemplazar a la naturaleza”, que el “llamado al progreso debe tener un límite” y que incluso “habrá que renunciar a alguna de las comodidades que nos ha brindado la civilización”. Además menciona que se necesita modificar las estructuras sociales y productivas en el mundo porque el “lucro y el despilfarro no pueden seguir siendo el motor básico de sociedad alguna”. Como contrapartida considera que “la justicia social debe exigirse en la base de todo sistema” para dar prioridad a la satisfacción de las necesidades esenciales del ser humano, racionar el consumo de recursos naturales y disminuir al mínimo posible la contaminación ambiental.
 
 Por último menciona cuál debe ser el lugar del Tercer Mundo en estos cambios. En este sentido resalta que estos países deben cuidar “los recursos naturales con uñas y dientes de la voracidad de los monopolios internacionales” pero que esto solo no servirá de nada “si seguimos aferrados a métodos de desarrollo [...] que significan la negación de un uso racional de aquellos recursos”. Tampoco debe olvidarse que “el problema básico de la mayor parte de los países del Tercer Mundo es la ausencia de una auténtica justicia social y de participación popular en la conducción de sus destinos”.
 
 <h2>Referencias</h2>
+
 * Perón, J. D. (2020). Modelo argentino para el proyecto nacional. Editorial Punto de Encuentro.
 * Perón, J. D. (1972) Mensaje a los Pueblos y Gobiernos del Mundo. https://www.pjbonaerense.org.ar/mensaje-a-los-pueblos-y-gobiernos-del-mundo/

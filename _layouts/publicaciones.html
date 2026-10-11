@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{%- assign pubs = site.data.publicaciones -%}
+{%- capture all -%}{%- for p in pubs -%}{%- for t in p.aporte -%}{{ t }}|{%- endfor -%}{%- endfor -%}{%- endcapture -%}
+{%- assign uniq = all | split: '|' | uniq -%}
+{%- capture keyed -%}
+  {%- for t in uniq -%}
+    {%- assign c = 0 -%}
+    {%- for p in pubs -%}{%- if p.aporte contains t -%}{%- assign c = c | plus: 1 -%}{%- endif -%}{%- endfor -%}
+    {%- assign inv = 100 | minus: c -%}{{ inv }}~{{ t }}~{{ c }};;
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign techs = keyed | split: ';;' | sort_natural -%}
+<section class="listing pubs-page">
+  <header class="listing__head">
+    <h1 class="listing__title">{{ page.title }}</h1>
+    <div class="listing__intro">{{ content }}</div>
+  </header>
+
+  <div class="tech-filter" data-tech-filter>
+    <p class="tech-filter__title" id="tf-title">Filtrar por técnica</p>
+    <div class="tech-filter__chips" role="group" aria-labelledby="tf-title">
+      {%- for k in techs -%}
+        {%- assign parts = k | split: '~' -%}
+        {%- assign n = parts[2] | plus: 0 -%}
+        <button type="button" class="tchip{% if n < 2 %} tchip--extra{% endif %}" data-tech="{{ parts[1] | slugify }}" aria-pressed="false"{% if n < 2 %} hidden{% endif %}>{{ parts[1] }} <span>{{ n }}</span></button>
+      {%- endfor -%}
+      <button type="button" class="tchip tchip--more" data-more>Ver todas las técnicas</button>
+    </div>
+    <p class="tech-filter__status" data-status aria-live="polite" hidden></p>
+  </div>
+
+  <ol class="pubs">
+    {%- for p in pubs -%}
+    <li class="pub" data-techs="|{% for t in p.aporte %}{{ t | slugify }}|{% endfor %}">
+      <div class="pub__year">{{ p.anio }}{% if p.estado %}<span>{{ p.estado }}</span>{% endif %}</div>
+      <div class="pub__body">
+        <h2 class="pub__title">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.titulo }}</a>{% else %}{{ p.titulo }}{% endif %}</h2>
+        <p class="pub__authors">{{ p.autores | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+        <p class="pub__journal"><em>{{ p.revista }}</em>{% if p.detalle %}, {{ p.detalle }}{% endif %}</p>
+        <p class="pub__temas">{{ p.temas | join: ' · ' }}</p>
+        <div class="pub__aporte">
+          <p class="pub__label">Mi aporte</p>
+          <ul class="techs">
+            {%- for t in p.aporte -%}<li><button type="button" class="tech" data-tech="{{ t | slugify }}">{{ t }}</button></li>{%- endfor -%}
+          </ul>
+        </div>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>

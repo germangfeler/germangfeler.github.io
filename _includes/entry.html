@@ -1,0 +1,21 @@
+{%- comment -%} Una fila del listado de posts. Recibe include.post {%- endcomment -%}
+{%- assign p = include.post -%}
+{%- assign sec = p.categories | first -%}
+{%- assign words = p.content | strip_html | number_of_words -%}
+{%- assign mins = words | divided_by: site.words_per_minute | plus: 1 -%}
+<li class="entry" data-section="{{ sec }}">
+  <a class="entry__link" href="{{ p.url | relative_url }}">
+    {%- if p.header.teaser %}
+    <span class="entry__thumb"><img src="{{ p.header.teaser | relative_url }}" alt="" loading="lazy" decoding="async"></span>
+    {%- endif %}
+    <span class="entry__body">
+      <span class="entry__title">{{ p.title }}</span>
+      {%- if p.excerpt and p.excerpt != '' %}<span class="entry__dek">{{ p.excerpt | strip_html | strip }}</span>{% endif %}
+      <span class="entry__meta">
+        {%- if include.show_section != false and site.sections[sec] -%}<span class="sec sec--{{ sec }}">{{ site.sections[sec].title }}</span>{%- endif -%}
+        {%- if p.date and p.collection == 'posts' -%}<time datetime="{{ p.date | date_to_xmlschema }}">{% include fecha.html date=p.date %}</time>{%- endif -%}
+        {%- if p.collection == 'posts' -%}<span>{{ mins }} min de lectura</span>{%- endif -%}
+      </span>
+    </span>
+  </a>
+</li>

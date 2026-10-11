@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- assign docs = site.servicios | sort: 'path' -%}
+<section class="listing">
+  <header class="listing__head">
+    <h1 class="listing__title">{{ page.title }}</h1>
+    <div class="listing__intro">{{ content }}</div>
+  </header>
+  <div class="services">
+    {%- for d in docs -%}
+    <details class="service" id="{{ d.title | slugify }}">
+      <summary class="service__summary">
+        {%- if d.header.teaser %}<span class="entry__thumb"><img src="{{ d.header.teaser | relative_url }}" alt="" loading="lazy"></span>{% endif %}
+        <span class="entry__body">
+          <span class="entry__title">{{ d.title }}</span>
+          {%- if d.excerpt %}<span class="entry__dek">{{ d.excerpt | strip_html | strip }}</span>{% endif %}
+        </span>
+        <svg class="service__chevron" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <div class="service__body prose">
+        {{ d.content }}
+      </div>
+    </details>
+    {%- endfor -%}
+  </div>
+  <p class="services__more">¿Querés ver ejemplos? En <a href="{{ '/publicaciones/' | relative_url }}">Publicaciones</a> están los trabajos donde hice el análisis, con las técnicas que usé en cada uno.</p>
+</section>

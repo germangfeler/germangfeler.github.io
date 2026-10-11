@@ -3,13 +3,14 @@ layout: single
 title: Análisis de datos biológicos
 categories: servicios
 header:
-  teaser: /assets/thumbnails/niche.png
-excerpt: "Anális de datos experimentales de ecología, biología y medicina"  
+  teaser: /assets/thumbnails/portadas/servicio-datos-biologicos.png
+excerpt: "Análisis de datos experimentales de ecología, biología y medicina"  
 ---
 
 Diseño de experimentos y análisis de datos de biología, ecología y medicina utilizando métodos bioestadísticos modernos. Además, se brinda asesoramiento en la interpretación de los resultados y redacción de informes o publicaciones. Destinado a grupos de investigación y empresas que apliquen estas metodologías en su trabajo.
 
 <h2>Metodología</h2>
+
 Algunas de las técnicas aplicadas:
 
 * Diseño experimental
@@ -23,5 +24,6 @@ Algunas de las técnicas aplicadas:
 Los análisis se realizan con la plataforma estadística de código abierto R.
 
 <h2>Costo</h2>
-A convenir dependiendo de la complejidad del experimento. Por consultas: germangfeler@gmail.com.
+
+A convenir dependiendo de la complejidad del experimento. Por consultas: <germangfeler@gmail.com>.
 

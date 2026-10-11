@@ -12,7 +12,7 @@ tags:
 toc: true
 toc_label: "Secciones"
 header:
-  teaser: /assets/thumbnails/regresion.png
+  teaser: /assets/thumbnails/portadas/son-todos-lo-mismo.png
 excerpt: "La relación entre ANOVA, regresión y test-t"
 ---
 

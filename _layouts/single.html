@@ -1,92 +1,60 @@
 ---
 layout: default
 ---
+{%- assign sec = page.categories | first -%}
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign mins = words | divided_by: site.words_per_minute | plus: 1 -%}
+<article class="post{% if page.toc %} has-toc{% endif %}"{% if site.sections[sec] %} data-sec="{{ sec }}"{% endif %}>
+  <header class="post__head">
+    {%- if site.sections[sec] -%}
+      <p class="post__section"><a class="sec sec--{{ sec }}" href="{{ site.sections[sec].url | relative_url }}">{{ site.sections[sec].title }}</a></p>
+    {%- elsif page.collection and page.collection != 'posts' -%}
+      <p class="post__section"><a class="sec" href="{{ '/' | append: page.collection | append: '/' | relative_url }}">{{ page.collection | capitalize }}</a></p>
+    {%- endif -%}
+    <h1 class="post__title">{{ page.title }}</h1>
+    {%- if page.excerpt and page.collection -%}<p class="post__dek">{{ page.excerpt | strip_html | strip }}</p>{%- endif -%}
+    {%- if page.collection == 'posts' -%}
+    <p class="post__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{% include fecha.html date=page.date %}</time>
+      <span>{{ mins }} min de lectura</span>
+    </p>
+    {%- endif -%}
+  </header>
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
+  {%- if page.stats -%}
+  <ul class="stats" aria-label="Resumen">
+    {%- for st in page.stats -%}
+    <li class="stat">{% if st.url %}<a class="stat__link" href="{{ st.url | relative_url }}">{% endif %}<span class="stat__n">{{ st.n }}</span><span class="stat__l">{{ st.label }}</span>{% if st.url %}</a>{% endif %}</li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
 
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
-<div id="main" role="main">
-  {% include sidebar.html %}
-
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
-
-    <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
-          {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-          {% endif %}
-        </header>
-      {% endunless %}
-
-      <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
-            </nav>
-          </aside>
-        {% endif %}
-        {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
-
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-        {% if page.last_modified_at %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-      </footer>
-
-      {% if page.share %}{% include social-share.html %}{% endif %}
-
-      {% include post_pagination.html %}
+  <div class="post__grid">
+    {%- if page.toc -%}
+    <nav class="toc" aria-label="{{ page.toc_label | default: 'Secciones' }}" data-toc hidden>
+      <p class="toc__title">{{ page.toc_label | default: 'Secciones' }}</p>
+      <ol></ol>
+    </nav>
+    {%- endif -%}
+    <div class="prose">
+      {{ content }}
     </div>
+  </div>
 
-    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
-  </article>
+  {%- if page.tags.size > 0 -%}
+  <footer class="post__foot">
+    <ul class="tags" aria-label="Etiquetas">
+      {%- for t in page.tags -%}<li><a href="{{ '/tags/' | relative_url }}#{{ t | slugify }}">{{ t }}</a></li>{%- endfor -%}
+    </ul>
+  </footer>
+  {%- endif -%}
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page.id and page.related %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
-</div>
+  {%- if page.collection == 'posts' -%}
+  <nav class="pager" aria-label="Más posts">
+    {%- if page.previous -%}<a class="pager__prev" href="{{ page.previous.url | relative_url }}"><span>Anterior</span>{{ page.previous.title }}</a>{%- else -%}<span></span>{%- endif -%}
+    {%- if page.next -%}<a class="pager__next" href="{{ page.next.url | relative_url }}"><span>Siguiente</span>{{ page.next.title }}</a>{%- endif -%}
+  </nav>
+  {%- endif -%}
+
+  {% include comments.html %}
+</article>

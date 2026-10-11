@@ -9,7 +9,7 @@ tags:
   - ggplot2
   - R
 header:
-  teaser: /assets/thumbnails/treemap.png
+  teaser: /assets/thumbnails/portadas/barras-y-tortas.png
 toc: true
 toc_label: "Secciones"
 excerpt: "Visualizando datos categóricos"  

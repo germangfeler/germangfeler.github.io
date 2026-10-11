@@ -8,7 +8,7 @@ tags:
   - estado
   - innovación
 header:
-  teaser: /assets/thumbnails/provincias.png
+  teaser: /assets/thumbnails/portadas/las-provincias-y-la-ciencia.png
 excerpt: "La experiencia en Brasil y Argentina"
 ---
 
@@ -40,7 +40,8 @@ En la <a href="https://x.com/ferpeirano/status/1121056481388965888?s=20">convers
 
 Actualización de 2023: el <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/296574/20231023">Plan Nacional de Ciencia, Tecnología e Innovación 2030</a>, aprobado como ley en 2023, introduce una serie de innovaciones en la gestión de la ciencia y la tecnología. Una de ellas son las Agendas Territoriales que se focalizan en temas estratégicos del desarrollo social y productivo de cada jurisdicción. Lo más interesante es que estas agendas fueron propuestas por las provincias y no impuestas desde el gobierno nacional y que su implementación la realizarán las agencias regionales de ciencia y tecnología.
 
-<h3>Referencias</h3> 
+<h3>Referencias</h3>
+
 Nature, 2018. <a href="https://nature.com/articles/d41586-018-07536-1">How science supports São Paulo</a>
 
 Originalmente publicado como <a href="https://twitter.com/germangfeler/status/1120878140526616577">hilo en Twitter</a>.

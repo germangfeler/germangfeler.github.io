@@ -1,6 +1,6 @@
 ---
 layout: single
-title: PSin tecnología nacional no hay desarrollo: qué pensaba Perón sobre la ciencia
+title: "Sin tecnología nacional no hay desarrollo: qué pensaba Perón sobre la ciencia"
 categories: cafe
 tags:
   - política
@@ -35,6 +35,7 @@ Con el segundo plan quinquenal el gobierno busca organizar la actividad científ
 El plan define una serie de objetivos generales y especiales que buscaba conseguir. 
 
 <h3>Objetivos generales</h3>
+
 * **Función social de la ciencia y de la técnicas:** se auspiciará las investigaciones en medida que cumplan con esta función social
 * **Función social de los investigadores:** se auspiciará su tarea en tanto sea útil al bien común
 * **Conciencia científica y técnica:** se promoverá la creación de una cultura nacional
@@ -45,6 +46,7 @@ El plan define una serie de objetivos generales y especiales que buscaba consegu
 * **Investigaciones especiales para la planificación nacional y su desarrollo:** el Estado las auspiciará como insumo para planes de gobierno 
 
 <h3>Objetivos especiales</h3>
+
 * **Prioridades:** se fijará un sistema de prioridades para las investigaciones científicas y técnicas
 * **Servicio civil científico y técnico:** se establecerá un escalafón único para el servicio civil científico y técnico, con características propias de selección, remuneración y ascensos
 * **Organización de los investigadores científicos y técnicos:** se auspiciará la organización nacional de los investigadores
@@ -66,6 +68,7 @@ Los salarios promedios del sistema científico-tecnológico en abril 2024 muestr
 <i>Fuente:</i> <a href="https://www.lanacion.com.ar/economia/cuanto-ganan-los-estatales-privilegios-para-los-recaudadores-de-impuestos-y-padecimientos-para-los-nid24042024/">La Nación</a>
 
 <h2>El tercer Perón</h2>
+
 En 1974, se publica de manera póstuma el último libro de Perón: Modelo argentino para el proyecto nacional donde busca sintetizar la doctrina del movimiento justicialista. Allí aborda diferentes temas que siguen siendo actuales al día de hoy como la comunidad organizada, el desarrollo económico, la ciencia y la tecnología, la ecología y la organización institucional.
 
 Perón dedica varias páginas a hablar sobre el sistema científico-tecnológico. Sobre cuáles deben ser los objetivos del mismo dice:
@@ -105,6 +108,7 @@ Otro párrafo que resuena especialmente en este presente en el que el gobierno d
 Pasaron 50 años pero Perón proponía lo mismo que piden los científicos hoy: estabilidad laboral, remuneración digna, respeto y reconocimiento social.
 
 <h2>Referencias</h2>
+
 Hurtado, D. (2010). La ciencia argentina: un proyecto inconcluso: 1930-2000.
 
 Perón, J. D. (2020). Modelo argentino para el proyecto nacional. Editorial Punto de Encuentro.

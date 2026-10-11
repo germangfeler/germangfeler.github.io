@@ -1,42 +1,21 @@
 ---
-layout: archive
+layout: default
 ---
-
-{{ content }}
-
-{% assign tags_max = 0 %}
-{% for tag in site.tags %}
-  {% if tag[1].size > tags_max %}
-    {% assign tags_max = tag[1].size %}
-  {% endif %}
-{% endfor %}
-
-<ul class="taxonomy__index">
-  {% for i in (1..tags_max) reversed %}
-    {% for tag in site.tags %}
-      {% if tag[1].size == i %}
-        <li>
-          <a href="#{{ tag[0] | slugify }}">
-            <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-</ul>
-
-{% for i in (1..tags_max) reversed %}
-  {% for tag in site.tags %}
-    {% if tag[1].size == i %}
-      <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ tag[0] }}</h2>
-        <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in tag.last %}
-            {% include archive-single.html type=page.entries_layout %}
-          {% endfor %}
-        </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+{%- capture all -%}{%- for p in site.posts -%}{%- for t in p.tags -%}{{ t }}|{%- endfor -%}{%- endfor -%}{%- endcapture -%}
+{%- assign names = all | split: '|' | uniq | sort_natural -%}
+<section class="listing">
+  <header class="listing__head">
+    <h1 class="listing__title">{{ page.title }}</h1>
+    <ul class="tags tags--cloud">
+      {%- for n in names -%}<li><a href="#{{ n | slugify }}">{{ n }} <span>{{ site.tags[n].size }}</span></a></li>{%- endfor -%}
+    </ul>
+  </header>
+  {%- for n in names -%}
+  <section class="tag-group" id="{{ n | slugify }}">
+    <h2 class="tag-group__title">{{ n }}</h2>
+    <ol class="entries entries--compact">
+      {%- for post in site.tags[n] -%}{% include entry.html post=post %}{%- endfor -%}
+    </ol>
+  </section>
+  {%- endfor -%}
+</section>

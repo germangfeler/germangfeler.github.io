@@ -15,6 +15,7 @@ excerpt: "El Estado Emprendedor y Misión Economía"
 Mariana Mazzucato es hoy una de las principales economistas heterodoxas. Su principal aporte ha sido mostrar como en muchos de los productos innovadores que producen las empresas privadas estuvo el Estado por detrás realizando contribuciones indispensables. En muchas de sus entrevistas habla de que el discurso económico progresista no puede quedarse solo en "repartir la torta" (porque eso tiene un limite) sino que tiene que proponer nuevas formas de crear riqueza. Sus propuestas se pueden encontrar en su siguiente libro, Mission Economy, donde propone utilizar una metodología basada en misiones (como la que llevó al hombre a la Luna) para generar innovaciones disruptivas.
 
 <h3>El Estado emprendedor</h3>
+
 Según la visión liberal de la economía las empresas privadas son las que realizan las innovaciones en la economía. Por esto consideran que la mejor política industrial y de innovación que puede tener un país es no tener ninguna. Simplemente bastaría con bajar los impuestos y las regulaciones para que los privados puedan desarrollarse. Sin embargo, en la práctica muchas veces las innovaciones privadas son subsidiadas por el Estado o se basan en investigaciones realizadas por el sector público. Por ejemplo, como veremos más adelante, la mayoría de las investigaciones biomédicas en EE.UU. son financiadas por el NIH, independientemente de si se realizan en una empresa privada o en un organismo público.
 
 <p>Ahora los invito a que intentemos un juego. Pensemos cuáles han sido las tecnologías que han cambiado nuestra vida durante los últimos 50 años. Internet, los nuevos fármacos, el GPS, las pantallas táctiles, probablemente vendrán a nuestra mente. Pero lo que quizás no es tan conocido es que la mayoría han tenido su origen en una investigación financiada por el Estado.</p> 
@@ -72,6 +73,7 @@ A modo de reflexión personal final: el Estado es un actor clave en la innovaci�
 estudien temas que no tienen un fin económico (al menos inmediato) es el Estado.
 
 <h3>Misión economía</h3>
+
 En 2021, Mazzucato publicó el libro Misión economía donde propone un enfoque “basado en misiones” en el que se coordinan a gran escala los esfuerzos estatales y privados con un objetivo concreto en mente. 
 
 La idea se inspira en el programa Apollo, con el que Kennedy anunció que Estados Unidos llegaría a la luna en los años ‘60. Este programa costó 283 mil millones de dólares (a precios de 2020) e involucró a 400 mil trabajadores de la NASA, universidades y contratistas. El alunizaje, dice Mazzucato, fue un gran ejercicio de resolución de problemas, con el sector público liderando y trabajando en conjunto con empresas —pequeñas, medianas y grandes— en cientos de problemas individuales. Hubo varias claves que hicieron exitoso a este proyecto:
@@ -101,6 +103,7 @@ Tomando por ejemplo el desafío sobre movilidad podemos descomponerlo en misione
 ![mision2](/assets/img/estado-ciencia/mision2.png)
 
 <h3>El enfoque basado en misiones en Argentina</h3>
+
 Argentina cuenta con algunos ejemplos de innovaciones orientadas por misiones, especialmente en el sector nuclear y satelital.
 
 En el primer caso podemos nombrar el proyecto del rector CAREM, un reactor nuclear modular de baja potencia que se encuentra entre los más avanzados en su desarrollo en el mundo. El desafío que viene a resolver es el de brindar energía a regiones aisladas, polos industriales o plantas de desalinización de agua. El proyecto es llevado adelante por la Comisión Nacional de Energía Atómica (CNEA) e INVAP, una empresa pública de alta tecnología. Como contratistas externos participan un total de 1400 empresas privadas.
@@ -110,6 +113,7 @@ En el sector satelital tenemos el caso de los satélites geoestacionarios ARSAT 
 Por último podemos citar lo sucedido durante la pandemia de COVID-19 en nuestro país. En marzo de 2020 se creó la Unidad Coronavirus, integrada  por el MinCyT, CONICET y la Agencia I+D+i, con el fin de llevar adelante proyectos de investigación y desarrollo tecnológico con capacidad de dar respuesta a la pandemia de COVID-19 en el país. En este sentido se realizó la convocatoria de Ideas Proyecto (IP) con el objetivo de mejorar la capacidad nacional de respuesta a la pandemia en la Argentina. De esta convocatoria surgieron los tests moleculares rápidos Neokit-Covid-19 y Ela-Chemstrip,4​5​ los tests serológicos COVIDAR IgG6​7​ y COVIDAR IgM8​9​, el​ tapabocas Atom-Protect​ y la vacuna ArVac Cecilia Grierson. También se realizó una convocatoria a Empresas de Base Tecnológica destinada a construir nuevas capacidades y brindar soluciones tecnológicas, una orientada a las ciencias sociales y humanas para pensar la pospandamia y una última sobre Hábitats Emergentes para diseñar viviendas con eficiencia ambiental que pudieran construirse en situaciones de emergencia. 
 
 <h3>Referencias</h3>
+
 * Mazzucato, M. (2014). El Estado emprendedor. Mitos del sector público frente al sector privado. Barcelona: RBA.
 * Mazzucato, M. (2021). Mission economy: A moonshot guide to changing capitalism. Penguin UK.
 * El Cronista, <a href="https://www.cronista.com/negocios/el-sueno-nuclear-argentino-vuelve-en-formato-pequeno-y-con-destino-de-exportacion/">https://www.cronista.com/negocios/el-sueno-nuclear-argentino-vuelve-en-formato-pequeno-y-con-destino-de-exportacion/</a>
