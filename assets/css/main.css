@@ -157,9 +157,7 @@ a { color: inherit; }
   font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: 1; font-weight: 800;
   letter-spacing: -.03em; margin: 0 0 .75rem; text-wrap: balance;
 }
-.hero__roles { margin: 0 0 1.4rem; font-size: clamp(1.05rem, 2.2vw, 1.4rem); font-weight: 500; line-height: 1.35; }
-.hero__roles .slash { color: var(--muted); font-weight: 400; opacity: .7; }
-.hero__intro { font-family: var(--serif); font-size: 1.2rem; color: var(--muted); max-width: 40rem; }
+.hero__intro { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.45; color: var(--muted); max-width: 38rem; text-wrap: pretty; }
 .hero__intro p { margin: 0 0 1.25rem; }
 .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
 .links a {
