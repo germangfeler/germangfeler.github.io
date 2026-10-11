@@ -1,0 +1,189 @@
+# Tabla del post "La reforma tributaria".
+# propuestas: columnas (grupo a/b/c define el color de la franja).
+# impuestos: filas. En cada impuesto, cada propuesta tiene una lista de puntos,
+# o "sin cambios" (se muestra atenuado).
+propuestas:
+- id: foro
+  nombre: Foro Economía y Trabajo
+  grupo: a
+  fuente: Aportes para una reforma en el sistema tributario argentino
+- id: grabois
+  nombre: Juan Grabois
+  grupo: a
+  fuente: Plan de Desarrollo Humano Integral
+  url: https://files.fundaciondhi.com.ar/plan-dhi.pdf
+- id: fundar
+  nombre: Fundar
+  grupo: a
+  fuente: Hacia un sistema tributario armónico
+  url: https://fund.ar/publicacion/hacia-un-sistema-tributario-armonico/
+- id: reforma2017
+  nombre: Reforma de 2017
+  grupo: b
+  fuente: La reforma tributaria de 2017
+  url: https://www.argentina.gob.ar/sites/default/files/ministerio_de_hacienda_-_la_reforma_tributaria_argentina_de_2017.pdf
+- id: fiel
+  nombre: FIEL 2015
+  grupo: c
+  fuente: El sistema tributario argentino
+  url: https://www.fiel.org/publicaciones/Documentos/DOC_TRAB_1440549015218.pdf
+- id: giordano
+  nombre: Giordano / IERAL
+  grupo: c
+  fuente: Una vacuna contra la decadencia
+impuestos:
+- nombre: IVA
+  icono: iva
+  propuestas:
+    foro:
+    - Integrar con Ingresos Brutos
+    - Devolver el IVA a consumidores de bajos recursos
+    grabois:
+    - Devolver el IVA a la canasta básica
+    fundar:
+    - Eliminar exenciones y alícuotas diferenciales
+    - Automatizar las devoluciones
+    reforma2017:
+    - Se incorporaron los servicios digitales
+    - 'A futuro: avanzar hacia la eliminación de las alícuotas diferenciales'
+    fiel:
+    - Eliminar alícuotas diferenciales (alícuota uniforme del 19%)
+    giordano:
+    - Unificar los impuestos sobre el consumo de bienes y servicios (Ingresos Brutos, Sellos, Internos) en un súper IVA (31-35%). Pasan a cobrarlo las provincias
+- nombre: Ganancias
+  icono: ganancias
+  propuestas:
+    foro:
+    - Eximir a los salarios de los trabajadores, excepto los que ejercen funciones directivas
+    - Eliminar las exenciones a las rentas y ganancias financieras
+    - Impuesto mínimo para Sociedades
+    - Reducción de la alícuota para Sociedades
+    grabois:
+    - Aumentar la progresividad, incrementando la tasa marginal máxima a 40%
+    - Eliminar exenciones (magistrados, regímenes de promoción económica, etc.)
+    fundar:
+    - Unificar aportes y Ganancias
+    - Impuesto negativo a los ingresos
+    - Impuesto mínimo para Sociedades
+    - Unificar la alícuota para Sociedades en 35%
+    - Adicional sobre la renta de recursos naturales
+    reforma2017:
+    - Reducción de la alícuota para Sociedades (de 35 a 25%)
+    - Impuesto a los dividendos y a las rentas financieras
+    - Extensión del impuesto a todos los ingresos y tipos de trabajadores
+    fiel:
+    - Ajustar las escalas y el MNI por inflación
+    - Eliminación de regímenes sectoriales
+    giordano:
+    - Fusionar Ganancias con los Aportes Personales a la Seguridad Social en un Impuesto a los Ingresos. Pasa a ser un impuesto solo nacional (no se coparticipa)
+- nombre: Monotributo
+  icono: monotributo
+  propuestas:
+    foro:
+    - Eliminar el componente impositivo para las categorías A a G
+    grabois: sin cambios
+    fundar:
+    - Jerarquizar y aumentar la progresividad
+    reforma2017:
+    - Limitado solo a personas humanas
+    fiel:
+    - Bajar a la mitad el límite para pasar a ser Responsable Inscripto
+    - Todos los profesionales deberían ser Responsables Inscriptos
+    giordano:
+    - Fusionar con el impuesto al consumo (súper IVA)
+- nombre: Aportes y contribuciones
+  icono: aportes
+  propuestas:
+    foro: sin cambios
+    grabois:
+    - Disminuir las contribuciones patronales para MiPyME
+    fundar:
+    - Homogeneizar las alícuotas de contribuciones patronales
+    reforma2017:
+    - Se introduce un MNI para la deducción de las Contribuciones Patronales
+    - Eliminación gradual de la diferenciación por tamaño de empresa y localización geográfica (convergencia en 19,5%)
+    fiel:
+    - Homogeneizar las alícuotas de Contribuciones Patronales (en 12%)
+    giordano:
+    - Fusionar los Aportes con Ganancias (Impuesto a los Ingresos)
+    - Las Contribuciones Patronales siguen igual
+- nombre: Bienes Personales
+  icono: bienes
+  propuestas:
+    foro: sin cambios
+    grabois:
+    - Adicional a las grandes fortunas, con alícuota marginal de 2% sobre el excedente
+    - Mejorar la base imponible, actualizando la valuación fiscal de los inmuebles
+    fundar:
+    - Eliminar exenciones
+    reforma2017:
+    - Se reinstauró el MNI y se redujeron las alícuotas
+    fiel:
+    - Actualizar la escala e instaurar un MNI
+    - 'A futuro: que se tome a cuenta de Ganancias'
+    giordano:
+    - Unificar los impuestos al patrimonio (Inmobiliario y Automotor provinciales, Bienes Personales nacional) en un Impuesto a la Riqueza. Pasan a cobrarlo solo las provincias
+- nombre: Cheque
+  icono: cheque
+  propuestas:
+    foro:
+    - Eliminación
+    grabois: sin cambios
+    fundar:
+    - Pago a cuenta de otros impuestos
+    reforma2017:
+    - Pago a cuenta de otros impuestos
+    fiel:
+    - Pago a cuenta de otros impuestos
+    giordano: sin cambios
+- nombre: Retenciones
+  icono: retenciones
+  propuestas:
+    foro: sin cambios
+    grabois:
+    - Tasas progresivas de retenciones según precio internacional y tipo de cambio
+    fundar:
+    - Eliminar; se compensa con otros impuestos que aumentan en esta propuesta
+    reforma2017:
+    - Sin cambios (se habían bajado en 2015)
+    fiel:
+    - Eliminar todas, excepto soja y derivados, que quedarían temporalmente en 15%
+    giordano: sin cambios
+- nombre: Impuestos provinciales
+  icono: provincias
+  propuestas:
+    foro:
+    - 'Ingresos Brutos como pago a cuenta del IVA: se perdería un 55% de la recaudación nacional, que se compensaría con los nuevos impuestos'
+    grabois:
+    - Coordinar con las provincias un aumento del Inmobiliario y una reducción de Ingresos Brutos
+    fundar:
+    - Negociar la desgravación de la actividad primaria y manufacturera en Ingresos Brutos
+    - Armonizar la valuación de las propiedades inmuebles
+    reforma2017:
+    - Consenso Fiscal con las provincias para bajar gradualmente Ingresos Brutos a actividades primarias, manufactureras, transporte, créditos hipotecarios y electricidad, gas y agua
+    - Rebaja gradual de Sellos hasta su eliminación
+    fiel:
+    - Sustituir Ingresos Brutos por un IVA provincial o un impuesto a las ventas minoristas
+    giordano:
+    - 'División de fuentes: las provincias cobran Consumo (IVA + Ingresos Brutos + Sellos) y Riqueza (Bienes Personales + Inmobiliario + Automotor)'
+    - Nación cobra Ingresos, Contribuciones patronales y recursos aduaneros
+    - 'Otros impuestos van a un fondo de convergencia: cheque, combustibles, etc.'
+- nombre: Nuevos impuestos y eliminaciones
+  icono: nuevos
+  propuestas:
+    foro:
+    - Impuesto al consumo excesivo de las personas humanas, con alícuota del 9,8%
+    - Impuesto nacional a la herencia
+    grabois:
+    - Impuesto al carbono
+    - Impuesto nacional a la herencia
+    fundar:
+    - Impuesto al carbono
+    - Impuesto provincial a la herencia
+    reforma2017:
+    - Impuesto al carbono
+    - Eliminar el impuesto a la transferencia de inmuebles
+    fiel:
+    - Eliminar impuestos de bajo potencial recaudatorio o con asignación específica
+    giordano:
+    - 'Se eliminan numerosos impuestos y quedan tres principales: al Consumo, a la Riqueza y a los Ingresos'

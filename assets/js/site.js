@@ -126,6 +126,31 @@
     if (m) setTech(m[1], false);
   }
 
+  // Tabla comparativa: pestañas por impuesto (celular)
+  document.querySelectorAll('[data-tr]').forEach(function (tr) {
+    var tabs = Array.prototype.slice.call(tr.querySelectorAll('[role="tab"]'));
+    var select = function (tab, focus) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+      if (focus) tab.focus();
+    };
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(t); });
+      t.addEventListener('keydown', function (e) {
+        var k = e.key, n = null;
+        if (k === 'ArrowRight' || k === 'ArrowDown') n = tabs[(i + 1) % tabs.length];
+        if (k === 'ArrowLeft' || k === 'ArrowUp') n = tabs[(i - 1 + tabs.length) % tabs.length];
+        if (k === 'Home') n = tabs[0];
+        if (k === 'End') n = tabs[tabs.length - 1];
+        if (n) { e.preventDefault(); select(n, true); }
+      });
+    });
+  });
+
   // Botón para copiar código
   if (navigator.clipboard) {
     document.querySelectorAll('.prose div.highlighter-rouge').forEach(function (block) {
