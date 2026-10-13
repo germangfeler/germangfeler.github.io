@@ -61,6 +61,11 @@
         - CCA
         - PERMANOVA
         - MANOVA
+        - ANOSIM
+        - BIOENV
+        - envfit
+        - PLS
+        - PLS-DA
     - nombre: Ciencia de datos
       items:
         - Data science
@@ -90,20 +95,36 @@
         - RLQ
         - SIMPER
         - IndVal
+        - Modelos de ocupación
     - nombre: Bioinformática y salud
       items:
         - Bioinformática
-        - Transcriptómica
+        - Transcriptómica (RNA-Seq y microarrays)
+        - Control de calidad
+        - Expresión diferencial
+        - Análisis funcional y de enriquecimiento (GSEA)
         - Metabolómica
         - Estudios clínicos
-        - Clinical Information Systems
+        - Sistemas de gestión de datos clínicos (OpenClinica, BSI-II, CINECA)
     - nombre: Herramientas
       items:
         - R
+        - Desarrollo de paquetes de R
+        - tidyverse
+        - ggplot2
+        - RMarkdown
+        - Shiny
+        - Computación paralela
         - Linux
+        - GitHub
         - HTML
         - CSS
         - WordPress
+    - nombre: Comunicación
+      items:
+        - Redacción científica y comunicación de resultados
+        - Comunicación pública de la ciencia
+        - Edición de textos
     - nombre: Idiomas
       items:
         - Inglés (nivel intermedio)
