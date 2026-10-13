@@ -47,7 +47,19 @@
         - Modelos marginales
         - Métodos no paramétricos
         - Bootstrapping
+    - nombre: Análisis multivariado
+      items:
         - Métodos multivariados
+        - Análisis de componentes principales (PCA)
+        - Análisis factorial
+        - Escalamiento multidimensional (MDS)
+        - Escalamiento multidimensional no métrico (NMDS)
+        - Análisis de coordenadas principales (PCoA)
+        - Análisis de redundancia (RDA)
+        - Análisis de redundancia basado en transformaciones (tb-RDA)
+        - Análisis de correspondencias canónico
+        - PERMANOVA
+        - Análisis multivariado de la varianza (MANOVA)
     - nombre: Ciencia de datos
       items:
         - Exploración de datos
@@ -57,15 +69,30 @@
         - Machine learning
         - Data mining
         - Data science
+        - Árboles de decisión
+        - Random forest
+        - Redes neuronales
+        - k-NN
+        - k-means
+        - SVM
+        - Agrupamiento jerárquico
+        - Validación
     - nombre: Ecología
       items:
         - Índices de diversidad
         - Números de Hill
         - Diversidad funcional
+        - Curvas de rarefacción
+        - Diversidad beta
+        - Fourth-corner approach
+        - RLQ
+        - SIMPER
+        - IndVal
     - nombre: Bioinformática y salud
       items:
         - Bioinformática
         - Transcriptómica
+        - Metabolómica
         - Estudios clínicos
         - Clinical Information Systems
     - nombre: Herramientas
