@@ -15,6 +15,16 @@ layout: default
   {%- for sec in site.data.cv -%}
   <section class="cv-sec" aria-labelledby="cv-{{ forloop.index }}">
     <h2 class="cv-sec__title" id="cv-{{ forloop.index }}"><span class="cv-sec__icon">{% include icon.html name=sec.icono %}</span>{{ sec.titulo }}</h2>
+    {%- if sec.grupos -%}
+    <dl class="cv-skills">
+      {%- for g in sec.grupos -%}
+      <div class="cv-skills__row">
+        <dt class="cv-item__date">{{ g.nombre }}</dt>
+        <dd><ul class="cv-chips">{%- for sk in g.items -%}<li>{{ sk }}</li>{%- endfor -%}</ul></dd>
+      </div>
+      {%- endfor -%}
+    </dl>
+    {%- else -%}
     <ol class="cv-items">
       {%- for it in sec.items -%}
       <li class="cv-item">
@@ -27,6 +37,7 @@ layout: default
       </li>
       {%- endfor -%}
     </ol>
+    {%- endif -%}
   </section>
   {%- endfor -%}
   {{ content }}
