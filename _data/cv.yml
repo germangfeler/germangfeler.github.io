@@ -36,7 +36,7 @@
       items:
         - Diseño de experimentos
         - Regresión lineal
-        - Análisis de la varianza (ANOVA)
+        - ANOVA
         - Permutation-based ANOVA
         - Modelos lineales
         - Modelos lineales generalizados
@@ -52,16 +52,16 @@
     - nombre: Análisis multivariado
       items:
         - Métodos multivariados
-        - Análisis de componentes principales (PCA)
+        - PCA
         - Análisis factorial
-        - Escalamiento multidimensional (MDS)
-        - Escalamiento multidimensional no métrico (NMDS)
-        - Análisis de coordenadas principales (PCoA)
-        - Análisis de redundancia (RDA)
-        - Análisis de redundancia basado en transformaciones (tb-RDA)
-        - Análisis de correspondencias canónico
+        - MDS
+        - NMDS
+        - PCoA
+        - RDA
+        - tb-RDA
+        - CCA
         - PERMANOVA
-        - Análisis multivariado de la varianza (MANOVA)
+        - MANOVA
     - nombre: Ciencia de datos
       items:
         - Data science
