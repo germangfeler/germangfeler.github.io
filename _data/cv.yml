@@ -51,7 +51,6 @@
         - Bootstrapping
     - nombre: Análisis multivariado
       items:
-        - Métodos multivariados
         - PCA
         - Análisis factorial
         - MDS
@@ -69,6 +68,7 @@
         - Machine learning
         - Exploración
         - Visualización
+        - Preprocesamiento
         - Clasificación
         - Agrupamiento
         - Árboles de decisión
