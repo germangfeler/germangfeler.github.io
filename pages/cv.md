@@ -7,7 +7,7 @@ stats:
   - n: 17
     label: publicaciones científicas
     url: /publicaciones/
-  - n: 21
+  - n: 24
     label: trabajos presentados en congresos
   - n: 8
     label: proyectos de investigación financiados
