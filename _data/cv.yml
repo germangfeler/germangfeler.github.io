@@ -32,11 +32,12 @@
 - titulo: Skills
   icono: skills
   grupos:
-    - nombre: Estadística
+    - nombre: Análisis univariado
       items:
-        - Diseño de experimentos (DOE)
+        - Diseño de experimentos
         - Regresión lineal
         - Análisis de la varianza (ANOVA)
+        - Permutation-based ANOVA
         - Modelos lineales
         - Modelos lineales generalizados
         - Modelos mixtos
@@ -62,13 +63,13 @@
         - Análisis multivariado de la varianza (MANOVA)
     - nombre: Ciencia de datos
       items:
-        - Exploración de datos
-        - Visualización de datos
-        - Clasificación de datos
-        - Agrupamiento de datos
-        - Machine learning
-        - Data mining
         - Data science
+        - Data mining
+        - Machine learning
+        - Exploración
+        - Visualización
+        - Clasificación
+        - Agrupamiento
         - Árboles de decisión
         - Random forest
         - Redes neuronales
