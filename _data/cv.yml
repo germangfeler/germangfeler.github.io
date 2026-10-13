@@ -1,6 +1,7 @@
 # Contenido del CV (/cv/). Cada sección tiene un ícono y una lista de ítems.
 # Campos de cada ítem: fecha, titulo, url (opcional), lugar (opcional), detalle (opcional, admite **negrita**).
-# Íconos disponibles: formacion, experiencia, docencia, gestion, comunicacion, libros
+# Íconos disponibles: formacion, experiencia, skills, docencia, gestion, comunicacion, libros
+# La sección Skills usa "grupos" (nombre + lista de items) en lugar de "items".
 
 - titulo: Formación académica
   icono: formacion
@@ -27,6 +28,56 @@
     - fecha: 2015–2016
       titulo: Consorcio italiano CINECA
       detalle: Desarrollo front-end y back-end para ensayos clínicos (02/2015 – 08/2016).
+
+- titulo: Skills
+  icono: skills
+  grupos:
+    - nombre: Estadística
+      items:
+        - Diseño de experimentos (DOE)
+        - Regresión lineal
+        - Análisis de la varianza (ANOVA)
+        - Modelos lineales
+        - Modelos lineales generalizados
+        - Modelos mixtos
+        - Modelos generalizados mixtos
+        - Modelos aditivos generalizados
+        - Modelos longitudinales
+        - Modelos para medidas repetidas
+        - Modelos marginales
+        - Métodos no paramétricos
+        - Bootstrapping
+        - Métodos multivariados
+    - nombre: Ciencia de datos
+      items:
+        - Exploración de datos
+        - Visualización de datos
+        - Clasificación de datos
+        - Agrupamiento de datos
+        - Machine learning
+        - Data mining
+        - Data science
+    - nombre: Ecología
+      items:
+        - Índices de diversidad
+        - Números de Hill
+        - Diversidad funcional
+    - nombre: Bioinformática y salud
+      items:
+        - Bioinformática
+        - Transcriptómica
+        - Estudios clínicos
+        - Clinical Information Systems
+    - nombre: Herramientas
+      items:
+        - R
+        - Linux
+        - HTML
+        - CSS
+        - WordPress
+    - nombre: Idiomas
+      items:
+        - Inglés (nivel intermedio)
 
 - titulo: Docencia
   icono: docencia

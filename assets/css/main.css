@@ -557,3 +557,12 @@ a { color: inherit; }
 @media (max-width: 600px) {
   .cv-item { grid-template-columns: 1fr; gap: .25rem; }
 }
+.cv-skills { margin: 0; }
+.cv-skills__row { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1.25rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.cv-skills dd { margin: 0; }
+.cv-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.cv-chips li {
+  font-size: .88rem; font-weight: 500; line-height: 1.3; padding: .3rem .65rem; border-radius: 5px;
+  background: color-mix(in srgb, var(--hero-bg, #203f6e) 10%, transparent);
+}
+@media (max-width: 600px) { .cv-skills__row { grid-template-columns: 1fr; gap: .5rem; } }
