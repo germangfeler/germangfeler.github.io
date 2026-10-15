@@ -257,4 +257,4 @@ El modelo estima que hay al menos 2 parcelas donde las wetas estaban, pero ningu
 
 Los modelos de ocupación nos obligan a pensar el muestreo de otra manera. Ya no alcanza con ir una vez a cada sitio y anotar si la especie está: hay que volver, registrar quién observó, cuándo y en qué condiciones. A cambio, podemos separar lo que pasa en la naturaleza de lo que pasa con nuestros métodos de muestreo.
 
-En el próximo y último post de la serie vamos a dejar la presencia y la ausencia y pasar a contar individuos: modelos de Poisson, sobredispersión y binomial negativa.
+En el [próximo y último post](/datascience/modelos-de-conteo/) de la serie vamos a dejar la presencia y la ausencia y pasar a contar individuos: modelos de Poisson, sobredispersión y binomial negativa.
