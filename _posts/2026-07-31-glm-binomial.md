@@ -157,13 +157,6 @@ La deviance de nuestro modelo compara su verosimilitud con la del modelo saturad
 
 > D = 2 × [ log L(modelo saturado) − log L(modelo en estudio) ]
 
-Un valor pequeño indica que, con muchos menos parámetros, logramos un ajuste casi tan bueno como el del modelo saturado. En la salida del `summary()` vemos que la deviance baja de 55.8 en el modelo nulo a 26.9 al incluir NAP. Para evaluar el ajuste podemos compararla con una distribución chi-cuadrado:
-
-```r
-> pchisq(deviance(squa.mod), df.residual(squa.mod), lower.tail = FALSE)
-[1] 0.9512685
-```
-
-Un p-valor alto indica que no hay evidencia de falta de ajuste.
+Un valor pequeño indica que, con muchos menos parámetros, logramos un ajuste casi tan bueno como el del modelo saturado. En la salida del `summary()` vemos que la deviance baja de 55.8 en el modelo nulo a 26.9 al incluir NAP.
 
 En el próximo post vamos a cuestionar algo que dimos por sentado en todo este análisis: que cuando no vimos a la especie es porque no estaba. Ahí entran al campo de juego los **modelos de ocupación**.
