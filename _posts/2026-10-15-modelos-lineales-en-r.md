@@ -27,13 +27,13 @@ Este es un caso típico de dataset multivariado pero en este caso vamos a utiliz
 
 ## Ajustar el modelo
 
-Cuando uno entiende que todo es un modelo lineal, escribirlo en R sale natural:
+Como vimos en el post anterior, un modelo lineal se especifica en R de la siguiente manera:
 
 ```r
 regsimple <- lm(Richness ~ NAP, data = rikz)
 ```
 
-`lm` viene de *linear model*. A la izquierda de la `~` va la variable respuesta, a la derecha la explicativa, y en `data` la tabla. Si la variable explicativa es continua estamos haciendo una regresión; si es un factor, un ANOVA. La función es la misma.
+A la izquierda de la `~` va la variable respuesta, a la derecha la explicativa, y en `data` la tabla. Si la variable explicativa es continua estamos haciendo una regresión; si es un factor, un ANOVA. La función es la misma.
 
 ## Leer la salida
 
@@ -62,7 +62,7 @@ La columna `Pr(>|t|)` es el test de cada coeficiente. Para la pendiente, la hip�
 
 ## Chequear los supuestos
 
-Acá es donde muchos análisis se quedan cortos. El modelo lineal asume cuatro cosas sobre los errores (lo que el modelo no explica):
+El modelo lineal asume cuatro cosas sobre los errores (lo que el modelo no explica):
 
 1. **Media cero.**
 2. **Varianza constante** (homocedasticidad): la dispersión de los residuos no debería cambiar a lo largo de los valores ajustados.
@@ -192,4 +192,4 @@ Las guías de análisis estadístico de la Ecological Society of America piden, 
 
 En los últimos años crecieron las críticas a la ciencia "p-valor-céntrica", la que reduce todo a si p < 0.05. Revistas y sociedades científicas vienen pidiendo reportar **tamaños de efecto e intervalos de confianza**, y no sólo si algo dio "significativo" (ver por ejemplo Wasserstein, Schirm y Lazar, 2019, *Moving to a World Beyond "p < 0.05"*, en *The American Statistician*). La pendiente de −2.87 especies por metro nos dice mucho más sobre la playa que el p-valor que la acompaña.
 
-En el próximo post vamos a ver qué hacer cuando la variable respuesta no es continua sino binaria: presencia o ausencia de una especie. Ahí el modelo lineal ya no alcanza y entran en juego los **modelos lineales generalizados**.
+En el próximo post vamos a ver qué hacer cuando la variable respuesta no es continua sino binaria: presencia o ausencia de una especie. Ahí el modelo lineal ya no alcanza y entran al campo de juego los **modelos lineales generalizados**.
