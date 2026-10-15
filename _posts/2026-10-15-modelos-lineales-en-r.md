@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Modelos en ecología con R I: el modelo lineal, de la salida al paper"
+title: "El modelo lineal en ecología, de la salida al paper"
 categories: datascience
 tags:
   - R
