@@ -14,7 +14,7 @@ header:
 excerpt: "Regresión logística, odds ratio y deviance con datos ecológicos"
 ---
 
-Este es el segundo post de la serie basada en el curso [R aplicado a Ecología: de individuos a comunidades](/cursos/96-ecologia/). En [el anterior](/datascience/modelos-lineales-en-r/) vimos cómo ajustar, chequear y reportar un modelo lineal. Pero en ecología muchas veces la pregunta no es *cuánto* sino *si*: ¿la especie está o no está en el sitio? Hoy vemos cómo modelar una variable respuesta binaria.
+Este es el segundo post de la serie basada en el curso [R aplicado a Ecología: de individuos a comunidades](/cursos/96-ecologia/). En [el anterior](/datascience/modelos-lineales-en-r/) vimos cómo ajustar, chequear y reportar un modelo lineal. Pero en ecología muchas veces la pregunta no es *cuánto* sino *si*: ¿la especie está o no está en el sitio? Hoy vamos a ver cómo modelar una variable respuesta binaria.
 
 ## ¿Qué hacer cuando los supuestos no se cumplen?
 
