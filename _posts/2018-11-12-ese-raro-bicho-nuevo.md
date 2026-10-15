@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Ese raro bicho ¿nuevo?"
+title: "Data Science: ese raro bicho ¿nuevo?"
 categories: datascience
 tags:
   - Data Science
