@@ -6,8 +6,21 @@ layout: default
   <header class="listing__head">
     <h1 class="listing__title">{{ page.title }}</h1>
     <div class="listing__intro">{{ content }}</div>
-    <p class="listing__count">{{ site.categories[sec].size }} posts</p>
+    <p class="listing__count" data-count>{{ site.categories[sec].size }} posts</p>
   </header>
+  {%- assign temas = site.data.temas[sec] -%}
+  {%- if temas %}
+  <div class="filters filters--temas" role="group" aria-label="Filtrar por tema" data-tema-filter>
+    <button type="button" class="chip" data-tema="todos" aria-pressed="true">Todos <span class="chip__n">{{ site.categories[sec].size }}</span></button>
+    {%- for t in temas -%}
+    {%- assign n = 0 -%}
+    {%- for post in site.categories[sec] -%}{%- if post.temas contains t.slug -%}{%- assign n = n | plus: 1 -%}{%- endif -%}{%- endfor -%}
+    {%- if n > 0 %}
+    <button type="button" class="chip" data-tema="{{ t.slug }}" aria-pressed="false">{{ t.nombre }} <span class="chip__n">{{ n }}</span></button>
+    {%- endif -%}
+    {%- endfor %}
+  </div>
+  {%- endif %}
   <ol class="entries">
     {%- for post in site.categories[sec] -%}
       {% include entry.html post=post show_section=false %}

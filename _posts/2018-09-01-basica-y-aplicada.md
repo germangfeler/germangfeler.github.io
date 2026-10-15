@@ -2,6 +2,7 @@
 layout: single
 title: "Ciencia básica y ciencia aplicada"
 categories: cafe
+temas: [ciencia]
 tags:
   - política
   - ciencia

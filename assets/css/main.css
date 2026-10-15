@@ -239,6 +239,9 @@ a { color: inherit; }
 .listing__intro { font-family: var(--serif); font-size: 1.2rem; color: var(--muted); }
 .listing__intro p { margin: 0; }
 .listing__count { margin: .9rem 0 0; font-size: .85rem; color: var(--muted); }
+.filters--temas { margin: 1.25rem 0 .75rem; }
+.filters--temas .chip { --sec: var(--ds); }
+.listing--cafe .filters--temas .chip { --sec: var(--cafe); }
 
 .tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
 .tags a {

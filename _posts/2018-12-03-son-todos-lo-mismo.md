@@ -2,6 +2,7 @@
 layout: single
 title: "Son todos lo mismo"
 categories: datascience
+temas: [estadistica]
 tags:
   - R
   - Estadística

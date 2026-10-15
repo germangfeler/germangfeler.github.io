@@ -2,6 +2,7 @@
 layout: single
 title: "El modelo lineal en ecología, de la salida al paper"
 categories: datascience
+temas: [estadistica, ecologia]
 tags:
   - R
   - Estadística
