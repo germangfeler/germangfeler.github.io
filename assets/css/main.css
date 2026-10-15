@@ -211,6 +211,15 @@ a { color: inherit; }
 @media (max-width: 700px) { .featured__link { grid-template-columns: 1fr; } }
 
 .featured + .entries { border-top: 1px solid var(--rule); }
+.home-sec { margin-top: 2.5rem; }
+.home-sec--datascience { --sec: var(--ds); }
+.home-sec--cafe { --sec: var(--cafe); }
+.home-sec__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem;
+  border-bottom: 2px solid var(--sec); padding-bottom: .6rem; }
+.home-sec__title { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -.01em; }
+.home-sec__title a { color: var(--sec); text-decoration: none; }
+.home-sec__all { font-size: .9rem; font-weight: 600; color: var(--sec); text-decoration: none; }
+.home-sec__all:hover, .home-sec__title a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .entries { list-style: none; margin: 0; padding: 0; }
 .entry + .entry { border-top: 1px solid var(--rule); }

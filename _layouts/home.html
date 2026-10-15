@@ -19,13 +19,6 @@ layout: default
 <section class="index" aria-labelledby="titulo-posts">
   <div class="index__head">
     <h2 id="titulo-posts">Posts</h2>
-    <div class="filters" role="group" aria-label="Filtrar por sección">
-      <button type="button" class="chip" data-filter="all" aria-pressed="true">Todo <span class="chip__n">{{ site.posts.size }}</span></button>
-      {%- for s in site.sections -%}
-      {%- assign key = s[0] -%}
-      <button type="button" class="chip chip--{{ key }}" data-filter="{{ key }}" aria-pressed="false">{{ s[1].title }} <span class="chip__n">{{ site.categories[key].size }}</span></button>
-      {%- endfor -%}
-    </div>
   </div>
 
   {%- assign latest = site.posts.first -%}
@@ -42,9 +35,19 @@ layout: default
     </a>
   </article>
 
-  <ol class="entries">
-    {%- for post in site.posts offset:1 -%}
-      {% include entry.html post=post %}
-    {%- endfor -%}
-  </ol>
+  {%- for s in site.sections -%}
+  {%- assign key = s[0] -%}
+  {%- assign lista = site.categories[key] | where_exp: "p", "p.url != latest.url" -%}
+  <section class="home-sec home-sec--{{ key }}" aria-labelledby="sec-{{ key }}">
+    <div class="home-sec__head">
+      <h3 id="sec-{{ key }}" class="home-sec__title"><a href="{{ s[1].url | relative_url }}">{{ s[1].title }}</a></h3>
+      <a class="home-sec__all" href="{{ s[1].url | relative_url }}">Ver los {{ site.categories[key].size }} posts <span aria-hidden="true">→</span></a>
+    </div>
+    <ol class="entries">
+      {%- for post in lista limit:2 -%}
+        {% include entry.html post=post show_section=false %}
+      {%- endfor -%}
+    </ol>
+  </section>
+  {%- endfor %}
 </section>
