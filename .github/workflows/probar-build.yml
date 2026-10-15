@@ -1,0 +1,27 @@
+name: Probar build de GitHub Pages
+on:
+  push:
+    branches: [unir-data-science]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Revisar
+        shell: python
+        run: |
+          import os, re
+          os.chdir('_site')
+          urls = ['bioinformatica/bioinfo101/index.html','bioinformatica/bioinfo101-parte2/index.html','bioinformatica/margaret-dayhoff/index.html','bioinformatica/vida-exe/index.html','bioinformatica/index.html','datascience/index.html','datascience/shape-of-you/index.html']
+          faltan = [u for u in urls if not os.path.exists(u)]
+          ds = open('datascience/index.html', encoding='utf-8').read()
+          bi = open('bioinformatica/index.html', encoding='utf-8').read()
+          v = open('bioinformatica/vida-exe/index.html', encoding='utf-8').read()
+          sm = open('sitemap.xml', encoding='utf-8').read()
+          print('::notice::' + '; '.join([f'faltan={faltan}', f'posts DS={ds.count("class=\"entry\"")}', f'redirect={"http-equiv=\"refresh\"" in bi}',
+            f'menu activo vida-exe={re.findall(r"aria-current=.page.>([^<]+)", v)}', f'seccion vida-exe={re.findall(r"sec sec--(\w+)", v)[:1]}',
+            f'/bioinformatica/ en sitemap={"/bioinformatica/</loc>" in sm}']))
