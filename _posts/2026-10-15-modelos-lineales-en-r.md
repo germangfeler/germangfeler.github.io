@@ -67,7 +67,7 @@ El modelo lineal asume cuatro cosas sobre los errores (lo que el modelo no expli
 1. **Media cero.**
 2. **Varianza constante** (homocedasticidad): la dispersión de los residuos no debería cambiar a lo largo de los valores ajustados.
 3. **Distribución normal.**
-4. **Independencia:** es difícil de evaluar mirando los datos y depende sobre todo de que el diseño del muestreo esté bien hecho. Cuando no se cumple, hay modelos que permiten tenerlo en cuenta, como los mixtos y los marginales.
+4. **Independencia:** depende sobre todo de que el diseño del muestreo esté bien hecho. Cuando no se cumple, hay modelos que permiten tenerlo en cuenta, como los mixtos y los marginales.
 
 En R, la forma más rápida de mirar los tres primeros es graficar el modelo:
 
