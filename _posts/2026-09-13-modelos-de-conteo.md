@@ -42,7 +42,7 @@ Por lo tanto:
 
 Esto tiene dos consecuencias. La primera es que μ siempre es positiva, como corresponde a un conteo. La segunda es que el efecto de x es **multiplicativo**: cada vez que x aumenta una unidad, la media se multiplica por exp(β₁).
 
-## El ejemplo: la riqueza en RIKZ
+## Ejemplo: la riqueza en RIKZ
 
 Volvemos al modelo del primer post:
 
@@ -87,7 +87,7 @@ Comparemos con el modelo lineal, que decía que por cada metro de altura se pier
 
 ## Chequear el ajuste
 
-Como en el GLM binomial, podemos comparar la deviance residual con una distribución chi-cuadrado:
+Para chequear el ajuste del modelo podemos comparar la deviance residual con una distribución chi-cuadrado:
 
 ```r
 > pchisq(deviance(regpoisson), df.residual(regpoisson), lower.tail = FALSE)
