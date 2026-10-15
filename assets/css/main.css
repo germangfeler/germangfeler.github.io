@@ -568,3 +568,4 @@ a { color: inherit; }
 @media (max-width: 600px) { .cv-skills__row { grid-template-columns: 1fr; gap: .5rem; } }
 .cv-pubs { margin: 0 0 3rem; font-family: var(--serif); font-size: 1.1rem; color: var(--muted); }
 .cv-pubs a { color: var(--link); font-family: var(--sans); font-weight: 600; text-underline-offset: 3px; }
+.cv-pubs--after { margin: 1rem 0 0; }
