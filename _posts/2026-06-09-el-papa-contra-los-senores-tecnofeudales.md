@@ -2,7 +2,7 @@
 layout: single
 title: "El Papa contra los señores tecnofeudales"
 categories: cafe
-temas: [ciencia, doctrina-social]
+temas: [ciencia, politica]
 tags:
   - política
   - inteligencia artificial

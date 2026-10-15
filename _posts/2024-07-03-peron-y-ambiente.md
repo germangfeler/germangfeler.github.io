@@ -2,7 +2,7 @@
 layout: single
 title: Cuando Perón advirtió sobre la crisis ambiental
 categories: cafe
-temas: [ambiente, peronismo]
+temas: [politica]
 tags:
   - política
   - ciencia

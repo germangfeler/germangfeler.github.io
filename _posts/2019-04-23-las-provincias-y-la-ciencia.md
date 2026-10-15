@@ -2,7 +2,7 @@
 layout: single
 title: El rol de las provincias en la I+D
 categories: cafe
-temas: [ciencia, economia]
+temas: [ciencia, politica]
 tags:
   - política
   - ciencia

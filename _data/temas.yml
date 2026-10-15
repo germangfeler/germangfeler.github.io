@@ -16,11 +16,5 @@ datascience:
 cafe:
   - slug: ciencia
     nombre: Ciencia y tecnología
-  - slug: economia
-    nombre: Economía y desarrollo
-  - slug: ambiente
-    nombre: Ambiente
-  - slug: peronismo
-    nombre: Peronismo
-  - slug: doctrina-social
-    nombre: Doctrina social
+  - slug: politica
+    nombre: Política, Sociedad y Economía

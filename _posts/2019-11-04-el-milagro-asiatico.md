@@ -2,7 +2,7 @@
 layout: single
 title: Cómo Asia se hizo rica (y por qué no siguió las recetas del FMI)
 categories: cafe
-temas: [economia]
+temas: [politica]
 tags:
   - política
   - ciencia

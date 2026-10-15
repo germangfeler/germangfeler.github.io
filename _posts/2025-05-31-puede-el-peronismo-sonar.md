@@ -2,7 +2,7 @@
 layout: single
 title: ¿Puede el peronismo soñar con el futuro?
 categories: cafe
-temas: [peronismo]
+temas: [politica]
 tags:
   - peronismo
   - futuro

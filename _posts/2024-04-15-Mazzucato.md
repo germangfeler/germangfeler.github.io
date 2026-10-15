@@ -2,7 +2,7 @@
 layout: single
 title: "La Luna, Google y el CAREM: lo que Mariana Mazzucato entendió sobre la innovación"
 categories: cafe
-temas: [ciencia, economia]
+temas: [ciencia, politica]
 tags:
   - política
   - ciencia

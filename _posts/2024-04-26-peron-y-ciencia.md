@@ -2,7 +2,7 @@
 layout: single
 title: "Sin tecnología nacional no hay desarrollo: qué pensaba Perón sobre la ciencia"
 categories: cafe
-temas: [ciencia, peronismo]
+temas: [ciencia, politica]
 tags:
   - política
   - ciencia
