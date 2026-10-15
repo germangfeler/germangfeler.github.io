@@ -145,7 +145,9 @@ a { color: inherit; }
 .sec--cafe, .listing--cafe, [data-sec="cafe"] { --sec: var(--cafe); }
 
 /* ---------- portada ---------- */
-:root { --hero-bg: #2f5da8; --hero-ink: #eef1ec; --hero-muted: rgba(238, 241, 236, .78); --hero-line: rgba(238, 241, 236, .3); }
+:root { --hero-bg: #dbe6f5; --hero-ink: #1b2430; --hero-muted: #3d4a5c; --hero-line: rgba(27, 36, 48, .25); --accent: #2f5da8; }
+:root[data-theme="dark"] { --hero-bg: #c9d8ee; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --hero-bg: #c9d8ee; } }
 .hero {
   display: grid; grid-template-columns: auto 1fr; gap: clamp(1.25rem, 4vw, 3rem);
   align-items: center; padding: clamp(2.5rem, 6vw, 4.5rem) 0;
@@ -154,7 +156,7 @@ a { color: inherit; }
   background: var(--hero-bg); color: var(--hero-ink);
   box-shadow: 0 0 0 100vmax var(--hero-bg); clip-path: inset(0 -100vmax);
 }
-.hero a:focus-visible { outline-color: #f2c14e; }
+.hero a:focus-visible { outline-color: #2f5da8; }
 .hero__avatar {
   width: clamp(5rem, 11vw, 8rem); aspect-ratio: 1; height: auto; object-fit: cover;
   border-radius: 50%; filter: grayscale(.15) contrast(1.02);
@@ -172,7 +174,7 @@ a { color: inherit; }
 }
 .links a:hover { border-color: var(--ink); }
 .links--hero a { color: var(--hero-ink); border-color: var(--hero-line); }
-.links--hero a:hover { border-color: var(--hero-ink); background: rgba(238, 241, 236, .08); }
+.links--hero a:hover { border-color: var(--hero-ink); background: rgba(27, 36, 48, .06); }
 .hero__avatar { box-shadow: 0 0 0 4px var(--hero-line); }
 @media (max-width: 600px) {
   .hero { grid-template-columns: 1fr; }
@@ -540,7 +542,7 @@ a { color: inherit; }
 }
 .cv-sec__icon {
   display: grid; place-items: center; width: 2.3rem; height: 2.3rem; flex: none; border-radius: 50%;
-  background: var(--hero-bg, #203f6e); color: #eef1ec;
+  background: var(--accent, #2f5da8); color: #eef1ec;
 }
 .cv-sec__icon .icon { width: 1.2rem; height: 1.2rem; }
 .cv-items { list-style: none; margin: 0; padding: 0; }
@@ -561,6 +563,6 @@ a { color: inherit; }
 .cv-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
 .cv-chips li {
   font-size: .88rem; font-weight: 500; line-height: 1.3; padding: .3rem .65rem; border-radius: 5px;
-  background: color-mix(in srgb, var(--hero-bg, #203f6e) 10%, transparent);
+  background: color-mix(in srgb, var(--accent, #2f5da8) 12%, transparent);
 }
 @media (max-width: 600px) { .cv-skills__row { grid-template-columns: 1fr; gap: .5rem; } }
