@@ -2,7 +2,7 @@
 layout: single
 title: "DataViz I: Shape of You"
 categories: datascience
-temas: [visualizacion]
+temas: [visualizacion, programacion]
 tags:
   - DataViz
   - Visualización

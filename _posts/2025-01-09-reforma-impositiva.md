@@ -2,6 +2,7 @@
 layout: single
 title: La reforma tributaria
 categories: cafe
+temas: [economia]
 tags:
   - impuestos
   - política

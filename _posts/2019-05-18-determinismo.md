@@ -2,6 +2,7 @@
 layout: single
 title: "El debate nature-nurture"
 categories: cafe
+temas: [ciencia]
 tags:
   - política
   - ciencia
