@@ -15,12 +15,7 @@ header:
 excerpt: "Cómo ajustar, leer, chequear y reportar un modelo lineal"
 ---
 
-Hace unos años di el curso de posgrado [R aplicado a Ecología: de individuos a comunidades](/cursos/96-ecologia/) y me quedaron varias presentaciones guardadas en una carpeta. Me pareció un desperdicio que vivan ahí, así que empiezo una serie de posts basada en las clases sobre modelos. Esta es la primera de cuatro:
-
-1. **El modelo lineal: de la salida al paper** (este post)
-2. Datos de presencia/ausencia: GLM binomial
-3. ¿Ausente o no detectado? Modelos de ocupación
-4. Datos de conteo: Poisson, binomial negativa y offset
+Hace unos años, junto a Nicolás Pelegrin, dimos un curso de posgrado en el Doctorado en Ciencias Biológicas de la UNC que titulamos [R aplicado a Ecología: de individuos a comunidades](/cursos/96-ecologia/). Ahora voy a adaptar esas clases en una serie de posts disponibles para todo el mundo, empezando por este donde vamos a ver la aplicación práctica de modelos lineales en datos ecológicos.
 
 En [un post anterior](/datascience/son-todos-lo-mismo/) conté que la regresión, el ANOVA y el test t son en realidad el mismo modelo lineal. Si no lo leíste, te recomiendo empezar por ahí. Hoy vamos a lo práctico: cómo se ajusta un modelo lineal en R, cómo se lee la salida, cómo se chequean los supuestos y qué hay que poner en el paper.
 
@@ -28,7 +23,7 @@ En [un post anterior](/datascience/son-todos-lo-mismo/) conté que la regresión
 
 Vamos a usar un dataset clásico de los libros de Zuur y colaboradores: **RIKZ**. Tiene la abundancia de 75 especies de invertebrados medida en 45 sitios de playas de Holanda, junto con variables abióticas como la composición del sedimento o la pendiente de la playa.
 
-Más adelante en el curso usábamos técnicas multivariadas para relacionar toda la comunidad con el ambiente, pero acá vamos a simplificar: resumimos la comunidad de cada sitio en un solo número, la **riqueza** (cantidad de especies), y la explicamos con **NAP**, la altura del sitio respecto del nivel medio del mar.
+Este es un caso típico de dataset multivariado pero en este caso vamos a utilizarlo para un análisis univariado. Por eso vamos a resumir la comunidad de cada sitio en un solo número, la **riqueza** (cantidad de especies), y buscaremos evaluar si es explicada por la altura del sitio respecto del nivel medio del mar (**NAP**).
 
 ## Ajustar el modelo
 
