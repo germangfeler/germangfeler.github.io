@@ -14,6 +14,7 @@ layout: default
 {%- assign techs = keyed | split: ';;' | sort_natural -%}
 <section class="listing pubs-page">
   <header class="listing__head">
+    <p class="post__section"><a class="sec" href="{{ '/cv/' | relative_url }}">CV</a></p>
     <h1 class="listing__title">{{ page.title }}</h1>
     <div class="listing__intro">{{ content }}</div>
   </header>

@@ -6,7 +6,5 @@ main:
     url: /cafe/
   - title: "Servicios"
     url: /servicios/
-  - title: "Publicaciones"
-    url: /publicaciones/
   - title: "CV"
     url: /cv/

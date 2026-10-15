@@ -8,6 +8,7 @@
         {%- if page.url contains link.url -%}{%- assign active = true -%}{%- endif -%}
         {%- assign slug = link.url | remove: '/' -%}
         {%- if page.categories contains slug -%}{%- assign active = true -%}{%- endif -%}
+        {%- if page.nav_parent == link.url -%}{%- assign active = true -%}{%- endif -%}
         <a href="{{ link.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ link.title }}</a>
       {%- endfor -%}
     </nav>
