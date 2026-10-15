@@ -65,7 +65,7 @@ Por ejemplo, el tipo de hábitat puede afectar la ocupación, mientras que el cl
 
 Los dos últimos supuestos tienen una consecuencia práctica: hay que **registrar todo lo posible sobre el muestreo**. ¿Llovió? ¿Estuvo soleado? ¿A qué distancia del camino principal está la transecta? Si no se cumplen los supuestos, las estimaciones de ocupación y detectabilidad pueden estar sesgadas y las inferencias pueden ser incorrectas.
 
-## El ejemplo: el weta gigante
+## Ejemplo: el weta gigante
 
 El weta gigante (*Deinacrida mahoenui*) es un insecto endémico de Nueva Zelanda. En 2004 se hizo un estudio en una reserva con este diseño:
 
@@ -73,7 +73,7 @@ El weta gigante (*Deinacrida mahoenui*) es un insecto endémico de Nueva Zelanda
 * Cada parcela se visitó entre 3 y 5 veces durante un período de 5 días (3.6 veces en promedio).
 * Hubo tres observadores, y cada uno visitó cada parcela al menos una vez. Así se buscó evitar que la detección dependiera de un único observador.
 
-Se detectaron wetas en 35 de las 72 parcelas, lo que da una **ocupación naïve** de 0.49. Pero muchas veces se las detectó en solo una o dos de las visitas, lo que indica que la probabilidad de detección es menor a 1. Es decir que puede haber otras parcelas donde la especie está pero no se la pudo detectar.
+Se detectaron wetas en 35 de las 72 parcelas, lo que da una **ocupación naïve** de 0.49. Pero muchas veces se las detectó en solo una o dos de las visitas, lo que indica que la probabilidad de detección es menor a 1. Es decir que puede haber otras parcelas donde la especie estaba pero no se la pudo detectar.
 
 Las variables que vamos a considerar son:
 
@@ -165,7 +165,7 @@ Model selection table
 Models ranked by AIC(x)
 ```
 
-El modelo con menor AIC incluye el día y el observador para la detección, y el ramoneo para la ocupación. Igual conviene mirar la columna `delta`: hay varios modelos a menos de 2 unidades de AIC del mejor, así que el soporte para cada uno no es abrumador.
+El modelo con menor AIC incluye el día y el observador para la detección, y el ramoneo para la ocupación. Igual conviene mirar la columna `delta`: hay varios modelos a menos de 2 unidades de AIC del mejor que explicarían igual de bien los datos.
 
 ## Leer la salida
 
