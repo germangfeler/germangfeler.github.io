@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Contando especies: GLM Poisson, sobredispersión y binomial negativa"
+title: "Comparando la abundancia de las especies: GLM para conteos"
 categories: datascience
 tags:
   - R
