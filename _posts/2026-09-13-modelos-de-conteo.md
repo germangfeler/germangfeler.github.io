@@ -2,6 +2,7 @@
 layout: single
 title: "Comparando la abundancia de las especies: GLM para conteos"
 categories: datascience
+temas: [estadistica, ecologia]
 tags:
   - R
   - Estadística

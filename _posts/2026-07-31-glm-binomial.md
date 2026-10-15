@@ -2,6 +2,7 @@
 layout: single
 title: "Datos de presencia y ausencia: el GLM binomial"
 categories: datascience
+temas: [estadistica, ecologia]
 tags:
   - R
   - Estadística

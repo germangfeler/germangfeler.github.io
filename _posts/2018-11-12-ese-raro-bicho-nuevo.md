@@ -2,6 +2,7 @@
 layout: single
 title: "Data Science: ese raro bicho ¿nuevo?"
 categories: datascience
+temas: [divulgacion]
 tags:
   - Data Science
 header:

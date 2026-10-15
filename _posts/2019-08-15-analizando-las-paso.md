@@ -2,6 +2,7 @@
 layout: single
 title: "Analizando las PASO"
 categories: datascience
+temas: [visualizacion]
 tags:
   - DataViz
   - Visualización

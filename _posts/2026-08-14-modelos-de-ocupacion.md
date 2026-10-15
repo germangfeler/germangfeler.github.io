@@ -2,6 +2,7 @@
 layout: single
 title: "Que no la veas no significa que no esté: modelos de ocupación"
 categories: datascience
+temas: [estadistica, ecologia]
 tags:
   - R
   - Estadística

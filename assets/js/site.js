@@ -27,6 +27,32 @@
     try { var saved = sessionStorage.getItem('filtro'); if (saved && document.querySelector('.chip[data-filter="' + saved + '"]')) apply(saved); } catch (e) {}
   }
 
+  // Filtro por tema en las páginas de sección
+  var tbox = document.querySelector('[data-tema-filter]');
+  if (tbox) {
+    var tchipsT = tbox.querySelectorAll('.chip[data-tema]');
+    var rows = document.querySelectorAll('.entries .entry');
+    var count = document.querySelector('[data-count]');
+    var applyT = function (t, push) {
+      if (!tbox.querySelector('.chip[data-tema="' + t + '"]')) t = 'todos';
+      var n = 0;
+      tchipsT.forEach(function (c) { c.setAttribute('aria-pressed', String(c.dataset.tema === t)); });
+      rows.forEach(function (el) {
+        var ok = t === 'todos' || (' ' + (el.dataset.temas || '') + ' ').indexOf(' ' + t + ' ') > -1;
+        el.hidden = !ok; if (ok) n++;
+      });
+      if (count) count.textContent = n + (n === 1 ? ' post' : ' posts');
+      if (push) {
+        var url = new URL(location.href);
+        if (t === 'todos') url.searchParams.delete('tema'); else url.searchParams.set('tema', t);
+        history.replaceState(null, '', url);
+      }
+    };
+    tchipsT.forEach(function (c) { c.addEventListener('click', function () { applyT(c.dataset.tema, true); }); });
+    var q = new URLSearchParams(location.search).get('tema');
+    if (q) applyT(q, false);
+  }
+
   // Índice de secciones del post
   var toc = document.querySelector('[data-toc]');
   var prose = document.querySelector('.prose');

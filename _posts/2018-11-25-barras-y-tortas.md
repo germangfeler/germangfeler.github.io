@@ -2,6 +2,7 @@
 layout: single
 title: "DataViz II: barras y tortas"
 categories: datascience
+temas: [visualizacion]
 tags:
   - DataViz
   - Visualización

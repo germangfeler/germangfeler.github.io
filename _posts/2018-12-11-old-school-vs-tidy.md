@@ -2,6 +2,7 @@
 layout: single
 title: "R: Old School vs tidyverse"
 categories: datascience
+temas: [programacion]
 tags:
   - tidyverse
   - R

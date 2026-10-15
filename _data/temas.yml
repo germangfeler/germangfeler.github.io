@@ -1,0 +1,15 @@
+# Temas para filtrar los posts dentro de cada sección.
+# Cada post indica sus temas en el front matter con `temas: [slug, slug]`.
+datascience:
+  - slug: estadistica
+    nombre: Estadística
+  - slug: ecologia
+    nombre: Ecología
+  - slug: bioinformatica
+    nombre: Bioinformática
+  - slug: visualizacion
+    nombre: Visualización
+  - slug: programacion
+    nombre: Programación en R
+  - slug: divulgacion
+    nombre: Divulgación
