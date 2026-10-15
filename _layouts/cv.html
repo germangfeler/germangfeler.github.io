@@ -11,6 +11,7 @@ layout: default
     <li class="stat">{% if st.url %}<a class="stat__link" href="{{ st.url | relative_url }}">{% endif %}<span class="stat__n">{{ st.n }}</span><span class="stat__l">{{ st.label }}</span>{% if st.url %}</a>{% endif %}</li>
     {%- endfor -%}
   </ul>
+  <p class="cv-pubs"><a href="{{ '/publicaciones/' | relative_url }}">Ver publicaciones seleccionadas</a>, con las técnicas que apliqué en cada una.</p>
   {%- endif -%}
   {%- for sec in site.data.cv -%}
   <section class="cv-sec" aria-labelledby="cv-{{ forloop.index }}">
