@@ -35,9 +35,6 @@ sections:
   datascience:
     title: "Data Science"
     url: /datascience/
-  bioinformatica:
-    title: "Bioinformática"
-    url: /bioinformatica/
   cafe:
     title: "Café"
     url: /cafe/

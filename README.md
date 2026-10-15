@@ -9,7 +9,7 @@ Crear `_posts/AAAA-MM-DD-nombre.md` con este encabezado:
 ```yaml
 ---
 title: "Título del post"
-categories: datascience   # datascience | bioinformatica | cafe
+categories: datascience   # datascience | cafe
 tags:
   - R
 header:
