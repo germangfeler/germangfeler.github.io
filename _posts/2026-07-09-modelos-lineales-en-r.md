@@ -81,7 +81,7 @@ plot(regsimple)
 
 ¿Qué nos dicen? En el gráfico *Scale-Location* la línea roja sube: la variabilidad de los residuos aumenta con los valores ajustados, así que la varianza no es constante. En el *Q-Q* los puntos de la derecha se despegan de la diagonal, así que los residuos tampoco son del todo normales. Y hay un par de sitios (el 9 y el 22) que se escapan bastante del resto.
 
-Esto tiene sentido: la riqueza es un **conteo** (cantidad de especies), y los conteos rara vez se portan como una variable normal. No es el mejor modelo para estos datos. En la cuarta parte de la serie vamos a ver una alternativa mejor.
+Esto tiene sentido: la riqueza es un **conteo** (cantidad de especies), y los conteos rara vez se portan como una variable normal. No es el mejor modelo para estos datos. En la [segunda parte de la serie](/datascience/glm-binomial/) vamos a ver una alternativa mejor.
 
 ## ¿Y si la variable explicativa es categórica?
 
