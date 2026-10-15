@@ -145,9 +145,7 @@ a { color: inherit; }
 .sec--cafe, .listing--cafe, [data-sec="cafe"] { --sec: var(--cafe); }
 
 /* ---------- portada ---------- */
-:root { --hero-bg: #203f6e; --hero-ink: #eef1ec; --hero-muted: rgba(238, 241, 236, .78); --hero-line: rgba(238, 241, 236, .3); }
-:root[data-theme="dark"] { --hero-bg: #1a2c47; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --hero-bg: #1a2c47; } }
+:root { --hero-bg: #2f5da8; --hero-ink: #eef1ec; --hero-muted: rgba(238, 241, 236, .78); --hero-line: rgba(238, 241, 236, .3); }
 .hero {
   display: grid; grid-template-columns: auto 1fr; gap: clamp(1.25rem, 4vw, 3rem);
   align-items: center; padding: clamp(2.5rem, 6vw, 4.5rem) 0;

@@ -1,7 +1,8 @@
 ---
 layout: single
 title: "Margaret Oakley Dayhoff, la madre de la bioinformática"
-categories: bioinformatica
+categories: datascience
+permalink: /bioinformatica/margaret-dayhoff/   # se mantiene la dirección original
 tags:
   - bioinformatica
   - ciencia

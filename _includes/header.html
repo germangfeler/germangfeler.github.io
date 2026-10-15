@@ -6,6 +6,8 @@
       {%- for link in site.data.navigation.main -%}
         {%- assign active = false -%}
         {%- if page.url contains link.url -%}{%- assign active = true -%}{%- endif -%}
+        {%- assign slug = link.url | remove: '/' -%}
+        {%- if page.categories contains slug -%}{%- assign active = true -%}{%- endif -%}
         <a href="{{ link.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ link.title }}</a>
       {%- endfor -%}
     </nav>
