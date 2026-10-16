@@ -490,33 +490,38 @@ ggplot(dumbbell, aes(y = Author)) +
 
 Arriba aparecen Philip K. Dick y Mariana Mazzucato. Abajo, R. L. Stine y Christopher Pike, a los que puntué con 3 contra más de 3,5 del promedio.
 
-¿Y cuáles son mis autores preferidos? Para que no gane alguien por un solo libro que me encantó, me quedo con los autores de los que califiqué al menos dos libros y los ordeno por mi rating promedio. A igual promedio, primero va el que tiene más libros:
+¿Y cuáles son mis autores preferidos? Para que no gane alguien por un solo libro que me encantó, me quedo con los autores de los que califiqué al menos dos libros y los ordeno por mi rating promedio. A igual promedio, primero va el que tiene más libros. Y como no es lo mismo una novela que un ensayo, armo un ranking para ficción y otro para no ficción, uno al lado del otro:
 
 ```r
 preferidos <- books %>%
   filter(!is.na(`My Rating`)) %>%
-  group_by(Author) %>%
-  summarize(rating = mean(`My Rating`), n = n()) %>%
-  filter(n >= 2) %>%
-  arrange(desc(rating), desc(n))
+  group_by(Type, Author) %>%
+  summarize(rating = mean(`My Rating`), n = n(), .groups = "drop") %>%
+  filter(n >= 2)
 
 top_autores <- preferidos %>%
+  group_by(Type) %>%
   slice_max(rating, n = 10) %>%
-  arrange(rating, n) %>%
-  mutate(Author = fct_inorder(Author))
+  ungroup() %>%
+  arrange(Type, rating, n) %>%
+  mutate(fila = fct_inorder(paste(Author, Type, sep = "___")))
 
-ggplot(top_autores, aes(x = rating, y = Author)) +
-  geom_segment(aes(x = 1, xend = rating, yend = Author), color = "grey60", linewidth = 1) +
+ggplot(top_autores, aes(x = rating, y = fila)) +
+  geom_segment(aes(x = 1, xend = rating, yend = fila), color = "grey60", linewidth = 1) +
   geom_point(color = "gold", size = 4) +
-  geom_text(aes(label = paste0(round(rating, 2), " (", n, " libros)")),
+  geom_text(aes(label = paste0(round(rating, 2), " (", n, ")")),
             hjust = -0.25, color = "white", size = 3.5) +
+  facet_wrap(~ Type, scales = "free_y") +
+  scale_y_discrete(labels = function(x) str_remove(x, "___.*$")) +
   scale_x_continuous(limits = c(1, 6), breaks = 1:5) +
-  xlab("Mi rating promedio") + ylab("") +
+  xlab("Mi rating promedio (entre paréntesis, libros calificados)") + ylab("") +
   theme_dark_blue()
 ```
 
+El truco de `fila` es para que cada panel tenga su propio orden: si el eje usara solo el nombre del autor, `facet_wrap()` compartiría un único orden entre los dos paneles. Pegándole el tipo al nombre cada fila es única, y `scale_y_discrete()` lo vuelve a sacar al momento de escribir la etiqueta.
+
 {:.center}
-![Gráfico de piruletas con mis diez autores preferidos, entre los que califiqué al menos dos libros, ordenados por mi rating promedio](/assets/img/posts/dataviz3/20_autores_preferidos.png)
+![Dos gráficos de piruletas lado a lado con mis autores preferidos de ficción y de no ficción, entre los que califiqué al menos dos libros, ordenados por mi rating promedio](/assets/img/posts/dataviz3/20_autores_preferidos.png)
 
 [COMPLETAR: comentario sobre los autores preferidos]
 

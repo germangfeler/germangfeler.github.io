@@ -434,30 +434,37 @@ p <- ggplot(ratings, aes(x = `Average Rating`, y = `My Rating`)) +
   theme_dark_blue()
 mostrar(p, "12_rating_vs_promedio", w = 9, h = 6)
 
-## Mis autores preferidos: al menos 2 libros calificados, ordenados por mi rating promedio
+## Mis autores preferidos: al menos 2 libros calificados, ordenados por mi rating promedio,
+## por separado para ficción y no ficción
 preferidos <- books %>%
   filter(!is.na(`My Rating`)) %>%
-  group_by(Author) %>%
-  summarize(rating = mean(`My Rating`), n = n()) %>%
+  group_by(Type, Author) %>%
+  summarize(rating = mean(`My Rating`), n = n(), .groups = "drop") %>%
   filter(n >= 2) %>%
-  arrange(desc(rating), desc(n))
+  arrange(Type, desc(rating), desc(n))
 preferidos
 
-# Los 10 primeros (con empates puede haber más); a igual rating, primero el que tiene más libros
+# Los 10 primeros de cada tipo (con empates puede haber más); a igual rating,
+# primero el que tiene más libros. Como el mismo autor puede aparecer en los dos
+# paneles, el eje usa "Autor___Tipo" y la etiqueta muestra solo el autor.
 top_autores <- preferidos %>%
+  group_by(Type) %>%
   slice_max(rating, n = 10) %>%
-  arrange(rating, n) %>%
-  mutate(Author = fct_inorder(Author))
+  ungroup() %>%
+  arrange(Type, rating, n) %>%
+  mutate(fila = fct_inorder(paste(Author, Type, sep = "___")))
 
-p <- ggplot(top_autores, aes(x = rating, y = Author)) +
-  geom_segment(aes(x = 1, xend = rating, yend = Author), color = "grey60", linewidth = 1) +
+p <- ggplot(top_autores, aes(x = rating, y = fila)) +
+  geom_segment(aes(x = 1, xend = rating, yend = fila), color = "grey60", linewidth = 1) +
   geom_point(color = "gold", size = 4) +
-  geom_text(aes(label = paste0(round(rating, 2), " (", n, " libros)")),
+  geom_text(aes(label = paste0(round(rating, 2), " (", n, ")")),
             hjust = -0.25, color = "white", size = 3.5) +
+  facet_wrap(~ Type, scales = "free_y") +
+  scale_y_discrete(labels = function(x) str_remove(x, "___.*$")) +
   scale_x_continuous(limits = c(1, 6), breaks = 1:5) +
-  xlab("Mi rating promedio") + ylab("") +
+  xlab("Mi rating promedio (entre paréntesis, libros calificados)") + ylab("") +
   theme_dark_blue()
-mostrar(p, "20_autores_preferidos", w = 9, h = 6)
+mostrar(p, "20_autores_preferidos", w = 12, h = 6)
 
 ## Países ordenados por mi rating promedio (al menos 3 libros calificados)
 rating_global <- mean(books$`My Rating`, na.rm = TRUE)
