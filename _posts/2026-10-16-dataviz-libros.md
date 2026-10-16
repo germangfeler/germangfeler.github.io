@@ -99,7 +99,7 @@ capa_anios <- list(
 )
 ```
 
-Esta capa resuelve un problema que aparece en cualquier serie temporal armada en el medio del año: el último año está incompleto, y si no se aclara, la caída de la última barra o del último punto parece una tendencia. El asterisco y la nota al pie lo dejan explícito.
+Esta capa resuelve un problema que aparece en cualquier serie temporal armada en el medio del año: el último año está incompleto, y si no se aclara, la caída de la última barra o del último punto parece una tendencia.
 
 La tercera pieza es un filtro para etiquetar solo el último punto de cada línea, que vamos a usar enseguida:
 
