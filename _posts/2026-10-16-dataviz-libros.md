@@ -456,7 +456,7 @@ ggplot(ratings, aes(x = `Average Rating`, y = `My Rating`)) +
 {:.center}
 ![Diagrama de dispersión entre el rating promedio de Goodreads y mi rating para cada libro, con la recta identidad punteada y los diez libros con mayor diferencia rotulados](/assets/img/posts/dataviz3/12_rating_vs_promedio.png)
 
-Mis ratings son casi siempre números enteros, así que sin ayuda los puntos se apilarían en cinco filas y no se verían. `geom_jitter()` los desparrama un poco, pero solo en vertical (`width = 0`), para no alterar el valor real del eje X. Y para rotular solo los casos interesantes, **ggrepel** acomoda las etiquetas para que no se pisen entre sí ni con los puntos. Entre los que puse mucho más alto que el promedio hay clásicos como *La Odisea* o *Cinco semanas en globo*. Entre los que puntué muy por debajo del promedio están *Annihilation* y *Por qué fracasan los países*.
+Entre los que puse mucho más alto que el promedio hay clásicos como *La Odisea* o *Cinco semanas en globo*. Entre los que puntué muy por debajo del promedio están *Annihilation* y *Por qué fracasan los países*.
 
 El scatter muestra libro por libro. Para comparar por autor, una buena opción es el **dumbbell plot** (o gráfico de pesas): dos puntos por autor, uno para cada rating, unidos por un segmento.
 
