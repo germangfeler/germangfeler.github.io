@@ -566,14 +566,12 @@ country <- country %>%
     round(n() * 1.8) + 1)[row_number()]) %>%   # como máximo ~50% hacia el blanco
   ungroup()
 
-## Rótulo de cada continente: se calcula la misma disposición que usa
-## geom_treemap() para ubicar la esquina superior izquierda de cada bloque, y
-## el nombre va en una etiqueta con fondo blanco para que no lo tape el texto
-## de los países. Los bloques muy angostos (Oceanía) quedan sin rótulo.
-continentes <- treemapify(country, area = "n", subgroup = "continente") %>%
-  group_by(continente) %>%
-  summarize(x = min(xmin), y = max(ymax), ancho = max(xmax) - min(xmin)) %>%
-  filter(ancho > 0.05)
+## Los continentes van en una leyenda debajo del treemap, con el color base de
+## cada uno: dentro de los bloques siempre terminaban tapando (o tapados por)
+## el nombre de algún país. Se ordenan de más a menos libros.
+orden_continentes <- country %>%
+  count(continente, wt = n, sort = TRUE) %>%
+  pull(continente)
 
 p <- ggplot(country, aes(area = n, fill = color, subgroup = continente,
                          label = paste0(Country, "\n", n))) +
@@ -581,16 +579,20 @@ p <- ggplot(country, aes(area = n, fill = color, subgroup = continente,
   geom_treemap_subgroup_border(colour = "white", size = 4) +
   geom_treemap_text(colour = "grey15", place = "centre", grow = TRUE,
                     reflow = TRUE, min.size = 3) +
-  geom_label(data = continentes, aes(x = x, y = y, label = continente),
-             inherit.aes = FALSE, hjust = 0, vjust = 1,
-             nudge_x = 0.006, nudge_y = -0.008,
-             fill = scales::alpha("white", 0.85), colour = "grey10",
-             fontface = "bold", size = 5, label.size = 0) +
-  scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(0, 1), expand = c(0, 0)) +
+  # Capa invisible: solo sirve para generar la leyenda de continentes
+  geom_point(data = distinct(country, continente),
+             aes(x = 0, y = 0, colour = continente),
+             inherit.aes = FALSE, alpha = 0, shape = 15, size = 0) +
+  scale_colour_manual(values = colores_base, breaks = orden_continentes, name = NULL,
+                      guide = guide_legend(nrow = 1,
+                                           override.aes = list(alpha = 1, size = 8))) +
   scale_fill_identity() +
-  theme_void()
-mostrar(p, "16_paises_treemap", w = 10, h = 7)
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.text = element_text(colour = "white", size = 14),
+        plot.background = element_rect(fill = "#282C33", colour = NA),
+        plot.margin = margin(6, 6, 10, 6))
+mostrar(p, "16_paises_treemap", w = 10, h = 7.5)
 
 ## Mapa mundial (requiere sf y rnaturalearth; iso3 ya viene calculado en `country`)
 if (all(sapply(c("sf", "rnaturalearth"), requireNamespace, quietly = TRUE))) {
