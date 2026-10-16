@@ -492,8 +492,4 @@ Arriba aparecen Philip K. Dick y Mariana Mazzucato. Abajo, R. L. Stine y Christo
 
 ## Para cerrar
 
-Un solo export de Goodreads alcanzó para recorrer líneas, barras, heatmaps, facets, treemaps, mapas, scatters, dumbbells y hasta una animación. Pero lo que más tiempo llevó no fue ningún gráfico, sino limpiar los datos y pulir los detalles. Y eso, en cualquier análisis real, suele ser la regla.
-
 Si tienen cuenta en Goodreads, pueden exportar su biblioteca y probar con sus propios datos. Lo único que van a tener que agregar a mano son las columnas de país, género, idioma y tipo. Y si quieren ver qué estoy leyendo ahora, me pueden seguir en [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez).
-
-Desde <a href="/assets/scripts/dataviz3_libros.R">aquí</a> pueden descargar el script del análisis completo, y desde <a href="/assets/scripts/dataviz3_graficos.R">aquí</a> el de los gráficos nuevos (heatmap, facets, dumbbell y animación). Los gráficos usan `theme_dark_blue()`, un tema propio; si no lo tienen, cámbienlo por `theme_minimal()` o cualquier otro.
