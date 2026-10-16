@@ -155,8 +155,9 @@ ggplot(acum, aes(x = dia, y = acumulado, color = factor(Year_read),
                  linewidth = Year_read == anio_actual)) +
   geom_step() +
   geom_vline(xintercept = hoy_yday, linetype = "dashed", color = "grey70") +
-  geom_text(data = acum %>% group_by(Year_read) %>% slice_max(dia, n = 1, with_ties = FALSE),
-            aes(label = Year_read), hjust = -0.2, size = 4, show.legend = FALSE) +
+  geom_text_repel(data = acum %>% group_by(Year_read) %>% slice_max(dia, n = 1, with_ties = FALSE),
+                  aes(label = Year_read), direction = "y", hjust = 0, nudge_x = 5,
+                  segment.color = NA, size = 4, show.legend = FALSE) +
   scale_linewidth_manual(values = c(`FALSE` = 0.7, `TRUE` = 1.8), guide = "none") +
   scale_x_continuous(breaks = yday(as_date(paste0(anio_actual, "-", 1:12, "-01"))),
                      labels = month.abb, expand = expansion(mult = c(0.02, 0.08))) +
@@ -279,6 +280,7 @@ books_recent %>%
             inherit.aes = FALSE, hjust = -0.1, vjust = 1.5, size = 3, color = "white") +
   facet_wrap(~ Year_read, nrow = 2, labeller = as_labeller(lab_anio)) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+  scale_x_continuous(breaks = c(0, 500, 1000)) +
   xlab("Páginas") + ylab("Libros") +
   theme_dark_blue() +
   theme(legend.position = "bottom", legend.title = element_blank())
@@ -303,7 +305,9 @@ decadas %>%
   geom_col(alpha = 0.8) +
   labs(caption = paste(sum(decadas$decada < 1800), "libros anteriores a 1800 no se muestran")) +
   xlab("Década de publicación original") + ylab("Libros") +
-  theme_dark_blue()
+  theme_dark_blue() +
+  theme(plot.caption = element_text(color = "white")) +
+  labs(fill = NULL)
 ```
 
 {:.center}
@@ -396,7 +400,10 @@ ggplot(world) +
   geom_sf(aes(fill = n), color = "grey40", linewidth = 0.1) +
   scale_fill_viridis_c(trans = "log10", na.value = "grey85", direction = -1, name = "Libros") +
   coord_sf(crs = "+proj=robin") +
-  theme_void()
+  theme_void() +
+  theme(plot.background = element_rect(fill = "#282C33", colour = NA),
+        legend.text = element_text(colour = "white"),
+        legend.title = element_text(colour = "white"))
 ```
 
 {:.center}
@@ -450,7 +457,8 @@ ggplot(ratings, aes(x = `Average Rating`, y = `My Rating`)) +
   geom_text_repel(data = extremos, aes(label = str_trunc(Title, 30)),
                   color = "white", size = 3, max.overlaps = Inf) +
   xlab("Rating promedio en Goodreads") + ylab("Mi rating") +
-  theme_dark_blue()
+  theme_dark_blue() +
+  labs(color = NULL)
 ```
 
 {:.center}
