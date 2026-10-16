@@ -260,7 +260,7 @@ ggplot(fnf_year, aes(x = Year_read, y = n, color = Type, group = Type)) +
 {:.center}
 ![Libros de ficción y no ficción por año: la no ficción domina en 2021 y 2022, y desde 2023 la ficción la supera, con un pico de 27 libros en 2024](/assets/img/posts/dataviz3/04_ficcion_anio.png)
 
-Hasta 2022 leía más no ficción, y en 2023 se cruzaron las líneas. Otra vez aparece `complete()`, ahora por un motivo más sutil: si algún año no hubiera tenido libros de un tipo, `count()` no generaría esa fila y la línea saltaría de un año al otro en vez de bajar a cero.
+Hasta 2022 leía más no ficción, y en 2023 se cruzaron las líneas.
 
 ¿Y cuánto miden los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
 
