@@ -140,7 +140,7 @@ ggplot(bp_year, aes(x = Year_read)) +
 {:.center}
 ![Libros y páginas leídos por año entre 2021 y 2026: de 19 libros en 2021 a 36 en 2023, 34 en 2024 y 37 en 2025](/assets/img/posts/dataviz3/01_libros_paginas_anio.png)
 
-Hay dos decisiones para comentar. La primera es el eje doble, que es polémico con razón: como las dos escalas son arbitrarias, se puede hacer que las líneas parezcan correlacionadas o no según cómo se elija `k`. Acá lo uso porque las dos variables miden lo mismo (cuánto leo) y la pregunta es si se mueven juntas, pero conviene usarlo con cuidado. La segunda es que no hay leyenda: cada línea lleva su nombre al final. Las **etiquetas directas** le ahorran al lector el ida y vuelta entre el gráfico y la leyenda. Ojo con un detalle: para que las dos etiquetas arranquen a la misma distancia del punto hay que usar `hjust = 0` y correrlas con `nudge_x`. Con `hjust` negativo, el corrimiento depende del largo del texto.
+Nota: el doble eje es polémico pero en algunos casos como éste le veo cierta utilidad.
 
 Del gráfico sale que pasé de 19 libros en 2021 a unos 35 por año desde 2023. Pero los totales anuales esconden *cuándo* leí. Para eso sirve el acumulado: una línea por año con la cantidad de libros que llevaba leídos en cada día del calendario.
 
