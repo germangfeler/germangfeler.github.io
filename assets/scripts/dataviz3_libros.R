@@ -436,16 +436,13 @@ p <- ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
   geom_text(aes(label = n), vjust = 3, color = "white") +
   geom_image(data = ~ filter(.x, !is.na(image)),
              aes(image = image, y = n + 1.5), size = 0.1) +
-  # Si un autor no tiene imagen, se muestra su nombre en su lugar
-  geom_text(data = ~ filter(.x, is.na(image)),
-            aes(label = Author, y = n + 1), angle = 45, hjust = 0,
-            size = 3, color = "white") +
   expand_limits(y = max(authors$n) + 4) +
-  xlab("Autor") + ylab("Libros") +
+  xlab(NULL) + ylab("Libros") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_dark_blue() +
-  theme(axis.text.x = element_blank())
-mostrar(p, "12_autores", w = 10)
+  # Nombre de cada autor debajo de su barra, a 45 grados
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+mostrar(p, "12_autores", w = 10, h = 6)
 
 ## Mis autores preferidos: al menos 3 libros calificados, ordenados por mi rating promedio,
 ## por separado para ficción y no ficción
@@ -569,16 +566,28 @@ country <- country %>%
     round(n() * 1.8) + 1)[row_number()]) %>%   # como máximo ~50% hacia el blanco
   ungroup()
 
+## Rótulo de cada continente: se calcula la misma disposición que usa
+## geom_treemap() para ubicar la esquina superior izquierda de cada bloque, y
+## el nombre va en una etiqueta con fondo blanco para que no lo tape el texto
+## de los países. Los bloques muy angostos (Oceanía) quedan sin rótulo.
+continentes <- treemapify(country, area = "n", subgroup = "continente") %>%
+  group_by(continente) %>%
+  summarize(x = min(xmin), y = max(ymax), ancho = max(xmax) - min(xmin)) %>%
+  filter(ancho > 0.05)
+
 p <- ggplot(country, aes(area = n, fill = color, subgroup = continente,
                          label = paste0(Country, "\n", n))) +
   geom_treemap(colour = "white") +
   geom_treemap_subgroup_border(colour = "white", size = 4) +
   geom_treemap_text(colour = "grey15", place = "centre", grow = TRUE,
                     reflow = TRUE, min.size = 3) +
-  geom_treemap_subgroup_text(colour = "grey10", place = "topleft", grow = FALSE,
-                             size = 14, fontface = "bold", alpha = 0.6,
-                             padding.x = grid::unit(2, "mm"),
-                             padding.y = grid::unit(2, "mm")) +
+  geom_label(data = continentes, aes(x = x, y = y, label = continente),
+             inherit.aes = FALSE, hjust = 0, vjust = 1,
+             nudge_x = 0.006, nudge_y = -0.008,
+             fill = scales::alpha("white", 0.85), colour = "grey10",
+             fontface = "bold", size = 5, label.size = 0) +
+  scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 1), expand = c(0, 0)) +
   scale_fill_identity() +
   theme_void()
 mostrar(p, "16_paises_treemap", w = 10, h = 7)

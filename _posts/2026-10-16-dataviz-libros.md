@@ -336,10 +336,10 @@ ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
   geom_col(fill = "aquamarine", alpha = 0.5) +
   geom_text(aes(label = n), vjust = 3, color = "white") +
   geom_image(aes(image = image, y = n + 1.5), size = 0.1) +
-  xlab("Autor") + ylab("Libros") +
+  xlab(NULL) + ylab("Libros") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_dark_blue() +
-  theme(axis.text.x = element_blank())
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
 ```
 
 {:.center}
@@ -374,14 +374,25 @@ country <- country %>%
     round(n() * 1.8) + 1)[row_number()]) %>%
   ungroup()
 
+# Esquina superior izquierda de cada continente, para rotularlo
+continentes <- treemapify(country, area = "n", subgroup = "continente") %>%
+  group_by(continente) %>%
+  summarize(x = min(xmin), y = max(ymax), ancho = max(xmax) - min(xmin)) %>%
+  filter(ancho > 0.05)
+
 ggplot(country, aes(area = n, fill = color, subgroup = continente,
                     label = paste0(Country, "\n", n))) +
   geom_treemap(colour = "white") +
   geom_treemap_subgroup_border(colour = "white", size = 4) +
   geom_treemap_text(colour = "grey15", place = "centre", grow = TRUE,
                     reflow = TRUE, min.size = 3) +
-  geom_treemap_subgroup_text(colour = "grey10", place = "topleft", grow = FALSE,
-                             size = 14, fontface = "bold", alpha = 0.6) +
+  geom_label(data = continentes, aes(x = x, y = y, label = continente),
+             inherit.aes = FALSE, hjust = 0, vjust = 1,
+             nudge_x = 0.006, nudge_y = -0.008,
+             fill = scales::alpha("white", 0.85), colour = "grey10",
+             fontface = "bold", size = 5, label.size = 0) +
+  scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 1), expand = c(0, 0)) +
   scale_fill_identity() +
   theme_void()
 ```
