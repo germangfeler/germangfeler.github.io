@@ -70,7 +70,7 @@ books <- books_raw %>%
   )
 ```
 
-Dos detalles más. En Goodreads un rating de 0 no significa "malísimo" sino "sin calificar", así que lo pasamos a `NA` para que no arrastre los promedios hacia abajo. Y la fecha de lectura falta en muchos libros (los que registré de memoria, sin saber cuándo los leí), así que todos los análisis por año van a usar solo los libros con fecha, que arrancan en 2021.
+Dos detalles más. En Goodreads un rating de 0 no significa "malísimo" sino "sin calificar", así que lo pasamos a `NA` para que no arrastre los promedios hacia abajo. Y la fecha de lectura falta en muchos libros (los que registré de memoria, sin saber cuándo los leí), así que todos los análisis por año van a usar solo los libros con fecha, que arrancan en 2020.
 
 ## Un esqueleto para todos los gráficos
 
@@ -138,11 +138,11 @@ ggplot(bp_year, aes(x = Year_read)) +
 ```
 
 {:.center}
-![Libros y páginas leídos por año entre 2021 y 2026: de 19 libros en 2021 a 36 en 2023, 34 en 2024 y 37 en 2025](/assets/img/posts/dataviz3/01_libros_paginas_anio.png)
+![Libros y páginas leídos por año entre 2020 y 2026: 27 libros en 2020, 19 en 2021, 27 en 2022, 36 en 2023, 35 en 2024, 38 en 2025 y 31 en lo que va de 2026](/assets/img/posts/dataviz3/01_libros_paginas_anio.png)
 
 Nota: el doble eje es polémico pero en algunos casos como éste le veo cierta utilidad.
 
-Del gráfico sale que pasé de 19 libros en 2021 a unos 35 por año desde 2023. Pero los totales anuales esconden *cuándo* leí. Para eso sirve el acumulado: una línea por año con la cantidad de libros que llevaba leídos en cada día del calendario.
+Del gráfico sale que, después de bajar a 19 libros en 2021, desde 2023 leo unos 35 por año. Pero los totales anuales esconden *cuándo* leí. Para eso sirve el acumulado: una línea por año con la cantidad de libros que llevaba leídos en cada día del calendario.
 
 ```r
 acum <- books_recent %>%
@@ -155,8 +155,9 @@ ggplot(acum, aes(x = dia, y = acumulado, color = factor(Year_read),
                  linewidth = Year_read == anio_actual)) +
   geom_step() +
   geom_vline(xintercept = hoy_yday, linetype = "dashed", color = "grey70") +
-  geom_text(data = acum %>% group_by(Year_read) %>% slice_max(dia, n = 1, with_ties = FALSE),
-            aes(label = Year_read), hjust = -0.2, size = 4, show.legend = FALSE) +
+  geom_text_repel(data = acum %>% group_by(Year_read) %>% slice_max(dia, n = 1, with_ties = FALSE),
+                  aes(label = Year_read), direction = "y", hjust = 0, nudge_x = 5,
+                  segment.color = NA, size = 4, show.legend = FALSE) +
   scale_linewidth_manual(values = c(`FALSE` = 0.7, `TRUE` = 1.8), guide = "none") +
   scale_x_continuous(breaks = yday(as_date(paste0(anio_actual, "-", 1:12, "-01"))),
                      labels = month.abb, expand = expansion(mult = c(0.02, 0.08))) +
@@ -166,7 +167,7 @@ ggplot(acum, aes(x = dia, y = acumulado, color = factor(Year_read),
 ```
 
 {:.center}
-![Libros acumulados a lo largo del año, una línea escalonada por año desde 2021; 2026 aparece resaltado con una línea más gruesa y una línea punteada marca el día de hoy](/assets/img/posts/dataviz3/02_acumulado_anio.png)
+![Libros acumulados a lo largo del año, una línea escalonada por año desde 2020; 2026 aparece resaltado con una línea más gruesa y una línea punteada marca el día de hoy](/assets/img/posts/dataviz3/02_acumulado_anio.png)
 
 La línea punteada marca el día de hoy, así que se puede comparar cómo viene 2026 contra los años anteriores a la misma altura del calendario. 2026 arrancó más rápido que cualquier otro año y a mitad de octubre está empatado con 2023 y 2025, los dos mejores.
 
@@ -197,7 +198,7 @@ anim_save("acumulado_animado.gif", animacion)
 ```
 
 {:.center}
-![Animación de los libros acumulados por año: las líneas de cada año avanzan día a día desde enero, con la fecha en el título](/assets/img/posts/dataviz3/19_acumulado_animado.gif)
+![Animación de los libros acumulados por año: las líneas de cada año avanzan día a día desde enero, con la fecha en el título](/assets/img/posts/dataviz3/04_acumulado_animado.gif)
 
 ¿Y en qué meses leo más? Un gráfico de barras por mes respondería eso, pero perdería los años. Un **heatmap** con años en las filas y meses en las columnas muestra las dos cosas a la vez:
 
@@ -231,7 +232,7 @@ ggplot(heat, aes(x = Month_read, y = Year_read, fill = n)) +
 ```
 
 {:.center}
-![Heatmap de libros leídos por mes y año: cada celda es un mes, con más color cuantos más libros; el máximo es mayo de 2025 con 9 libros](/assets/img/posts/dataviz3/16_heatmap_calendario.png)
+![Heatmap de libros leídos por mes y año entre 2020 y 2026: cada celda es un mes, con más color cuantos más libros; los máximos son enero y mayo de 2025, con 7 libros cada uno](/assets/img/posts/dataviz3/05_heatmap_calendario.png)
 
 Se puede ver que durante el verano (especialmente diciembre y enero) es cuando más libros termino.
 
@@ -258,9 +259,9 @@ ggplot(fnf_year, aes(x = Year_read, y = n, color = Type, group = Type)) +
 ```
 
 {:.center}
-![Libros de ficción y no ficción por año: la no ficción domina en 2021 y 2022, y desde 2023 la ficción la supera, con un pico de 27 libros en 2024](/assets/img/posts/dataviz3/04_ficcion_anio.png)
+![Libros de ficción y no ficción por año: en 2020 están parejos, en 2021 y 2022 domina la no ficción, y desde 2023 la ficción la supera, con un pico de 28 libros en 2024](/assets/img/posts/dataviz3/10_ficcion_anio.png)
 
-Hasta 2022 leía más no ficción, y en 2023 se cruzaron las líneas.
+Después de un 2020 parejo, en 2021 y 2022 leí más no ficción, y en 2023 se cruzaron las líneas.
 
 ¿Y qué tan largos son los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
 
@@ -279,15 +280,16 @@ books_recent %>%
             inherit.aes = FALSE, hjust = -0.1, vjust = 1.5, size = 3, color = "white") +
   facet_wrap(~ Year_read, nrow = 2, labeller = as_labeller(lab_anio)) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+  scale_x_continuous(breaks = c(0, 500, 1000)) +
   xlab("Páginas") + ylab("Libros") +
   theme_dark_blue() +
   theme(legend.position = "bottom", legend.title = element_blank())
 ```
 
 {:.center}
-![Histogramas de páginas por libro, un panel por año, con la mediana marcada: 252 páginas en 2021, 332 en 2022, 288 en 2023, 249.5 en 2024, 220 en 2025 y 240 en 2026](/assets/img/posts/dataviz3/17_paginas_facets.png)
+![Histogramas de páginas por libro, un panel por año, con la mediana marcada: 240 páginas en 2020, 252 en 2021, 332 en 2022, 288 en 2023, 249 en 2024, 219.5 en 2025 y 240 en 2026](/assets/img/posts/dataviz3/07_paginas_facets.png)
 
-Con una línea, `facet_wrap(~ Year_read)`, el histograma se parte en seis. La mediana de cada panel sale de un data frame aparte (`medianas`) que tiene la misma columna `Year_read`, y ggplot sabe en qué panel dibujar cada línea. Los libros se fueron acortando: de una mediana de 332 páginas en 2022 a 220 en 2025. Los ladrillos de más de 1.000 páginas son casi todos de la saga de *Canción de hielo y fuego*.
+Con una línea, `facet_wrap(~ Year_read)`, el histograma se parte en siete. La mediana de cada panel sale de un data frame aparte (`medianas`) que tiene la misma columna `Year_read`, y ggplot sabe en qué panel dibujar cada línea. Los libros se fueron acortando: de una mediana de 332 páginas en 2022 a unas 220 en 2025. Los ladrillos de más de 1.000 páginas son casi todos de la saga de *Canción de hielo y fuego*.
 
 Otra pregunta es cuán viejos son los libros que leo. Contando por década de la publicación original:
 
@@ -303,18 +305,20 @@ decadas %>%
   geom_col(alpha = 0.8) +
   labs(caption = paste(sum(decadas$decada < 1800), "libros anteriores a 1800 no se muestran")) +
   xlab("Década de publicación original") + ylab("Libros") +
-  theme_dark_blue()
+  theme_dark_blue() +
+  theme(plot.caption = element_text(color = "white")) +
+  labs(fill = NULL)
 ```
 
 {:.center}
-![Libros por década de publicación original, apilados por ficción y no ficción; la mayoría son de las décadas de 1990 a 2010, con un máximo en la de 2010](/assets/img/posts/dataviz3/13_decada_publicacion.png)
+![Libros por década de publicación original, apilados por ficción y no ficción; la mayoría son de las décadas de 1990 a 2010, con un máximo en la de 2010](/assets/img/posts/dataviz3/08_decada_publicacion.png)
 
 El eje empieza en 1800 porque hay tres libros mucho más antiguos (*La Odisea* entre ellos) que estirarían el eje dos milenios y aplastarían todo lo demás. La no ficción es casi toda de las últimas tres décadas, mientras que la ficción tiene una cola larga hacia atrás.
 
 Para ver si eso cambia con los años, calculé cuántos años tenía cada libro al momento de leerlo y tomé la mediana por año:
 
 {:.center}
-![Antigüedad mediana de los libros leídos cada año: 10 años en 2021, 9.5 en 2022, 17 en 2023, 19 en 2024, 13 en 2025 y 27 en 2026](/assets/img/posts/dataviz3/14_antiguedad_anio.png)
+![Antigüedad mediana de los libros leídos cada año: 9.5 años en 2020, 2 en 2021, 8 en 2022, 11.5 en 2023, 18 en 2024, 12.5 en 2025 y 23 en 2026](/assets/img/posts/dataviz3/09_antiguedad_anio.png)
 
 Uso la mediana y no el promedio porque los clásicos la sesgarían: un solo libro de hace 2.800 años movería el promedio de todo un año. Este 2026 viene de clásicos.
 
@@ -339,7 +343,7 @@ ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
 ```
 
 {:.center}
-![Autores con al menos cuatro libros leídos, con su foto sobre cada barra; Stephen King encabeza con 19 libros](/assets/img/posts/dataviz3/05_autores.png)
+![Autores con al menos cuatro libros leídos, con su foto sobre cada barra; Stephen King encabeza con 19 libros](/assets/img/posts/dataviz3/12_autores.png)
 
 ¿De dónde son esos autores? En [DataViz II](/datascience/barras-y-tortas/) vimos el treemap. Acá le agregué un nivel: los países se agrupan por continente, cada continente tiene un color y los países van del tono pleno (el más leído) a tonos más claros. El continente sale de **countrycode**, a partir del nombre del país en español:
 
@@ -383,7 +387,7 @@ ggplot(country, aes(area = n, fill = color, subgroup = continente,
 ```
 
 {:.center}
-![Treemap de libros por país del autor, agrupados por continente: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/06_paises_treemap.png)
+![Treemap de libros por país del autor, agrupados por continente: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/16_paises_treemap.png)
 
 Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Para ver la geografía, en cambio, nada como un mapa. Con **sf** y **rnaturalearth** es casi gratis una vez que tenemos los códigos ISO:
 
@@ -396,11 +400,14 @@ ggplot(world) +
   geom_sf(aes(fill = n), color = "grey40", linewidth = 0.1) +
   scale_fill_viridis_c(trans = "log10", na.value = "grey85", direction = -1, name = "Libros") +
   coord_sf(crs = "+proj=robin") +
-  theme_void()
+  theme_void() +
+  theme(plot.background = element_rect(fill = "#282C33", colour = NA),
+        legend.text = element_text(colour = "white"),
+        legend.title = element_text(colour = "white"))
 ```
 
 {:.center}
-![Mapa mundial coloreado por cantidad de libros leídos de autores de cada país, en escala logarítmica; África y gran parte de Asia aparecen en gris, sin libros](/assets/img/posts/dataviz3/07_paises_mapa.png)
+![Mapa mundial coloreado por cantidad de libros leídos de autores de cada país, en escala logarítmica; África y gran parte de Asia aparecen en gris, sin libros](/assets/img/posts/dataviz3/17_paises_mapa.png)
 
 El mapa deja a la vista la gran deuda: África, de donde no leí ningún libro.
 
@@ -423,11 +430,12 @@ ggplot(gender_year, aes(x = Year_read, y = pct)) +
   capa_anios +
   scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
   xlab("Año") + ylab("Libros escritos por mujeres") +
-  theme_dark_blue()
+  theme_dark_blue() +
+  theme(plot.caption = element_text(color = "white"))
 ```
 
 {:.center}
-![Porcentaje de libros escritos por mujeres cada año: 26% en 2021, 11% en 2022, 17% en 2023, 29% en 2024, 46% en 2025 y 19% en 2026](/assets/img/posts/dataviz3/10_mujeres_anio.png)
+![Porcentaje de libros escritos por mujeres cada año: 15% en 2020, 26% en 2021, 11% en 2022, 17% en 2023, 29% en 2024, 45% en 2025 y 19% en 2026](/assets/img/posts/dataviz3/15_mujeres_anio.png)
 
 En el total, solo el 16% de los libros que leí son de autoras. La etiqueta del gráfico muestra el porcentaje y el conteo entre paréntesis. 2025 fue el año más parejo.
 
@@ -450,11 +458,12 @@ ggplot(ratings, aes(x = `Average Rating`, y = `My Rating`)) +
   geom_text_repel(data = extremos, aes(label = str_trunc(Title, 30)),
                   color = "white", size = 3, max.overlaps = Inf) +
   xlab("Rating promedio en Goodreads") + ylab("Mi rating") +
-  theme_dark_blue()
+  theme_dark_blue() +
+  labs(color = NULL)
 ```
 
 {:.center}
-![Diagrama de dispersión entre el rating promedio de Goodreads y mi rating para cada libro, con la recta identidad punteada y los diez libros con mayor diferencia rotulados](/assets/img/posts/dataviz3/12_rating_vs_promedio.png)
+![Diagrama de dispersión entre el rating promedio de Goodreads y mi rating para cada libro, con la recta identidad punteada y los diez libros con mayor diferencia rotulados](/assets/img/posts/dataviz3/19_rating_vs_promedio.png)
 
 Entre los que puse mucho más alto que el promedio hay clásicos como *La Odisea* o *Cinco semanas en globo*. Entre los que puntué muy por debajo del promedio están *Annihilation* y *Por qué fracasan los países*.
 
@@ -486,10 +495,75 @@ ggplot(dumbbell, aes(y = Author)) +
 ```
 
 {:.center}
-![Dumbbell plot con mi rating promedio y el de Goodreads para cada autor con al menos tres libros calificados, ordenados por la diferencia: arriba Philip K. Dick y Mariana Mazzucato, abajo R. L. Stine y Christopher Pike](/assets/img/posts/dataviz3/18_dumbbell_autores.png)
+![Dumbbell plot con mi rating promedio y el de Goodreads para cada autor con al menos tres libros calificados, ordenados por la diferencia: arriba Philip K. Dick y Mariana Mazzucato, abajo R. L. Stine y Christopher Pike](/assets/img/posts/dataviz3/21_dumbbell_autores.png)
 
 Arriba aparecen Philip K. Dick y Mariana Mazzucato. Abajo, R. L. Stine y Christopher Pike, a los que puntué con 3 contra más de 3,5 del promedio.
+
+¿Y cuáles son mis autores preferidos? Para que no gane alguien por un solo libro que me encantó, me quedo con los autores de los que califiqué al menos tres libros y los ordeno por mi rating promedio. A igual promedio, primero va el que tiene más libros. Y como no es lo mismo una novela que un ensayo, armo un ranking para ficción y otro para no ficción, uno al lado del otro:
+
+```r
+preferidos <- books %>%
+  filter(!is.na(`My Rating`)) %>%
+  group_by(Type, Author) %>%
+  summarize(rating = mean(`My Rating`), n = n(), .groups = "drop") %>%
+  filter(n >= 3)
+
+top_autores <- preferidos %>%
+  group_by(Type) %>%
+  slice_max(rating, n = 10) %>%
+  ungroup() %>%
+  arrange(Type, rating, n) %>%
+  mutate(fila = fct_inorder(paste(Author, Type, sep = "___")))
+
+ggplot(top_autores, aes(x = rating, y = fila)) +
+  geom_segment(aes(x = 1, xend = rating, yend = fila), color = "grey60", linewidth = 1) +
+  geom_point(color = "gold", size = 4) +
+  geom_text(aes(label = paste0(round(rating, 2), " (", n, ")")),
+            hjust = -0.25, color = "white", size = 3.5) +
+  facet_wrap(~ Type, scales = "free_y") +
+  scale_y_discrete(labels = function(x) str_remove(x, "___.*$")) +
+  scale_x_continuous(limits = c(1, 6), breaks = 1:5) +
+  xlab("Mi rating promedio (entre paréntesis, libros calificados)") + ylab("") +
+  theme_dark_blue()
+```
+
+El truco de `fila` es para que cada panel tenga su propio orden: si el eje usara solo el nombre del autor, `facet_wrap()` compartiría un único orden entre los dos paneles. Pegándole el tipo al nombre cada fila es única, y `scale_y_discrete()` lo vuelve a sacar al momento de escribir la etiqueta.
+
+{:.center}
+![Dos gráficos de piruletas lado a lado con mis autores preferidos, entre los que califiqué al menos tres libros: en ficción encabezan Liu Cixin y J.R.R. Tolkien con 4.67; en no ficción, Matías Kulfas, Ha-Joon Chang y Juan Domingo Perón empatan con 4.5](/assets/img/posts/dataviz3/13_autores_preferidos.png)
+
+En ficción encabezan Liu Cixin y Tolkien, con 4,67 sobre tres libros cada uno. Murakami, del que más libros califiqué en esta lista, queda más abajo con 4,12 en ocho libros. En no ficción solo tres autores llegan al mínimo de tres libros, y los tres empatan con 4,5: Matías Kulfas, Ha-Joon Chang y Juan Domingo Perón.
+
+Lo mismo se puede hacer por país, con el mismo mínimo de tres libros. En lugar de arrancar las líneas en 1 las hago salir de mi rating promedio general (la línea punteada): así se ve de un vistazo qué países están por encima y cuáles por debajo de lo que suelo poner. El tamaño del punto indica cuántos libros hay detrás de cada promedio.
+
+```r
+rating_global <- mean(books$`My Rating`, na.rm = TRUE)
+
+paises_rating <- books %>%
+  filter(!is.na(`My Rating`), !is.na(Country)) %>%
+  group_by(Country) %>%
+  summarize(rating = mean(`My Rating`), n = n()) %>%
+  filter(n >= 3) %>%
+  arrange(rating) %>%
+  mutate(Country = fct_inorder(Country))
+
+ggplot(paises_rating, aes(x = rating, y = Country)) +
+  geom_vline(xintercept = rating_global, linetype = "dashed", color = "grey70") +
+  geom_segment(aes(x = rating_global, xend = rating, yend = Country),
+               color = "grey60", linewidth = 1) +
+  geom_point(aes(size = n), color = "gold") +
+  scale_size_area(max_size = 8, name = "Libros") +
+  xlab("Mi rating promedio") + ylab("") +
+  theme_dark_blue()
+```
+
+{:.center}
+![Países de los autores ordenados por mi rating promedio, con las líneas saliendo de mi rating promedio general, cercano a 4: arriba Rusia y Chequia con 4.5, abajo Estados Unidos, Italia y Alemania](/assets/img/posts/dataviz3/20_paises_rating.png)
+
+Rusia y Chequia encabezan con 4,5, aunque con pocos libros detrás. Argentina, el país con más libros, queda prácticamente en mi promedio general. Estados Unidos, el segundo, queda un poco por debajo, y Alemania es el país que peor puntúo.
 
 ## Para cerrar
 
 Si tienen cuenta en Goodreads, pueden exportar su biblioteca y probar con sus propios datos. Lo único que van a tener que agregar a mano son las columnas de país, género, idioma y tipo. Y si quieren ver qué estoy leyendo ahora, me pueden seguir en [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez).
+
+Desde <a href="/assets/scripts/dataviz3_libros.R">aquí</a> pueden descargar el script completo del análisis. Los gráficos usan `theme_dark_blue()`, un tema propio que pueden descargar desde <a href="/assets/scripts/ggplot_theme_Publication-2.R">aquí</a>.
