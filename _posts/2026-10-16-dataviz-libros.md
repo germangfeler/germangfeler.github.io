@@ -402,7 +402,7 @@ ggplot(world) +
 {:.center}
 ![Mapa mundial coloreado por cantidad de libros leídos de autores de cada país, en escala logarítmica; África y gran parte de Asia aparecen en gris, sin libros](/assets/img/posts/dataviz3/07_paises_mapa.png)
 
-Tres detalles. La escala es logarítmica (`trans = "log10"`) porque con 134 libros de un país y 1 de muchos otros, una escala lineal pintaría todo del mismo color salvo dos países. La proyección Robinson (`crs = "+proj=robin"`) distorsiona menos los tamaños que la proyección por defecto, que usa directamente latitud y longitud. Y el join usa la columna `adm0_a3` en lugar de `iso_a3`, porque Natural Earth le pone `-99` a Francia y Noruega en esta última. El mapa deja a la vista la gran deuda: África, de donde no leí ningún libro.
+El mapa deja a la vista la gran deuda: África, de donde no leí ningún libro.
 
 Con el idioma la historia es más simple: leo el 83% en español y el resto en inglés. Y por género del autor:
 
