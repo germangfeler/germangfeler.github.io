@@ -490,18 +490,6 @@ ggplot(dumbbell, aes(y = Author)) +
 
 Arriba aparecen Philip K. Dick y Mariana Mazzucato. Abajo, R. L. Stine y Christopher Pike, a los que puntué con 3 contra más de 3,5 del promedio.
 
-## Detalles que hacen la diferencia
-
-Muchas de las horas de este post no se fueron en elegir el gráfico sino en pulirlo. Junto acá los detalles que más se repitieron:
-
-- **Barras pegadas al eje.** Por defecto ggplot deja un margen debajo del 0, y las barras quedan flotando. `scale_y_continuous(expand = expansion(mult = c(0, 0.05)))` lo saca abajo y deja un poco de aire arriba.
-- **Etiquetas cortadas.** Un número sobre el punto más alto o una etiqueta al final de una línea pueden quedar fuera del panel. Se resuelve agrandando el margen de la escala (`expand`) y permitiendo dibujar fuera del panel con `coord_cartesian(clip = "off")`.
-- **Ceros explícitos.** `count()` no genera filas para las combinaciones que no ocurren. `complete()` las agrega con 0, y así las líneas no saltan ni los heatmaps tienen agujeros.
-- **"Cero" no es lo mismo que "todavía no".** Los meses que no pasaron van como `NA`, no como 0, y el año en curso lleva un asterisco.
-- **Etiquetas en lugar de leyendas.** Siempre que se pueda, el nombre de la serie va al lado de la serie.
-- **Escalas que se adaptan a los datos.** Logarítmica cuando los valores abarcan varios órdenes de magnitud, como en el mapa.
-- **Nada hardcodeado que dependa de los datos.** Las posiciones de las etiquetas, el último año o el factor del eje secundario se calculan a partir de los datos. Así el script sigue funcionando el año que viene sin tocar nada.
-
 ## Para cerrar
 
 Un solo export de Goodreads alcanzó para recorrer líneas, barras, heatmaps, facets, treemaps, mapas, scatters, dumbbells y hasta una animación. Pero lo que más tiempo llevó no fue ningún gráfico, sino limpiar los datos y pulir los detalles. Y eso, en cualquier análisis real, suele ser la regla.
