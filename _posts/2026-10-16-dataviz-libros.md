@@ -309,7 +309,7 @@ decadas %>%
 {:.center}
 ![Libros por década de publicación original, apilados por ficción y no ficción; la mayoría son de las décadas de 1990 a 2010, con un máximo en la de 2010](/assets/img/posts/dataviz3/13_decada_publicacion.png)
 
-El eje empieza en 1800 porque hay tres libros mucho más antiguos (*La Odisea* entre ellos) que estirarían el eje dos milenios y aplastarían todo lo demás. En lugar de esconderlos en silencio, la nota al pie dice cuántos quedaron afuera. La no ficción es casi toda de las últimas tres décadas, mientras que la ficción tiene una cola larga hacia atrás.
+El eje empieza en 1800 porque hay tres libros mucho más antiguos (*La Odisea* entre ellos) que estirarían el eje dos milenios y aplastarían todo lo demás. La no ficción es casi toda de las últimas tres décadas, mientras que la ficción tiene una cola larga hacia atrás.
 
 Para ver si eso cambia con los años, calculé cuántos años tenía cada libro al momento de leerlo y tomé la mediana por año:
 
