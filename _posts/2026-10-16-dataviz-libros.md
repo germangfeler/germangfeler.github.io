@@ -16,9 +16,9 @@ header:
 excerpt: "Un dataset real, de la limpieza al gráfico final"
 ---
 
-<i>Previously on this blog...</i> vimos cómo [visualizar datos continuos](/datascience/shape-of-you/) y [datos categóricos](/datascience/barras-y-tortas/). Aquellos posts eran un catálogo: un dataset de juguete y un gráfico distinto en cada sección. Esta vez vamos a hacer lo contrario: tomar un dataset real, con todas sus mañas, y recorrer el camino completo desde el archivo crudo hasta los gráficos terminados.
+<i>Previously on this blog…</i> vimos cómo [visualizar datos continuos](/datascience/shape-of-you/) y [datos categóricos](/datascience/barras-y-tortas/). A partir de un dataset de juguete fuimos conociendo diferentes gráficos. Ahora vamos a hacer algo diferente: tomar un dataset real y recorrer el camino completo desde el archivo crudo hasta los gráficos terminados.
 
-El dataset es mi biblioteca de [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez), donde registro todo lo que leo desde hace años: casi 400 libros y más de 120.000 páginas. Las preguntas son las que cualquier lector se haría sobre sí mismo: ¿cuánto leo?, ¿qué leo?, ¿de dónde son los autores?, ¿coincido con el resto de los lectores?
+El dataset es mi biblioteca de [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez), donde registro todo lo que leo desde hace años: casi 400 libros y más de 120.000 páginas. Las preguntas son las que cualquier lector se haría sobre sí mismo: ¿cuánto leo?, ¿qué leo?, ¿de dónde son los autores?, ¿leo autoras mujeres o solo hombres?, ¿coincido con el resto de los lectores en las calificaciones que doy?
 
 ## Los datos
 
@@ -72,15 +72,6 @@ books <- books_raw %>%
 
 Dos detalles más. En Goodreads un rating de 0 no significa "malísimo" sino "sin calificar", así que lo pasamos a `NA` para que no arrastre los promedios hacia abajo. Y la fecha de lectura falta en muchos libros (los que registré de memoria, sin saber cuándo los leí), así que todos los análisis por año van a usar solo los libros con fecha, que arrancan en 2021.
 
-Vale la pena dejar en el script un control que avise cuando algo no se pudo convertir, en lugar de descubrirlo tres gráficos después:
-
-```r
-fechas_fallidas <- sum(!is.na(books_raw$`Date Read`) & is.na(books$`Date Read`))
-if (fechas_fallidas > 0) {
-  warning(fechas_fallidas, " fechas no se pudieron convertir.")
-}
-```
-
 ## Un esqueleto para todos los gráficos
 
 Antes de graficar armé tres piezas que se reusan en casi todo el post. La primera es una función que muestra el gráfico y lo guarda con un nombre, para no exportar a mano:
@@ -108,7 +99,7 @@ capa_anios <- list(
 )
 ```
 
-Esta capa resuelve un problema que aparece en cualquier serie temporal armada en el medio del año: el último año está incompleto, y si no se aclara, la caída de la última barra o del último punto parece una tendencia. El asterisco y la nota al pie lo dejan explícito.
+Esta capa resuelve un problema que aparece en cualquier serie temporal armada en el medio del año: el último año está incompleto, y si no se aclara, la caída de la última barra o del último punto parece una tendencia.
 
 La tercera pieza es un filtro para etiquetar solo el último punto de cada línea, que vamos a usar enseguida:
 
@@ -149,7 +140,7 @@ ggplot(bp_year, aes(x = Year_read)) +
 {:.center}
 ![Libros y páginas leídos por año entre 2021 y 2026: de 19 libros en 2021 a 36 en 2023, 34 en 2024 y 37 en 2025](/assets/img/posts/dataviz3/01_libros_paginas_anio.png)
 
-Hay dos decisiones para comentar. La primera es el eje doble, que es polémico con razón: como las dos escalas son arbitrarias, se puede hacer que las líneas parezcan correlacionadas o no según cómo se elija `k`. Acá lo uso porque las dos variables miden lo mismo (cuánto leo) y la pregunta es si se mueven juntas, pero conviene usarlo con cuidado. La segunda es que no hay leyenda: cada línea lleva su nombre al final. Las **etiquetas directas** le ahorran al lector el ida y vuelta entre el gráfico y la leyenda. Ojo con un detalle: para que las dos etiquetas arranquen a la misma distancia del punto hay que usar `hjust = 0` y correrlas con `nudge_x`. Con `hjust` negativo, el corrimiento depende del largo del texto.
+Nota: el doble eje es polémico pero en algunos casos como éste le veo cierta utilidad.
 
 Del gráfico sale que pasé de 19 libros en 2021 a unos 35 por año desde 2023. Pero los totales anuales esconden *cuándo* leí. Para eso sirve el acumulado: una línea por año con la cantidad de libros que llevaba leídos en cada día del calendario.
 
@@ -177,7 +168,7 @@ ggplot(acum, aes(x = dia, y = acumulado, color = factor(Year_read),
 {:.center}
 ![Libros acumulados a lo largo del año, una línea escalonada por año desde 2021; 2026 aparece resaltado con una línea más gruesa y una línea punteada marca el día de hoy](/assets/img/posts/dataviz3/02_acumulado_anio.png)
 
-La línea punteada marca el día de hoy, así que se puede comparar cómo viene 2026 contra los años anteriores a la misma altura del calendario. El truco para resaltarlo es mapear el grosor de la línea a una condición (`linewidth = Year_read == anio_actual`) y después fijar los dos grosores a mano con `scale_linewidth_manual()`. 2026 arrancó más rápido que cualquier otro año y a mitad de octubre está empatado con 2023 y 2025, los dos mejores.
+La línea punteada marca el día de hoy, así que se puede comparar cómo viene 2026 contra los años anteriores a la misma altura del calendario. 2026 arrancó más rápido que cualquier otro año y a mitad de octubre está empatado con 2023 y 2025, los dos mejores.
 
 Este gráfico tiene algo de carrera, así que pedía una animación. Con **gganimate** alcanza con agregar una transición al gráfico. `transition_reveal()` va dibujando las líneas a medida que avanza la variable que le indiquemos, en este caso el día del año:
 
@@ -207,13 +198,6 @@ anim_save("acumulado_animado.gif", animacion)
 
 {:.center}
 ![Animación de los libros acumulados por año: las líneas de cada año avanzan día a día desde enero, con la fecha en el título](/assets/img/posts/dataviz3/19_acumulado_animado.gif)
-
-Algunas cosas que aprendí haciéndola:
-
-- El título puede cambiar en cada cuadro: entre llaves se escribe código de R que usa variables de la animación, como `frame_along`, que es el día que se está mostrando.
-- Con `transition_reveal()`, los puntos y las etiquetas no se dibujan completos sino solo en el extremo de cada línea, así que el año "viaja" con su línea.
-- En el día 0 todos los años están en el mismo punto y las etiquetas se pisan. Por eso la columna `etiqueta` queda vacía ese día.
-- Si los cuadros salen pixelados, el culpable suele ser el dispositivo gráfico. `device = "ragg_png"` los dibuja con antialiasing.
 
 ¿Y en qué meses leo más? Un gráfico de barras por mes respondería eso, pero perdería los años. Un **heatmap** con años en las filas y meses en las columnas muestra las dos cosas a la vez:
 
@@ -249,9 +233,7 @@ ggplot(heat, aes(x = Month_read, y = Year_read, fill = n)) +
 {:.center}
 ![Heatmap de libros leídos por mes y año: cada celda es un mes, con más color cuantos más libros; el máximo es mayo de 2025 con 9 libros](/assets/img/posts/dataviz3/16_heatmap_calendario.png)
 
-Hay dos funciones clave acá. `complete()` agrega las combinaciones de año y mes que no aparecen en los datos (los meses en que no terminé ningún libro) con un 0. Sin ella esas celdas no existirían y el gráfico tendría agujeros. Después, los meses de 2026 que todavía no pasaron se pasan a `NA`: no es lo mismo "no leí nada" que "todavía no llegó". El color del número también depende del valor, para que se lea tanto sobre las celdas oscuras como sobre las claras.
-
-Sumando los años completos (2021 a 2025), mayo, enero y diciembre son los meses con más libros terminados, y julio y noviembre los más flojos. Aunque ojo: el mayo de 2025, con 9 libros, explica buena parte del primer puesto de mayo.
+Se puede ver que durante el verano (especialmente diciembre y enero) es cuando más libros termino.
 
 ## ¿Qué leo?
 
@@ -278,9 +260,9 @@ ggplot(fnf_year, aes(x = Year_read, y = n, color = Type, group = Type)) +
 {:.center}
 ![Libros de ficción y no ficción por año: la no ficción domina en 2021 y 2022, y desde 2023 la ficción la supera, con un pico de 27 libros en 2024](/assets/img/posts/dataviz3/04_ficcion_anio.png)
 
-Hasta 2022 leía más no ficción, y en 2023 se cruzaron las líneas. Otra vez aparece `complete()`, ahora por un motivo más sutil: si algún año no hubiera tenido libros de un tipo, `count()` no generaría esa fila y la línea saltaría de un año al otro en vez de bajar a cero.
+Hasta 2022 leía más no ficción, y en 2023 se cruzaron las líneas.
 
-¿Y cuánto miden los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
+¿Y qué tan largos son los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
 
 ```r
 medianas <- books_recent %>%
@@ -327,7 +309,7 @@ decadas %>%
 {:.center}
 ![Libros por década de publicación original, apilados por ficción y no ficción; la mayoría son de las décadas de 1990 a 2010, con un máximo en la de 2010](/assets/img/posts/dataviz3/13_decada_publicacion.png)
 
-El eje empieza en 1800 porque hay tres libros mucho más antiguos (*La Odisea* entre ellos) que estirarían el eje dos milenios y aplastarían todo lo demás. En lugar de esconderlos en silencio, la nota al pie dice cuántos quedaron afuera. La no ficción es casi toda de las últimas tres décadas, mientras que la ficción tiene una cola larga hacia atrás.
+El eje empieza en 1800 porque hay tres libros mucho más antiguos (*La Odisea* entre ellos) que estirarían el eje dos milenios y aplastarían todo lo demás. La no ficción es casi toda de las últimas tres décadas, mientras que la ficción tiene una cola larga hacia atrás.
 
 Para ver si eso cambia con los años, calculé cuántos años tenía cada libro al momento de leerlo y tomé la mediana por año:
 
@@ -358,8 +340,6 @@ ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
 
 {:.center}
 ![Autores con al menos cuatro libros leídos, con su foto sobre cada barra; Stephen King encabeza con 19 libros](/assets/img/posts/dataviz3/05_autores.png)
-
-Las imágenes salen de un CSV con dos columnas, autor e imagen, que se une a los conteos con `left_join()`. La primera versión de este gráfico tenía las URLs en un vector, en el mismo orden que la tabla. Funcionaba hasta que cambiaba algún conteo o había un empate: el orden se movía y las fotos quedaban asignadas al autor equivocado. Unir por nombre evita ese problema. Y si las imágenes vienen de internet, conviene descargarlas una vez a una carpeta local, porque los links se rompen.
 
 ¿De dónde son esos autores? En [DataViz II](/datascience/barras-y-tortas/) vimos el treemap. Acá le agregué un nivel: los países se agrupan por continente, cada continente tiene un color y los países van del tono pleno (el más leído) a tonos más claros. El continente sale de **countrycode**, a partir del nombre del país en español:
 
@@ -405,8 +385,6 @@ ggplot(country, aes(area = n, fill = color, subgroup = continente,
 {:.center}
 ![Treemap de libros por país del autor, agrupados por continente: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/06_paises_treemap.png)
 
-`scale_fill_identity()` le dice a ggplot que la columna `color` ya trae los colores listos y que no los transforme. Algo que me pasó en el camino: "Afganistan" no encontraba su código porque en CLDR se escribe con tilde, "Afganistán". El join es por coincidencia exacta, así que conviene listar los países que quedaron sin código antes de seguir.
-
 Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Para ver la geografía, en cambio, nada como un mapa. Con **sf** y **rnaturalearth** es casi gratis una vez que tenemos los códigos ISO:
 
 ```r
@@ -424,7 +402,7 @@ ggplot(world) +
 {:.center}
 ![Mapa mundial coloreado por cantidad de libros leídos de autores de cada país, en escala logarítmica; África y gran parte de Asia aparecen en gris, sin libros](/assets/img/posts/dataviz3/07_paises_mapa.png)
 
-Tres detalles. La escala es logarítmica (`trans = "log10"`) porque con 134 libros de un país y 1 de muchos otros, una escala lineal pintaría todo del mismo color salvo dos países. La proyección Robinson (`crs = "+proj=robin"`) distorsiona menos los tamaños que la proyección por defecto, que usa directamente latitud y longitud. Y el join usa la columna `adm0_a3` en lugar de `iso_a3`, porque Natural Earth le pone `-99` a Francia y Noruega en esta última. El mapa deja a la vista la gran deuda: África, de donde no leí ningún libro.
+El mapa deja a la vista la gran deuda: África, de donde no leí ningún libro.
 
 Con el idioma la historia es más simple: leo el 83% en español y el resto en inglés. Y por género del autor:
 
@@ -451,7 +429,7 @@ ggplot(gender_year, aes(x = Year_read, y = pct)) +
 {:.center}
 ![Porcentaje de libros escritos por mujeres cada año: 26% en 2021, 11% en 2022, 17% en 2023, 29% en 2024, 46% en 2025 y 19% en 2026](/assets/img/posts/dataviz3/10_mujeres_anio.png)
 
-En el total, solo el 16% de los libros que leí son de autoras. Graficar el porcentaje en lugar de la cantidad es importante acá: como leo distinta cantidad de libros cada año, comparar conteos absolutos confunde dos cosas, cuánto leí y a quién. La etiqueta muestra igual el conteo entre paréntesis, porque un 46% sobre 37 libros no es lo mismo que sobre 5. 2025 fue el año más parejo, pero 2026 volvió a valores bajos.
+En el total, solo el 16% de los libros que leí son de autoras. La etiqueta del gráfico muestra el porcentaje y el conteo entre paréntesis. 2025 fue el año más parejo.
 
 ## ¿Qué me gusta?
 
@@ -478,7 +456,7 @@ ggplot(ratings, aes(x = `Average Rating`, y = `My Rating`)) +
 {:.center}
 ![Diagrama de dispersión entre el rating promedio de Goodreads y mi rating para cada libro, con la recta identidad punteada y los diez libros con mayor diferencia rotulados](/assets/img/posts/dataviz3/12_rating_vs_promedio.png)
 
-Mis ratings son casi siempre números enteros, así que sin ayuda los puntos se apilarían en cinco filas y no se verían. `geom_jitter()` los desparrama un poco, pero solo en vertical (`width = 0`), para no alterar el valor real del eje X. Y para rotular solo los casos interesantes, **ggrepel** acomoda las etiquetas para que no se pisen entre sí ni con los puntos. Entre los que puse mucho más alto que el promedio hay clásicos como *La Odisea* o *Cinco semanas en globo*. Entre los que puntué muy por debajo del promedio están *Annihilation* y *Por qué fracasan los países*.
+Entre los que puse mucho más alto que el promedio hay clásicos como *La Odisea* o *Cinco semanas en globo*. Entre los que puntué muy por debajo del promedio están *Annihilation* y *Por qué fracasan los países*.
 
 El scatter muestra libro por libro. Para comparar por autor, una buena opción es el **dumbbell plot** (o gráfico de pesas): dos puntos por autor, uno para cada rating, unidos por un segmento.
 
@@ -510,26 +488,8 @@ ggplot(dumbbell, aes(y = Author)) +
 {:.center}
 ![Dumbbell plot con mi rating promedio y el de Goodreads para cada autor con al menos tres libros calificados, ordenados por la diferencia: arriba Philip K. Dick y Mariana Mazzucato, abajo R. L. Stine y Christopher Pike](/assets/img/posts/dataviz3/18_dumbbell_autores.png)
 
-El gráfico es apenas un `geom_segment()` y dos `geom_point()`, pero hay tres decisiones que lo hacen legible. El orden: `fct_reorder()` ordena los autores por la diferencia, así que arriba quedan los que valoro más que el resto y abajo los que valoro menos. El color: el punto propio es verde si está por encima de Goodreads y salmón si está por debajo, para que la dirección se lea sin mirar los números. Y en lugar de una leyenda, los dos puntos de la primera fila llevan su nombre, "Goodreads" y "Yo". El argumento `data` acepta una función (`~ filter(...)`), que se aplica a los datos del gráfico para quedarse solo con esa fila.
-
 Arriba aparecen Philip K. Dick y Mariana Mazzucato. Abajo, R. L. Stine y Christopher Pike, a los que puntué con 3 contra más de 3,5 del promedio.
-
-## Detalles que hacen la diferencia
-
-Muchas de las horas de este post no se fueron en elegir el gráfico sino en pulirlo. Junto acá los detalles que más se repitieron:
-
-- **Barras pegadas al eje.** Por defecto ggplot deja un margen debajo del 0, y las barras quedan flotando. `scale_y_continuous(expand = expansion(mult = c(0, 0.05)))` lo saca abajo y deja un poco de aire arriba.
-- **Etiquetas cortadas.** Un número sobre el punto más alto o una etiqueta al final de una línea pueden quedar fuera del panel. Se resuelve agrandando el margen de la escala (`expand`) y permitiendo dibujar fuera del panel con `coord_cartesian(clip = "off")`.
-- **Ceros explícitos.** `count()` no genera filas para las combinaciones que no ocurren. `complete()` las agrega con 0, y así las líneas no saltan ni los heatmaps tienen agujeros.
-- **"Cero" no es lo mismo que "todavía no".** Los meses que no pasaron van como `NA`, no como 0, y el año en curso lleva un asterisco.
-- **Etiquetas en lugar de leyendas.** Siempre que se pueda, el nombre de la serie va al lado de la serie.
-- **Escalas que se adaptan a los datos.** Logarítmica cuando los valores abarcan varios órdenes de magnitud, como en el mapa.
-- **Nada hardcodeado que dependa de los datos.** Las posiciones de las etiquetas, el último año o el factor del eje secundario se calculan a partir de los datos. Así el script sigue funcionando el año que viene sin tocar nada.
 
 ## Para cerrar
 
-Un solo export de Goodreads alcanzó para recorrer líneas, barras, heatmaps, facets, treemaps, mapas, scatters, dumbbells y hasta una animación. Pero lo que más tiempo llevó no fue ningún gráfico, sino limpiar los datos y pulir los detalles. Y eso, en cualquier análisis real, suele ser la regla.
-
 Si tienen cuenta en Goodreads, pueden exportar su biblioteca y probar con sus propios datos. Lo único que van a tener que agregar a mano son las columnas de país, género, idioma y tipo. Y si quieren ver qué estoy leyendo ahora, me pueden seguir en [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez).
-
-Desde <a href="/assets/scripts/dataviz3_libros.R">aquí</a> pueden descargar el script del análisis completo, y desde <a href="/assets/scripts/dataviz3_graficos.R">aquí</a> el de los gráficos nuevos (heatmap, facets, dumbbell y animación). Los gráficos usan `theme_dark_blue()`, un tema propio; si no lo tienen, cámbienlo por `theme_minimal()` o cualquier otro.
