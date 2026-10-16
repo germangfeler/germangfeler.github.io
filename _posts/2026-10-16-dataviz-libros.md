@@ -16,9 +16,9 @@ header:
 excerpt: "Un dataset real, de la limpieza al gráfico final"
 ---
 
-<i>Previously on this blog...</i> vimos cómo [visualizar datos continuos](/datascience/shape-of-you/) y [datos categóricos](/datascience/barras-y-tortas/). Aquellos posts eran un catálogo: un dataset de juguete y un gráfico distinto en cada sección. Esta vez vamos a hacer lo contrario: tomar un dataset real, con todas sus mañas, y recorrer el camino completo desde el archivo crudo hasta los gráficos terminados.
+<i>Previously on this blog…</i> vimos cómo [visualizar datos continuos](/datascience/shape-of-you/) y [datos categóricos](/datascience/barras-y-tortas/). A partir de un dataset de juguete fuimos conociendo diferentes gráficos. Ahora vamos a hacer algo diferente: tomar un dataset real y recorrer el camino completo desde el archivo crudo hasta los gráficos terminados.
 
-El dataset es mi biblioteca de [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez), donde registro todo lo que leo desde hace años: casi 400 libros y más de 120.000 páginas. Las preguntas son las que cualquier lector se haría sobre sí mismo: ¿cuánto leo?, ¿qué leo?, ¿de dónde son los autores?, ¿coincido con el resto de los lectores?
+El dataset es mi biblioteca de [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez), donde registro todo lo que leo desde hace años: casi 400 libros y más de 120.000 páginas. Las preguntas son las que cualquier lector se haría sobre sí mismo: ¿cuánto leo?, ¿qué leo?, ¿de dónde son los autores?, ¿leo autoras mujeres o solo hombres?, ¿coincido con el resto de los lectores en las calificaciones que doy?
 
 ## Los datos
 
