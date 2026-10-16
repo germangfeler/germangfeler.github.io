@@ -168,7 +168,7 @@ ggplot(acum, aes(x = dia, y = acumulado, color = factor(Year_read),
 {:.center}
 ![Libros acumulados a lo largo del año, una línea escalonada por año desde 2021; 2026 aparece resaltado con una línea más gruesa y una línea punteada marca el día de hoy](/assets/img/posts/dataviz3/02_acumulado_anio.png)
 
-La línea punteada marca el día de hoy, así que se puede comparar cómo viene 2026 contra los años anteriores a la misma altura del calendario. El truco para resaltarlo es mapear el grosor de la línea a una condición (`linewidth = Year_read == anio_actual`) y después fijar los dos grosores a mano con `scale_linewidth_manual()`. 2026 arrancó más rápido que cualquier otro año y a mitad de octubre está empatado con 2023 y 2025, los dos mejores.
+La línea punteada marca el día de hoy, así que se puede comparar cómo viene 2026 contra los años anteriores a la misma altura del calendario. 2026 arrancó más rápido que cualquier otro año y a mitad de octubre está empatado con 2023 y 2025, los dos mejores.
 
 Este gráfico tiene algo de carrera, así que pedía una animación. Con **gganimate** alcanza con agregar una transición al gráfico. `transition_reveal()` va dibujando las líneas a medida que avanza la variable que le indiquemos, en este caso el día del año:
 
