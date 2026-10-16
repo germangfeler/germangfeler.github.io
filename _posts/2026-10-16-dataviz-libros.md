@@ -199,13 +199,6 @@ anim_save("acumulado_animado.gif", animacion)
 {:.center}
 ![Animación de los libros acumulados por año: las líneas de cada año avanzan día a día desde enero, con la fecha en el título](/assets/img/posts/dataviz3/19_acumulado_animado.gif)
 
-Algunas cosas que aprendí haciéndola:
-
-- El título puede cambiar en cada cuadro: entre llaves se escribe código de R que usa variables de la animación, como `frame_along`, que es el día que se está mostrando.
-- Con `transition_reveal()`, los puntos y las etiquetas no se dibujan completos sino solo en el extremo de cada línea, así que el año "viaja" con su línea.
-- En el día 0 todos los años están en el mismo punto y las etiquetas se pisan. Por eso la columna `etiqueta` queda vacía ese día.
-- Si los cuadros salen pixelados, el culpable suele ser el dispositivo gráfico. `device = "ragg_png"` los dibuja con antialiasing.
-
 ¿Y en qué meses leo más? Un gráfico de barras por mes respondería eso, pero perdería los años. Un **heatmap** con años en las filas y meses en las columnas muestra las dos cosas a la vez:
 
 ```r
