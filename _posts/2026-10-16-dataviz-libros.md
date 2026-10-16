@@ -341,8 +341,6 @@ ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
 {:.center}
 ![Autores con al menos cuatro libros leídos, con su foto sobre cada barra; Stephen King encabeza con 19 libros](/assets/img/posts/dataviz3/05_autores.png)
 
-Las imágenes salen de un CSV con dos columnas, autor e imagen, que se une a los conteos con `left_join()`. La primera versión de este gráfico tenía las URLs en un vector, en el mismo orden que la tabla. Funcionaba hasta que cambiaba algún conteo o había un empate: el orden se movía y las fotos quedaban asignadas al autor equivocado. Unir por nombre evita ese problema. Y si las imágenes vienen de internet, conviene descargarlas una vez a una carpeta local, porque los links se rompen.
-
 ¿De dónde son esos autores? En [DataViz II](/datascience/barras-y-tortas/) vimos el treemap. Acá le agregué un nivel: los países se agrupan por continente, cada continente tiene un color y los países van del tono pleno (el más leído) a tonos más claros. El continente sale de **countrycode**, a partir del nombre del país en español:
 
 ```r
