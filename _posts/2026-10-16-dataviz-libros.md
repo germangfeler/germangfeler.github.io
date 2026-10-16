@@ -233,9 +233,7 @@ ggplot(heat, aes(x = Month_read, y = Year_read, fill = n)) +
 {:.center}
 ![Heatmap de libros leídos por mes y año: cada celda es un mes, con más color cuantos más libros; el máximo es mayo de 2025 con 9 libros](/assets/img/posts/dataviz3/16_heatmap_calendario.png)
 
-Hay dos funciones clave acá. `complete()` agrega las combinaciones de año y mes que no aparecen en los datos (los meses en que no terminé ningún libro) con un 0. Sin ella esas celdas no existirían y el gráfico tendría agujeros. Después, los meses de 2026 que todavía no pasaron se pasan a `NA`: no es lo mismo "no leí nada" que "todavía no llegó". El color del número también depende del valor, para que se lea tanto sobre las celdas oscuras como sobre las claras.
-
-Sumando los años completos (2021 a 2025), mayo, enero y diciembre son los meses con más libros terminados, y julio y noviembre los más flojos. Aunque ojo: el mayo de 2025, con 9 libros, explica buena parte del primer puesto de mayo.
+Se puede ver que durante el verano (especialmente diciembre y enero) es cuando más libros termino.
 
 ## ¿Qué leo?
 
