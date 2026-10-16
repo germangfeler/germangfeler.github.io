@@ -262,7 +262,7 @@ ggplot(fnf_year, aes(x = Year_read, y = n, color = Type, group = Type)) +
 
 Hasta 2022 leía más no ficción, y en 2023 se cruzaron las líneas.
 
-¿Y cuánto miden los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
+¿Y qué tan largos son los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
 
 ```r
 medianas <- books_recent %>%
