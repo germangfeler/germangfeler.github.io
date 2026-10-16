@@ -72,15 +72,6 @@ books <- books_raw %>%
 
 Dos detalles más. En Goodreads un rating de 0 no significa "malísimo" sino "sin calificar", así que lo pasamos a `NA` para que no arrastre los promedios hacia abajo. Y la fecha de lectura falta en muchos libros (los que registré de memoria, sin saber cuándo los leí), así que todos los análisis por año van a usar solo los libros con fecha, que arrancan en 2021.
 
-Vale la pena dejar en el script un control que avise cuando algo no se pudo convertir, en lugar de descubrirlo tres gráficos después:
-
-```r
-fechas_fallidas <- sum(!is.na(books_raw$`Date Read`) & is.na(books$`Date Read`))
-if (fechas_fallidas > 0) {
-  warning(fechas_fallidas, " fechas no se pudieron convertir.")
-}
-```
-
 ## Un esqueleto para todos los gráficos
 
 Antes de graficar armé tres piezas que se reusan en casi todo el post. La primera es una función que muestra el gráfico y lo guarda con un nombre, para no exportar a mano:
