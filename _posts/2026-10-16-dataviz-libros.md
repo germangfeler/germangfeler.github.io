@@ -430,7 +430,8 @@ ggplot(gender_year, aes(x = Year_read, y = pct)) +
   capa_anios +
   scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
   xlab("Año") + ylab("Libros escritos por mujeres") +
-  theme_dark_blue()
+  theme_dark_blue() +
+  theme(plot.caption = element_text(color = "white"))
 ```
 
 {:.center}
