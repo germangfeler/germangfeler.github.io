@@ -434,6 +434,53 @@ p <- ggplot(ratings, aes(x = `Average Rating`, y = `My Rating`)) +
   theme_dark_blue()
 mostrar(p, "12_rating_vs_promedio", w = 9, h = 6)
 
+## Mis autores preferidos: al menos 2 libros calificados, ordenados por mi rating promedio
+preferidos <- books %>%
+  filter(!is.na(`My Rating`)) %>%
+  group_by(Author) %>%
+  summarize(rating = mean(`My Rating`), n = n()) %>%
+  filter(n >= 2) %>%
+  arrange(desc(rating), desc(n))
+preferidos
+
+# Los 10 primeros (con empates puede haber más); a igual rating, primero el que tiene más libros
+top_autores <- preferidos %>%
+  slice_max(rating, n = 10) %>%
+  arrange(rating, n) %>%
+  mutate(Author = fct_inorder(Author))
+
+p <- ggplot(top_autores, aes(x = rating, y = Author)) +
+  geom_segment(aes(x = 1, xend = rating, yend = Author), color = "grey60", linewidth = 1) +
+  geom_point(color = "gold", size = 4) +
+  geom_text(aes(label = paste0(round(rating, 2), " (", n, " libros)")),
+            hjust = -0.25, color = "white", size = 3.5) +
+  scale_x_continuous(limits = c(1, 6), breaks = 1:5) +
+  xlab("Mi rating promedio") + ylab("") +
+  theme_dark_blue()
+mostrar(p, "20_autores_preferidos", w = 9, h = 6)
+
+## Países ordenados por mi rating promedio (al menos 3 libros calificados)
+rating_global <- mean(books$`My Rating`, na.rm = TRUE)
+
+paises_rating <- books %>%
+  filter(!is.na(`My Rating`), !is.na(Country)) %>%
+  group_by(Country) %>%
+  summarize(rating = mean(`My Rating`), n = n()) %>%
+  filter(n >= 3) %>%
+  arrange(rating) %>%
+  mutate(Country = fct_inorder(Country))
+paises_rating %>% arrange(desc(rating))
+
+p <- ggplot(paises_rating, aes(x = rating, y = Country)) +
+  geom_vline(xintercept = rating_global, linetype = "dashed", color = "grey70") +
+  geom_segment(aes(x = rating_global, xend = rating, yend = Country),
+               color = "grey60", linewidth = 1) +
+  geom_point(aes(size = n), color = "gold") +
+  scale_size_area(max_size = 8, name = "Libros") +
+  xlab("Mi rating promedio") + ylab("") +
+  theme_dark_blue()
+mostrar(p, "21_paises_rating", w = 9, h = 6)
+
 ##------------------------- Antigüedad de lo que leo ---------------------------
 
 ## Por década de publicación original

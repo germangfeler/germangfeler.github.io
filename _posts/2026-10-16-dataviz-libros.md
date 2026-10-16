@@ -490,6 +490,64 @@ ggplot(dumbbell, aes(y = Author)) +
 
 Arriba aparecen Philip K. Dick y Mariana Mazzucato. Abajo, R. L. Stine y Christopher Pike, a los que puntué con 3 contra más de 3,5 del promedio.
 
+¿Y cuáles son mis autores preferidos? Para que no gane alguien por un solo libro que me encantó, me quedo con los autores de los que califiqué al menos dos libros y los ordeno por mi rating promedio. A igual promedio, primero va el que tiene más libros:
+
+```r
+preferidos <- books %>%
+  filter(!is.na(`My Rating`)) %>%
+  group_by(Author) %>%
+  summarize(rating = mean(`My Rating`), n = n()) %>%
+  filter(n >= 2) %>%
+  arrange(desc(rating), desc(n))
+
+top_autores <- preferidos %>%
+  slice_max(rating, n = 10) %>%
+  arrange(rating, n) %>%
+  mutate(Author = fct_inorder(Author))
+
+ggplot(top_autores, aes(x = rating, y = Author)) +
+  geom_segment(aes(x = 1, xend = rating, yend = Author), color = "grey60", linewidth = 1) +
+  geom_point(color = "gold", size = 4) +
+  geom_text(aes(label = paste0(round(rating, 2), " (", n, " libros)")),
+            hjust = -0.25, color = "white", size = 3.5) +
+  scale_x_continuous(limits = c(1, 6), breaks = 1:5) +
+  xlab("Mi rating promedio") + ylab("") +
+  theme_dark_blue()
+```
+
+{:.center}
+![Gráfico de piruletas con mis diez autores preferidos, entre los que califiqué al menos dos libros, ordenados por mi rating promedio](/assets/img/posts/dataviz3/20_autores_preferidos.png)
+
+[COMPLETAR: comentario sobre los autores preferidos]
+
+Lo mismo se puede hacer por país. Acá subo el mínimo a tres libros, y en lugar de arrancar las líneas en 1 las hago salir de mi rating promedio general (la línea punteada): así se ve de un vistazo qué países están por encima y cuáles por debajo de lo que suelo poner. El tamaño del punto indica cuántos libros hay detrás de cada promedio.
+
+```r
+rating_global <- mean(books$`My Rating`, na.rm = TRUE)
+
+paises_rating <- books %>%
+  filter(!is.na(`My Rating`), !is.na(Country)) %>%
+  group_by(Country) %>%
+  summarize(rating = mean(`My Rating`), n = n()) %>%
+  filter(n >= 3) %>%
+  arrange(rating) %>%
+  mutate(Country = fct_inorder(Country))
+
+ggplot(paises_rating, aes(x = rating, y = Country)) +
+  geom_vline(xintercept = rating_global, linetype = "dashed", color = "grey70") +
+  geom_segment(aes(x = rating_global, xend = rating, yend = Country),
+               color = "grey60", linewidth = 1) +
+  geom_point(aes(size = n), color = "gold") +
+  scale_size_area(max_size = 8, name = "Libros") +
+  xlab("Mi rating promedio") + ylab("") +
+  theme_dark_blue()
+```
+
+{:.center}
+![Países de los autores ordenados por mi rating promedio, con las líneas saliendo de mi rating promedio general y el tamaño del punto según la cantidad de libros](/assets/img/posts/dataviz3/21_paises_rating.png)
+
+[COMPLETAR: comentario sobre los países]
+
 ## Para cerrar
 
 Si tienen cuenta en Goodreads, pueden exportar su biblioteca y probar con sus propios datos. Lo único que van a tener que agregar a mano son las columnas de país, género, idioma y tipo. Y si quieren ver qué estoy leyendo ahora, me pueden seguir en [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez).
