@@ -429,7 +429,7 @@ ggplot(gender_year, aes(x = Year_read, y = pct)) +
 {:.center}
 ![Porcentaje de libros escritos por mujeres cada año: 26% en 2021, 11% en 2022, 17% en 2023, 29% en 2024, 46% en 2025 y 19% en 2026](/assets/img/posts/dataviz3/10_mujeres_anio.png)
 
-En el total, solo el 16% de los libros que leí son de autoras. Graficar el porcentaje en lugar de la cantidad es importante acá: como leo distinta cantidad de libros cada año, comparar conteos absolutos confunde dos cosas, cuánto leí y a quién. La etiqueta muestra igual el conteo entre paréntesis, porque un 46% sobre 37 libros no es lo mismo que sobre 5. 2025 fue el año más parejo, pero 2026 volvió a valores bajos.
+En el total, solo el 16% de los libros que leí son de autoras. La etiqueta del gráfico muestra el porcentaje y el conteo entre paréntesis. 2025 fue el año más parejo.
 
 ## ¿Qué me gusta?
 
