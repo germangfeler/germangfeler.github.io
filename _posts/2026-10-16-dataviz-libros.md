@@ -385,8 +385,6 @@ ggplot(country, aes(area = n, fill = color, subgroup = continente,
 {:.center}
 ![Treemap de libros por país del autor, agrupados por continente: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/06_paises_treemap.png)
 
-`scale_fill_identity()` le dice a ggplot que la columna `color` ya trae los colores listos y que no los transforme. Algo que me pasó en el camino: "Afganistan" no encontraba su código porque en CLDR se escribe con tilde, "Afganistán". El join es por coincidencia exacta, así que conviene listar los países que quedaron sin código antes de seguir.
-
 Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Para ver la geografía, en cambio, nada como un mapa. Con **sf** y **rnaturalearth** es casi gratis una vez que tenemos los códigos ISO:
 
 ```r
