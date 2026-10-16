@@ -436,16 +436,13 @@ p <- ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
   geom_text(aes(label = n), vjust = 3, color = "white") +
   geom_image(data = ~ filter(.x, !is.na(image)),
              aes(image = image, y = n + 1.5), size = 0.1) +
-  # Si un autor no tiene imagen, se muestra su nombre en su lugar
-  geom_text(data = ~ filter(.x, is.na(image)),
-            aes(label = Author, y = n + 1), angle = 45, hjust = 0,
-            size = 3, color = "white") +
   expand_limits(y = max(authors$n) + 4) +
-  xlab("Autor") + ylab("Libros") +
+  xlab(NULL) + ylab("Libros") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_dark_blue() +
-  theme(axis.text.x = element_blank())
-mostrar(p, "12_autores", w = 10)
+  # Nombre de cada autor debajo de su barra, a 45 grados
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+mostrar(p, "12_autores", w = 10, h = 6)
 
 ## Mis autores preferidos: al menos 3 libros calificados, ordenados por mi rating promedio,
 ## por separado para ficción y no ficción
@@ -569,19 +566,32 @@ country <- country %>%
     round(n() * 1.8) + 1)[row_number()]) %>%   # como máximo ~50% hacia el blanco
   ungroup()
 
+## Los continentes van en una leyenda debajo del treemap, con el color base de
+## cada uno. Se ordenan de más a menos libros.
+orden_continentes <- country %>%
+  count(continente, wt = n, sort = TRUE) %>%
+  pull(continente)
+
 p <- ggplot(country, aes(area = n, fill = color, subgroup = continente,
                          label = paste0(Country, "\n", n))) +
   geom_treemap(colour = "white") +
   geom_treemap_subgroup_border(colour = "white", size = 4) +
   geom_treemap_text(colour = "grey15", place = "centre", grow = TRUE,
                     reflow = TRUE, min.size = 3) +
-  geom_treemap_subgroup_text(colour = "grey10", place = "topleft", grow = FALSE,
-                             size = 14, fontface = "bold", alpha = 0.6,
-                             padding.x = grid::unit(2, "mm"),
-                             padding.y = grid::unit(2, "mm")) +
+  # Capa invisible: solo sirve para generar la leyenda de continentes
+  geom_point(data = distinct(country, continente),
+             aes(x = 0, y = 0, colour = continente),
+             inherit.aes = FALSE, alpha = 0, shape = 15, size = 0) +
+  scale_colour_manual(values = colores_base, breaks = orden_continentes, name = NULL,
+                      guide = guide_legend(nrow = 1,
+                                           override.aes = list(alpha = 1, size = 8))) +
   scale_fill_identity() +
-  theme_void()
-mostrar(p, "16_paises_treemap", w = 10, h = 7)
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.text = element_text(colour = "white", size = 14),
+        plot.background = element_rect(fill = "#282C33", colour = NA),
+        plot.margin = margin(6, 6, 10, 6))
+mostrar(p, "16_paises_treemap", w = 10, h = 7.5)
 
 ## Mapa mundial (requiere sf y rnaturalearth; iso3 ya viene calculado en `country`)
 if (all(sapply(c("sf", "rnaturalearth"), requireNamespace, quietly = TRUE))) {

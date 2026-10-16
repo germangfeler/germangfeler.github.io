@@ -336,14 +336,16 @@ ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
   geom_col(fill = "aquamarine", alpha = 0.5) +
   geom_text(aes(label = n), vjust = 3, color = "white") +
   geom_image(aes(image = image, y = n + 1.5), size = 0.1) +
-  xlab("Autor") + ylab("Libros") +
+  expand_limits(y = max(authors$n) + 4) +
+  xlab(NULL) + ylab("Libros") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   theme_dark_blue() +
-  theme(axis.text.x = element_blank())
+  # Nombre de cada autor debajo de su barra, a 45 grados
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
 ```
 
 {:.center}
-![Autores con al menos cuatro libros leídos, con su foto sobre cada barra; Stephen King encabeza con 19 libros](/assets/img/posts/dataviz3/12_autores.png)
+![Autores con al menos cuatro libros leídos, con su foto sobre cada barra y su nombre debajo; Stephen King encabeza con 19 libros, seguido por R. L. Stine con 14 y Haruki Murakami con 8](/assets/img/posts/dataviz3/12_autores.png)
 
 ¿De dónde son esos autores? En [DataViz II](/datascience/barras-y-tortas/) vimos el treemap. Acá le agregué un nivel: los países se agrupan por continente, cada continente tiene un color y los países van del tono pleno (el más leído) a tonos más claros. El continente sale de **countrycode**, a partir del nombre del país en español:
 
@@ -374,20 +376,34 @@ country <- country %>%
     round(n() * 1.8) + 1)[row_number()]) %>%
   ungroup()
 
+# Los continentes van en una leyenda debajo del treemap, ordenados de más a menos libros
+orden_continentes <- country %>%
+  count(continente, wt = n, sort = TRUE) %>%
+  pull(continente)
+
 ggplot(country, aes(area = n, fill = color, subgroup = continente,
                     label = paste0(Country, "\n", n))) +
   geom_treemap(colour = "white") +
   geom_treemap_subgroup_border(colour = "white", size = 4) +
   geom_treemap_text(colour = "grey15", place = "centre", grow = TRUE,
                     reflow = TRUE, min.size = 3) +
-  geom_treemap_subgroup_text(colour = "grey10", place = "topleft", grow = FALSE,
-                             size = 14, fontface = "bold", alpha = 0.6) +
+  # Capa invisible: solo sirve para generar la leyenda de continentes
+  geom_point(data = distinct(country, continente),
+             aes(x = 0, y = 0, colour = continente),
+             inherit.aes = FALSE, alpha = 0, shape = 15, size = 0) +
+  scale_colour_manual(values = colores_base, breaks = orden_continentes, name = NULL,
+                      guide = guide_legend(nrow = 1,
+                                           override.aes = list(alpha = 1, size = 8))) +
   scale_fill_identity() +
-  theme_void()
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.text = element_text(colour = "white", size = 14),
+        plot.background = element_rect(fill = "#282C33", colour = NA),
+        plot.margin = margin(6, 6, 10, 6))
 ```
 
 {:.center}
-![Treemap de libros por país del autor, agrupados por continente: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/16_paises_treemap.png)
+![Treemap de libros por país del autor, agrupados por continente, con una leyenda de continentes debajo: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/16_paises_treemap.png)
 
 Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Para ver la geografía, en cambio, nada como un mapa. Con **sf** y **rnaturalearth** es casi gratis una vez que tenemos los códigos ISO:
 
