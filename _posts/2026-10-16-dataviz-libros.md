@@ -488,8 +488,6 @@ ggplot(dumbbell, aes(y = Author)) +
 {:.center}
 ![Dumbbell plot con mi rating promedio y el de Goodreads para cada autor con al menos tres libros calificados, ordenados por la diferencia: arriba Philip K. Dick y Mariana Mazzucato, abajo R. L. Stine y Christopher Pike](/assets/img/posts/dataviz3/18_dumbbell_autores.png)
 
-El gráfico es apenas un `geom_segment()` y dos `geom_point()`, pero hay tres decisiones que lo hacen legible. El orden: `fct_reorder()` ordena los autores por la diferencia, así que arriba quedan los que valoro más que el resto y abajo los que valoro menos. El color: el punto propio es verde si está por encima de Goodreads y salmón si está por debajo, para que la dirección se lea sin mirar los números. Y en lugar de una leyenda, los dos puntos de la primera fila llevan su nombre, "Goodreads" y "Yo". El argumento `data` acepta una función (`~ filter(...)`), que se aplica a los datos del gráfico para quedarse solo con esa fila.
-
 Arriba aparecen Philip K. Dick y Mariana Mazzucato. Abajo, R. L. Stine y Christopher Pike, a los que puntué con 3 contra más de 3,5 del promedio.
 
 ## Detalles que hacen la diferencia
