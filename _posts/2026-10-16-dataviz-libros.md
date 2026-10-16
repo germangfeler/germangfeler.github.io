@@ -199,12 +199,7 @@ anim_save("acumulado_animado.gif", animacion)
 {:.center}
 ![Animación de los libros acumulados por año: las líneas de cada año avanzan día a día desde enero, con la fecha en el título](/assets/img/posts/dataviz3/04_acumulado_animado.gif)
 
-¿Y en qué meses leo más? Un gráfico de barras con los libros por mes, sumando solo los años completos, responde eso:
-
-{:.center}
-![Libros terminados por mes sumando los años completos de 2020 a 2025: enero y diciembre encabezan con 21 libros cada uno, seguidos por mayo con 20; noviembre es el más flojo con 8](/assets/img/posts/dataviz3/03_libros_mes.png)
-
-Enero y diciembre encabezan con 21 libros cada uno, y noviembre es el mes más flojo. Pero al sumar se pierden los años. Un **heatmap** con años en las filas y meses en las columnas muestra las dos cosas a la vez:
+¿Y en qué meses leo más? Un gráfico de barras por mes respondería eso, pero perdería los años. Un **heatmap** con años en las filas y meses en las columnas muestra las dos cosas a la vez:
 
 ```r
 # Etiqueta de año con "*" para el año en curso
@@ -267,12 +262,7 @@ ggplot(fnf_year, aes(x = Year_read, y = n, color = Type, group = Type)) +
 
 Después de un 2020 parejo, en 2021 y 2022 leí más no ficción, y en 2023 se cruzaron las líneas.
 
-¿Y qué tan largos son los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Un boxplot por tipo ya da una primera idea:
-
-{:.center}
-![Boxplot de páginas por libro para ficción y no ficción: la mediana de la no ficción es algo mayor, pero los libros más largos, de más de 1.000 páginas, son de ficción](/assets/img/posts/dataviz3/06_paginas_tipo.png)
-
-Los libros de no ficción son un poco más largos en la mediana, pero los ladrillos son de ficción. Para ver cómo cambia esto con los años sirve una herramienta que no apareció en DataViz I: los **facets** (o *small multiples*), el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
+¿Y qué tan largos son los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
 
 ```r
 medianas <- books_recent %>%
@@ -414,17 +404,7 @@ ggplot(world) +
 
 El mapa deja a la vista la gran deuda: África, de donde no leí ningún libro.
 
-Con el idioma la historia es más simple: leo el 83% en español y el resto en inglés.
-
-{:.center}
-![Barras horizontales de libros por idioma: 327 en español (82.6%) y 69 en inglés (17.4%)](/assets/img/posts/dataviz3/11_idioma.png)
-
-Y por género del autor:
-
-{:.center}
-![Gráfico de torta de libros por género del autor: 332 de hombres (83.8%) y 64 de mujeres (16.2%)](/assets/img/posts/dataviz3/14_genero.png)
-
-Para ver cómo cambió con los años conviene graficar el porcentaje de autoras en cada año:
+Con el idioma la historia es más simple: leo el 83% en español y el resto en inglés. Y por género del autor:
 
 ```r
 gender_year <- books_recent %>%
@@ -452,13 +432,6 @@ ggplot(gender_year, aes(x = Year_read, y = pct)) +
 En el total, solo el 16% de los libros que leí son de autoras. La etiqueta del gráfico muestra el porcentaje y el conteo entre paréntesis. 2025 fue el año más parejo.
 
 ## ¿Qué me gusta?
-
-Primero, ¿cómo califico? La distribución de mis ratings, separada por tipo:
-
-{:.center}
-![Barras de cantidad de libros según mi rating, separadas por ficción y no ficción: el 4 es la nota más frecuente en ficción, y en no ficción el 4 y el 5 están casi empatados](/assets/img/posts/dataviz3/18_ratings_distribucion.png)
-
-El 4 es mi nota más frecuente, sobre todo en ficción. En no ficción, en cambio, pongo casi tantos 5 como 4.
 
 Goodreads guarda dos ratings por libro: el mío y el promedio de todos los usuarios. Lo natural es enfrentarlos en un scatter, con la línea y = x como referencia: arriba de la línea están los libros que me gustaron más que al resto, y abajo los que me gustaron menos.
 
