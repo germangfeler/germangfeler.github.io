@@ -72,41 +72,6 @@ books <- books_raw %>%
 
 Dos detalles más. En Goodreads un rating de 0 no significa "malísimo" sino "sin calificar", así que lo pasamos a `NA` para que no arrastre los promedios hacia abajo. Y la fecha de lectura falta en muchos libros (los que registré de memoria, sin saber cuándo los leí), así que todos los análisis por año van a usar solo los libros con fecha, que arrancan en 2020.
 
-## Un esqueleto para todos los gráficos
-
-Antes de graficar armé tres piezas que se reusan en casi todo el post. La primera es una función que muestra el gráfico y lo guarda con un nombre, para no exportar a mano:
-
-```r
-mostrar <- function(p, nombre, w = 8, h = 5) {
-  ggsave(file.path(dir_fig, paste0(nombre, ".png")), p, width = w, height = h, dpi = 300)
-  print(p)
-  invisible(p)
-}
-```
-
-La segunda es una "capa" para todos los gráficos con años en el eje X. En ggplot2 se puede guardar una lista de componentes y sumarla con `+` como si fuera uno solo:
-
-```r
-anios <- anio_desde:anio_actual
-capa_anios <- list(
-  scale_x_continuous(breaks = anios,
-                     labels = ifelse(anios == anio_actual, paste0(anios, "*"), anios),
-                     expand = expansion(mult = c(0.05, 0.25))),
-  scale_y_continuous(expand = expansion(mult = c(0.05, 0.12))),
-  coord_cartesian(clip = "off"),
-  labs(caption = paste0("* ", anio_actual, " en curso (hasta el ",
-                        format(today(), "%d/%m"), ")"))
-)
-```
-
-Esta capa resuelve un problema que aparece en cualquier serie temporal armada en el medio del año: el último año está incompleto, y si no se aclara, la caída de la última barra o del último punto parece una tendencia.
-
-La tercera pieza es un filtro para etiquetar solo el último punto de cada línea, que vamos a usar enseguida:
-
-```r
-ultimo_punto <- function(df) filter(df, Year_read == max(Year_read))
-```
-
 ## ¿Cuánto leo?
 
 Empecemos por lo básico, libros y páginas por año:
