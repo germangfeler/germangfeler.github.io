@@ -515,7 +515,7 @@ ggplot(top_autores, aes(x = rating, y = fila)) +
 
 En ficción encabezan Liu Cixin y Tolkien, con 4,67 sobre tres libros cada uno. Murakami, del que más libros califiqué en esta lista, queda más abajo con 4,12 en ocho libros. En no ficción solo tres autores llegan al mínimo de tres libros, y los tres empatan con 4,5: Matías Kulfas, Ha-Joon Chang y Juan Domingo Perón.
 
-Lo mismo se puede hacer por país, con el mismo mínimo de tres libros. En lugar de arrancar las líneas en 1 las hago salir de mi rating promedio general (la línea punteada): así se ve de un vistazo qué países están por encima y cuáles por debajo de lo que suelo poner. El tamaño del punto indica cuántos libros hay detrás de cada promedio.
+Lo mismo se puede hacer por país, con el mismo mínimo de tres libros. En lugar de arrancar las líneas en 1 las hago empezar en mi rating promedio general (la línea punteada): así se ve de un vistazo qué países están por encima y cuáles por debajo de lo que suelo poner. El tamaño del punto indica cuántos libros hay detrás de cada promedio.
 
 ```r
 rating_global <- mean(books$`My Rating`, na.rm = TRUE)
