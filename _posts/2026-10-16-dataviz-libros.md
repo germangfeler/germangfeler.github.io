@@ -18,7 +18,7 @@ excerpt: "Un dataset real, de la limpieza al gráfico final"
 
 <i>Previously on this blog…</i> vimos cómo [visualizar datos continuos](/datascience/shape-of-you/) y [datos categóricos](/datascience/barras-y-tortas/). A partir de un dataset de juguete fuimos conociendo diferentes gráficos. Ahora vamos a hacer algo diferente: tomar un dataset real y recorrer el camino completo desde el archivo crudo hasta los gráficos terminados.
 
-El dataset es mi biblioteca de [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez), donde registro todo lo que leo desde hace años: casi 400 libros y más de 120.000 páginas. Las preguntas son las que cualquier lector se haría sobre sí mismo: ¿cuánto leo?, ¿qué leo?, ¿de dónde son los autores?, ¿leo autoras mujeres o solo hombres?, ¿coincido con el resto de los lectores en las calificaciones que doy?
+El dataset es mi biblioteca de [Goodreads](https://www.goodreads.com/author/show/21461505.Germ_n_A_Gonz_lez), donde registro todo lo que leo desde hace años: casi 400 libros y más de 120.000 páginas. Las preguntas son las que cualquier lector con algún tipo de trastorno obsesivo se haría sobre sí mismo: ¿cuánto leo?, ¿qué leo?, ¿de dónde son los autores?, ¿leo autoras mujeres o solo hombres?, ¿coincido con el resto de los lectores en las calificaciones que doy?
 
 ## Los datos
 
@@ -107,7 +107,7 @@ ggplot(bp_year, aes(x = Year_read)) +
 {:.center}
 ![Libros y páginas leídos por año entre 2020 y 2026: 27 libros en 2020, 19 en 2021, 27 en 2022, 36 en 2023, 35 en 2024, 38 en 2025 y 31 en lo que va de 2026](/assets/img/posts/dataviz3/01_libros_paginas_anio.png)
 
-Nota: el doble eje es polémico pero en algunos casos como éste le veo cierta utilidad.
+Nota: el doble eje es desaconsejado por muchos expertos en visualización, aplicalo bajo tu propio riesgo.
 
 Del gráfico sale que, después de bajar a 19 libros en 2021, desde 2023 leo unos 35 por año. Pero los totales anuales esconden *cuándo* leí. Para eso sirve el acumulado: una línea por año con la cantidad de libros que llevaba leídos en cada día del calendario.
 
@@ -287,7 +287,7 @@ Para ver si eso cambia con los años, calculé cuántos años tenía cada libro 
 {:.center}
 ![Antigüedad mediana de los libros leídos cada año: 9.5 años en 2020, 2 en 2021, 8 en 2022, 11.5 en 2023, 18 en 2024, 12.5 en 2025 y 23 en 2026](/assets/img/posts/dataviz3/09_antiguedad_anio.png)
 
-Uso la mediana y no el promedio porque los clásicos la sesgarían: un solo libro de hace 2.800 años movería el promedio de todo un año. Este 2026 viene de clásicos.
+Uso la mediana y no el promedio porque los clásicos lo sesgarían: un solo libro de hace 2.800 años movería el promedio de todo un año. Este 2026 viene de clásicos.
 
 ## ¿A quién leo?
 
@@ -420,7 +420,7 @@ ggplot(gender_year, aes(x = Year_read, y = pct)) +
 {:.center}
 ![Porcentaje de libros escritos por mujeres cada año: 15% en 2020, 26% en 2021, 11% en 2022, 17% en 2023, 29% en 2024, 45% en 2025 y 19% en 2026](/assets/img/posts/dataviz3/15_mujeres_anio.png)
 
-En el total, solo el 16% de los libros que leí son de autoras. La etiqueta del gráfico muestra el porcentaje y el conteo entre paréntesis. 2025 fue el año más parejo.
+En total, solo el 16% de los libros que leí son de autoras. La etiqueta del gráfico muestra el porcentaje y el conteo entre paréntesis. 2025 fue el año más parejo.
 
 ## ¿Qué me gusta?
 
@@ -509,8 +509,6 @@ ggplot(top_autores, aes(x = rating, y = fila)) +
   xlab("Mi rating promedio (entre paréntesis, libros calificados)") + ylab("") +
   theme_dark_blue()
 ```
-
-El truco de `fila` es para que cada panel tenga su propio orden: si el eje usara solo el nombre del autor, `facet_wrap()` compartiría un único orden entre los dos paneles. Pegándole el tipo al nombre cada fila es única, y `scale_y_discrete()` lo vuelve a sacar al momento de escribir la etiqueta.
 
 {:.center}
 ![Dos gráficos de piruletas lado a lado con mis autores preferidos, entre los que califiqué al menos tres libros: en ficción encabezan Liu Cixin y J.R.R. Tolkien con 4.67; en no ficción, Matías Kulfas, Ha-Joon Chang y Juan Domingo Perón empatan con 4.5](/assets/img/posts/dataviz3/13_autores_preferidos.png)
