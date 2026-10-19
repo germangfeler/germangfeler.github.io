@@ -1,7 +1,7 @@
 ##------------------------------------------------------------------------------
 ## Estadísticas de Goodreads
 ## Autor: German Gonzalez
-## Fecha: 22-04-25 (revisado 16-10-26)
+## Fecha: 22-04-25 (revisado 19-10-26: tema theme_tinta())
 ##------------------------------------------------------------------------------
 
 library(tidyverse)
@@ -13,7 +13,10 @@ library(ggimage)
 library(ggrepel)
 library(gganimate)
 
-source(here("ggplot_theme_Publication-2.R"))
+source(here("theme_tinta.R"))
+
+# Las etiquetas de ggrepel también en Spectral y en tinta
+update_geom_defaults(ggrepel::GeomTextRepel, list(family = fuente_texto, colour = "#111111"))
 
 ##------------------------------ Parámetros ------------------------------------
 
@@ -25,9 +28,11 @@ dir_fig <- here("figuras")
 dir.create(dir_fig, showWarnings = FALSE)
 
 # Muestra el gráfico y lo guarda en figuras/<nombre>.png
+# (con ragg, para que use las fuentes instaladas en la compu)
 mostrar <- function(p, nombre, w = 8, h = 5) {
   print(p)
-  ggsave(file.path(dir_fig, paste0(nombre, ".png")), p, width = w, height = h, dpi = 300)
+  ggsave(file.path(dir_fig, paste0(nombre, ".png")), p, width = w, height = h, dpi = 300,
+         bg = "white", device = ragg::agg_png)
   invisible(p)
 }
 
@@ -41,9 +46,14 @@ capa_anios <- list(
   scale_y_continuous(expand = expansion(mult = c(0.05, 0.12))),   # margen arriba para las etiquetas
   coord_cartesian(clip = "off"),                                   # no recorta texto en los bordes
   labs(caption = paste0("* ", anio_actual, " en curso (hasta el ",
-                        format(today(), "%d/%m"), ")")),
-  theme(plot.caption = element_text(color = "white"))
+                        format(today(), "%d/%m"), ")"))
 )
+
+# Un color por año: el año en curso en negro y los anteriores con la paleta
+col_anios <- setNames(c(rep_len(unname(tinta[-1]), length(anios) - 1), tinta[["negro"]]), anios)
+
+# Ficción y no ficción siempre con los mismos colores
+col_tipo <- c("Ficción" = tinta[["negro"]], "No ficción" = tinta[["azul"]])
 
 # Filtro para etiquetar sólo el último punto de cada línea
 ultimo_punto <- function(df) filter(df, Year_read == max(Year_read))
@@ -118,23 +128,25 @@ bp_year
 k <- ceiling(max(bp_year$Pages) / max(bp_year$Books) / 100) * 100
 
 p <- ggplot(bp_year, aes(x = Year_read)) +
-  geom_line(aes(y = Books), color = "blue", linewidth = 1.2) +
-  geom_point(aes(y = Books), color = "blue", size = 4) +
-  geom_text(aes(y = Books, label = Books), vjust = -1, color = "white") +
-  geom_line(aes(y = Pages / k), color = "red", linewidth = 1.2) +
-  geom_point(aes(y = Pages / k), color = "red", size = 4) +
-  geom_text(aes(y = Pages / k, label = Pages), vjust = -1, color = "white") +
+  geom_line(aes(y = Books), color = tinta[["negro"]], linewidth = 1.2) +
+  geom_point(aes(y = Books), color = tinta[["negro"]], size = 4) +
+  geom_text(aes(y = Books, label = Books), vjust = -1) +
+  geom_line(aes(y = Pages / k), color = tinta[["ladrillo"]], linewidth = 1.2) +
+  geom_point(aes(y = Pages / k), color = tinta[["ladrillo"]], size = 4) +
+  geom_text(aes(y = Pages / k, label = Pages), vjust = -1, color = tinta[["ladrillo"]]) +
   geom_text(data = ultimo_punto, aes(y = Books, label = "libros"),
-            hjust = 0, nudge_x = 0.15, size = 5, color = "white") +
+            hjust = 0, nudge_x = 0.15, size = 5) +
   geom_text(data = ultimo_punto, aes(y = Pages / k, label = "páginas"),
-            hjust = 0, nudge_x = 0.15, size = 5, color = "white") +
+            hjust = 0, nudge_x = 0.15, size = 5, color = tinta[["ladrillo"]]) +
   capa_anios +
   scale_y_continuous(sec.axis = sec_axis(~ . * k, name = "Páginas"),
                      expand = expansion(mult = c(0, 0.15))) +
   expand_limits(y = 0) +
   xlab("Año") + ylab("Libros") +
-  theme_dark_blue() +
-  theme(plot.caption = element_text(color = "white"))
+  theme_tinta() +
+  # el eje de la derecha también se ve, en el color de las páginas
+  theme(axis.title.y.right = element_text(color = tinta[["ladrillo"]]),
+        axis.text.y.right  = element_text(color = tinta[["ladrillo"]]))
 mostrar(p, "01_libros_paginas_anio")
 
 ## Lectura acumulada: cómo viene cada año a la misma altura del calendario
@@ -152,15 +164,16 @@ acum %>%
 p <- ggplot(acum, aes(x = dia, y = acumulado, color = factor(Year_read),
                       linewidth = Year_read == anio_actual)) +
   geom_step() +
-  geom_vline(xintercept = hoy_yday, linetype = "dashed", color = "grey70") +
+  geom_vline(xintercept = hoy_yday, linetype = "dashed", color = tinta[["gris"]]) +
   geom_text_repel(data = acum %>% group_by(Year_read) %>% slice_max(dia, n = 1, with_ties = FALSE),
                   aes(label = Year_read), direction = "y", hjust = 0, nudge_x = 5,
                   segment.color = NA, size = 4, show.legend = FALSE) +  
   scale_linewidth_manual(values = c(`FALSE` = 0.7, `TRUE` = 1.8), guide = "none") +
+  scale_color_manual(values = col_anios) +
   scale_x_continuous(breaks = yday(as_date(paste0(anio_actual, "-", 1:12, "-01"))),
                      labels = month.abb, expand = expansion(mult = c(0.02, 0.08))) +
   xlab("") + ylab("Libros acumulados") +
-  theme_dark_blue() +
+  theme_tinta() +
   theme(legend.position = "none")
 mostrar(p, "02_acumulado_anio", w = 10)
 
@@ -169,11 +182,11 @@ p <- books_recent %>%
   filter(Year_read < anio_actual) %>%
   count(Month_read) %>%
   ggplot(aes(x = Month_read, y = n)) +
-  geom_col(fill = "aquamarine", alpha = 0.6) +
+  geom_col(fill = tinta[["azul"]]) +
   geom_text(aes(label = n), vjust = 2, color = "white") +
   xlab("Mes") + ylab("Libros") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
-  theme_dark_blue()
+  theme_tinta()
 mostrar(p, "03_libros_mes")
 
 ##-------------------------- Animación del acumulado ------------------------
@@ -200,13 +213,14 @@ anim <- ggplot(acum_anim, aes(x = dia, y = acumulado, group = anio, color = anio
   geom_point(size = 3) +
   geom_text(aes(label = etiqueta), hjust = -0.3, size = 4.5, show.legend = FALSE) +
   scale_linewidth_manual(values = c(`FALSE` = 0.8, `TRUE` = 2), guide = "none") +
+  scale_color_manual(values = col_anios) +
   scale_x_continuous(breaks = yday(as_date(paste0("2025-", 1:12, "-01"))),
                      labels = month.abb, limits = c(0, 400)) +
   # Fecha en el título: frame_along es el día del año que se está mostrando
   # (el día 0 se muestra como 01/01, no como 31/12)
   labs(title = "{format(as_date(max(1, round(frame_along)), origin = '2024-12-31'), '%d/%m')}",
        x = "", y = "Libros acumulados") +
-  theme_dark_blue() +
+  theme_tinta() +
   theme(legend.position = "none") +
   transition_reveal(dia)
 
@@ -241,19 +255,21 @@ heat <- books_recent %>%
 max_n <- max(heat$n, na.rm = TRUE)
 
 p <- ggplot(heat, aes(x = Month_read, y = Year_read, fill = n)) +
-  geom_tile(color = "grey15", linewidth = 1) +
+  geom_tile(color = "white", linewidth = 1) +
+  # números en blanco sobre las celdas oscuras y en tinta sobre las claras
   geom_text(aes(label = if_else(n > 0, as.character(n), ""),
-                color = if_else(n > max_n * 0.6, "grey10", "white")),
+                color = if_else(n > max_n * 0.5, "white", "#111111")),
             size = 4, na.rm = TRUE) +
-  scale_fill_viridis_c(option = "mako", begin = 0.15, na.value = "transparent",
-                       name = "Libros") +
+  scale_fill_gradient(low = "#f2f2ef", high = tinta[["azul"]], na.value = "transparent",
+                      name = "Libros") +
   scale_color_identity() +
   coord_fixed() +
   xlab("") + ylab("") +
-  theme_dark_blue() +
-  theme(panel.grid = element_blank(),
-        axis.line = element_blank(),
-        axis.ticks = element_blank())
+  theme_tinta(grilla = "ninguna") +
+  theme(axis.line = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "right",
+        legend.title = element_text(family = fuente_titulos, face = "bold"))
 mostrar(p, "05_heatmap_calendario", w = 10, h = 5)
 
 ##------------------------------ Páginas ---------------------------------------
@@ -267,9 +283,10 @@ books %>%
 p <- books %>%
   filter(!is.na(`Number of Pages`)) %>%
   ggplot(aes(x = Type, y = `Number of Pages`, fill = Type)) +
-  geom_boxplot(alpha = 0.6, color = "white", outlier.color = "white") +
+  geom_boxplot(alpha = 0.25, color = "#111111", outlier.color = "#111111") +
+  scale_fill_manual(values = col_tipo) +
   xlab("") + ylab("Páginas") +
-  theme_dark_blue() +
+  theme_tinta() +
   theme(legend.position = "none")
 mostrar(p, "06_paginas_tipo")
 
@@ -294,17 +311,17 @@ medianas <- books_recent %>%
 p <- books_recent %>%
   filter(!is.na(`Number of Pages`)) %>%
   ggplot(aes(x = `Number of Pages`, fill = Type)) +
-  geom_histogram(binwidth = 100, boundary = 0, color = "grey15", alpha = 0.8) +
+  geom_histogram(binwidth = 100, boundary = 0, color = "white") +
   geom_vline(data = medianas, aes(xintercept = mediana),
-             linetype = "dashed", color = "white") +
+             linetype = "dashed", color = tinta[["ladrillo"]]) +
   geom_text(data = medianas, aes(x = mediana, y = Inf, label = paste("mediana:", mediana)),
-            inherit.aes = FALSE, hjust = -0.1, vjust = 1.5, size = 3, color = "white") +
+            inherit.aes = FALSE, hjust = -0.1, vjust = 1.5, size = 3, color = tinta[["ladrillo"]]) +
   facet_wrap(~ Year_read, nrow = 2, labeller = as_labeller(lab_anio)) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
   scale_x_continuous(breaks = c(0, 500, 1000)) +
+  scale_fill_manual(values = col_tipo) +
   xlab("Páginas") + ylab("Libros") +
-  theme_dark_blue() +
-  theme(legend.position = "bottom", legend.title = element_blank())
+  theme_tinta()
 mostrar(p, "07_paginas_facets", w = 10, h = 6)
 
 ##------------------------- Antigüedad de lo que leo ---------------------------
@@ -320,12 +337,12 @@ p <- decadas %>%
   filter(decada >= 1800) %>%
   count(decada, Type) %>%
   ggplot(aes(x = decada, y = n, fill = Type)) +
-  geom_col(alpha = 0.8) +
+  geom_col(color = "white", linewidth = 0.3) +
+  scale_fill_manual(values = col_tipo) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
   labs(caption = paste(sum(decadas$decada < 1800), "libros anteriores a 1800 no se muestran")) +
   xlab("Década de publicación original") + ylab("Libros") +
-  theme_dark_blue() +
-  theme(plot.caption = element_text(color = "white")) +
-  labs(fill = NULL)
+  theme_tinta()
 mostrar(p, "08_decada_publicacion", w = 10)
 
 ## Cuántos años tenía el libro cuando lo leí
@@ -337,14 +354,13 @@ edad_year <- books_recent %>%
 edad_year
 
 p <- ggplot(edad_year, aes(x = Year_read, y = mediana)) +
-  geom_line(color = "gold", linewidth = 1.2) +
-  geom_point(color = "gold", size = 4) +
-  geom_text(aes(label = mediana), vjust = -1, color = "white") +
+  geom_line(color = tinta[["mostaza"]], linewidth = 1.2) +
+  geom_point(color = tinta[["mostaza"]], size = 4) +
+  geom_text(aes(label = mediana), vjust = -1) +
   expand_limits(y = 0) +
   capa_anios +
   xlab("Año") + ylab("Antigüedad mediana del libro (años)") +
-  theme_dark_blue() +
-  theme(plot.caption = element_text(color = "white"))
+  theme_tinta()
 mostrar(p, "09_antiguedad_anio")
 
 ##------------------------- Ficción vs no ficción ------------------------------
@@ -365,12 +381,13 @@ p <- ggplot(fnf_year, aes(x = Year_read, y = n, color = Type, group = Type)) +
   geom_point(size = 4) +
   geom_text(aes(label = n), vjust = -1) +
   geom_text(data = ultimo_punto, aes(label = str_to_lower(Type)),
-            hjust = 0, nudge_x = 0.15, size = 5, color = "white") +
+            hjust = 0, nudge_x = 0.15, size = 5) +
+  scale_color_manual(values = col_tipo) +
   expand_limits(y = 0) +
   capa_anios +
   xlab("Año") + ylab("Libros") +
-  theme_dark_blue() +
-  theme(legend.position = "none", plot.caption = element_text(color = "white"))
+  theme_tinta() +
+  theme(legend.position = "none")
 mostrar(p, "10_ficcion_anio")
 
 ##------------------------------ Idioma ----------------------------------------
@@ -381,11 +398,11 @@ lang <- books %>%
 lang
 
 p <- ggplot(lang, aes(x = n, y = fct_reorder(Language, n))) +
-  geom_col(fill = "aquamarine", alpha = 0.6) +
-  geom_text(aes(label = paste0(n, " (", pct, "%)")), hjust = -0.1, color = "white") +
+  geom_col(fill = tinta[["azul"]]) +
+  geom_text(aes(label = paste0(n, " (", pct, "%)")), hjust = -0.1) +
   scale_x_continuous(expand = expansion(mult = c(0, 0.2))) +
   xlab("Libros") + ylab("") +
-  theme_dark_blue()
+  theme_tinta(grilla = "x")
 mostrar(p, "11_idioma")
 
 ##------------------------------ Autores ---------------------------------------
@@ -432,14 +449,14 @@ descargar_imagenes <- function(archivo = archivo_imgs, carpeta = here("img_autor
 
 ## Grafico de barra autores
 p <- ggplot(authors, aes(x = reorder(Author, -n), y = n)) +
-  geom_col(fill = "aquamarine", alpha = 0.5) +
+  geom_col(fill = tinta[["azul"]]) +
   geom_text(aes(label = n), vjust = 3, color = "white") +
   geom_image(data = ~ filter(.x, !is.na(image)),
              aes(image = image, y = n + 1.5), size = 0.1) +
   expand_limits(y = max(authors$n) + 4) +
   xlab(NULL) + ylab("Libros") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
-  theme_dark_blue() +
+  theme_tinta() +
   # Nombre de cada autor debajo de su barra, a 45 grados
   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
 mostrar(p, "12_autores", w = 10, h = 6)
@@ -465,15 +482,16 @@ top_autores <- preferidos %>%
   mutate(fila = fct_inorder(paste(Author, Type, sep = "___")))
 
 p <- ggplot(top_autores, aes(x = rating, y = fila)) +
-  geom_segment(aes(x = 1, xend = rating, yend = fila), color = "grey60", linewidth = 1) +
-  geom_point(color = "gold", size = 4) +
+  geom_segment(aes(x = 1, xend = rating, yend = fila), color = tinta[["gris"]], linewidth = 1) +
+  geom_point(aes(color = Type), size = 4) +
   geom_text(aes(label = paste0(round(rating, 2), " (", n, ")")),
-            hjust = -0.25, color = "white", size = 3.5) +
+            hjust = -0.25, size = 3.5) +
+  scale_color_manual(values = col_tipo, guide = "none") +
   facet_wrap(~ Type, scales = "free_y") +
   scale_y_discrete(labels = function(x) str_remove(x, "___.*$")) +
   scale_x_continuous(limits = c(1, 6), breaks = 1:5) +
   xlab("Mi rating promedio (entre paréntesis, libros calificados)") + ylab("") +
-  theme_dark_blue()
+  theme_tinta(grilla = "x")
 mostrar(p, "13_autores_preferidos", w = 12, h = 6)
 
 
@@ -485,11 +503,13 @@ gender <- books %>%
 gender
 
 p <- ggplot(gender, aes(x = "", y = n, fill = Gender)) +
-  geom_col(width = 1) +
+  geom_col(width = 1, color = "white") +
   coord_polar(theta = "y") +
   geom_text(aes(label = paste0(n, " (", pct, "%)")),
-            position = position_stack(vjust = 0.5)) +
-  theme_void()
+            position = position_stack(vjust = 0.5), color = "white") +
+  scale_fill_manual(values = c(Mujer = tinta[["ladrillo"]], Hombre = tinta[["negro"]]), name = NULL) +
+  theme_void(base_family = fuente_texto) +
+  theme(plot.background = element_rect(fill = "white", colour = NA))
 mostrar(p, "14_genero")
 
 ## Porcentaje de autoras por año 
@@ -502,15 +522,14 @@ gender_year <- books_recent %>%
   filter(Gender == "Mujer")
 
 p <- ggplot(gender_year, aes(x = Year_read, y = pct)) +
-  geom_line(color = "orchid", linewidth = 1.2) +
-  geom_point(color = "orchid", size = 4) +
+  geom_line(color = tinta[["ladrillo"]], linewidth = 1.2) +
+  geom_point(color = tinta[["ladrillo"]], size = 4) +
   geom_text(aes(label = paste0(round(pct), "%\n(", n, "/", total, ")")),
-            vjust = -0.5, color = "white", size = 3.5) +
+            vjust = -0.5, size = 3.5) +
   capa_anios +
   scale_y_continuous(limits = c(0, 100), labels = function(x) paste0(x, "%")) +
   xlab("Año") + ylab("Libros escritos por mujeres") +
-  theme_dark_blue() +
-  theme(plot.caption = element_text(color = "white"))
+  theme_tinta()
 mostrar(p, "15_mujeres_anio")
 
 ## Género × tipo
@@ -550,13 +569,13 @@ country %>% filter(continente == "Otro")
 ## Un color base por continente; los países van del tono pleno (más leídos)
 ## a tonos más claros (menos leídos)
 colores_base <- c(
-  "Latinoamérica" = "#E07A5F",
-  "Norteamérica"  = "#3D85C6",
-  "Europa"        = "#81B29A",
-  "Asia"          = "#F2CC8F",
-  "África"        = "#9C6ADE",
+  "Latinoamérica" = tinta[["ladrillo"]],
+  "Norteamérica"  = tinta[["azul"]],
+  "Europa"        = tinta[["verde"]],
+  "Asia"          = tinta[["mostaza"]],
+  "África"        = tinta[["violeta"]],
   "Oceanía"       = "#4FB0C6",
-  "Otro"          = "grey60"
+  "Otro"          = tinta[["gris"]]
 )
 
 country <- country %>%
@@ -576,7 +595,7 @@ p <- ggplot(country, aes(area = n, fill = color, subgroup = continente,
                          label = paste0(Country, "\n", n))) +
   geom_treemap(colour = "white") +
   geom_treemap_subgroup_border(colour = "white", size = 4) +
-  geom_treemap_text(colour = "grey15", place = "centre", grow = TRUE,
+  geom_treemap_text(colour = "white", family = fuente_texto, place = "centre", grow = TRUE,
                     reflow = TRUE, min.size = 3) +
   # Capa invisible: solo sirve para generar la leyenda de continentes
   geom_point(data = distinct(country, continente),
@@ -586,10 +605,10 @@ p <- ggplot(country, aes(area = n, fill = color, subgroup = continente,
                       guide = guide_legend(nrow = 1,
                                            override.aes = list(alpha = 1, size = 8))) +
   scale_fill_identity() +
-  theme_void() +
+  theme_void(base_family = fuente_texto) +
   theme(legend.position = "bottom",
-        legend.text = element_text(colour = "white", size = 14),
-        plot.background = element_rect(fill = "#282C33", colour = NA),
+        legend.text = element_text(colour = "#111111", size = 14),
+        plot.background = element_rect(fill = "white", colour = NA),
         plot.margin = margin(6, 6, 10, 6))
 mostrar(p, "16_paises_treemap", w = 10, h = 7.5)
 
@@ -607,13 +626,14 @@ if (all(sapply(c("sf", "rnaturalearth"), requireNamespace, quietly = TRUE))) {
               by = c("adm0_a3" = "iso3"))
   
   p <- ggplot(world) +
-    geom_sf(aes(fill = n), color = "grey40", linewidth = 0.1) +
-    scale_fill_viridis_c(trans = "log10", na.value = "grey85", direction = -1, name = "Libros") +
+    geom_sf(aes(fill = n), color = "white", linewidth = 0.15) +
+    scale_fill_gradient(trans = "log10", low = "#c9d6ee", high = "#14284d",
+                        na.value = "#e6e6e2", name = "Libros") +
     coord_sf(crs = "+proj=robin") +
-    theme_void() +
-    theme(plot.background = element_rect(fill = "#282C33", colour = NA),
-          legend.text = element_text(colour = "white"),
-          legend.title = element_text(colour = "white"))
+    theme_void(base_family = fuente_texto) +
+    theme(plot.background = element_rect(fill = "white", colour = NA),
+          legend.text = element_text(colour = "#111111"),
+          legend.title = element_text(colour = "#111111", family = fuente_titulos, face = "bold"))
   mostrar(p, "17_paises_mapa", w = 10)
 }
 
@@ -624,9 +644,10 @@ p <- books %>%
   filter(!is.na(`My Rating`)) %>%
   count(Type, `My Rating`) %>%
   ggplot(aes(x = factor(`My Rating`), y = n, fill = Type)) +
-  geom_col(position = "dodge", alpha = 0.8) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = col_tipo) +
   xlab("Mi rating") + ylab("Libros") +
-  theme_dark_blue() +  labs(fill = NULL)
+  theme_tinta()
 mostrar(p, "18_ratings_distribucion")
 
 ## Mi rating vs. el promedio de Goodreads
@@ -653,13 +674,13 @@ extremos <- bind_rows(slice_max(ratings, dif, n = 5, with_ties = FALSE),
                       slice_min(ratings, dif, n = 5, with_ties = FALSE))
 
 p <- ggplot(ratings, aes(x = `Average Rating`, y = `My Rating`)) +
-  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "grey70") +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = tinta[["gris"]]) +
   geom_jitter(aes(color = Type), height = 0.15, width = 0, alpha = 0.6, size = 2) +
   geom_text_repel(data = extremos, aes(label = str_trunc(Title, 30)),
-                  color = "white", size = 3, max.overlaps = Inf) +
+                  size = 3, max.overlaps = Inf) +
+  scale_color_manual(values = col_tipo) +
   xlab("Rating promedio en Goodreads") + ylab("Mi rating") +
-  theme_dark_blue() +
-  labs(color = NULL)
+  theme_tinta()
 mostrar(p, "19_rating_vs_promedio", w = 9, h = 6)
 
 
@@ -676,13 +697,15 @@ paises_rating <- books %>%
 paises_rating %>% arrange(desc(rating))
 
 p <- ggplot(paises_rating, aes(x = rating, y = Country)) +
-  geom_vline(xintercept = rating_global, linetype = "dashed", color = "grey70") +
+  geom_vline(xintercept = rating_global, linetype = "dashed", color = tinta[["gris"]]) +
   geom_segment(aes(x = rating_global, xend = rating, yend = Country),
-               color = "grey60", linewidth = 1) +
-  geom_point(aes(size = n), color = "gold") +
+               color = tinta[["gris"]], linewidth = 1) +
+  geom_point(aes(size = n), color = tinta[["azul"]]) +
   scale_size_area(max_size = 8, name = "Libros") +
   xlab("Mi rating promedio") + ylab("") +
-  theme_dark_blue()
+  theme_tinta(grilla = "x") +
+  theme(legend.position = "right",
+        legend.title = element_text(family = fuente_titulos, face = "bold"))
 mostrar(p, "20_paises_rating", w = 9, h = 6)
 
 
@@ -701,15 +724,15 @@ fila_top <- ~ filter(.x, Author == last(levels(Author)))
 
 p <- ggplot(dumbbell, aes(y = Author)) +
   geom_segment(aes(x = goodreads, xend = mio, yend = Author),
-               color = "grey60", linewidth = 1.2) +
-  geom_point(aes(x = goodreads), color = "grey70", size = 4) +
+               color = "#d4d4d0", linewidth = 1.2) +
+  geom_point(aes(x = goodreads), color = tinta[["gris"]], size = 4) +
   geom_point(aes(x = mio, color = mio > goodreads), size = 4) +
   geom_text(data = fila_top, aes(x = goodreads, label = "Goodreads"),
-            vjust = -1.3, size = 3.5, color = "grey70") +
+            vjust = -1.3, size = 3.5, color = tinta[["gris"]]) +
   geom_text(data = fila_top, aes(x = mio, label = "Yo"),
-            vjust = -1.3, size = 3.5, color = "white") +
-  scale_color_manual(values = c(`TRUE` = "aquamarine", `FALSE` = "salmon"), guide = "none") +
+            vjust = -1.3, size = 3.5) +
+  scale_color_manual(values = c(`TRUE` = tinta[["verde"]], `FALSE` = tinta[["ladrillo"]]), guide = "none") +
   scale_y_discrete(expand = expansion(add = c(0.6, 1.2))) +
   xlab("Rating promedio") + ylab("") +
-  theme_dark_blue()
+  theme_tinta(grilla = "x")
 mostrar(p, "21_dumbbell_autores", w = 9, h = 6)
