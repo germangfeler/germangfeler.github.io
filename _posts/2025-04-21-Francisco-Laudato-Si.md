@@ -10,6 +10,7 @@ tags:
 header:
   teaser: /assets/thumbnails/francisco-laudato-si.jpg
 excerpt: "Sobre Laudato Si'"
+image: /assets/thumbnails/francisco-laudato-si.jpg
 ---
 
 En 2015, Francisco publicó su segunda encíclica: Laudato Si’, sobre el cuidado de la casa común. En este documento nos alerta sobre la degradación ambiental y el cambio climático, a la vez que expone sus causas: el consumismo y el desarrollo económico irresponsable. Laudato Si’ no es solo un texto religioso, es profundamente humanista y puede ser leído por creyentes y no creyentes por igual. Aquí intentaré reseñar los puntos que más me interesaron.

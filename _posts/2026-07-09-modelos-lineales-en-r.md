@@ -14,6 +14,7 @@ toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/portadas/modelos-lineales.png
 excerpt: "Cómo ajustar, leer, chequear y reportar un modelo lineal"
+image: /assets/thumbnails/portadas/modelos-lineales.png
 ---
 
 Hace unos años, junto a Nicolás Pelegrin, dimos un curso de posgrado en el Doctorado en Ciencias Biológicas de la UNC que titulamos [R aplicado a Ecología: de individuos a comunidades](/cursos/96-ecologia/). Ahora voy a adaptar esas clases en una serie de posts disponibles para todo el mundo, empezando por este donde vamos a ver la aplicación práctica de modelos lineales en datos ecológicos.

@@ -10,6 +10,7 @@ tags:
 header:
   teaser: /assets/img/posts/bioinfo/md1.jpeg
 excerpt: "Homenaje a la gran pionera"
+image: /assets/img/posts/bioinfo/md1.jpeg
 ---
 
 Margaret se graduó con honores en matemáticas y luego realizó un doctorado en química. Tras doctorarse comenzó a trabajar en la Asoc. Nac. para la Investigación Biomédica en Estados Unidos buscando la forma de aplicar la entonces novedosa computación en problemas biológicos.

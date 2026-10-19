@@ -10,6 +10,7 @@ tags:
 header:
   teaser: /assets/thumbnails/peron-ciencia.jpg
 excerpt: "Lecturas sobre Perón"
+image: /assets/thumbnails/peron-ciencia.jpg
 ---
 
 Durante el primer gobierno de Perón, a semejanza de lo que sucedió durante la posguerra en otros países, se comenzó a organizar el sistema nacional de ciencia y tecnología. En este sentido se destacan la creación de la Comisión Nacional de Energía Atómica (**CNEA**) y de la Dirección Nacional de Investigaciones Técnicas (**DNIT**) en 1950, el Instituto Antártico Argentino y el Consejo Nacional de Investigaciones Científicas y Técnicas (**CNICyT**) en 1951 y el Instituto de Investigaciones Científicas y Técnicas de las Fuerzas Armadas (**CITEFA**) en 1954. En este post no me interesa entrar en detalles sobre los avances científico-tecnológicos que se dieron durante los gobiernos de Perón (para eso están los excelentes libros de Hurtado y Feld) sino profundizar sobre su obra escrita para entender que es lo que pensaba sobre este tema.

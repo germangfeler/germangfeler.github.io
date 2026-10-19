@@ -5,6 +5,7 @@ categories: servicios
 header:
   teaser: /assets/thumbnails/portadas/servicio-transcriptomica.png
 excerpt: "Análisis de datos de experimentos de RNA-seq"    
+image: /assets/thumbnails/portadas/servicio-transcriptomica.png
 ---
 
 Diseño, control de calidad y análisis de experimentos transcriptómicos con tecnologías de alto rendimiento (microarrays de expresión, RNA-Seq). Se asesora en la interpretación de los resultados y redacción de informes o publicaciones. Destinado a grupos de investigación y empresas que apliquen estas metodologías en su trabajo.

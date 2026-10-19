@@ -317,9 +317,10 @@ a { color: inherit; }
 .comments { max-width: var(--measure); margin-top: 3rem; }
 
 /* ---------- pie ---------- */
-.site-footer { border-top: 3px solid var(--ink); margin-top: 2rem; }
+/* la línea del pie va alineada con la columna de contenido, como las de las secciones */
+.site-footer { width: min(calc(var(--wrap) - 2 * var(--gutter)), calc(100% - 2 * var(--gutter))); margin: 2rem auto 0; border-top: 3px solid var(--ink); }
 .site-footer__inner {
-  max-width: var(--wrap); margin: 0 auto; padding: 1.75rem var(--gutter) 2.5rem;
+  padding: 1.75rem 0 2.5rem;
   display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between;
   font-size: .98rem; color: var(--muted);
 }

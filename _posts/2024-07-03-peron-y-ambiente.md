@@ -10,6 +10,7 @@ tags:
 header:
   teaser: /assets/thumbnails/peron-ambiente.jpg
 excerpt: "Lecturas sobre Perón"
+image: /assets/thumbnails/peron-ambiente.jpg
 ---
 
 Todos conocemos al Perón militar, al estadista, al impulsor de derechos laborales y al industrialista. Pero hay un Perón menos explorado que es el Perón ambientalista que aparece en los años ‘70 con el Mensaje a los Pueblos y Gobiernos del Mundo y que luego se replica en el libro Modelo argentino para el desarrollo nacional. El mensaje de este Perón cobra más relevancia aún en la actualidad donde la política ambiental no es un lujo sino una necesidad.

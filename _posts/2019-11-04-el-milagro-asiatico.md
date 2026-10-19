@@ -11,6 +11,7 @@ tags:
 header:
   teaser: /assets/thumbnails/milagro-asiatico.jpg
 excerpt: "Algunas ideas del libro How Asia Works"
+image: /assets/thumbnails/milagro-asiatico.jpg
 ---
 
 ¿Cómo sucedió el “milagro asiático? ¿Qué recetas aplicaron estos países? ¿Podemos aprender algo de ellos en Latinoamérica? Acá van algunas ideas tomadas del libro How Asia Works de Joe Studwell.

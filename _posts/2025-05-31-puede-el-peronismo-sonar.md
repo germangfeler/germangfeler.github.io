@@ -10,6 +10,7 @@ tags:
 header:
   teaser: /assets/thumbnails/peronismo_futuro.jpg
 excerpt: "Ideas para pensar el peronismo del siglo XXI"
+image: /assets/thumbnails/peronismo_futuro.jpg
 ---
 ![futuro](/assets/thumbnails/peronismo_futuro.jpg)
 

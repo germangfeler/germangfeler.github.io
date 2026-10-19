@@ -10,7 +10,7 @@ locale: es_AR
 
 author:
   name: "Germán A. González"
-  avatar: "/assets/GG4.JPG"
+  avatar: "/assets/img/retrato-tinta.jpg"
   location: "Córdoba, Argentina"
   twitter: germangfeler
 
@@ -93,6 +93,11 @@ collections:
     output: false   # se muestran desplegables dentro de /servicios/
 
 defaults:
+  # imagen que se muestra al compartir un link (los posts usan su miniatura)
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/compartir.jpg
   - scope:
       path: ""
       type: posts

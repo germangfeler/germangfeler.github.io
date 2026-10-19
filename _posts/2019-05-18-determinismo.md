@@ -9,6 +9,7 @@ tags:
 header:
   teaser: /assets/thumbnails/nature-nurture.jpg
 excerpt: "Determinismo genético vs libre albedrío"
+image: /assets/thumbnails/nature-nurture.jpg
 ---
 
 ¿Somos una “hoja en blanco” al momento de nacer o nuestro comportamiento está moldeado por los genes? No pretendo dar una respuesta absoluta pero si contarles de algunas cosas que he leído en estos años.

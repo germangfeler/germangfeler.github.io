@@ -14,6 +14,7 @@ toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/portadas/shape-of-you.png
 excerpt: "Conociendo la forma de mis datos"  
+image: /assets/thumbnails/portadas/shape-of-you.png
 ---
 
 Hablando de palabras nuevas para nombrar cosas viejas, hoy empezamos una serie de artículos sobre <i>DataViz</i>. O como decimos en criollo, visualización de datos. Un conjunto de técnicas que nos van a permitir representar gráficamente información, con el objeto de entenderla mejor o de comunicar eficientemente resultados.
