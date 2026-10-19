@@ -4,7 +4,7 @@ layout: default
 {%- assign sec = page.categories | first -%}
 {%- assign words = content | strip_html | number_of_words -%}
 {%- assign mins = words | divided_by: site.words_per_minute | plus: 1 -%}
-<article class="post{% if page.toc %} has-toc{% endif %}"{% if site.sections[sec] %} data-sec="{{ sec }}"{% endif %}>
+<article class="post{% if page.toc %} has-toc{% endif %}{% if page.sin_marco %} post--sin-marco{% endif %}"{% if site.sections[sec] %} data-sec="{{ sec }}"{% endif %}>
   <header class="post__head">
     {%- if site.sections[sec] -%}
       <p class="post__section"><a class="sec sec--{{ sec }}" href="{{ site.sections[sec].url | relative_url }}">{{ site.sections[sec].title }}</a></p>

@@ -10,6 +10,7 @@ tags:
   - R
   - tidyverse
 toc: true
+sin_marco: true
 toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/portadas/dataviz-libros.png
