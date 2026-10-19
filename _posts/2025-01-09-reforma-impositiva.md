@@ -8,7 +8,7 @@ tags:
   - política
   - economia
 header:
-  teaser: /assets/thumbnails/impuestos.jpg
+  teaser: /assets/thumbnails/reforma-tributaria.jpg
 excerpt: "Propuestas de todo el arco"
 image: /assets/img/impuestos/tabla-propuestas.png
 ---
