@@ -372,7 +372,7 @@ ggplot(country, aes(area = n, fill = color, subgroup = continente,
 {:.center}
 ![Treemap de libros por país del autor, agrupados por continente, con una leyenda de continentes debajo: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/16_paises_treemap.png)
 
-Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Pero si hablamos de países quizás nos interese más ver los datos sobre un mapa. Para eso usamos *sf* y *rnaturalearth*:
+Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Pero si hablamos de países quizás nos interese más ver los datos sobre un mapa. Para eso usamos **sf** y **rnaturalearth**:
 
 ```r
 world <- rnaturalearth::ne_countries(scale = "small", returnclass = "sf") %>%
