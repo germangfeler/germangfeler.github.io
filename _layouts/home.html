@@ -3,7 +3,7 @@ layout: default
 ---
 {%- assign a = site.author -%}
 <section class="hero">
-  <img class="hero__avatar" src="{{ a.avatar | relative_url }}" alt="Foto de {{ a.name }}" width="168" height="168">
+  <img class="hero__avatar" src="{{ '/assets/img/retrato-tinta.jpg' | relative_url }}" alt="Retrato de {{ a.name }} dibujado en tinta" width="720" height="745">
   <div class="hero__text">
     <h1 class="hero__name">{{ a.name }}</h1>
     <div class="hero__intro">{{ content }}</div>
@@ -16,38 +16,19 @@ layout: default
   </div>
 </section>
 
-<section class="index" aria-labelledby="titulo-posts">
-  <div class="index__head">
-    <h2 id="titulo-posts">Posts</h2>
-  </div>
-
-  {%- assign latest = site.posts.first -%}
-  {%- assign sec = latest.categories | first -%}
-  <article class="featured" data-section="{{ sec }}">
-    <a href="{{ latest.url | relative_url }}" class="featured__link">
-      {%- if latest.header.teaser %}<img class="featured__img" src="{{ latest.header.teaser | relative_url }}" alt="" loading="eager">{% endif %}
-      <div class="featured__body">
-        <p class="featured__kicker"><span class="sec sec--{{ sec }}">{{ site.sections[sec].title }}</span> <span>Lo más reciente</span></p>
-        <h3 class="featured__title">{{ latest.title }}</h3>
-        <p class="featured__dek">{{ latest.excerpt | strip_html | strip }}</p>
-        <p class="entry__meta"><time datetime="{{ latest.date | date_to_xmlschema }}">{% include fecha.html date=latest.date %}</time></p>
-      </div>
-    </a>
-  </article>
-
+<div class="home-secs">
   {%- for s in site.sections -%}
-  {%- assign key = s[0] -%}
-  {%- assign lista = site.categories[key] | where_exp: "p", "p.url != latest.url" -%}
+  {%- assign key = s[0] %}
   <section class="home-sec home-sec--{{ key }}" aria-labelledby="sec-{{ key }}">
     <div class="home-sec__head">
-      <h3 id="sec-{{ key }}" class="home-sec__title"><a href="{{ s[1].url | relative_url }}">{{ s[1].title }}</a></h3>
+      <h2 id="sec-{{ key }}" class="home-sec__title"><a href="{{ s[1].url | relative_url }}">{{ s[1].title }}</a></h2>
       <a class="home-sec__all" href="{{ s[1].url | relative_url }}">Ver los {{ site.categories[key].size }} posts <span aria-hidden="true">→</span></a>
     </div>
     <ol class="entries">
-      {%- for post in lista limit:2 -%}
+      {%- for post in site.categories[key] limit:2 -%}
         {% include entry.html post=post show_section=false %}
       {%- endfor -%}
     </ol>
   </section>
   {%- endfor %}
-</section>
+</div>

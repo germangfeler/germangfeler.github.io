@@ -3,7 +3,7 @@
 {%- assign sec = p.categories | first -%}
 {%- assign words = p.content | strip_html | number_of_words -%}
 {%- assign mins = words | divided_by: site.words_per_minute | plus: 1 -%}
-<li class="entry" data-section="{{ sec }}"{% if p.temas %} data-temas="{{ p.temas | join: ' ' }}"{% endif %}>
+<li class="entry{% unless p.header.teaser %} entry--sin-img{% endunless %}" data-section="{{ sec }}"{% if p.temas %} data-temas="{{ p.temas | join: ' ' }}"{% endif %}>
   <a class="entry__link" href="{{ p.url | relative_url }}">
     {%- if p.header.teaser %}
     <span class="entry__thumb"><img src="{{ p.header.teaser | relative_url }}" alt="" loading="lazy" decoding="async"></span>

@@ -1,18 +1,6 @@
 (function () {
   var root = document.documentElement;
 
-  // Modo claro / oscuro
-  var toggle = document.querySelector('.theme-toggle');
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      var current = root.dataset.theme ||
-        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      var next = current === 'dark' ? 'light' : 'dark';
-      root.dataset.theme = next;
-      try { localStorage.setItem('tema', next); } catch (e) {}
-    });
-  }
-
   // Filtros de sección en la portada
   var chips = document.querySelectorAll('.chip[data-filter]');
   if (chips.length) {
