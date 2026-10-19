@@ -8,7 +8,7 @@ tags:
   - ambiente
   - economia
 header:
-  teaser: /assets/thumbnails/laudato_si.jpg
+  teaser: /assets/thumbnails/francisco-laudato-si.jpg
 excerpt: "Sobre Laudato Si'"
 ---
 
