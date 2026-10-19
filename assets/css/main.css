@@ -256,6 +256,8 @@ a { color: inherit; }
 .prose li::marker { color: var(--muted); }
 /* los gráficos van enmarcados, como láminas */
 .prose img { border: var(--line); display: inline-block; vertical-align: middle; }
+/* posts con gráficos de fondo blanco: sin marco (sin_marco: true en el front matter) */
+.post--sin-marco .prose img { border: 0; }
 .prose .center, .prose p.center { text-align: center; }
 .prose hr { border: 0; border-top: var(--line); margin: 2.5rem 0; }
 .prose blockquote {
