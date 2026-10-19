@@ -12,9 +12,5 @@
         <a href="{{ link.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ link.title }}</a>
       {%- endfor -%}
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Cambiar entre modo claro y oscuro" title="Modo claro / oscuro">
-      <span class="theme-toggle__sun">{% include icon.html name='sun' %}</span>
-      <span class="theme-toggle__moon">{% include icon.html name='moon' %}</span>
-    </button>
   </div>
 </header>

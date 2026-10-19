@@ -3,7 +3,7 @@ layout: default
 ---
 {%- assign a = site.author -%}
 <section class="hero">
-  <img class="hero__avatar" src="{{ a.avatar | relative_url }}" alt="Foto de {{ a.name }}" width="168" height="168">
+  <img class="hero__avatar" src="{{ '/assets/img/retrato-tinta.jpg' | relative_url }}" alt="Retrato de {{ a.name }} dibujado en tinta" width="720" height="745">
   <div class="hero__text">
     <h1 class="hero__name">{{ a.name }}</h1>
     <div class="hero__intro">{{ content }}</div>
