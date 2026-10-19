@@ -8,7 +8,7 @@ tags:
   - ciencia
   - estado
 header:
-  teaser: /assets/thumbnails/peron_azul.png
+  teaser: /assets/thumbnails/peron-ciencia.jpg
 excerpt: "Lecturas sobre Perón"
 ---
 
