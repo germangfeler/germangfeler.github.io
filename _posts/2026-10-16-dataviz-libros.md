@@ -15,6 +15,7 @@ toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/portadas/dataviz-libros.png
 excerpt: "Un dataset real, de la limpieza al gráfico final"
+image: /assets/thumbnails/portadas/dataviz-libros.png
 ---
 
 <i>Previously on this blog…</i> vimos cómo [visualizar datos continuos](/datascience/shape-of-you/) y [datos categóricos](/datascience/barras-y-tortas/). A partir de un dataset de juguete fuimos conociendo diferentes gráficos. Ahora vamos a hacer algo diferente: tomar un dataset real y recorrer el camino completo desde el archivo crudo hasta los gráficos terminados.

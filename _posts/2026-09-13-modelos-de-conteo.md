@@ -13,6 +13,7 @@ toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/portadas/modelos-conteos.png
 excerpt: "Qué hacer cuando la variable respuesta es un conteo"
+image: /assets/thumbnails/portadas/modelos-conteos.png
 ---
 
 Este es el cuarto y último post de la serie basada en el curso [R aplicado a Ecología: de individuos a comunidades](/cursos/96-ecologia/). En [el primero](/datascience/modelos-lineales-en-r/) ajustamos un modelo lineal a la riqueza de especies de las playas de RIKZ y vimos que no cumplía los supuestos. Quedó pendiente una alternativa mejor, y de eso se trata este post.

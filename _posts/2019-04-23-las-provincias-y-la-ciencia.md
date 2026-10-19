@@ -11,6 +11,7 @@ tags:
 header:
   teaser: /assets/thumbnails/portadas/las-provincias-y-la-ciencia.png
 excerpt: "La experiencia en Brasil y Argentina"
+image: /assets/thumbnails/portadas/las-provincias-y-la-ciencia.png
 ---
 
 Siempre hablamos del Estado nacional pero... ¿qué rol les toca a las provincias en el sistema de CyT? La experiencia de Sao Paulo puede tener algunas cosas que enseñarnos.

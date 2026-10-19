@@ -13,6 +13,7 @@ toc_label: "Secciones"
 header:
   teaser: /assets/thumbnails/portadas/modelos-ocupacion.png
 excerpt: "Cómo separar la presencia de una especie de nuestra capacidad de detectarla"
+image: /assets/thumbnails/portadas/modelos-ocupacion.png
 ---
 
 Este es el tercer post de la serie basada en el curso [R aplicado a Ecología: de individuos a comunidades](/cursos/96-ecologia/). En [el anterior](/datascience/glm-binomial/) modelamos la presencia de una especie con un GLM binomial. Pero en ese análisis dimos por sentado algo que en el campo casi nunca es cierto, y de eso se trata este post.

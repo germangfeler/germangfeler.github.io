@@ -5,6 +5,7 @@ categories: servicios
 header:
   teaser: /assets/thumbnails/portadas/servicio-datos-biologicos.png
 excerpt: "Análisis de datos experimentales de ecología, biología y medicina"  
+image: /assets/thumbnails/portadas/servicio-datos-biologicos.png
 ---
 
 Diseño de experimentos y análisis de datos de biología, ecología y medicina utilizando métodos bioestadísticos modernos. Además, se brinda asesoramiento en la interpretación de los resultados y redacción de informes o publicaciones. Destinado a grupos de investigación y empresas que apliquen estas metodologías en su trabajo.

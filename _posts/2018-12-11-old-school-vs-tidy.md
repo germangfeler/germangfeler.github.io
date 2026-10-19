@@ -12,6 +12,7 @@ header:
 toc: true
 toc_label: "Secciones"
 excerpt: "Comparamos los dos universos"  
+image: /assets/thumbnails/portadas/old-school-vs-tidy.png
 ---
 
 Hace algunos años este pibe de moñito vino a sacarnos de la modorra y cambiar la forma de programar en R.

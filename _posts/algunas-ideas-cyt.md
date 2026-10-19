@@ -9,6 +9,7 @@ tags:
 header:
   teaser: /assets/img/posts/cyt/ciencia-argentina.jpg
 excerpt: "Donde estamos y adónde vamos"
+image: /assets/img/posts/cyt/ciencia-argentina.jpg
 ---
 
 Primera versión: 1-9-2019
