@@ -201,11 +201,11 @@ ggplot(heat, aes(x = Month_read, y = Year_read, fill = n)) +
 {:.center}
 ![Heatmap de libros leídos por mes y año entre 2020 y 2026: cada celda es un mes, con más color cuantos más libros; los máximos son enero y mayo de 2025, con 7 libros cada uno](/assets/img/posts/dataviz3/05_heatmap_calendario.png)
 
-Se puede ver que durante el verano (especialmente diciembre y enero) es cuando más libros termino.
+Se puede ver que durante el verano (especialmente diciembre y enero) es cuando más libros termino. En mayo de 2025 también tuve un buen mes lector, no recuerdo qué pasó en particular.
 
 ## ¿Qué leo?
 
-La primera división es ficción contra no ficción:
+En mi vida lectora fui pasando por épocas donde leía más ficción y otras en las que me decantaba más por la no ficción. Veamos cómo se ve reflejado eso en los datos de Goodreads:
 
 ```r
 fnf_year <- books_recent %>%
@@ -230,7 +230,7 @@ ggplot(fnf_year, aes(x = Year_read, y = n, color = Type, group = Type)) +
 
 Después de un 2020 parejo, en 2021 y 2022 leí más no ficción, y en 2023 se cruzaron las líneas.
 
-¿Y qué tan largos son los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets** (o *small multiples*): el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
+¿Y qué tan largos son los libros? En [DataViz I](/datascience/shape-of-you/) vimos histogramas y boxplots. Una herramienta que no apareció ahí son los **facets**: el mismo gráfico repetido en paneles, uno por grupo, todos con la misma escala.
 
 ```r
 medianas <- books_recent %>%
@@ -372,7 +372,7 @@ ggplot(country, aes(area = n, fill = color, subgroup = continente,
 {:.center}
 ![Treemap de libros por país del autor, agrupados por continente, con una leyenda de continentes debajo: Argentina con 134 y Estados Unidos con 129 ocupan más de la mitad; siguen Reino Unido con 29 y Francia con 24](/assets/img/posts/dataviz3/16_paises_treemap.png)
 
-Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Para ver la geografía, en cambio, nada como un mapa. Con **sf** y **rnaturalearth** es casi gratis una vez que tenemos los códigos ISO:
+Argentina y Estados Unidos se reparten dos tercios de la biblioteca. Eso es lo que muestra el treemap, que es bueno para comparar tamaños. Pero si hablamos de países quizás nos interese más ver los datos sobre un mapa. Para eso usamos **sf** y **rnaturalearth**:
 
 ```r
 world <- rnaturalearth::ne_countries(scale = "small", returnclass = "sf") %>%
