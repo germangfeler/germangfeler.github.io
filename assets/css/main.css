@@ -167,7 +167,10 @@ a { color: inherit; }
 .entry__dek { font-family: var(--serif); font-size: 1.18rem; line-height: 1.45; color: var(--ink); max-width: 36rem; }
 .entry__meta { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .95rem; color: var(--muted); }
 .entry__link:hover .entry__title { text-decoration-thickness: 5px; }
-.entry__link:hover .entry__thumb img { filter: contrast(1.08) saturate(1.1); }
+/* las fotos e ilustraciones van en blanco y negro y toman color al pasar el mouse;
+   las portadas dibujadas (carpeta portadas/) ya están en tinta */
+.entry__thumb img:not([src*="/portadas/"]) { filter: grayscale(1) contrast(1.05); transition: filter .25s; }
+.entry__link:hover .entry__thumb img, .entry__link:focus-visible .entry__thumb img { filter: none; }
 @media (max-width: 720px) {
   .entry__link { grid-template-columns: 1fr; }
   .entry__thumb { order: 0; border-left: 0; padding: 1.25rem 0 0; }
