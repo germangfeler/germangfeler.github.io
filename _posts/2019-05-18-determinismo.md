@@ -7,7 +7,7 @@ tags:
   - política
   - ciencia
 header:
-  teaser: /assets/thumbnails/nurture-portada.png
+  teaser: /assets/thumbnails/nature-nurture.jpg
 excerpt: "Determinismo genético vs libre albedrío"
 ---
 
