@@ -18,3 +18,5 @@ cafe:
     nombre: Ciencia y tecnología
   - slug: politica
     nombre: Política, Sociedad y Economía
+  - slug: random
+    nombre: Random
