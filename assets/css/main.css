@@ -569,6 +569,14 @@ a { color: inherit; }
 .prose .fav-extra li { margin: 0; font-size: .98rem; line-height: 1.3; padding: .25rem .65rem; border: 1px solid var(--ink); background: var(--paper-2); }
 .prose .fav-spotify { margin: 0 0 1.5rem; border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); line-height: 0; }
 .prose .fav-spotify iframe { display: block; width: 100%; border: 0; }
+/* grilla de pósters con título, sin reseña */
+.prose .fav-posters { list-style: none; margin: 0 0 2rem; padding: 1.6rem 0 0; border-top: 3px solid var(--ink); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.8rem 1.4rem; }
+.prose .fav-posters li { margin: 0; min-width: 0; scroll-margin-top: 5rem; }
+.prose .fav-posters img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); }
+.prose .fav-posters span { display: block; margin-top: 1rem; font-family: var(--display); font-weight: 700; font-size: 1.05rem; line-height: 1.2; }
+.prose .fav-posters em { font-style: normal; }
+.prose .fav-posters li:target img { box-shadow: 6px 6px 0 var(--cafe); }
+@media (max-width: 560px) { .prose .fav-posters { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem 1rem; } }
 /* bloque especial: franja negra con pósters (ej. "Buen año para el cine de terror") */
 .prose .fav-terror {
   width: min(calc(var(--wrap) - 2 * var(--gutter)), calc(100vw - 2 * var(--gutter) - 1rem));
