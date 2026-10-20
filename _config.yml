@@ -39,9 +39,6 @@ sections:
     title: "Café"
     url: /cafe/
 
-# Comentarios con Disqus (borrá el shortname para desactivarlos)
-disqus_shortname: germangfeler
-
 # Google Analytics 4: poné tu ID "G-XXXXXXX" para activarlo.
 # (El ID viejo UA-129293475-1 dejó de funcionar en 2023.)
 ga4_id:
@@ -103,7 +100,6 @@ defaults:
       type: posts
     values:
       layout: single
-      comments: true
       read_time: true
   - scope:
       path: ""

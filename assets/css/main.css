@@ -314,7 +314,6 @@ a { color: inherit; }
 .pager a span { font-weight: 500; font-size: .8rem; color: var(--muted); }
 .pager__next { text-align: right; grid-column: 2; }
 @media (max-width: 560px) { .pager { grid-template-columns: 1fr; } .pager__next { grid-column: 1; } }
-.comments { max-width: var(--measure); margin-top: 3rem; }
 
 /* ---------- pie ---------- */
 /* la línea del pie va alineada con la columna de contenido, como las de las secciones */
@@ -332,7 +331,7 @@ a { color: inherit; }
   *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
 }
 @media print {
-  .masthead, .site-footer, .toc, .pager, .comments, .copy-btn { display: none !important; }
+  .masthead, .site-footer, .toc, .pager, .copy-btn { display: none !important; }
   body { background: #fff; color: #000; }
 }
 
