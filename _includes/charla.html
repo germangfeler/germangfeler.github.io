@@ -1,0 +1,18 @@
+{%- comment -%}
+  Invitación a discutir el post en X o en Substack (reemplaza a los comentarios).
+  Si el post también está en Substack (canonical_url), el botón lleva directo a sus comentarios.
+{%- endcomment -%}
+{%- assign url_post = page.url | absolute_url -%}
+{%- capture texto_x -%}{{ page.title }} @{{ site.author.twitter }}{%- endcapture -%}
+<aside class="charla" aria-labelledby="charla-titulo">
+  <p class="charla__titulo" id="charla-titulo">¿Charlamos?</p>
+  <p class="charla__texto">Si querés comentar, discutir o decirme que estoy equivocado, escribime en X o en Substack.</p>
+  <div class="charla__botones">
+    <a class="charla__btn" href="https://twitter.com/intent/tweet?text={{ texto_x | url_encode }}&amp;url={{ url_post | url_encode }}" target="_blank" rel="noopener">{% include icon.html name='twitter' %}<span>Comentalo en X</span></a>
+    {%- if page.canonical_url contains 'substack.com' %}
+    <a class="charla__btn" href="{{ page.canonical_url }}/comments" target="_blank" rel="noopener">{% include icon.html name='substack' %}<span>Comentalo en Substack</span></a>
+    {%- else %}
+    <a class="charla__btn" href="https://substack.com/@{{ site.author.twitter }}" target="_blank" rel="noopener">{% include icon.html name='substack' %}<span>Escribime en Substack</span></a>
+    {%- endif %}
+  </div>
+</aside>
