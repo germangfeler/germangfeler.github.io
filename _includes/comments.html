@@ -1,9 +1,0 @@
-{% if site.disqus_shortname and page.comments and jekyll.environment == 'production' %}
-<section class="comments" aria-label="Comentarios">
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () { this.page.url = "{{ page.url | absolute_url }}"; this.page.identifier = "{{ page.id }}"; this.language = "es_ES"; };
-    (function () { var d = document, s = d.createElement('script'); s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();
-  </script>
-</section>
-{% endif %}
