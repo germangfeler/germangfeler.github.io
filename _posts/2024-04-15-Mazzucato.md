@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "La Luna, Google y el CAREM: lo que Mariana Mazzucato entendió sobre la innovación"
+title: "Mazzucato: ¿quién asume los riesgos de la innovación?"
 categories: cafe
 temas: [ciencia, politica]
 tags:
